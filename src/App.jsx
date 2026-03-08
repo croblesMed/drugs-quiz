@@ -2,6 +2,7 @@ import { useState } from 'react';
 import HomeScreen from './components/HomeScreen';
 import QuizScreen from './components/QuizScreen';
 import ResultScreen from './components/ResultScreen';
+import UpdatePrompt from './components/UpdatePrompt';
 import './App.css';
 
 /**
@@ -43,6 +44,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <UpdatePrompt />
       {screen === 'home' && (
         <HomeScreen onStartQuiz={handleStartQuiz} />
       )}
