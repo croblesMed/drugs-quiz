@@ -417,6 +417,43 @@ button {
 .primary-btn   { color: #fff; }
 .secondary-btn { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
 
+/* ── Update banner ───────────────────────────────────────────────────────── */
+.update-banner {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e293b;
+  color: #f8fafc;
+  border-radius: 14px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  z-index: 9999;
+  max-width: calc(100vw - 32px);
+}
+
+.update-banner-actions { display: flex; gap: 8px; }
+
+.update-btn {
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.update-btn-primary  { background: #3b82f6; color: #fff; }
+.update-btn-primary:hover  { background: #2563eb; }
+.update-btn-secondary { background: #334155; color: #cbd5e1; }
+.update-btn-secondary:hover { background: #475569; }
+
 /* ── Responsive ──────────────────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .app-title    { font-size: 1.8rem; }
