@@ -1,0 +1,823 @@
+{
+  "id": "infectious-disease",
+  "label": "Infectious Disease",
+  "icon": "🦠",
+  "blurb": "Antibacterials, antivirals, antifungals, antiparasitics, HIV and TB therapy",
+  "drugs": [
+    {
+      "id": "penicillin-g",
+      "name": "Penicillin G",
+      "emoji": "🦠💍🔨",
+      "drugClass": "Natural Penicillin",
+      "primaryEffect": "Bactericidal against susceptible gram-positive and gram-negative cocci",
+      "treatmentUsage": "Syphilis (drug of choice), group A and B streptococcal infections, Neisseria meningitidis meningitis, Clostridium perfringens, actinomycosis",
+      "mechanismOfAction": "Binds penicillin-binding proteins and inhibits transpeptidase cross-linking of peptidoglycan, while also activating autolysins that degrade the cell wall.",
+      "sideEffects": "Hypersensitivity reactions including anaphylaxis, hemolytic anemia, interstitial nephritis, seizures at very high doses, Jarisch-Herxheimer reaction in syphilis",
+      "contraindications": "Known penicillin anaphylaxis; beta-lactamase-producing organisms are intrinsically resistant",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "syphilis",
+        "streptococcus",
+        "beta-lactam"
+      ],
+      "tooltip": "Still the drug of choice for syphilis at every stage, with no documented Treponema resistance. Penicillin-allergic pregnant patients must be desensitized rather than given an alternative."
+    },
+    {
+      "id": "amoxicillin",
+      "name": "Amoxicillin",
+      "emoji": "🦠💍👂",
+      "drugClass": "Aminopenicillin",
+      "primaryEffect": "Bactericidal with extended gram-negative coverage",
+      "treatmentUsage": "Acute otitis media (first-line), streptococcal pharyngitis, sinusitis, Helicobacter pylori eradication, Lyme disease, endocarditis prophylaxis",
+      "mechanismOfAction": "Inhibits transpeptidase-mediated peptidoglycan cross-linking; the amino group improves penetration through gram-negative porin channels.",
+      "sideEffects": "Diarrhea, rash, hypersensitivity, pseudomembranous colitis, characteristic maculopapular rash if given during Epstein-Barr virus infection",
+      "contraindications": "Penicillin allergy; ineffective against beta-lactamase producers unless combined with clavulanate",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "otitis media",
+        "H pylori",
+        "beta-lactam"
+      ],
+      "tooltip": "Classic vignette: a teenager with sore throat gets amoxicillin and develops a diffuse maculopapular rash — that indicates infectious mononucleosis, not a true penicillin allergy."
+    },
+    {
+      "id": "piperacillin-tazobactam",
+      "name": "Piperacillin / Tazobactam",
+      "emoji": "🦠💍🛡️",
+      "drugClass": "Antipseudomonal Penicillin",
+      "primaryEffect": "Broad-spectrum bactericidal activity including Pseudomonas and anaerobes",
+      "treatmentUsage": "Hospital-acquired pneumonia, intra-abdominal infection, febrile neutropenia, complicated skin and soft tissue infection, sepsis of unknown source",
+      "mechanismOfAction": "Piperacillin inhibits cell wall cross-linking while tazobactam irreversibly inhibits many beta-lactamases, protecting piperacillin from degradation.",
+      "sideEffects": "Diarrhea, hypersensitivity, Clostridioides difficile colitis, thrombocytopenia, hypokalemia, nephrotoxicity when combined with vancomycin",
+      "contraindications": "Penicillin anaphylaxis; ineffective against MRSA, atypicals, and extended-spectrum beta-lactamase producers",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "Pseudomonas",
+        "anaerobes",
+        "beta-lactam"
+      ],
+      "tooltip": "The empiric workhorse for hospital sepsis. It covers Pseudomonas and anaerobes but not MRSA, so vancomycin is added. The combination carries a well-known nephrotoxicity signal."
+    },
+    {
+      "id": "ceftriaxone",
+      "name": "Ceftriaxone",
+      "emoji": "🦠3️⃣🧠",
+      "drugClass": "Third-Generation Cephalosporin",
+      "primaryEffect": "Broad gram-negative coverage with excellent CNS penetration",
+      "treatmentUsage": "Bacterial meningitis, gonorrhea, community-acquired pneumonia, pyelonephritis, Lyme disease with neurologic involvement, spontaneous bacterial peritonitis",
+      "mechanismOfAction": "Binds penicillin-binding proteins to block peptidoglycan cross-linking; its beta-lactam ring is more resistant to many beta-lactamases than earlier cephalosporins.",
+      "sideEffects": "Diarrhea, hypersensitivity, biliary sludging and pseudocholelithiasis, kernicterus in neonates, Clostridioides difficile colitis",
+      "contraindications": "Neonates especially with hyperbilirubinemia, concurrent calcium-containing intravenous solutions in neonates, severe cephalosporin allergy",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "meningitis",
+        "gonorrhea",
+        "beta-lactam"
+      ],
+      "tooltip": "Crosses the blood-brain barrier well, making it the meningitis backbone. Avoided in neonates because it displaces bilirubin from albumin and can cause kernicterus."
+    },
+    {
+      "id": "cefazolin",
+      "name": "Cefazolin",
+      "emoji": "🦠1️⃣🔪",
+      "drugClass": "First-Generation Cephalosporin",
+      "primaryEffect": "Bactericidal against skin flora and methicillin-sensitive Staphylococcus aureus",
+      "treatmentUsage": "Surgical prophylaxis, methicillin-sensitive Staphylococcus aureus bacteremia, cellulitis, osteomyelitis",
+      "mechanismOfAction": "Inhibits bacterial cell wall synthesis by binding penicillin-binding proteins and blocking peptidoglycan cross-linking.",
+      "sideEffects": "Hypersensitivity, diarrhea, phlebitis, rare seizures at high dose in renal failure, Clostridioides difficile colitis",
+      "contraindications": "Severe cephalosporin or penicillin anaphylaxis; does not cross into the CNS and does not cover MRSA or enterococci",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "surgical prophylaxis",
+        "MSSA",
+        "beta-lactam"
+      ],
+      "tooltip": "The standard preoperative prophylaxis given within one hour of incision. First-generation cephalosporins cover PEcK: Proteus, E. coli, and Klebsiella, plus gram-positive cocci."
+    },
+    {
+      "id": "cefepime",
+      "name": "Cefepime",
+      "emoji": "🦠4️⃣🔥",
+      "drugClass": "Fourth-Generation Cephalosporin",
+      "primaryEffect": "Broad gram-negative coverage including Pseudomonas with retained gram-positive activity",
+      "treatmentUsage": "Febrile neutropenia, hospital-acquired and ventilator-associated pneumonia, complicated urinary tract infection, Pseudomonas infections",
+      "mechanismOfAction": "Zwitterionic structure allows rapid penetration of gram-negative porins and gives high stability against AmpC beta-lactamases while binding penicillin-binding proteins.",
+      "sideEffects": "Neurotoxicity with encephalopathy, myoclonus, and nonconvulsive status epilepticus especially in renal impairment; diarrhea; hypersensitivity",
+      "contraindications": "Severe cephalosporin allergy; requires renal dose adjustment to avoid neurotoxicity",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "Pseudomonas",
+        "febrile neutropenia",
+        "beta-lactam"
+      ],
+      "tooltip": "Standard empiric monotherapy for febrile neutropenia. Cefepime neurotoxicity is a classic ICU scenario: a confused patient with myoclonus and renal failure on high-dose cefepime."
+    },
+    {
+      "id": "ceftaroline",
+      "name": "Ceftaroline",
+      "emoji": "🦠5️⃣🎯",
+      "drugClass": "Fifth-Generation Cephalosporin",
+      "primaryEffect": "Cephalosporin with activity against MRSA",
+      "treatmentUsage": "Complicated skin and soft tissue infection and community-acquired pneumonia caused by MRSA",
+      "mechanismOfAction": "Uniquely binds penicillin-binding protein 2a, the altered PBP encoded by mecA that confers methicillin resistance, allowing cell wall inhibition in MRSA.",
+      "sideEffects": "Rash, diarrhea, nausea, neutropenia with prolonged use, direct Coombs positivity, hypersensitivity",
+      "contraindications": "Severe cephalosporin allergy; lacks Pseudomonas coverage",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "MRSA",
+        "beta-lactam"
+      ],
+      "tooltip": "The only beta-lactam that treats MRSA, because it binds PBP2a which all other beta-lactams cannot. Note it does not cover Pseudomonas despite being fifth generation."
+    },
+    {
+      "id": "meropenem",
+      "name": "Meropenem",
+      "emoji": "🦠🏆🔨",
+      "drugClass": "Carbapenem",
+      "primaryEffect": "Extremely broad bactericidal activity",
+      "treatmentUsage": "Severe multidrug-resistant gram-negative infections, extended-spectrum beta-lactamase producers, polymicrobial intra-abdominal sepsis, meningitis",
+      "mechanismOfAction": "Binds penicillin-binding proteins with high affinity and resists most beta-lactamases including extended-spectrum enzymes, blocking peptidoglycan cross-linking.",
+      "sideEffects": "Diarrhea, seizures (less than imipenem), hypersensitivity, Clostridioides difficile colitis, reduced valproate levels",
+      "contraindications": "Carbapenem hypersensitivity; concurrent valproate because levels fall precipitously and seizures result",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "multidrug resistance",
+        "beta-lactam"
+      ],
+      "tooltip": "The broadest beta-lactam class, covering gram-positives, gram-negatives including Pseudomonas, and anaerobes — but not MRSA, VRE, or atypicals. Imipenem needs cilastatin to block renal dehydropeptidase."
+    },
+    {
+      "id": "aztreonam",
+      "name": "Aztreonam",
+      "emoji": "🦠➖🛡️",
+      "drugClass": "Monobactam",
+      "primaryEffect": "Bactericidal against aerobic gram-negative organisms only",
+      "treatmentUsage": "Gram-negative infections including Pseudomonas in patients with severe penicillin allergy",
+      "mechanismOfAction": "Monocyclic beta-lactam that binds penicillin-binding protein 3 of aerobic gram-negative bacteria, with no activity against gram-positives or anaerobes.",
+      "sideEffects": "Rash, diarrhea, elevated transaminases, phlebitis; very low cross-reactivity with other beta-lactams",
+      "contraindications": "Hypersensitivity to aztreonam itself; no gram-positive or anaerobic coverage means it cannot be used empirically alone",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "Pseudomonas",
+        "penicillin allergy",
+        "beta-lactam"
+      ],
+      "tooltip": "The answer when a patient has true penicillin anaphylaxis but needs gram-negative coverage, because there is essentially no cross-reactivity except with ceftazidime, which shares a side chain."
+    },
+    {
+      "id": "vancomycin",
+      "name": "Vancomycin",
+      "emoji": "🦠🔴🧍",
+      "drugClass": "Glycopeptide",
+      "primaryEffect": "Bactericidal against gram-positive organisms including MRSA",
+      "treatmentUsage": "MRSA infections, methicillin-resistant coagulase-negative staphylococci, ampicillin-resistant enterococci, oral therapy for Clostridioides difficile colitis",
+      "mechanismOfAction": "Binds the D-alanyl-D-alanine terminus of peptidoglycan precursors, sterically preventing transglycosylation and transpeptidation of the cell wall.",
+      "sideEffects": "Vancomycin infusion reaction with flushing of the upper body, nephrotoxicity, ototoxicity, neutropenia, DRESS syndrome, thrombocytopenia",
+      "contraindications": "Hypersensitivity; requires level monitoring and renal dose adjustment; oral form only for Clostridioides difficile since it is not absorbed",
+      "topicTags": [
+        "antibacterial",
+        "cell wall synthesis",
+        "MRSA",
+        "C difficile"
+      ],
+      "tooltip": "The infusion reaction is direct mast cell degranulation from rapid infusion, not IgE allergy, and it resolves with slower administration. Resistance in VRE comes from D-ala-D-lac substitution."
+    },
+    {
+      "id": "daptomycin",
+      "name": "Daptomycin",
+      "emoji": "🦠💥💪",
+      "drugClass": "Lipopeptide",
+      "primaryEffect": "Rapid bactericidal killing of gram-positive organisms",
+      "treatmentUsage": "MRSA bacteremia and right-sided endocarditis, vancomycin-resistant enterococci, complicated skin and soft tissue infection",
+      "mechanismOfAction": "Inserts its lipid tail into the gram-positive cell membrane in a calcium-dependent manner, forming pores that cause rapid membrane depolarization and potassium efflux.",
+      "sideEffects": "Myopathy with elevated creatine kinase requiring weekly monitoring, rhabdomyolysis, eosinophilic pneumonia, peripheral neuropathy",
+      "contraindications": "Pneumonia of any cause because pulmonary surfactant inactivates it; caution with concurrent statins",
+      "topicTags": [
+        "antibacterial",
+        "cell membrane",
+        "MRSA",
+        "VRE"
+      ],
+      "tooltip": "Never use daptomycin for pneumonia — surfactant binds and inactivates it. Weekly creatine kinase monitoring is required, and statins are usually held during therapy."
+    },
+    {
+      "id": "linezolid",
+      "name": "Linezolid",
+      "emoji": "🦠5️⃣0️⃣",
+      "drugClass": "Oxazolidinone",
+      "primaryEffect": "Bacteriostatic inhibition of gram-positive protein synthesis",
+      "treatmentUsage": "Vancomycin-resistant enterococci, MRSA pneumonia and skin infection, multidrug-resistant tuberculosis",
+      "mechanismOfAction": "Binds the 23S ribosomal RNA of the 50S subunit and prevents formation of the 70S initiation complex, blocking protein synthesis at the very first step.",
+      "sideEffects": "Reversible myelosuppression especially thrombocytopenia, peripheral and optic neuropathy with prolonged use, serotonin syndrome, lactic acidosis",
+      "contraindications": "Concurrent MAO inhibitors; caution with SSRIs and other serotonergic drugs; tyramine-rich foods",
+      "topicTags": [
+        "antibacterial",
+        "protein synthesis",
+        "MRSA",
+        "VRE"
+      ],
+      "tooltip": "It is a weak MAO inhibitor, which is the tested interaction: linezolid plus an SSRI can cause serotonin syndrome. Excellent oral bioavailability means no dose change from IV to oral."
+    },
+    {
+      "id": "azithromycin",
+      "name": "Azithromycin",
+      "emoji": "🦠5️⃣🫁",
+      "drugClass": "Macrolide",
+      "primaryEffect": "Bacteriostatic against atypical and respiratory pathogens",
+      "treatmentUsage": "Community-acquired pneumonia, atypical pneumonia from Mycoplasma or Legionella, chlamydia, pertussis, Mycobacterium avium complex prophylaxis",
+      "mechanismOfAction": "Binds the 23S rRNA of the 50S ribosomal subunit and blocks translocation of the growing peptide chain, halting protein synthesis.",
+      "sideEffects": "Gastrointestinal upset from motilin receptor agonism, QT prolongation, cholestatic hepatitis, hearing loss with prolonged use",
+      "contraindications": "Known long QT syndrome, concurrent QT-prolonging drugs, history of cholestatic jaundice with macrolides",
+      "topicTags": [
+        "antibacterial",
+        "protein synthesis",
+        "atypical pneumonia",
+        "chlamydia"
+      ],
+      "tooltip": "Azithromycin has minimal CYP3A4 inhibition unlike erythromycin and clarithromycin, which is why it is preferred when drug interactions matter. QT prolongation remains a class effect."
+    },
+    {
+      "id": "doxycycline",
+      "name": "Doxycycline",
+      "emoji": "🦠3️⃣0️⃣",
+      "drugClass": "Tetracycline",
+      "primaryEffect": "Bacteriostatic with broad atypical and intracellular coverage",
+      "treatmentUsage": "Rocky Mountain spotted fever, Lyme disease, chlamydia, community-acquired MRSA skin infection, acne, malaria prophylaxis, atypical pneumonia",
+      "mechanismOfAction": "Binds the 30S ribosomal subunit and blocks attachment of aminoacyl-tRNA to the acceptor site, preventing peptide chain elongation.",
+      "sideEffects": "Photosensitivity, esophagitis if taken without water, gastrointestinal upset, tooth discoloration and impaired bone growth in children under eight, benign intracranial hypertension",
+      "contraindications": "Pregnancy, children under age eight, concurrent divalent cations such as calcium, iron, magnesium, or antacids which chelate the drug",
+      "topicTags": [
+        "antibacterial",
+        "protein synthesis",
+        "tick-borne illness",
+        "Lyme disease",
+        "acne"
+      ],
+      "tooltip": "The drug of choice for Rocky Mountain spotted fever even in children, because the disease is more dangerous than the tooth staining. Take with a full glass of water sitting upright to avoid esophagitis."
+    },
+    {
+      "id": "gentamicin",
+      "name": "Gentamicin",
+      "emoji": "🦠👂🫘",
+      "drugClass": "Aminoglycoside",
+      "primaryEffect": "Concentration-dependent bactericidal killing of aerobic gram-negatives",
+      "treatmentUsage": "Serious gram-negative infections, synergy with beta-lactams for enterococcal and staphylococcal endocarditis, bowel surgery prophylaxis",
+      "mechanismOfAction": "Binds irreversibly to the 30S ribosomal subunit, causing misreading of mRNA and premature termination; uptake requires oxygen-dependent transport, so anaerobes are intrinsically resistant.",
+      "sideEffects": "Nephrotoxicity with acute tubular necrosis, irreversible ototoxicity and vestibular toxicity, neuromuscular blockade, teratogenicity",
+      "contraindications": "Pregnancy, myasthenia gravis, concurrent loop diuretics or vancomycin which compound toxicity, anaerobic infections",
+      "topicTags": [
+        "antibacterial",
+        "protein synthesis",
+        "gram-negative",
+        "nephrotoxicity"
+      ],
+      "tooltip": "Once-daily extended-interval dosing exploits concentration-dependent killing and the post-antibiotic effect while reducing nephrotoxicity. Aminoglycosides are ineffective in abscesses because of the low-oxygen environment."
+    },
+    {
+      "id": "levofloxacin",
+      "name": "Levofloxacin",
+      "emoji": "🦠🌀🦴",
+      "drugClass": "Fluoroquinolone",
+      "primaryEffect": "Bactericidal with broad gram-negative and respiratory coverage",
+      "treatmentUsage": "Community-acquired pneumonia, complicated urinary tract infection and pyelonephritis, intra-abdominal infection, anthrax, tuberculosis as second-line",
+      "mechanismOfAction": "Inhibits DNA gyrase (topoisomerase II) and topoisomerase IV, preventing supercoiling relief and religation during bacterial DNA replication.",
+      "sideEffects": "Tendinopathy and tendon rupture, peripheral neuropathy, QT prolongation, CNS effects including confusion and seizures, aortic aneurysm and dissection, Clostridioides difficile colitis, dysglycemia",
+      "contraindications": "Pregnancy, children and adolescents when alternatives exist, myasthenia gravis, concurrent divalent cations, history of tendon disorders",
+      "topicTags": [
+        "antibacterial",
+        "DNA replication",
+        "pneumonia",
+        "urinary tract infection"
+      ],
+      "tooltip": "Multiple boxed warnings restrict fluoroquinolones to situations without alternatives. Tendon rupture risk is highest in the Achilles tendon, in patients over 60, and with concurrent corticosteroids."
+    },
+    {
+      "id": "ciprofloxacin",
+      "name": "Ciprofloxacin",
+      "emoji": "🦠🌀🚽",
+      "drugClass": "Fluoroquinolone",
+      "primaryEffect": "Bactericidal with strong gram-negative and Pseudomonas activity",
+      "treatmentUsage": "Complicated urinary tract infection, pyelonephritis, traveler's diarrhea, typhoid fever, Pseudomonas infection, anthrax prophylaxis",
+      "mechanismOfAction": "Inhibits bacterial DNA gyrase and topoisomerase IV, blocking DNA supercoiling and causing double-strand breaks during replication.",
+      "sideEffects": "Tendon rupture, peripheral neuropathy, QT prolongation, CNS toxicity, Clostridioides difficile colitis, aortic dissection, theophylline toxicity via CYP1A2 inhibition",
+      "contraindications": "Pregnancy, pediatric use when alternatives exist, myasthenia gravis, concurrent tizanidine, divalent cation co-administration",
+      "topicTags": [
+        "antibacterial",
+        "DNA replication",
+        "Pseudomonas",
+        "urinary tract infection"
+      ],
+      "tooltip": "The best oral anti-Pseudomonal agent. It inhibits CYP1A2, which raises theophylline and caffeine levels — a classic interaction question producing seizures or arrhythmias."
+    },
+    {
+      "id": "trimethoprim-sulfamethoxazole",
+      "name": "Trimethoprim / Sulfamethoxazole",
+      "emoji": "🦠🍃🍃",
+      "drugClass": "Folate Synthesis Inhibitor",
+      "primaryEffect": "Sequential blockade of bacterial folate synthesis",
+      "treatmentUsage": "Uncomplicated urinary tract infection, Pneumocystis jirovecii pneumonia treatment and prophylaxis, community-acquired MRSA, toxoplasmosis prophylaxis, Nocardia, Listeria",
+      "mechanismOfAction": "Sulfamethoxazole inhibits dihydropteroate synthase and trimethoprim inhibits dihydrofolate reductase, sequentially blocking two steps in bacterial tetrahydrofolate synthesis.",
+      "sideEffects": "Rash and Stevens-Johnson syndrome, hyperkalemia, elevated creatinine without true renal injury, megaloblastic anemia, hemolysis in G6PD deficiency, kernicterus in neonates",
+      "contraindications": "Sulfa allergy, pregnancy near term, G6PD deficiency, folate deficiency, severe renal impairment, concurrent methotrexate",
+      "topicTags": [
+        "antibacterial",
+        "folate synthesis",
+        "PCP prophylaxis",
+        "urinary tract infection",
+        "MRSA"
+      ],
+      "tooltip": "Trimethoprim blocks the distal tubule sodium channel, which explains both the hyperkalemia and the rise in creatinine from blocked tubular secretion without actual kidney injury."
+    },
+    {
+      "id": "metronidazole",
+      "name": "Metronidazole",
+      "emoji": "🦠🚫💨",
+      "drugClass": "Nitroimidazole",
+      "primaryEffect": "Bactericidal against anaerobes and antiprotozoal activity",
+      "treatmentUsage": "Anaerobic infections, bacterial vaginosis, trichomoniasis, giardiasis, amebiasis, Clostridioides difficile colitis, Helicobacter pylori regimens",
+      "mechanismOfAction": "Reduced by anaerobic organisms into cytotoxic free radical intermediates that damage DNA, which requires the low-redox environment found only in anaerobes and protozoa.",
+      "sideEffects": "Metallic taste, nausea, disulfiram-like reaction with alcohol, peripheral neuropathy with prolonged use, seizures, dark urine",
+      "contraindications": "Alcohol use during and for three days after therapy, first trimester of pregnancy, concurrent disulfiram",
+      "topicTags": [
+        "antibacterial",
+        "anaerobes",
+        "antiprotozoal",
+        "C difficile",
+        "DNA damage"
+      ],
+      "tooltip": "The disulfiram-like reaction with alcohol is the most tested fact. Selectivity for anaerobes comes from requiring a low-redox environment to activate the drug into DNA-damaging radicals."
+    },
+    {
+      "id": "clindamycin",
+      "name": "Clindamycin",
+      "emoji": "🦠5️⃣💩",
+      "drugClass": "Lincosamide",
+      "primaryEffect": "Bacteriostatic against gram-positives and anaerobes above the diaphragm",
+      "treatmentUsage": "Anaerobic infections above the diaphragm such as lung abscess and aspiration pneumonia, necrotizing fasciitis and toxic shock as a toxin suppressor, dental prophylaxis in penicillin allergy",
+      "mechanismOfAction": "Binds the 50S ribosomal subunit at the same site as macrolides and blocks peptide bond formation and translocation, also suppressing bacterial exotoxin production.",
+      "sideEffects": "Clostridioides difficile colitis (highest risk of any antibiotic), diarrhea, rash, metallic taste, hepatotoxicity",
+      "contraindications": "History of Clostridioides difficile infection, hypersensitivity; does not cover gram-negatives",
+      "topicTags": [
+        "antibacterial",
+        "protein synthesis",
+        "anaerobes",
+        "C difficile",
+        "necrotizing fasciitis"
+      ],
+      "tooltip": "The classic C. difficile antibiotic. In necrotizing fasciitis it is added to a beta-lactam specifically because it shuts off ribosomal toxin production, an effect penicillin lacks in high inoculum."
+    },
+    {
+      "id": "nitrofurantoin",
+      "name": "Nitrofurantoin",
+      "emoji": "🦠🚽🎯",
+      "drugClass": "Urinary Antiseptic",
+      "primaryEffect": "Bactericidal concentration achieved only in urine",
+      "treatmentUsage": "Uncomplicated cystitis including in pregnancy; long-term urinary tract infection prophylaxis",
+      "mechanismOfAction": "Reduced by bacterial nitroreductases into reactive intermediates that damage ribosomal proteins, DNA, and multiple metabolic enzymes simultaneously.",
+      "sideEffects": "Nausea, brown urine discoloration, acute and chronic pulmonary reactions with fibrosis, peripheral neuropathy, hemolysis in G6PD deficiency, hepatotoxicity",
+      "contraindications": "Creatinine clearance below 30 mL/min because urinary levels become inadequate, pyelonephritis, G6PD deficiency, pregnancy at term",
+      "topicTags": [
+        "antibacterial",
+        "urinary tract infection",
+        "pregnancy safe"
+      ],
+      "tooltip": "Only concentrates in urine, so it treats cystitis but never pyelonephritis or systemic infection. Resistance remains remarkably rare after decades of use because of its multiple simultaneous targets."
+    },
+    {
+      "id": "isoniazid",
+      "name": "Isoniazid",
+      "emoji": "🫁🅱️6️⃣",
+      "drugClass": "Antimycobacterial",
+      "primaryEffect": "Bactericidal against replicating Mycobacterium tuberculosis",
+      "treatmentUsage": "Active tuberculosis as part of RIPE therapy; latent tuberculosis infection treatment",
+      "mechanismOfAction": "Prodrug activated by mycobacterial catalase-peroxidase KatG, then inhibits InhA to block synthesis of mycolic acids essential to the mycobacterial cell wall.",
+      "sideEffects": "Hepatotoxicity, peripheral neuropathy from pyridoxine depletion, drug-induced lupus, sideroblastic anemia, CYP450 inhibition, seizures in overdose",
+      "contraindications": "Acute liver disease, prior isoniazid hepatitis; requires pyridoxine supplementation",
+      "topicTags": [
+        "tuberculosis",
+        "antimycobacterial",
+        "cell wall synthesis",
+        "hepatotoxicity"
+      ],
+      "tooltip": "Always give vitamin B6 with isoniazid to prevent peripheral neuropathy. Slow acetylators are at higher risk for neuropathy and lupus; fast acetylators at higher risk of hepatotoxicity."
+    },
+    {
+      "id": "rifampin",
+      "name": "Rifampin",
+      "emoji": "🫁🟠🔥",
+      "drugClass": "Antimycobacterial",
+      "primaryEffect": "Bactericidal inhibition of bacterial RNA synthesis",
+      "treatmentUsage": "Tuberculosis, latent tuberculosis, meningococcal and Haemophilus influenzae prophylaxis, prosthetic device staphylococcal infections, leprosy",
+      "mechanismOfAction": "Binds the beta subunit of bacterial DNA-dependent RNA polymerase and blocks initiation of transcription.",
+      "sideEffects": "Orange-red discoloration of urine, sweat, tears, and contact lenses; hepatotoxicity; flu-like syndrome; thrombocytopenia; potent CYP450 induction",
+      "contraindications": "Concurrent protease inhibitors and many other CYP3A4 substrates; caution in hepatic impairment",
+      "topicTags": [
+        "tuberculosis",
+        "antimycobacterial",
+        "RNA synthesis",
+        "CYP induction"
+      ],
+      "tooltip": "The most potent CYP450 inducer in clinical medicine, causing failure of oral contraceptives, warfarin, and HIV protease inhibitors. Orange body fluids are harmless but alarming to patients."
+    },
+    {
+      "id": "pyrazinamide",
+      "name": "Pyrazinamide",
+      "emoji": "🫁🦶💎",
+      "drugClass": "Antimycobacterial",
+      "primaryEffect": "Kills mycobacteria in the acidic environment of macrophages",
+      "treatmentUsage": "Tuberculosis during the first two months of intensive-phase therapy",
+      "mechanismOfAction": "Converted by mycobacterial pyrazinamidase into pyrazinoic acid, which disrupts membrane transport and energy metabolism most effectively at the acidic pH inside phagolysosomes.",
+      "sideEffects": "Hyperuricemia and gout flares, hepatotoxicity, arthralgias, photosensitivity, gastrointestinal upset",
+      "contraindications": "Acute gout, severe hepatic disease, pregnancy in some guidelines",
+      "topicTags": [
+        "tuberculosis",
+        "antimycobacterial",
+        "hyperuricemia"
+      ],
+      "tooltip": "The reason tuberculosis therapy could be shortened to six months, because it kills semi-dormant intracellular organisms. Hyperuricemia and gout flares are the signature adverse effect."
+    },
+    {
+      "id": "ethambutol",
+      "name": "Ethambutol",
+      "emoji": "🫁👁️🔴",
+      "drugClass": "Antimycobacterial",
+      "primaryEffect": "Bacteriostatic inhibition of mycobacterial cell wall assembly",
+      "treatmentUsage": "Tuberculosis intensive-phase therapy; Mycobacterium avium complex infection",
+      "mechanismOfAction": "Inhibits arabinosyl transferase, blocking polymerization of arabinogalactan required to anchor mycolic acids in the mycobacterial cell wall.",
+      "sideEffects": "Optic neuritis with decreased visual acuity and red-green color blindness, peripheral neuropathy, hyperuricemia, rash",
+      "contraindications": "Preexisting optic neuritis, young children who cannot report visual changes, severe renal impairment without dose adjustment",
+      "topicTags": [
+        "tuberculosis",
+        "antimycobacterial",
+        "cell wall synthesis",
+        "optic neuritis"
+      ],
+      "tooltip": "Ethambutol affects the Eyes: dose-dependent optic neuritis causing red-green color discrimination loss. Baseline and monthly visual acuity and color vision testing are required."
+    },
+    {
+      "id": "acyclovir",
+      "name": "Acyclovir",
+      "emoji": "🦠💋🔒",
+      "drugClass": "Antiviral (Herpesvirus)",
+      "primaryEffect": "Inhibits replication of herpes simplex and varicella zoster viruses",
+      "treatmentUsage": "Genital and orolabial herpes, herpes encephalitis, varicella, herpes zoster, suppression of recurrent HSV",
+      "mechanismOfAction": "Monophosphorylated selectively by viral thymidine kinase, then converted by host kinases to acyclovir triphosphate, which inhibits viral DNA polymerase and terminates the growing DNA chain.",
+      "sideEffects": "Crystalline nephropathy with inadequate hydration, neurotoxicity with confusion and tremor, nausea, phlebitis",
+      "contraindications": "Hypersensitivity; requires adequate hydration and renal dose adjustment",
+      "topicTags": [
+        "antiviral",
+        "herpes",
+        "DNA polymerase",
+        "varicella"
+      ],
+      "tooltip": "Selectivity comes entirely from the first phosphorylation requiring viral thymidine kinase, so uninfected cells are spared. Thymidine kinase mutation is the main resistance mechanism, treated with foscarnet."
+    },
+    {
+      "id": "ganciclovir",
+      "name": "Ganciclovir",
+      "emoji": "🦠👁️🩸",
+      "drugClass": "Antiviral (Cytomegalovirus)",
+      "primaryEffect": "Inhibits cytomegalovirus DNA replication",
+      "treatmentUsage": "Cytomegalovirus retinitis, colitis, and pneumonitis in immunocompromised patients; CMV prophylaxis after transplant",
+      "mechanismOfAction": "Phosphorylated by the CMV UL97 kinase then by cellular kinases to the triphosphate, which competitively inhibits viral DNA polymerase and terminates chain elongation.",
+      "sideEffects": "Severe myelosuppression with neutropenia and thrombocytopenia, nephrotoxicity, seizures, carcinogenicity and teratogenicity",
+      "contraindications": "Absolute neutrophil count below 500 or platelets below 25,000, pregnancy",
+      "topicTags": [
+        "antiviral",
+        "cytomegalovirus",
+        "DNA polymerase",
+        "transplant"
+      ],
+      "tooltip": "Far more myelosuppressive than acyclovir, which limits its use. Valganciclovir is the oral prodrug used for prophylaxis. Resistance from UL97 mutation is treated with foscarnet or cidofovir."
+    },
+    {
+      "id": "oseltamivir",
+      "name": "Oseltamivir",
+      "emoji": "🦠🤧✂️",
+      "drugClass": "Neuraminidase Inhibitor",
+      "primaryEffect": "Prevents release of influenza virions from infected cells",
+      "treatmentUsage": "Treatment and prophylaxis of influenza A and B, most effective within 48 hours of symptom onset",
+      "mechanismOfAction": "Inhibits viral neuraminidase, the enzyme that cleaves sialic acid to release progeny virions from the host cell surface, so new virus remains bound and cannot spread.",
+      "sideEffects": "Nausea and vomiting, headache, rare neuropsychiatric events in adolescents including delirium",
+      "contraindications": "Hypersensitivity; requires renal dose adjustment",
+      "topicTags": [
+        "antiviral",
+        "influenza",
+        "neuraminidase"
+      ],
+      "tooltip": "Shortens illness by about one day if started within 48 hours; the real value is in high-risk and hospitalized patients. Hemagglutinin lets virus in, neuraminidase lets it out."
+    },
+    {
+      "id": "tenofovir",
+      "name": "Tenofovir",
+      "emoji": "🦠🫘🦴",
+      "drugClass": "Nucleotide Reverse Transcriptase Inhibitor",
+      "primaryEffect": "Blocks reverse transcription of HIV and hepatitis B",
+      "treatmentUsage": "HIV treatment as part of combination therapy, HIV pre-exposure prophylaxis, chronic hepatitis B",
+      "mechanismOfAction": "A nucleotide analog already bearing one phosphate that requires only two further phosphorylations; it competitively inhibits reverse transcriptase and terminates the DNA chain.",
+      "sideEffects": "Nephrotoxicity with proximal tubulopathy and Fanconi syndrome, decreased bone mineral density, lactic acidosis; the alafenamide formulation greatly reduces both",
+      "contraindications": "Severe renal impairment for the disoproxil formulation; hepatitis B flare on discontinuation",
+      "topicTags": [
+        "HIV",
+        "antiviral",
+        "reverse transcriptase",
+        "hepatitis B",
+        "PrEP"
+      ],
+      "tooltip": "The backbone of most HIV regimens and of pre-exposure prophylaxis. Tenofovir alafenamide delivers drug intracellularly at far lower plasma levels, sharply reducing renal and bone toxicity."
+    },
+    {
+      "id": "emtricitabine",
+      "name": "Emtricitabine",
+      "emoji": "🦠🧬🤝",
+      "drugClass": "Nucleoside Reverse Transcriptase Inhibitor",
+      "primaryEffect": "Terminates HIV proviral DNA synthesis",
+      "treatmentUsage": "HIV combination therapy and pre-exposure prophylaxis, almost always paired with tenofovir; also active against hepatitis B",
+      "mechanismOfAction": "Cytidine analog phosphorylated intracellularly to the triphosphate, which competes with deoxycytidine triphosphate and terminates the DNA chain after incorporation.",
+      "sideEffects": "Headache, nausea, skin hyperpigmentation especially of palms and soles, lactic acidosis, hepatitis B flare on discontinuation",
+      "contraindications": "Hypersensitivity; requires renal dose adjustment; do not stop abruptly in hepatitis B coinfection",
+      "topicTags": [
+        "HIV",
+        "antiviral",
+        "reverse transcriptase",
+        "PrEP"
+      ],
+      "tooltip": "Very well tolerated and paired with tenofovir in nearly every first-line regimen and in PrEP. Palmar and plantar hyperpigmentation is a distinctive if uncommon finding."
+    },
+    {
+      "id": "dolutegravir",
+      "name": "Dolutegravir",
+      "emoji": "🦠🧬🚪",
+      "drugClass": "Integrase Strand Transfer Inhibitor",
+      "primaryEffect": "Prevents HIV proviral DNA from integrating into host DNA",
+      "treatmentUsage": "First-line HIV therapy in combination with two nucleoside reverse transcriptase inhibitors",
+      "mechanismOfAction": "Chelates magnesium ions in the integrase active site, blocking the strand transfer step that inserts viral DNA into the host genome.",
+      "sideEffects": "Insomnia, headache, weight gain, small increase in serum creatinine from blocked tubular secretion without true renal injury, rare hepatotoxicity and hypersensitivity",
+      "contraindications": "Concurrent dofetilide; separate dosing from polyvalent cation antacids and supplements which chelate the drug",
+      "topicTags": [
+        "HIV",
+        "antiviral",
+        "integrase",
+        "first-line therapy"
+      ],
+      "tooltip": "Integrase inhibitors are first-line because of high potency, few interactions, and a high barrier to resistance. The creatinine rise is from blocked tubular secretion, not nephrotoxicity."
+    },
+    {
+      "id": "efavirenz",
+      "name": "Efavirenz",
+      "emoji": "🦠💭🌙",
+      "drugClass": "Non-Nucleoside Reverse Transcriptase Inhibitor",
+      "primaryEffect": "Directly inhibits HIV reverse transcriptase",
+      "treatmentUsage": "HIV combination therapy, historically a first-line agent, now largely replaced by integrase inhibitors",
+      "mechanismOfAction": "Binds a hydrophobic allosteric pocket adjacent to the reverse transcriptase active site, causing a conformational change that inactivates the enzyme without requiring phosphorylation.",
+      "sideEffects": "Vivid dreams, nightmares, dizziness, and mood changes; rash; hyperlipidemia; false-positive cannabinoid screens; teratogenicity concerns historically",
+      "contraindications": "Concurrent drugs heavily dependent on CYP3A4; caution with psychiatric illness",
+      "topicTags": [
+        "HIV",
+        "antiviral",
+        "reverse transcriptase",
+        "neuropsychiatric"
+      ],
+      "tooltip": "Central nervous system side effects — vivid dreams and dizziness — usually appear in the first weeks and improve. Dosing at bedtime on an empty stomach minimizes them."
+    },
+    {
+      "id": "ritonavir",
+      "name": "Ritonavir",
+      "emoji": "🦠🔒⚗️",
+      "drugClass": "Protease Inhibitor",
+      "primaryEffect": "Blocks HIV protease and boosts levels of other antivirals",
+      "treatmentUsage": "Pharmacokinetic booster for other protease inhibitors and for nirmatrelvir in COVID-19; historically HIV therapy at full dose",
+      "mechanismOfAction": "Inhibits HIV-1 protease, preventing cleavage of gag-pol polyprotein into functional proteins so immature noninfectious virions are produced; it also potently inhibits CYP3A4.",
+      "sideEffects": "Gastrointestinal intolerance, hyperlipidemia, insulin resistance, lipodystrophy with fat redistribution, hepatotoxicity, extensive drug interactions",
+      "contraindications": "Concurrent drugs with narrow therapeutic index metabolized by CYP3A4 such as ergots, midazolam, simvastatin, and rifampin",
+      "topicTags": [
+        "HIV",
+        "antiviral",
+        "protease",
+        "CYP inhibition"
+      ],
+      "tooltip": "Used today almost entirely for its CYP3A4 inhibition rather than antiviral effect — a rare case where a side effect became the indication. Protease inhibitors end in -navir and cause lipodystrophy."
+    },
+    {
+      "id": "sofosbuvir",
+      "name": "Sofosbuvir",
+      "emoji": "🦠🫀💚",
+      "drugClass": "Direct-Acting Antiviral (Hepatitis C)",
+      "primaryEffect": "Cures chronic hepatitis C infection",
+      "treatmentUsage": "Chronic hepatitis C, combined with an NS5A inhibitor such as velpatasvir or ledipasvir",
+      "mechanismOfAction": "Uridine nucleotide analog prodrug that, once triphosphorylated in hepatocytes, is incorporated by the NS5B RNA-dependent RNA polymerase and terminates viral RNA synthesis.",
+      "sideEffects": "Fatigue, headache, nausea, bradycardia when combined with amiodarone, hepatitis B reactivation",
+      "contraindications": "Concurrent amiodarone because of symptomatic bradycardia; concurrent potent P-glycoprotein inducers such as rifampin or St. John's wort",
+      "topicTags": [
+        "hepatitis C",
+        "antiviral",
+        "RNA polymerase"
+      ],
+      "tooltip": "Direct-acting antivirals cure over 95 percent of hepatitis C in 8 to 12 oral weeks, replacing interferon entirely. Screen for hepatitis B first because treatment can trigger reactivation."
+    },
+    {
+      "id": "fluconazole",
+      "name": "Fluconazole",
+      "emoji": "🍄1️⃣4️⃣",
+      "drugClass": "Azole Antifungal",
+      "primaryEffect": "Fungistatic disruption of fungal membrane synthesis",
+      "treatmentUsage": "Candidiasis including esophageal and vaginal, cryptococcal meningitis maintenance therapy, coccidioidomycosis",
+      "mechanismOfAction": "Inhibits the fungal cytochrome P450 enzyme 14-alpha-demethylase, blocking conversion of lanosterol to ergosterol and destabilizing the fungal cell membrane.",
+      "sideEffects": "Hepatotoxicity, QT prolongation, nausea, rash, teratogenicity at high doses, numerous CYP2C9 and CYP3A4 interactions",
+      "contraindications": "Pregnancy at high doses, concurrent QT-prolonging drugs, coadministration with cisapride or pimozide",
+      "topicTags": [
+        "antifungal",
+        "candidiasis",
+        "ergosterol",
+        "cryptococcus"
+      ],
+      "tooltip": "Excellent CSF and urine penetration, which distinguishes it from other azoles. Candida krusei is intrinsically resistant and Candida glabrata often is, so speciation matters."
+    },
+    {
+      "id": "amphotericin-b",
+      "name": "Amphotericin B",
+      "emoji": "🍄🕳️🧊",
+      "drugClass": "Polyene Antifungal",
+      "primaryEffect": "Fungicidal disruption of the fungal cell membrane",
+      "treatmentUsage": "Severe systemic mycoses including cryptococcal meningitis induction, mucormycosis, severe histoplasmosis and blastomycosis, visceral leishmaniasis",
+      "mechanismOfAction": "Binds ergosterol in the fungal membrane and forms transmembrane pores that allow potassium and other ions to leak out, causing cell death.",
+      "sideEffects": "Infusion reactions with fever and rigors, nephrotoxicity with potassium and magnesium wasting, renal tubular acidosis, anemia, phlebitis",
+      "contraindications": "Significant renal impairment; requires aggressive sodium loading and electrolyte repletion; liposomal formulations reduce toxicity",
+      "topicTags": [
+        "antifungal",
+        "systemic mycosis",
+        "ergosterol",
+        "nephrotoxicity"
+      ],
+      "tooltip": "Nicknamed amphoterrible for shake-and-bake infusion reactions and nephrotoxicity. Pretreatment with acetaminophen and diphenhydramine plus saline loading reduces toxicity; liposomal forms reduce it further."
+    },
+    {
+      "id": "caspofungin",
+      "name": "Caspofungin",
+      "emoji": "🍄🧱🚫",
+      "drugClass": "Echinocandin",
+      "primaryEffect": "Fungicidal against Candida through cell wall disruption",
+      "treatmentUsage": "Invasive candidiasis and candidemia (first-line), esophageal candidiasis, salvage therapy for invasive aspergillosis",
+      "mechanismOfAction": "Noncompetitively inhibits beta-1,3-D-glucan synthase, preventing synthesis of a cell wall polysaccharide unique to fungi and absent in humans.",
+      "sideEffects": "Infusion-related histamine reactions, elevated transaminases, hypokalemia, fever; overall very well tolerated",
+      "contraindications": "Hypersensitivity; not active against Cryptococcus which lacks substantial beta-glucan, nor Mucorales",
+      "topicTags": [
+        "antifungal",
+        "candidiasis",
+        "cell wall synthesis"
+      ],
+      "tooltip": "Echinocandins target a structure humans do not have, so they are remarkably safe. They are first-line for candidemia but useless against Cryptococcus, whose capsule structure differs."
+    },
+    {
+      "id": "voriconazole",
+      "name": "Voriconazole",
+      "emoji": "🍄👁️✨",
+      "drugClass": "Azole Antifungal",
+      "primaryEffect": "Broad antifungal activity including molds",
+      "treatmentUsage": "Invasive aspergillosis (drug of choice), Scedosporium and Fusarium infections, refractory candidiasis",
+      "mechanismOfAction": "Inhibits fungal 14-alpha-demethylase with a broader spectrum than fluconazole, halting ergosterol synthesis and disrupting membrane integrity.",
+      "sideEffects": "Transient visual disturbances with bright light and color changes, hallucinations, hepatotoxicity, photosensitivity with long-term squamous cell carcinoma risk, QT prolongation, periostitis",
+      "contraindications": "Concurrent rifampin, carbamazepine, ergots, sirolimus, or pimozide; severe hepatic impairment",
+      "topicTags": [
+        "antifungal",
+        "aspergillosis",
+        "ergosterol"
+      ],
+      "tooltip": "The drug of choice for invasive aspergillosis. The reversible visual disturbance in the first days of therapy is a striking and heavily tested adverse effect. Requires therapeutic drug monitoring."
+    },
+    {
+      "id": "terbinafine",
+      "name": "Terbinafine",
+      "emoji": "🍄🦶💅",
+      "drugClass": "Allylamine Antifungal",
+      "primaryEffect": "Fungicidal against dermatophytes",
+      "treatmentUsage": "Onychomycosis, tinea capitis, tinea pedis and other dermatophyte infections",
+      "mechanismOfAction": "Inhibits squalene epoxidase, blocking ergosterol synthesis at an earlier step than azoles and causing toxic squalene accumulation within the fungus.",
+      "sideEffects": "Hepatotoxicity, taste and smell disturbance sometimes permanent, headache, rash, rare Stevens-Johnson syndrome, lupus-like reaction",
+      "contraindications": "Chronic or active liver disease; requires baseline liver function testing",
+      "topicTags": [
+        "antifungal",
+        "dermatophyte",
+        "onychomycosis",
+        "ergosterol"
+      ],
+      "tooltip": "It accumulates in keratin, which is why it works for nails but requires months of therapy. Loss of taste is a distinctive adverse effect that can persist after stopping the drug."
+    },
+    {
+      "id": "chloroquine",
+      "name": "Chloroquine",
+      "emoji": "🦟🩸👁️",
+      "drugClass": "Antimalarial",
+      "primaryEffect": "Kills blood-stage malaria parasites",
+      "treatmentUsage": "Malaria treatment and prophylaxis in chloroquine-sensitive regions; extraintestinal amebiasis",
+      "mechanismOfAction": "Concentrates in the parasite food vacuole and inhibits heme polymerase, preventing detoxification of heme into hemozoin so free heme accumulates and kills the parasite.",
+      "sideEffects": "Retinopathy with long-term use, pruritus, gastrointestinal upset, QT prolongation, hemolysis in G6PD deficiency, cardiomyopathy",
+      "contraindications": "Preexisting retinopathy, chloroquine-resistant Plasmodium falciparum regions, G6PD deficiency with caution",
+      "topicTags": [
+        "antimalarial",
+        "antiparasitic",
+        "malaria"
+      ],
+      "tooltip": "Widespread resistance limits it to a few regions. It kills only blood stages, so Plasmodium vivax and ovale also require primaquine to eradicate dormant hepatic hypnozoites."
+    },
+    {
+      "id": "primaquine",
+      "name": "Primaquine",
+      "emoji": "🦟🛌🧬",
+      "drugClass": "Antimalarial",
+      "primaryEffect": "Eradicates dormant liver-stage malaria parasites",
+      "treatmentUsage": "Radical cure of Plasmodium vivax and ovale by clearing hypnozoites; malaria prophylaxis; Pneumocystis with clindamycin",
+      "mechanismOfAction": "An 8-aminoquinoline metabolized into reactive intermediates that generate oxidative stress and disrupt mitochondrial function in hepatic hypnozoites.",
+      "sideEffects": "Severe hemolytic anemia in G6PD deficiency, methemoglobinemia, gastrointestinal upset, leukopenia",
+      "contraindications": "G6PD deficiency (must be tested before use), pregnancy, severe rheumatoid arthritis or lupus",
+      "topicTags": [
+        "antimalarial",
+        "antiparasitic",
+        "malaria",
+        "G6PD deficiency"
+      ],
+      "tooltip": "The only drug that clears hypnozoites, so it is required to prevent vivax and ovale relapse. G6PD testing before prescribing is mandatory to avoid catastrophic hemolysis."
+    },
+    {
+      "id": "ivermectin",
+      "name": "Ivermectin",
+      "emoji": "🪱⚡🚫",
+      "drugClass": "Antihelminthic",
+      "primaryEffect": "Paralyzes and kills parasitic nematodes",
+      "treatmentUsage": "Strongyloidiasis, onchocerciasis (river blindness), scabies, head lice, cutaneous larva migrans",
+      "mechanismOfAction": "Binds glutamate-gated chloride channels found only in invertebrate nerve and muscle cells, causing hyperpolarization, paralysis, and death of the parasite.",
+      "sideEffects": "Dizziness, pruritus, rash, Mazzotti reaction with fever and lymphadenopathy from dying microfilariae, encephalopathy if Loa loa coinfection is present",
+      "contraindications": "High Loa loa microfilarial burden because of fatal encephalopathy risk; caution with drugs affecting the blood-brain barrier",
+      "topicTags": [
+        "antiparasitic",
+        "helminth",
+        "scabies",
+        "strongyloidiasis"
+      ],
+      "tooltip": "Selective because glutamate-gated chloride channels exist only in invertebrates, and P-glycoprotein keeps the drug out of the human brain. Essential before steroids in patients from Strongyloides-endemic areas."
+    },
+    {
+      "id": "albendazole",
+      "name": "Albendazole",
+      "emoji": "🪱🧬🚫",
+      "drugClass": "Antihelminthic",
+      "primaryEffect": "Kills helminths by depleting their energy stores",
+      "treatmentUsage": "Neurocysticercosis, hydatid disease, pinworm, hookworm, ascariasis, whipworm, giardiasis",
+      "mechanismOfAction": "Binds parasite beta-tubulin with high selectivity, preventing microtubule polymerization so glucose uptake fails and the worm depletes its glycogen and ATP.",
+      "sideEffects": "Abdominal pain, elevated transaminases, bone marrow suppression with prolonged use, alopecia, teratogenicity; inflammatory reactions when cysticerci die",
+      "contraindications": "Pregnancy; requires concurrent corticosteroids in neurocysticercosis to blunt inflammation from dying larvae",
+      "topicTags": [
+        "antiparasitic",
+        "helminth",
+        "neurocysticercosis",
+        "microtubule"
+      ],
+      "tooltip": "Selectivity comes from higher affinity for parasite beta-tubulin than human tubulin. In neurocysticercosis, steroids and often antiepileptics are given first because dying cysts trigger severe inflammation and seizures."
+    },
+    {
+      "id": "praziquantel",
+      "name": "Praziquantel",
+      "emoji": "🪱🌊💥",
+      "drugClass": "Antihelminthic",
+      "primaryEffect": "Causes paralysis and tegument disruption in flatworms",
+      "treatmentUsage": "Schistosomiasis, liver flukes such as Clonorchis, tapeworm infections including Taenia and Diphyllobothrium",
+      "mechanismOfAction": "Increases calcium permeability of the parasite tegument, causing sustained muscular contraction, paralysis, and exposure of parasite antigens to host immunity.",
+      "sideEffects": "Abdominal pain, dizziness, headache, malaise, fever from dying parasites; seizures if neurocysticercosis is unrecognized",
+      "contraindications": "Ocular cysticercosis because parasite destruction damages the eye; concurrent strong CYP inducers reduce levels",
+      "topicTags": [
+        "antiparasitic",
+        "helminth",
+        "schistosomiasis",
+        "tapeworm"
+      ],
+      "tooltip": "The drug of choice for all schistosome species and most flukes and tapeworms. Remember praziquantel for flat worms (trematodes and cestodes), albendazole for round worms (nematodes)."
+    },
+    {
+      "id": "rifaximin",
+      "name": "Rifaximin",
+      "emoji": "🦠🚽🫀",
+      "drugClass": "Nonabsorbable Antibacterial",
+      "primaryEffect": "Reduces gut bacterial load without systemic absorption",
+      "treatmentUsage": "Hepatic encephalopathy prevention, traveler's diarrhea, irritable bowel syndrome with diarrhea, small intestinal bacterial overgrowth",
+      "mechanismOfAction": "Rifamycin derivative that inhibits bacterial DNA-dependent RNA polymerase; its structure prevents gut absorption so it acts entirely within the intestinal lumen.",
+      "sideEffects": "Flatulence, abdominal pain, nausea, peripheral edema; systemic effects are minimal, and Clostridioides difficile risk is low",
+      "contraindications": "Hypersensitivity to rifamycins",
+      "topicTags": [
+        "antibacterial",
+        "hepatic encephalopathy",
+        "traveler's diarrhea",
+        "RNA synthesis"
+      ],
+      "tooltip": "Nearly zero systemic absorption is the entire point. In hepatic encephalopathy it reduces ammonia-producing gut flora and is added to lactulose to prevent recurrence."
+    }
+  ]
+}

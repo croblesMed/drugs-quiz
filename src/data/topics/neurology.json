@@ -1,0 +1,731 @@
+{
+  "id": "neurology",
+  "label": "Neurology",
+  "icon": "⚡",
+  "blurb": "Antiepileptics, Parkinson disease, migraine, MS, dementia, anesthetics",
+  "drugs": [
+    {
+      "id": "phenytoin",
+      "name": "Phenytoin",
+      "emoji": "⚡🦷📈",
+      "drugClass": "Antiepileptic (Sodium Channel Blocker)",
+      "primaryEffect": "Raises seizure threshold and limits seizure spread",
+      "treatmentUsage": "Focal and generalized tonic-clonic seizures, status epilepticus, seizure prophylaxis after neurosurgery",
+      "mechanismOfAction": "Binds inactivated voltage-gated sodium channels and prolongs their inactivated state, reducing the ability of neurons to fire high-frequency repetitive action potentials.",
+      "sideEffects": "Gingival hyperplasia, hirsutism, nystagmus, ataxia, megaloblastic anemia from folate malabsorption, osteopenia, Stevens-Johnson syndrome, fetal hydantoin syndrome, cerebellar atrophy",
+      "contraindications": "Pregnancy, sinus bradycardia and high-grade AV block, hypersensitivity; avoid rapid intravenous infusion",
+      "topicTags": [
+        "epilepsy",
+        "status epilepticus",
+        "sodium channel",
+        "zero-order kinetics"
+      ],
+      "tooltip": "Zero-order kinetics at therapeutic doses means small dose increases cause large level jumps and toxicity. Gingival hyperplasia and hirsutism are the classic exam giveaways, along with potent CYP induction."
+    },
+    {
+      "id": "carbamazepine",
+      "name": "Carbamazepine",
+      "emoji": "⚡😖💧",
+      "drugClass": "Antiepileptic (Sodium Channel Blocker)",
+      "primaryEffect": "Suppresses repetitive neuronal firing",
+      "treatmentUsage": "Focal seizures, generalized tonic-clonic seizures, trigeminal neuralgia (first-line), bipolar disorder",
+      "mechanismOfAction": "Blocks voltage-gated sodium channels in their inactivated state, stabilizing neuronal membranes and preventing high-frequency repetitive discharge.",
+      "sideEffects": "Agranulocytosis and aplastic anemia, SIADH with hyponatremia, diplopia, ataxia, hepatotoxicity, Stevens-Johnson syndrome linked to HLA-B*1502, teratogenic neural tube defects",
+      "contraindications": "Bone marrow suppression, concurrent MAO inhibitors, pregnancy, absence and myoclonic seizures which it worsens",
+      "topicTags": [
+        "epilepsy",
+        "trigeminal neuralgia",
+        "sodium channel",
+        "bipolar disorder"
+      ],
+      "tooltip": "First-line for trigeminal neuralgia. Test HLA-B*1502 in patients of Asian descent before starting because of Stevens-Johnson risk. It induces its own metabolism (autoinduction)."
+    },
+    {
+      "id": "valproate",
+      "name": "Valproic Acid",
+      "emoji": "⚡🤰🫄",
+      "drugClass": "Broad-Spectrum Antiepileptic",
+      "primaryEffect": "Broad suppression of seizure activity across seizure types",
+      "treatmentUsage": "Generalized tonic-clonic, absence, and myoclonic seizures, bipolar mania, migraine prophylaxis",
+      "mechanismOfAction": "Blocks voltage-gated sodium channels, increases GABA concentration by inhibiting GABA transaminase, and blocks T-type calcium channels.",
+      "sideEffects": "Hepatotoxicity, pancreatitis, hyperammonemia with encephalopathy, weight gain, tremor, alopecia, thrombocytopenia, severe teratogenicity with neural tube defects",
+      "contraindications": "Pregnancy (boxed warning), hepatic disease, urea cycle disorders, mitochondrial disease from POLG mutations",
+      "topicTags": [
+        "epilepsy",
+        "absence seizures",
+        "migraine prophylaxis",
+        "bipolar disorder",
+        "teratogen"
+      ],
+      "tooltip": "The broadest-spectrum antiepileptic, effective against essentially every seizure type. It is also the most teratogenic, causing neural tube defects, and can cause fatal hepatotoxicity and hyperammonemia."
+    },
+    {
+      "id": "levetiracetam",
+      "name": "Levetiracetam",
+      "emoji": "⚡🧬😤",
+      "drugClass": "Broad-Spectrum Antiepileptic",
+      "primaryEffect": "Reduces seizure frequency with minimal drug interactions",
+      "treatmentUsage": "Focal and generalized seizures, myoclonic seizures, status epilepticus, seizure prophylaxis in acute brain injury",
+      "mechanismOfAction": "Binds synaptic vesicle protein SV2A, modulating neurotransmitter vesicle release and reducing synchronized neuronal firing.",
+      "sideEffects": "Irritability, agitation, mood changes, depression and suicidality, somnolence, dizziness",
+      "contraindications": "Hypersensitivity; caution with psychiatric history; dose reduction in renal impairment",
+      "topicTags": [
+        "epilepsy",
+        "status epilepticus",
+        "broad spectrum"
+      ],
+      "tooltip": "Renally cleared with almost no drug interactions and no hepatic metabolism, which makes it the workhorse antiepileptic in hospitals. The characteristic downside is behavioral change and irritability."
+    },
+    {
+      "id": "lamotrigine",
+      "name": "Lamotrigine",
+      "emoji": "⚡🔺🌡️",
+      "drugClass": "Broad-Spectrum Antiepileptic",
+      "primaryEffect": "Reduces seizure frequency and stabilizes mood",
+      "treatmentUsage": "Focal and generalized seizures, absence seizures, Lennox-Gastaut syndrome, bipolar depression maintenance",
+      "mechanismOfAction": "Blocks voltage-gated sodium channels and inhibits presynaptic glutamate release, reducing excitatory neurotransmission.",
+      "sideEffects": "Stevens-Johnson syndrome and toxic epidermal necrolysis (risk rises with rapid titration or concurrent valproate), dizziness, headache, diplopia, aseptic meningitis",
+      "contraindications": "Hypersensitivity; requires very slow dose titration, especially when combined with valproate",
+      "topicTags": [
+        "epilepsy",
+        "bipolar disorder",
+        "sodium channel",
+        "absence seizures"
+      ],
+      "tooltip": "The rash drug. Slow titration is mandatory because rapid escalation causes Stevens-Johnson syndrome. Valproate inhibits its metabolism and doubles the risk, so doses must be halved when combined."
+    },
+    {
+      "id": "ethosuximide",
+      "name": "Ethosuximide",
+      "emoji": "⚡👁️🎯",
+      "drugClass": "Antiepileptic (T-Type Calcium Channel Blocker)",
+      "primaryEffect": "Suppresses thalamic rhythmic firing underlying absence seizures",
+      "treatmentUsage": "First-line for absence (petit mal) seizures",
+      "mechanismOfAction": "Blocks T-type calcium channels in thalamic neurons, disrupting the 3-Hz spike-and-wave oscillation that generates absence seizures.",
+      "sideEffects": "Gastrointestinal upset, fatigue, headache, Stevens-Johnson syndrome, systemic lupus erythematosus-like syndrome, agranulocytosis",
+      "contraindications": "Hypersensitivity to succinimides; ineffective and inappropriate as sole therapy if tonic-clonic seizures coexist",
+      "topicTags": [
+        "epilepsy",
+        "absence seizures",
+        "calcium channel",
+        "pediatrics"
+      ],
+      "tooltip": "First-line for pure absence seizures. Remember the mnemonic: ethosuximide blocks Thalamic T-type channels. The 3-Hz spike-and-wave EEG pattern is the classic paired finding."
+    },
+    {
+      "id": "phenobarbital",
+      "name": "Phenobarbital",
+      "emoji": "⚡😴👶",
+      "drugClass": "Barbiturate Antiepileptic",
+      "primaryEffect": "Prolonged central nervous system depression and seizure suppression",
+      "treatmentUsage": "Neonatal seizures (first-line), refractory status epilepticus, seizures in resource-limited settings",
+      "mechanismOfAction": "Binds the GABA-A receptor and increases the duration of chloride channel opening, hyperpolarizing neurons; at high doses it opens the channel directly.",
+      "sideEffects": "Sedation, cognitive slowing, paradoxical hyperactivity in children, respiratory depression, potent CYP450 induction, physical dependence",
+      "contraindications": "Porphyria, severe respiratory disease, hepatic failure; avoid abrupt withdrawal",
+      "topicTags": [
+        "epilepsy",
+        "neonatal seizures",
+        "GABA",
+        "status epilepticus"
+      ],
+      "tooltip": "Barbiturates increase the DURATION of chloride channel opening; benzodiazepines increase the FREQUENCY. Phenobarbital is first-line for neonatal seizures and a potent CYP inducer."
+    },
+    {
+      "id": "lorazepam",
+      "name": "Lorazepam",
+      "emoji": "⚡⏱️🛑",
+      "drugClass": "Benzodiazepine",
+      "primaryEffect": "Rapid termination of seizure activity and anxiolysis",
+      "treatmentUsage": "First-line abortive therapy for status epilepticus, alcohol withdrawal, acute anxiety, preoperative sedation",
+      "mechanismOfAction": "Binds the benzodiazepine site on GABA-A receptors and increases the frequency of chloride channel opening, enhancing GABA-mediated inhibition.",
+      "sideEffects": "Sedation, respiratory depression, anterograde amnesia, ataxia, tolerance and dependence, paradoxical agitation in the elderly",
+      "contraindications": "Severe respiratory depression, sleep apnea, acute narrow-angle glaucoma, concurrent opioids without close monitoring",
+      "topicTags": [
+        "status epilepticus",
+        "GABA",
+        "anxiety",
+        "alcohol withdrawal"
+      ],
+      "tooltip": "First-line to stop an actively seizing patient, followed by a longer-acting agent to prevent recurrence. Lorazepam is preferred over diazepam because it redistributes out of the brain more slowly."
+    },
+    {
+      "id": "levodopa-carbidopa",
+      "name": "Levodopa / Carbidopa",
+      "emoji": "🧠🕺💊",
+      "drugClass": "Dopamine Precursor",
+      "primaryEffect": "Replenishes striatal dopamine and improves bradykinesia and rigidity",
+      "treatmentUsage": "Parkinson disease; it is the most effective symptomatic therapy available",
+      "mechanismOfAction": "Levodopa crosses the blood-brain barrier and is decarboxylated to dopamine in surviving nigrostriatal neurons; carbidopa inhibits peripheral DOPA decarboxylase without entering the brain, increasing central delivery and reducing peripheral side effects.",
+      "sideEffects": "Nausea, orthostatic hypotension, hallucinations, dyskinesias, on-off phenomenon and end-of-dose wearing off with chronic use, impulse control disorders",
+      "contraindications": "Narrow-angle glaucoma, concurrent nonselective MAO inhibitors, undiagnosed skin lesions given melanoma risk",
+      "topicTags": [
+        "Parkinson disease",
+        "dopamine",
+        "movement disorder"
+      ],
+      "tooltip": "Dopamine cannot cross the blood-brain barrier but levodopa can. Carbidopa blocks peripheral conversion, which cuts nausea and hypotension and lets more levodopa reach the brain."
+    },
+    {
+      "id": "pramipexole",
+      "name": "Pramipexole",
+      "emoji": "🧠🕺🎰",
+      "drugClass": "Dopamine Agonist",
+      "primaryEffect": "Directly stimulates striatal dopamine receptors",
+      "treatmentUsage": "Early Parkinson disease, especially in younger patients to delay levodopa; restless legs syndrome",
+      "mechanismOfAction": "Non-ergot agonist at D2 and D3 dopamine receptors in the striatum, bypassing the need for dopaminergic neurons to synthesize and store dopamine.",
+      "sideEffects": "Impulse control disorders including pathological gambling and hypersexuality, sudden sleep attacks, hallucinations, orthostatic hypotension, peripheral edema",
+      "contraindications": "Psychotic disorders; caution in elderly patients and in renal impairment",
+      "topicTags": [
+        "Parkinson disease",
+        "restless legs syndrome",
+        "dopamine",
+        "movement disorder"
+      ],
+      "tooltip": "Classic vignette: a Parkinson patient develops a new gambling or shopping compulsion. Impulse control disorders are far more common with dopamine agonists than with levodopa. Sleep attacks while driving are the other hallmark."
+    },
+    {
+      "id": "selegiline",
+      "name": "Selegiline",
+      "emoji": "🧠🅱️🚫",
+      "drugClass": "MAO-B Inhibitor",
+      "primaryEffect": "Prolongs the action of dopamine in the striatum",
+      "treatmentUsage": "Early Parkinson disease monotherapy, or adjunct to levodopa to smooth wearing-off",
+      "mechanismOfAction": "Selectively and irreversibly inhibits monoamine oxidase B, the enzyme that degrades dopamine in the central nervous system, increasing dopamine availability.",
+      "sideEffects": "Insomnia, amphetamine metabolites causing agitation, nausea, orthostatic hypotension, serotonin syndrome with serotonergic drugs, hypertensive crisis at high doses",
+      "contraindications": "Concurrent meperidine, tramadol, SSRIs, or other MAO inhibitors; tyramine-rich foods at high doses",
+      "topicTags": [
+        "Parkinson disease",
+        "dopamine",
+        "MAO inhibitor"
+      ],
+      "tooltip": "MAO-B is selective for dopamine, so low doses avoid the tyramine cheese reaction that MAO-A inhibitors cause. Selegiline is metabolized to amphetamine derivatives, which explains the insomnia."
+    },
+    {
+      "id": "entacapone",
+      "name": "Entacapone",
+      "emoji": "🧠🔒🟠",
+      "drugClass": "COMT Inhibitor",
+      "primaryEffect": "Extends the duration of each levodopa dose",
+      "treatmentUsage": "Parkinson disease with motor fluctuations and end-of-dose wearing off; always given with levodopa",
+      "mechanismOfAction": "Inhibits catechol-O-methyltransferase peripherally, preventing conversion of levodopa to 3-O-methyldopa so more levodopa reaches the brain and its plasma half-life is prolonged.",
+      "sideEffects": "Dyskinesia (from increased levodopa effect), nausea, orthostatic hypotension, diarrhea, harmless orange-brown urine discoloration",
+      "contraindications": "Hypersensitivity; no benefit as monotherapy since it has no intrinsic dopaminergic activity",
+      "topicTags": [
+        "Parkinson disease",
+        "dopamine",
+        "COMT inhibitor"
+      ],
+      "tooltip": "Useless alone — it only works by protecting levodopa from peripheral degradation. Orange urine is a harmless but memorable clue. Tolcapone works centrally too but causes fatal hepatotoxicity."
+    },
+    {
+      "id": "amantadine",
+      "name": "Amantadine",
+      "emoji": "🧠🌊🦠",
+      "drugClass": "NMDA Antagonist / Dopamine Releaser",
+      "primaryEffect": "Reduces levodopa-induced dyskinesia and mild parkinsonian symptoms",
+      "treatmentUsage": "Levodopa-induced dyskinesia, early Parkinson disease, drug-induced parkinsonism, historically influenza A",
+      "mechanismOfAction": "Blocks NMDA glutamate receptors and increases presynaptic dopamine release while inhibiting reuptake, dampening the overactive glutamatergic output that drives dyskinesia.",
+      "sideEffects": "Livedo reticularis, ankle edema, confusion and hallucinations especially in the elderly, dry mouth, insomnia",
+      "contraindications": "Severe renal impairment, seizure disorder, untreated narrow-angle glaucoma",
+      "topicTags": [
+        "Parkinson disease",
+        "dyskinesia",
+        "NMDA antagonist",
+        "movement disorder"
+      ],
+      "tooltip": "The go-to drug for levodopa-induced dyskinesia. Livedo reticularis — a mottled purple net-like rash on the legs — is the classic and heavily tested adverse effect."
+    },
+    {
+      "id": "benztropine",
+      "name": "Benztropine",
+      "emoji": "🧠🤝🚫",
+      "drugClass": "Anticholinergic (Central)",
+      "primaryEffect": "Reduces tremor and rigidity by rebalancing striatal cholinergic tone",
+      "treatmentUsage": "Tremor-predominant Parkinson disease in younger patients; acute dystonic reactions and drug-induced parkinsonism from antipsychotics",
+      "mechanismOfAction": "Blocks central muscarinic receptors in the striatum, correcting the relative cholinergic excess that results from dopaminergic neuron loss.",
+      "sideEffects": "Dry mouth, blurred vision, constipation, urinary retention, confusion and memory impairment, tachycardia, hyperthermia",
+      "contraindications": "Narrow-angle glaucoma, bladder outlet obstruction, myasthenia gravis, elderly patients with cognitive impairment",
+      "topicTags": [
+        "Parkinson disease",
+        "dystonia",
+        "anticholinergic",
+        "extrapyramidal symptoms"
+      ],
+      "tooltip": "Best for tremor, poor for bradykinesia. First-line for acute dystonic reaction from antipsychotics. Avoid in the elderly, where the anticholinergic load causes delirium and urinary retention."
+    },
+    {
+      "id": "sumatriptan",
+      "name": "Sumatriptan",
+      "emoji": "🤕5️⃣🅱️",
+      "drugClass": "Triptan",
+      "primaryEffect": "Aborts an acute migraine attack",
+      "treatmentUsage": "Acute migraine with or without aura, cluster headache",
+      "mechanismOfAction": "Agonist at 5-HT1B and 5-HT1D receptors, causing cranial vasoconstriction and inhibiting release of vasoactive neuropeptides such as CGRP from trigeminal nerve endings.",
+      "sideEffects": "Chest tightness and paresthesias, flushing, dizziness, coronary vasospasm, serotonin syndrome with other serotonergic drugs, medication-overuse headache",
+      "contraindications": "Coronary artery disease, Prinzmetal angina, uncontrolled hypertension, hemiplegic or basilar migraine, recent ergot or MAO inhibitor use",
+      "topicTags": [
+        "migraine",
+        "cluster headache",
+        "serotonin",
+        "abortive therapy"
+      ],
+      "tooltip": "Abortive, not preventive. The chest tightness patients report is usually benign, but true coronary vasospasm is why coronary artery disease is an absolute contraindication."
+    },
+    {
+      "id": "erenumab",
+      "name": "Erenumab",
+      "emoji": "🤕🎯🅲",
+      "drugClass": "CGRP Monoclonal Antibody",
+      "primaryEffect": "Reduces monthly migraine day frequency",
+      "treatmentUsage": "Preventive treatment of episodic and chronic migraine",
+      "mechanismOfAction": "Monoclonal antibody that binds and blocks the calcitonin gene-related peptide receptor, preventing CGRP-mediated trigeminovascular activation and neurogenic inflammation.",
+      "sideEffects": "Constipation (sometimes severe), injection site reactions, hypertension, muscle cramps",
+      "contraindications": "Hypersensitivity; caution in severe constipation and uncontrolled hypertension",
+      "topicTags": [
+        "migraine",
+        "prophylaxis",
+        "CGRP",
+        "biologic therapy"
+      ],
+      "tooltip": "CGRP is the key neuropeptide in migraine pathophysiology, released from trigeminal afferents. Monthly injectable antibodies block it for prevention. Constipation is the signature side effect."
+    },
+    {
+      "id": "topiramate",
+      "name": "Topiramate",
+      "emoji": "⚡🪨💭",
+      "drugClass": "Broad-Spectrum Antiepileptic",
+      "primaryEffect": "Reduces seizure frequency and prevents migraine",
+      "treatmentUsage": "Focal and generalized seizures, migraine prophylaxis, Lennox-Gastaut syndrome, weight loss in combination products",
+      "mechanismOfAction": "Blocks voltage-gated sodium channels, enhances GABA-A activity, antagonizes AMPA and kainate glutamate receptors, and weakly inhibits carbonic anhydrase.",
+      "sideEffects": "Cognitive slowing and word-finding difficulty, paresthesias, weight loss, kidney stones, metabolic acidosis, acute angle-closure glaucoma, oligohidrosis, cleft palate in pregnancy",
+      "contraindications": "Pregnancy, history of nephrolithiasis, metabolic acidosis, narrow-angle glaucoma",
+      "topicTags": [
+        "epilepsy",
+        "migraine prophylaxis",
+        "weight loss",
+        "teratogen"
+      ],
+      "tooltip": "Nicknamed dope-a-max for the cognitive slowing. Carbonic anhydrase inhibition explains three side effects at once: kidney stones, metabolic acidosis, and paresthesias."
+    },
+    {
+      "id": "propranolol-migraine",
+      "name": "Propranolol",
+      "emoji": "🤕🛡️🅱️",
+      "drugClass": "Beta-Blocker (Nonselective)",
+      "primaryEffect": "Reduces migraine frequency and essential tremor amplitude",
+      "treatmentUsage": "Migraine prophylaxis, essential tremor, performance anxiety, thyroid storm, portal hypertension, hypertension",
+      "mechanismOfAction": "Nonselectively antagonizes beta-1 and beta-2 adrenergic receptors; its migraine benefit likely comes from reduced cortical excitability and modulation of central catecholamine signaling.",
+      "sideEffects": "Fatigue, bradycardia, hypotension, bronchospasm, depression, vivid dreams, masking of hypoglycemia symptoms",
+      "contraindications": "Asthma, decompensated heart failure, high-grade AV block, severe bradycardia, cocaine-induced hypertension",
+      "topicTags": [
+        "migraine prophylaxis",
+        "essential tremor",
+        "beta-blocker",
+        "prophylaxis"
+      ],
+      "tooltip": "First-line for both migraine prophylaxis and essential tremor. Nonselective beta blockade means it is contraindicated in asthma. It also blocks the peripheral conversion of T4 to T3."
+    },
+    {
+      "id": "donepezil",
+      "name": "Donepezil",
+      "emoji": "🧠💭🔁",
+      "drugClass": "Acetylcholinesterase Inhibitor",
+      "primaryEffect": "Modest improvement in cognition and function in dementia",
+      "treatmentUsage": "Mild to severe Alzheimer disease; also used in dementia with Lewy bodies",
+      "mechanismOfAction": "Reversibly inhibits acetylcholinesterase in the central nervous system, increasing synaptic acetylcholine to partially compensate for degeneration of basal forebrain cholinergic neurons.",
+      "sideEffects": "Nausea, vomiting, diarrhea, anorexia, bradycardia and syncope, vivid dreams, muscle cramps, urinary incontinence",
+      "contraindications": "Significant bradycardia or sick sinus syndrome, active peptic ulcer disease, severe asthma or COPD",
+      "topicTags": [
+        "Alzheimer disease",
+        "dementia",
+        "cholinergic"
+      ],
+      "tooltip": "Slows symptomatic decline but does not alter the underlying disease. The side effects are pure cholinergic excess: nausea, diarrhea, bradycardia. Rivastigmine and galantamine work the same way."
+    },
+    {
+      "id": "memantine",
+      "name": "Memantine",
+      "emoji": "🧠🚪🧊",
+      "drugClass": "NMDA Receptor Antagonist",
+      "primaryEffect": "Reduces glutamate excitotoxicity in dementia",
+      "treatmentUsage": "Moderate to severe Alzheimer disease, often combined with donepezil",
+      "mechanismOfAction": "Low-affinity uncompetitive open-channel NMDA receptor antagonist that blocks pathological tonic glutamate signaling while sparing the phasic signaling needed for learning.",
+      "sideEffects": "Dizziness, headache, confusion, constipation, hypertension; generally very well tolerated",
+      "contraindications": "Severe renal impairment requires dose reduction; hypersensitivity",
+      "topicTags": [
+        "Alzheimer disease",
+        "dementia",
+        "NMDA antagonist"
+      ],
+      "tooltip": "The low affinity is the point: it blocks chronic pathological calcium influx but dissociates fast enough to permit normal synaptic transmission. Much better tolerated than cholinesterase inhibitors."
+    },
+    {
+      "id": "riluzole",
+      "name": "Riluzole",
+      "emoji": "🧠🦾⏳",
+      "drugClass": "Glutamate Modulator",
+      "primaryEffect": "Modestly prolongs survival in amyotrophic lateral sclerosis",
+      "treatmentUsage": "Amyotrophic lateral sclerosis",
+      "mechanismOfAction": "Inhibits presynaptic glutamate release and blocks voltage-gated sodium channels, reducing glutamate-mediated excitotoxic motor neuron death.",
+      "sideEffects": "Nausea, asthenia, dizziness, elevated transaminases requiring monitoring, neutropenia, interstitial lung disease",
+      "contraindications": "Significant hepatic impairment or transaminases above three times the upper limit of normal",
+      "topicTags": [
+        "amyotrophic lateral sclerosis",
+        "glutamate",
+        "neuroprotection"
+      ],
+      "tooltip": "Extends survival in ALS by roughly two to three months. The mechanism to remember is reduced glutamate excitotoxicity. Requires periodic liver function monitoring."
+    },
+    {
+      "id": "natalizumab",
+      "name": "Natalizumab",
+      "emoji": "🧠🛡️4️⃣",
+      "drugClass": "Integrin Antagonist (MS Therapy)",
+      "primaryEffect": "Prevents lymphocyte entry into the central nervous system",
+      "treatmentUsage": "Highly active relapsing-remitting multiple sclerosis; Crohn disease",
+      "mechanismOfAction": "Monoclonal antibody against alpha-4 integrin that blocks binding to VCAM-1 on endothelium, preventing leukocyte adhesion and migration across the blood-brain barrier.",
+      "sideEffects": "Progressive multifocal leukoencephalopathy from JC virus reactivation (boxed warning), infusion reactions, hepatotoxicity, increased infection risk",
+      "contraindications": "JC virus seropositivity with additional risk factors, current progressive multifocal leukoencephalopathy, significant immunosuppression",
+      "topicTags": [
+        "multiple sclerosis",
+        "biologic therapy",
+        "immunosuppression",
+        "Crohn disease"
+      ],
+      "tooltip": "Highly effective for MS but carries the PML risk that defines its use. Patients are screened for JC virus antibodies before and during treatment. The mechanism — blocking leukocyte diapedesis — is heavily tested."
+    },
+    {
+      "id": "glatiramer",
+      "name": "Glatiramer Acetate",
+      "emoji": "🧠🎭🧬",
+      "drugClass": "Immunomodulator (MS Therapy)",
+      "primaryEffect": "Reduces relapse rate in multiple sclerosis",
+      "treatmentUsage": "Relapsing-remitting multiple sclerosis, clinically isolated syndrome",
+      "mechanismOfAction": "Random polymer of four amino acids resembling myelin basic protein that acts as a decoy antigen, shifting the T cell response from a proinflammatory Th1 to a regulatory Th2 phenotype.",
+      "sideEffects": "Injection site lipoatrophy and reactions, a self-limited post-injection systemic reaction with flushing, chest tightness, and palpitations",
+      "contraindications": "Hypersensitivity to glatiramer or mannitol",
+      "topicTags": [
+        "multiple sclerosis",
+        "immunomodulator"
+      ],
+      "tooltip": "A molecular decoy for myelin basic protein that redirects autoreactive T cells toward a regulatory phenotype. Safe in pregnancy, which distinguishes it from most MS therapies."
+    },
+    {
+      "id": "interferon-beta",
+      "name": "Interferon Beta",
+      "emoji": "🧠🧊🌡️",
+      "drugClass": "Immunomodulator (MS Therapy)",
+      "primaryEffect": "Reduces relapse frequency and new MRI lesions",
+      "treatmentUsage": "Relapsing-remitting multiple sclerosis",
+      "mechanismOfAction": "Reduces T cell proliferation and antigen presentation, inhibits matrix metalloproteinases, and decreases leukocyte migration across the blood-brain barrier.",
+      "sideEffects": "Flu-like symptoms after injection, injection site reactions and necrosis, leukopenia, elevated transaminases, depression",
+      "contraindications": "Decompensated hepatic disease, severe depression with suicidality",
+      "topicTags": [
+        "multiple sclerosis",
+        "immunomodulator",
+        "interferon"
+      ],
+      "tooltip": "Flu-like symptoms after each injection are near-universal early on and are managed with NSAIDs and bedtime dosing. Requires monitoring of liver enzymes and blood counts."
+    },
+    {
+      "id": "gabapentin",
+      "name": "Gabapentin",
+      "emoji": "⚡🔌🦵",
+      "drugClass": "Calcium Channel Alpha-2-Delta Ligand",
+      "primaryEffect": "Reduces neuropathic pain and seizure frequency",
+      "treatmentUsage": "Neuropathic pain, postherpetic neuralgia, diabetic neuropathy, focal seizures, restless legs syndrome",
+      "mechanismOfAction": "Binds the alpha-2-delta subunit of presynaptic voltage-gated calcium channels, reducing calcium influx and release of glutamate, norepinephrine, and substance P.",
+      "sideEffects": "Sedation, dizziness, ataxia, peripheral edema, weight gain, respiratory depression when combined with opioids",
+      "contraindications": "Hypersensitivity; requires dose reduction in renal impairment; caution with concurrent opioids",
+      "topicTags": [
+        "neuropathic pain",
+        "epilepsy",
+        "restless legs syndrome",
+        "calcium channel"
+      ],
+      "tooltip": "Despite the name, it does not act on GABA receptors at all. It binds the alpha-2-delta calcium channel subunit. Renally cleared, so dosing must be adjusted in kidney disease."
+    },
+    {
+      "id": "pregabalin",
+      "name": "Pregabalin",
+      "emoji": "⚡🔌💪",
+      "drugClass": "Calcium Channel Alpha-2-Delta Ligand",
+      "primaryEffect": "Reduces neuropathic pain and central pain amplification",
+      "treatmentUsage": "Diabetic peripheral neuropathy, postherpetic neuralgia, fibromyalgia, focal seizures, generalized anxiety disorder",
+      "mechanismOfAction": "Binds the alpha-2-delta subunit of voltage-gated calcium channels with higher affinity and more predictable absorption than gabapentin, reducing excitatory neurotransmitter release.",
+      "sideEffects": "Dizziness, somnolence, peripheral edema, weight gain, blurred vision, euphoria and abuse potential",
+      "contraindications": "Hypersensitivity; dose reduction in renal impairment; Schedule V controlled substance",
+      "topicTags": [
+        "neuropathic pain",
+        "fibromyalgia",
+        "epilepsy",
+        "calcium channel"
+      ],
+      "tooltip": "Same target as gabapentin but with linear pharmacokinetics and higher potency. It is a controlled substance because of euphoria and abuse potential, unlike gabapentin federally."
+    },
+    {
+      "id": "baclofen",
+      "name": "Baclofen",
+      "emoji": "💪🌀🅱️",
+      "drugClass": "GABA-B Agonist",
+      "primaryEffect": "Reduces skeletal muscle spasticity",
+      "treatmentUsage": "Spasticity from multiple sclerosis, spinal cord injury, or cerebral palsy; intrathecal for severe cases",
+      "mechanismOfAction": "Agonist at presynaptic GABA-B receptors in the spinal cord, increasing potassium conductance and inhibiting excitatory neurotransmitter release onto motor neurons.",
+      "sideEffects": "Sedation, weakness, dizziness, hypotonia; abrupt withdrawal from intrathecal pumps causes fever, rebound spasticity, rhabdomyolysis, and death",
+      "contraindications": "Hypersensitivity; never stop intrathecal therapy abruptly; caution in renal impairment and seizure disorder",
+      "topicTags": [
+        "spasticity",
+        "multiple sclerosis",
+        "GABA",
+        "muscle relaxant"
+      ],
+      "tooltip": "The GABA-B agonist of spasticity. The tested danger is abrupt withdrawal from an intrathecal pump, which produces a life-threatening syndrome resembling autonomic dysreflexia or neuroleptic malignant syndrome."
+    },
+    {
+      "id": "dantrolene",
+      "name": "Dantrolene",
+      "emoji": "🌡️💪🛑",
+      "drugClass": "Ryanodine Receptor Antagonist",
+      "primaryEffect": "Blocks calcium release from the sarcoplasmic reticulum in skeletal muscle",
+      "treatmentUsage": "Malignant hyperthermia (first-line), neuroleptic malignant syndrome, chronic spasticity",
+      "mechanismOfAction": "Binds the ryanodine receptor RYR1 on the sarcoplasmic reticulum of skeletal muscle, preventing calcium release and therefore preventing sustained contraction and heat generation.",
+      "sideEffects": "Muscle weakness, sedation, dizziness, hepatotoxicity with chronic oral use, respiratory depression",
+      "contraindications": "Active hepatic disease with chronic use; not effective for cardiac or smooth muscle",
+      "topicTags": [
+        "malignant hyperthermia",
+        "neuroleptic malignant syndrome",
+        "spasticity",
+        "antidote"
+      ],
+      "tooltip": "The antidote for malignant hyperthermia after succinylcholine or volatile anesthetics in a susceptible patient. It works only on skeletal muscle because RYR1 is the skeletal muscle isoform."
+    },
+    {
+      "id": "propofol",
+      "name": "Propofol",
+      "emoji": "😴🥛⚡",
+      "drugClass": "Intravenous Anesthetic",
+      "primaryEffect": "Rapid induction and maintenance of general anesthesia",
+      "treatmentUsage": "Induction and maintenance of general anesthesia, procedural sedation, ICU sedation, refractory status epilepticus",
+      "mechanismOfAction": "Potentiates GABA-A receptor chloride currents, producing rapid loss of consciousness with very short duration due to fast redistribution from brain to peripheral tissues.",
+      "sideEffects": "Hypotension, apnea and respiratory depression, pain on injection, propofol infusion syndrome with metabolic acidosis, rhabdomyolysis, and cardiac failure",
+      "contraindications": "Hypersensitivity to egg or soy components in some formulations; hemodynamic instability requires dose reduction",
+      "topicTags": [
+        "anesthesia",
+        "sedation",
+        "GABA",
+        "status epilepticus"
+      ],
+      "tooltip": "Milk of amnesia. Onset and offset are fast because of redistribution, not metabolism. It has antiemetic properties but no analgesia. Watch for hypotension and propofol infusion syndrome."
+    },
+    {
+      "id": "ketamine",
+      "name": "Ketamine",
+      "emoji": "😴🌀💭",
+      "drugClass": "Dissociative Anesthetic",
+      "primaryEffect": "Dissociative anesthesia with preserved airway reflexes and analgesia",
+      "treatmentUsage": "Procedural sedation in children, induction in hemodynamically unstable or bronchospastic patients, treatment-resistant depression, chronic pain",
+      "mechanismOfAction": "Noncompetitive NMDA receptor antagonist producing functional dissociation between the thalamocortical and limbic systems; it also causes indirect sympathomimetic stimulation.",
+      "sideEffects": "Emergence delirium and hallucinations, hypertension and tachycardia, increased secretions, nystagmus, increased intracranial and intraocular pressure",
+      "contraindications": "Severe uncontrolled hypertension, unstable coronary artery disease, active psychosis",
+      "topicTags": [
+        "anesthesia",
+        "NMDA antagonist",
+        "sedation",
+        "depression"
+      ],
+      "tooltip": "Unique among anesthetics for increasing blood pressure and heart rate and preserving respiratory drive, making it ideal in shock and status asthmaticus. Emergence reactions are blunted with a benzodiazepine."
+    },
+    {
+      "id": "succinylcholine",
+      "name": "Succinylcholine",
+      "emoji": "💪⚡🔓",
+      "drugClass": "Depolarizing Neuromuscular Blocker",
+      "primaryEffect": "Rapid, brief skeletal muscle paralysis",
+      "treatmentUsage": "Rapid sequence intubation when the fastest possible onset and offset are needed",
+      "mechanismOfAction": "Binds nicotinic acetylcholine receptors at the motor endplate and causes persistent depolarization, producing initial fasciculations then flaccid paralysis; it is degraded by plasma pseudocholinesterase.",
+      "sideEffects": "Hyperkalemia, malignant hyperthermia in susceptible patients, bradycardia in children, increased intracranial and intraocular pressure, myalgias, prolonged paralysis with pseudocholinesterase deficiency",
+      "contraindications": "Burns or crush injury beyond 24 hours, denervation injury, rhabdomyolysis, hyperkalemia, personal or family history of malignant hyperthermia",
+      "topicTags": [
+        "anesthesia",
+        "neuromuscular blockade",
+        "malignant hyperthermia",
+        "rapid sequence intubation"
+      ],
+      "tooltip": "The only depolarizing blocker. Upregulated extrajunctional receptors in burns, crush injury, and denervation cause massive potassium release and cardiac arrest — that is the tested contraindication."
+    },
+    {
+      "id": "rocuronium",
+      "name": "Rocuronium",
+      "emoji": "💪🚫🔒",
+      "drugClass": "Nondepolarizing Neuromuscular Blocker",
+      "primaryEffect": "Competitive skeletal muscle paralysis without fasciculations",
+      "treatmentUsage": "Intubation and maintenance of paralysis during surgery and mechanical ventilation",
+      "mechanismOfAction": "Competitively antagonizes nicotinic acetylcholine receptors at the neuromuscular junction, preventing endplate depolarization without initially activating the receptor.",
+      "sideEffects": "Prolonged paralysis, anaphylaxis, no analgesia or sedation so awareness under paralysis is a hazard",
+      "contraindications": "Hypersensitivity; must never be given without adequate sedation and analgesia",
+      "topicTags": [
+        "anesthesia",
+        "neuromuscular blockade",
+        "rapid sequence intubation"
+      ],
+      "tooltip": "Reversed by sugammadex, which encapsulates the drug directly, or by neostigmine plus glycopyrrolate. Because it competes with acetylcholine, cholinesterase inhibitors overcome the blockade."
+    },
+    {
+      "id": "lidocaine-neuro",
+      "name": "Lidocaine",
+      "emoji": "💉🚫🧊",
+      "drugClass": "Local Anesthetic (Amide)",
+      "primaryEffect": "Reversible local loss of sensation",
+      "treatmentUsage": "Local and regional anesthesia, nerve blocks, ventricular arrhythmias, topical analgesia",
+      "mechanismOfAction": "Blocks voltage-gated sodium channels from the intracellular side in their open or inactivated state, preventing action potential propagation in nerve fibers.",
+      "sideEffects": "Perioral numbness, tinnitus, metallic taste, seizures, cardiovascular collapse at toxic doses, methemoglobinemia rarely",
+      "contraindications": "Hypersensitivity to amide anesthetics; avoid epinephrine-containing solutions in end-arterial fields",
+      "topicTags": [
+        "local anesthesia",
+        "sodium channel",
+        "arrhythmias"
+      ],
+      "tooltip": "Small myelinated pain fibers are blocked first, large motor fibers last. Local anesthetics work poorly in infected tissue because low pH keeps the drug ionized and unable to cross the membrane."
+    },
+    {
+      "id": "mannitol-neuro",
+      "name": "Mannitol",
+      "emoji": "🧠💧⬇️",
+      "drugClass": "Osmotic Diuretic",
+      "primaryEffect": "Reduces intracranial pressure by osmotically drawing water from brain tissue",
+      "treatmentUsage": "Elevated intracranial pressure, cerebral edema, acute glaucoma, forced diuresis in some poisonings",
+      "mechanismOfAction": "Freely filtered but not reabsorbed, creating an osmotic gradient that pulls water from the brain interstitium into plasma and increases urinary water excretion.",
+      "sideEffects": "Hypovolemia and hypotension, initial hypervolemia that can precipitate pulmonary edema, hypernatremia, hypokalemia, rebound intracranial pressure rise",
+      "contraindications": "Anuria, severe heart failure or pulmonary edema, active intracranial hemorrhage, severe dehydration",
+      "topicTags": [
+        "intracranial pressure",
+        "cerebral edema",
+        "diuretic"
+      ],
+      "tooltip": "The osmotic gradient requires an intact blood-brain barrier; where the barrier is disrupted, mannitol leaks into brain tissue and can worsen edema. Watch for transient volume expansion before diuresis."
+    },
+    {
+      "id": "nimodipine",
+      "name": "Nimodipine",
+      "emoji": "🧠🩸🚧",
+      "drugClass": "Calcium Channel Blocker (DHP)",
+      "primaryEffect": "Reduces delayed cerebral ischemia after subarachnoid hemorrhage",
+      "treatmentUsage": "Prevention of vasospasm-related neurologic deficit following aneurysmal subarachnoid hemorrhage",
+      "mechanismOfAction": "Highly lipophilic dihydropyridine calcium channel blocker with preferential cerebral vascular distribution that reduces calcium-mediated cerebral vasoconstriction and neuronal injury.",
+      "sideEffects": "Hypotension, headache, flushing, bradycardia, gastrointestinal upset",
+      "contraindications": "Severe hypotension; must never be given intravenously because of fatal cardiovascular collapse",
+      "topicTags": [
+        "subarachnoid hemorrhage",
+        "vasospasm",
+        "calcium channel",
+        "stroke"
+      ],
+      "tooltip": "Given orally for 21 days after aneurysmal subarachnoid hemorrhage. It improves neurologic outcome even though angiographic vasospasm is largely unchanged. Intravenous administration is fatal."
+    },
+    {
+      "id": "alteplase-neuro",
+      "name": "Alteplase (tPA)",
+      "emoji": "🧠🩸💥",
+      "drugClass": "Thrombolytic",
+      "primaryEffect": "Dissolves the occluding clot in acute ischemic stroke",
+      "treatmentUsage": "Acute ischemic stroke within 4.5 hours of symptom onset; also pulmonary embolism and myocardial infarction",
+      "mechanismOfAction": "Recombinant tissue plasminogen activator that converts fibrin-bound plasminogen to plasmin, which degrades the fibrin mesh of the clot.",
+      "sideEffects": "Intracranial hemorrhage, systemic bleeding, angioedema, reperfusion injury",
+      "contraindications": "Active internal bleeding, recent intracranial hemorrhage or surgery, blood pressure above 185/110, platelet count below 100,000, recent anticoagulant use with elevated INR",
+      "topicTags": [
+        "stroke",
+        "thrombolysis",
+        "emergency"
+      ],
+      "tooltip": "Time is brain: benefit falls sharply with delay, and a non-contrast head CT must exclude hemorrhage first. The feared complication is symptomatic intracranial hemorrhage in roughly 6 percent."
+    },
+    {
+      "id": "pyridostigmine",
+      "name": "Pyridostigmine",
+      "emoji": "💪⚡🔁",
+      "drugClass": "Acetylcholinesterase Inhibitor",
+      "primaryEffect": "Improves neuromuscular transmission and muscle strength",
+      "treatmentUsage": "Symptomatic treatment of myasthenia gravis; prophylaxis against nerve gas poisoning",
+      "mechanismOfAction": "Reversibly inhibits acetylcholinesterase at the neuromuscular junction, increasing acetylcholine available to the reduced number of functional nicotinic receptors.",
+      "sideEffects": "Cholinergic excess with diarrhea, cramping, salivation, bradycardia, bronchial secretions; cholinergic crisis with overdose",
+      "contraindications": "Mechanical bowel or urinary obstruction; caution in asthma and bradyarrhythmia",
+      "topicTags": [
+        "myasthenia gravis",
+        "cholinergic",
+        "neuromuscular junction"
+      ],
+      "tooltip": "Does not cross the blood-brain barrier, so it lacks the CNS effects of physostigmine. The key distinction on exams is myasthenic crisis versus cholinergic crisis from too much pyridostigmine."
+    },
+    {
+      "id": "tetrabenazine",
+      "name": "Tetrabenazine",
+      "emoji": "🧠💃🔻",
+      "drugClass": "VMAT2 Inhibitor",
+      "primaryEffect": "Reduces involuntary choreiform movements",
+      "treatmentUsage": "Chorea associated with Huntington disease; tardive dyskinesia with related agents",
+      "mechanismOfAction": "Reversibly inhibits vesicular monoamine transporter 2, depleting presynaptic vesicles of dopamine and reducing dopaminergic transmission in the striatum.",
+      "sideEffects": "Depression and suicidality (boxed warning), parkinsonism, sedation, akathisia, QT prolongation",
+      "contraindications": "Active depression or suicidality, untreated depression, hepatic impairment, concurrent MAO inhibitors",
+      "topicTags": [
+        "Huntington disease",
+        "chorea",
+        "movement disorder",
+        "dopamine"
+      ],
+      "tooltip": "Depletes dopamine by blocking its packaging into vesicles, the opposite strategy from Parkinson therapy. The boxed warning for depression and suicidality matters because Huntington disease itself carries high suicide risk."
+    },
+    {
+      "id": "ergotamine",
+      "name": "Ergotamine",
+      "emoji": "🤕🌾🩸",
+      "drugClass": "Ergot Alkaloid",
+      "primaryEffect": "Aborts migraine through cranial vasoconstriction",
+      "treatmentUsage": "Acute migraine and cluster headache when triptans are ineffective or unavailable",
+      "mechanismOfAction": "Nonselective partial agonist at serotonin 5-HT1B and 5-HT1D receptors with additional alpha-adrenergic and dopaminergic activity, producing cranial vasoconstriction.",
+      "sideEffects": "Nausea and vomiting, peripheral ischemia and ergotism, coronary vasospasm, medication-overuse headache, retroperitoneal fibrosis with chronic use",
+      "contraindications": "Pregnancy, coronary or peripheral vascular disease, sepsis, concurrent strong CYP3A4 inhibitors such as macrolides or protease inhibitors",
+      "topicTags": [
+        "migraine",
+        "cluster headache",
+        "serotonin",
+        "abortive therapy"
+      ],
+      "tooltip": "Historic migraine therapy largely replaced by triptans. Ergotism — St. Anthony's fire — is severe vasospasm causing limb ischemia and gangrene. Never combine with triptans or CYP3A4 inhibitors."
+    },
+    {
+      "id": "modafinil",
+      "name": "Modafinil",
+      "emoji": "😴☀️⏰",
+      "drugClass": "Wakefulness-Promoting Agent",
+      "primaryEffect": "Promotes wakefulness without classic stimulant euphoria",
+      "treatmentUsage": "Narcolepsy, obstructive sleep apnea with residual sleepiness, shift work sleep disorder",
+      "mechanismOfAction": "Weakly inhibits the dopamine transporter and increases orexin and histamine signaling in the hypothalamus, promoting cortical arousal.",
+      "sideEffects": "Headache, nausea, insomnia, anxiety, hypertension, Stevens-Johnson syndrome rarely, reduced efficacy of hormonal contraceptives via CYP3A4 induction",
+      "contraindications": "Hypersensitivity, significant cardiovascular disease including left ventricular hypertrophy or mitral valve prolapse",
+      "topicTags": [
+        "narcolepsy",
+        "sleep disorder",
+        "stimulant"
+      ],
+      "tooltip": "First-line for narcolepsy-related sleepiness, with much lower abuse potential than amphetamines. It induces CYP3A4, so it can cause oral contraceptive failure — a commonly tested interaction."
+    },
+    {
+      "id": "sodium-oxybate",
+      "name": "Sodium Oxybate",
+      "emoji": "😴🌙💤",
+      "drugClass": "CNS Depressant",
+      "primaryEffect": "Consolidates nighttime sleep and suppresses cataplexy",
+      "treatmentUsage": "Cataplexy and excessive daytime sleepiness in narcolepsy type 1",
+      "mechanismOfAction": "The sodium salt of gamma-hydroxybutyrate, acting at GABA-B and GHB receptors to increase slow-wave sleep, which paradoxically reduces daytime sleepiness and cataplexy.",
+      "sideEffects": "Respiratory depression, confusion, nausea, enuresis, sleepwalking, abuse and misuse potential",
+      "contraindications": "Concurrent alcohol or sedative hypnotics, succinic semialdehyde dehydrogenase deficiency, untreated sleep apnea",
+      "topicTags": [
+        "narcolepsy",
+        "cataplexy",
+        "sleep disorder",
+        "GABA"
+      ],
+      "tooltip": "This is medical GHB, taken in two doses during the night. It is the most effective treatment for cataplexy. Boxed warning for CNS and respiratory depression, and it is tightly restricted."
+    }
+  ]
+}

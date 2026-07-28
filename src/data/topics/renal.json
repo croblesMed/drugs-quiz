@@ -1,0 +1,634 @@
+{
+  "id": "renal",
+  "label": "Renal",
+  "icon": "🫘",
+  "blurb": "Diuretics, electrolyte and acid-base agents, CKD therapy, gout drugs",
+  "drugs": [
+    {
+      "id": "furosemide",
+      "name": "Furosemide",
+      "emoji": "🫘💧🔁",
+      "drugClass": "Loop Diuretic",
+      "primaryEffect": "Produces the most potent diuresis of any diuretic class",
+      "treatmentUsage": "Acute decompensated heart failure, pulmonary edema, volume overload in chronic kidney disease, hypercalcemia, refractory hypertension",
+      "mechanismOfAction": "Inhibits the Na-K-2Cl cotransporter in the thick ascending limb, abolishing the medullary concentration gradient and preventing reabsorption of up to 25 percent of filtered sodium.",
+      "sideEffects": "Hypokalemia, hypomagnesemia, hypocalcemia, metabolic alkalosis, ototoxicity, hyperuricemia and gout, hyperglycemia, sulfa allergy cross-reactivity",
+      "contraindications": "Anuria, severe electrolyte depletion, hepatic coma, sulfa allergy (use ethacrynic acid instead)",
+      "topicTags": [
+        "diuretic",
+        "heart failure",
+        "edema",
+        "hypercalcemia",
+        "loop of Henle"
+      ],
+      "tooltip": "Loops lose calcium; thiazides retain it. That distinction drives two exam questions: furosemide for hypercalcemia, thiazides for calcium stones. Ethacrynic acid is the non-sulfa alternative."
+    },
+    {
+      "id": "bumetanide",
+      "name": "Bumetanide",
+      "emoji": "🫘💧💪",
+      "drugClass": "Loop Diuretic",
+      "primaryEffect": "Potent diuresis with more reliable oral absorption",
+      "treatmentUsage": "Heart failure with gut edema impairing furosemide absorption, refractory volume overload, nephrotic syndrome",
+      "mechanismOfAction": "Blocks the Na-K-2Cl cotransporter in the thick ascending limb, producing natriuresis and diuresis identical in mechanism to furosemide but with roughly 40-fold greater potency per milligram.",
+      "sideEffects": "Hypokalemia, hypomagnesemia, metabolic alkalosis, ototoxicity, hyperuricemia, muscle cramps",
+      "contraindications": "Anuria, hepatic coma, severe electrolyte depletion, sulfa allergy",
+      "topicTags": [
+        "diuretic",
+        "heart failure",
+        "edema",
+        "loop of Henle"
+      ],
+      "tooltip": "Chosen over furosemide when gut wall edema makes oral furosemide absorption erratic, since bumetanide bioavailability is consistently near 80 to 100 percent."
+    },
+    {
+      "id": "hydrochlorothiazide",
+      "name": "Hydrochlorothiazide",
+      "emoji": "🫘🧂🪨",
+      "drugClass": "Thiazide Diuretic",
+      "primaryEffect": "Mild diuresis with sustained blood pressure reduction",
+      "treatmentUsage": "Hypertension, calcium-containing kidney stone prevention, nephrogenic diabetes insipidus, mild edema, osteoporosis adjunct",
+      "mechanismOfAction": "Inhibits the Na-Cl cotransporter in the distal convoluted tubule, reducing sodium reabsorption; enhanced distal calcium reabsorption follows from the altered electrochemical gradient.",
+      "sideEffects": "Hypokalemia, hyponatremia, hypercalcemia, hyperuricemia and gout, hyperglycemia, hyperlipidemia, pancreatitis, photosensitivity, sulfa cross-reactivity",
+      "contraindications": "Anuria, sulfa allergy, severe hyponatremia, symptomatic hyperuricemia; loses efficacy when eGFR falls below 30",
+      "topicTags": [
+        "diuretic",
+        "hypertension",
+        "kidney stones",
+        "diabetes insipidus"
+      ],
+      "tooltip": "Thiazides cause hyperGLUC: hyperGlycemia, hyperLipidemia, hyperUricemia, hyperCalcemia. Paradoxically they treat nephrogenic diabetes insipidus by inducing mild volume depletion and enhancing proximal water reabsorption."
+    },
+    {
+      "id": "chlorthalidone",
+      "name": "Chlorthalidone",
+      "emoji": "🫘🧂🕐",
+      "drugClass": "Thiazide-Like Diuretic",
+      "primaryEffect": "Long-acting blood pressure reduction",
+      "treatmentUsage": "Hypertension, particularly when 24-hour blood pressure control is the goal; resistant hypertension",
+      "mechanismOfAction": "Inhibits the distal convoluted tubule Na-Cl cotransporter with a half-life of 40 to 60 hours, giving more sustained natriuresis than hydrochlorothiazide.",
+      "sideEffects": "Hypokalemia (more pronounced than hydrochlorothiazide), hyponatremia, hyperuricemia, hyperglycemia, hypercalcemia",
+      "contraindications": "Anuria, sulfa allergy, severe electrolyte disturbance",
+      "topicTags": [
+        "diuretic",
+        "hypertension"
+      ],
+      "tooltip": "Preferred over hydrochlorothiazide in many guidelines because its long half-life gives better overnight control and it has stronger outcome trial evidence, at the cost of more hypokalemia."
+    },
+    {
+      "id": "spironolactone",
+      "name": "Spironolactone",
+      "emoji": "🫘🚫🧂",
+      "drugClass": "Potassium-Sparing Diuretic",
+      "primaryEffect": "Mild diuresis with potassium retention",
+      "treatmentUsage": "Heart failure with reduced ejection fraction, primary hyperaldosteronism, cirrhotic ascites, resistant hypertension, hirsutism and acne in PCOS",
+      "mechanismOfAction": "Competitively antagonizes the intracellular mineralocorticoid receptor in principal cells of the collecting duct, reducing ENaC and Na-K-ATPase expression so sodium is excreted and potassium retained.",
+      "sideEffects": "Hyperkalemia, gynecomastia and breast tenderness, menstrual irregularity, metabolic acidosis, decreased libido",
+      "contraindications": "Hyperkalemia, eGFR below 30, Addison disease, concurrent potassium supplementation or other potassium-sparing agents",
+      "topicTags": [
+        "diuretic",
+        "heart failure",
+        "hyperaldosteronism",
+        "cirrhosis",
+        "collecting duct"
+      ],
+      "tooltip": "The diuretic of choice in cirrhotic ascites because secondary hyperaldosteronism drives the sodium retention. Its antiandrogen effect causes gynecomastia; eplerenone avoids this."
+    },
+    {
+      "id": "eplerenone",
+      "name": "Eplerenone",
+      "emoji": "🫘🚫🎯",
+      "drugClass": "Potassium-Sparing Diuretic",
+      "primaryEffect": "Selective aldosterone blockade without endocrine side effects",
+      "treatmentUsage": "Heart failure with reduced ejection fraction, post-myocardial infarction left ventricular dysfunction, resistant hypertension, primary hyperaldosteronism",
+      "mechanismOfAction": "Selectively antagonizes the mineralocorticoid receptor with far lower affinity for androgen and progesterone receptors than spironolactone.",
+      "sideEffects": "Hyperkalemia, dizziness, elevated triglycerides, metabolic acidosis; minimal gynecomastia",
+      "contraindications": "Hyperkalemia, eGFR below 30, concurrent strong CYP3A4 inhibitors such as ketoconazole or clarithromycin",
+      "topicTags": [
+        "diuretic",
+        "heart failure",
+        "hyperaldosteronism",
+        "collecting duct"
+      ],
+      "tooltip": "Chosen over spironolactone when gynecomastia or sexual side effects are unacceptable. It is a CYP3A4 substrate, so strong inhibitors are contraindicated."
+    },
+    {
+      "id": "amiloride",
+      "name": "Amiloride",
+      "emoji": "🫘🚪🔒",
+      "drugClass": "Potassium-Sparing Diuretic",
+      "primaryEffect": "Blocks sodium reabsorption in the collecting duct without hormonal effects",
+      "treatmentUsage": "Adjunct to thiazides or loops to prevent hypokalemia, Liddle syndrome, lithium-induced nephrogenic diabetes insipidus, cystic fibrosis airway therapy historically",
+      "mechanismOfAction": "Directly blocks the epithelial sodium channel (ENaC) in the collecting duct principal cell apical membrane, reducing the lumen-negative potential that drives potassium and hydrogen secretion.",
+      "sideEffects": "Hyperkalemia, metabolic acidosis, nausea, headache; no antiandrogen effects",
+      "contraindications": "Hyperkalemia, severe renal impairment, concurrent potassium supplements or aldosterone antagonists",
+      "topicTags": [
+        "diuretic",
+        "hypokalemia prevention",
+        "Liddle syndrome",
+        "collecting duct"
+      ],
+      "tooltip": "The treatment for Liddle syndrome, where a gain-of-function ENaC mutation causes hypertension with hypokalemia — spironolactone fails there because the defect is downstream of the receptor."
+    },
+    {
+      "id": "acetazolamide",
+      "name": "Acetazolamide",
+      "emoji": "🫘⛰️👁️",
+      "drugClass": "Carbonic Anhydrase Inhibitor",
+      "primaryEffect": "Produces bicarbonate diuresis and metabolic acidosis",
+      "treatmentUsage": "Glaucoma, acute mountain sickness prophylaxis, idiopathic intracranial hypertension, metabolic alkalosis correction, urinary alkalinization",
+      "mechanismOfAction": "Inhibits carbonic anhydrase in the proximal tubule, preventing bicarbonate reabsorption so sodium bicarbonate is excreted; it also reduces aqueous humor and cerebrospinal fluid production.",
+      "sideEffects": "Hyperchloremic metabolic acidosis, hypokalemia, paresthesias, calcium phosphate kidney stones, sulfa cross-reactivity, drowsiness",
+      "contraindications": "Sulfa allergy, hepatic cirrhosis because of ammonia retention, hyperchloremic acidosis, severe renal or hepatic disease",
+      "topicTags": [
+        "diuretic",
+        "glaucoma",
+        "altitude sickness",
+        "metabolic alkalosis",
+        "proximal tubule"
+      ],
+      "tooltip": "In altitude sickness the induced metabolic acidosis stimulates ventilation, speeding acclimatization. Self-limiting diuresis occurs because acidosis eventually reduces filtered bicarbonate."
+    },
+    {
+      "id": "mannitol",
+      "name": "Mannitol",
+      "emoji": "🫘💧🧠",
+      "drugClass": "Osmotic Diuretic",
+      "primaryEffect": "Draws water from tissues into the vascular space and increases urine output",
+      "treatmentUsage": "Elevated intracranial pressure, cerebral edema, acute glaucoma, rhabdomyolysis-associated forced diuresis",
+      "mechanismOfAction": "Freely filtered but not reabsorbed, it raises tubular fluid osmolality throughout the nephron so water reabsorption is impeded, and it osmotically pulls water from brain and eye tissue.",
+      "sideEffects": "Initial volume expansion with pulmonary edema, subsequent hypovolemia, hypernatremia, hypokalemia, rebound intracranial pressure rise, acute kidney injury at high doses",
+      "contraindications": "Anuria, established acute kidney injury, decompensated heart failure, active intracranial bleeding, severe dehydration",
+      "topicTags": [
+        "diuretic",
+        "intracranial pressure",
+        "cerebral edema",
+        "osmotic"
+      ],
+      "tooltip": "Watch the biphasic volume effect: transient intravascular expansion that can flood a failing heart, then diuresis and hypovolemia. Serum osmolality and the osmolar gap guide dosing."
+    },
+    {
+      "id": "tolvaptan-renal",
+      "name": "Tolvaptan",
+      "emoji": "🫘💧🚫",
+      "drugClass": "Vasopressin V2 Antagonist",
+      "primaryEffect": "Excretes free water while retaining sodium",
+      "treatmentUsage": "Euvolemic and hypervolemic hyponatremia, SIADH, autosomal dominant polycystic kidney disease",
+      "mechanismOfAction": "Blocks V2 receptors in the collecting duct so aquaporin-2 channels are not inserted, producing electrolyte-free water excretion known as aquaresis.",
+      "sideEffects": "Thirst, polyuria, dry mouth, hepatotoxicity, overly rapid sodium correction causing osmotic demyelination",
+      "contraindications": "Hypovolemic hyponatremia, anuria, inability to sense thirst, concurrent strong CYP3A4 inhibitors, urgent need to raise sodium rapidly",
+      "topicTags": [
+        "hyponatremia",
+        "SIADH",
+        "polycystic kidney disease",
+        "vasopressin"
+      ],
+      "tooltip": "In polycystic kidney disease it slows cyst growth because vasopressin-driven cAMP is the main driver of cyst expansion. Fluid restriction must be lifted during therapy to avoid overcorrection."
+    },
+    {
+      "id": "patiromer",
+      "name": "Patiromer",
+      "emoji": "⚡🧲💩",
+      "drugClass": "Potassium Binder",
+      "primaryEffect": "Lowers serum potassium by increasing fecal excretion",
+      "treatmentUsage": "Chronic hyperkalemia, especially to allow continued use of RAAS inhibitors in heart failure and chronic kidney disease",
+      "mechanismOfAction": "A nonabsorbed polymer that exchanges calcium for potassium primarily in the distal colon, binding potassium for fecal elimination.",
+      "sideEffects": "Constipation, diarrhea, hypomagnesemia, hypokalemia if overdosed, abdominal discomfort",
+      "contraindications": "Bowel obstruction; separate from other oral medications by three hours because it binds them",
+      "topicTags": [
+        "hyperkalemia",
+        "chronic kidney disease",
+        "potassium"
+      ],
+      "tooltip": "For chronic rather than emergency hyperkalemia — onset takes hours. Its real value is permitting ACE inhibitors and mineralocorticoid antagonists to be continued in heart failure."
+    },
+    {
+      "id": "calcium-gluconate",
+      "name": "Calcium Gluconate",
+      "emoji": "⚡🫀🛡️",
+      "drugClass": "Membrane Stabilizer",
+      "primaryEffect": "Immediately protects the myocardium from hyperkalemia",
+      "treatmentUsage": "Hyperkalemia with ECG changes, hypocalcemia, calcium channel blocker overdose, magnesium toxicity, hydrofluoric acid burns",
+      "mechanismOfAction": "Raises the extracellular calcium concentration, restoring the difference between resting and threshold potential in cardiac myocytes without changing serum potassium.",
+      "sideEffects": "Tissue necrosis with extravasation, hypercalcemia, bradycardia with rapid infusion, vasodilation and hypotension",
+      "contraindications": "Hypercalcemia, digoxin toxicity relative caution, ventricular fibrillation; do not mix with bicarbonate-containing solutions",
+      "topicTags": [
+        "hyperkalemia",
+        "hypocalcemia",
+        "emergency",
+        "electrolytes"
+      ],
+      "tooltip": "First drug in hyperkalemia with ECG changes. It does not lower potassium at all — it only stabilizes the myocardium while insulin, glucose, and albuterol shift potassium intracellularly."
+    },
+    {
+      "id": "sodium-bicarbonate",
+      "name": "Sodium Bicarbonate",
+      "emoji": "⚗️⬆️🧂",
+      "drugClass": "Alkalinizing Agent",
+      "primaryEffect": "Raises serum and urine pH",
+      "treatmentUsage": "Severe metabolic acidosis, tricyclic antidepressant and salicylate overdose, hyperkalemia with acidosis, urinary alkalinization, contrast nephropathy prophylaxis",
+      "mechanismOfAction": "Provides bicarbonate that buffers hydrogen ions; in sodium channel blocker toxicity the sodium load plus alkalinization reduces drug binding to cardiac sodium channels.",
+      "sideEffects": "Volume overload, hypernatremia, hypokalemia, metabolic alkalosis, hypocalcemia with tetany, paradoxical intracellular acidosis",
+      "contraindications": "Metabolic or respiratory alkalosis, hypocalcemia, severe pulmonary edema, hypernatremia",
+      "topicTags": [
+        "metabolic acidosis",
+        "antidote",
+        "hyperkalemia",
+        "acid-base"
+      ],
+      "tooltip": "In tricyclic overdose, widened QRS is the indication and both the sodium load and the alkaline pH reduce drug binding to cardiac sodium channels. In salicylate overdose it traps salicylate in urine."
+    },
+    {
+      "id": "allopurinol",
+      "name": "Allopurinol",
+      "emoji": "💎🚫⚗️",
+      "drugClass": "Xanthine Oxidase Inhibitor",
+      "primaryEffect": "Lowers serum uric acid by blocking its production",
+      "treatmentUsage": "Chronic gout prophylaxis, tumor lysis syndrome prevention, recurrent uric acid kidney stones, Lesch-Nyhan syndrome",
+      "mechanismOfAction": "Inhibits xanthine oxidase, blocking conversion of hypoxanthine to xanthine and xanthine to uric acid, so more soluble precursors are excreted instead.",
+      "sideEffects": "Rash, hypersensitivity syndrome with DRESS especially in HLA-B*5801 carriers, hepatotoxicity, acute gout flare on initiation, bone marrow suppression",
+      "contraindications": "Concurrent azathioprine or 6-mercaptopurine without major dose reduction, prior severe hypersensitivity; test HLA-B*5801 in high-risk populations",
+      "topicTags": [
+        "gout",
+        "hyperuricemia",
+        "kidney stones",
+        "tumor lysis syndrome"
+      ],
+      "tooltip": "Never start during an acute flare without anti-inflammatory cover, since lowering urate mobilizes crystals. The azathioprine interaction is lethal: xanthine oxidase normally clears its active metabolite."
+    },
+    {
+      "id": "febuxostat",
+      "name": "Febuxostat",
+      "emoji": "💎🚫🫀",
+      "drugClass": "Xanthine Oxidase Inhibitor",
+      "primaryEffect": "Potent reduction of serum uric acid",
+      "treatmentUsage": "Chronic gout in patients intolerant of or unresponsive to allopurinol",
+      "mechanismOfAction": "Selective non-purine inhibitor of both oxidized and reduced forms of xanthine oxidase, more potently blocking uric acid synthesis than allopurinol.",
+      "sideEffects": "Increased cardiovascular mortality compared with allopurinol (boxed warning), elevated transaminases, rash, acute gout flare on initiation, nausea",
+      "contraindications": "Established cardiovascular disease, concurrent azathioprine or 6-mercaptopurine",
+      "topicTags": [
+        "gout",
+        "hyperuricemia"
+      ],
+      "tooltip": "Second-line because of the cardiovascular mortality signal from the CARES trial. It is hepatically cleared, so it does not require renal dose adjustment like allopurinol."
+    },
+    {
+      "id": "colchicine",
+      "name": "Colchicine",
+      "emoji": "💎🌷🚫",
+      "drugClass": "Antimitotic Anti-inflammatory",
+      "primaryEffect": "Suppresses the inflammatory response to urate crystals",
+      "treatmentUsage": "Acute gout flare, gout flare prophylaxis when starting urate-lowering therapy, familial Mediterranean fever, pericarditis",
+      "mechanismOfAction": "Binds tubulin and prevents microtubule polymerization, impairing neutrophil chemotaxis, adhesion, and inflammasome-driven interleukin-1 beta release in response to crystals.",
+      "sideEffects": "Diarrhea, nausea, vomiting, myopathy and rhabdomyolysis, bone marrow suppression with overdose, peripheral neuropathy",
+      "contraindications": "Severe renal or hepatic impairment with concurrent P-glycoprotein or CYP3A4 inhibitors such as clarithromycin, cyclosporine, or verapamil",
+      "topicTags": [
+        "gout",
+        "inflammation",
+        "microtubule",
+        "familial Mediterranean fever"
+      ],
+      "tooltip": "Low-dose regimens are as effective as old high-dose ones with far less diarrhea. Fatal toxicity occurs when combined with CYP3A4 or P-glycoprotein inhibitors in renal impairment."
+    },
+    {
+      "id": "probenecid",
+      "name": "Probenecid",
+      "emoji": "💎🚽⬆️",
+      "drugClass": "Uricosuric",
+      "primaryEffect": "Increases renal uric acid excretion",
+      "treatmentUsage": "Chronic gout in underexcretors of uric acid with preserved renal function; historically to prolong penicillin levels",
+      "mechanismOfAction": "Inhibits the URAT1 transporter in the proximal tubule, blocking uric acid reabsorption; it also blocks organic anion secretion, which is why it raises penicillin levels.",
+      "sideEffects": "Uric acid kidney stones, acute gout flare on initiation, rash, gastrointestinal upset, aplastic anemia rarely",
+      "contraindications": "History of uric acid nephrolithiasis, overproduction of uric acid, creatinine clearance below 50 mL/min, concurrent aspirin which antagonizes it",
+      "topicTags": [
+        "gout",
+        "hyperuricemia",
+        "uricosuric",
+        "proximal tubule"
+      ],
+      "tooltip": "Requires a 24-hour urine uric acid to confirm underexcretion, plus high fluid intake and urinary alkalinization to prevent stones. Low-dose aspirin blocks its effect entirely."
+    },
+    {
+      "id": "rasburicase",
+      "name": "Rasburicase",
+      "emoji": "💎⚗️💥",
+      "drugClass": "Recombinant Urate Oxidase",
+      "primaryEffect": "Rapidly degrades existing uric acid",
+      "treatmentUsage": "Tumor lysis syndrome prevention and treatment in high-risk hematologic malignancies",
+      "mechanismOfAction": "A recombinant urate oxidase that converts uric acid to allantoin, which is five to ten times more water soluble and readily excreted; humans lack this enzyme naturally.",
+      "sideEffects": "Severe hemolysis in G6PD deficiency, methemoglobinemia, anaphylaxis, falsely low uric acid readings in samples left at room temperature",
+      "contraindications": "G6PD deficiency (absolute, must be screened), prior anaphylaxis to rasburicase",
+      "topicTags": [
+        "tumor lysis syndrome",
+        "hyperuricemia",
+        "gout",
+        "oncology"
+      ],
+      "tooltip": "Unlike allopurinol, which prevents new uric acid, rasburicase destroys uric acid already present, so it works in hours. Hydrogen peroxide is a byproduct, which is why G6PD deficiency causes hemolysis."
+    },
+    {
+      "id": "epoetin-alfa",
+      "name": "Epoetin Alfa",
+      "emoji": "🩸📈🫘",
+      "drugClass": "Erythropoiesis-Stimulating Agent",
+      "primaryEffect": "Stimulates red blood cell production",
+      "treatmentUsage": "Anemia of chronic kidney disease, chemotherapy-induced anemia, zidovudine-associated anemia, reduction of perioperative transfusion",
+      "mechanismOfAction": "Recombinant erythropoietin that binds erythropoietin receptors on marrow erythroid progenitors, promoting their proliferation, differentiation, and survival.",
+      "sideEffects": "Hypertension, increased thrombosis and stroke risk, tumor progression in some malignancies, pure red cell aplasia from anti-EPO antibodies, seizures",
+      "contraindications": "Uncontrolled hypertension, hemoglobin target above 11 g/dL because of cardiovascular harm, pure red cell aplasia after prior use",
+      "topicTags": [
+        "chronic kidney disease",
+        "anemia",
+        "erythropoietin"
+      ],
+      "tooltip": "Targeting normal hemoglobin increases death, stroke, and thrombosis, so the target is deliberately subnormal. Iron stores must be repleted first or the drug will not work."
+    },
+    {
+      "id": "sevelamer-renal",
+      "name": "Sevelamer",
+      "emoji": "🦴🧲🚫",
+      "drugClass": "Phosphate Binder",
+      "primaryEffect": "Reduces serum phosphate without a calcium load",
+      "treatmentUsage": "Hyperphosphatemia in chronic kidney disease stages 4 and 5 and in dialysis patients",
+      "mechanismOfAction": "A nonabsorbed cationic polymer that binds dietary phosphate anions in the gastrointestinal lumen, forming an insoluble complex excreted in stool.",
+      "sideEffects": "Nausea, constipation or diarrhea, metabolic acidosis, reduced fat-soluble vitamin absorption, rare bowel obstruction",
+      "contraindications": "Bowel obstruction, hypophosphatemia, severe gastrointestinal motility disorders",
+      "topicTags": [
+        "chronic kidney disease",
+        "hyperphosphatemia",
+        "dialysis",
+        "mineral bone disorder"
+      ],
+      "tooltip": "Preferred over calcium acetate when vascular calcification is a concern, because calcium-based binders add to the total calcium burden. Must be taken with meals."
+    },
+    {
+      "id": "lisinopril-renal",
+      "name": "Lisinopril",
+      "emoji": "🫘🛡️🅰️",
+      "drugClass": "ACE Inhibitor",
+      "primaryEffect": "Reduces intraglomerular pressure and proteinuria",
+      "treatmentUsage": "Diabetic and nondiabetic proteinuric chronic kidney disease, hypertension, heart failure, post-myocardial infarction",
+      "mechanismOfAction": "Inhibits angiotensin-converting enzyme, reducing angiotensin II-mediated efferent arteriolar constriction, which lowers intraglomerular pressure and slows glomerular injury.",
+      "sideEffects": "Dry cough from bradykinin accumulation, hyperkalemia, angioedema, acute kidney injury in bilateral renal artery stenosis, fetal renal dysgenesis",
+      "contraindications": "Pregnancy (boxed warning), bilateral renal artery stenosis, history of angioedema, hyperkalemia, concurrent aliskiren in diabetes",
+      "topicTags": [
+        "chronic kidney disease",
+        "proteinuria",
+        "hypertension",
+        "renin-angiotensin system"
+      ],
+      "tooltip": "An expected rise in creatinine of up to 30 percent reflects the intended drop in intraglomerular pressure and is not a reason to stop. A larger rise suggests renal artery stenosis."
+    },
+    {
+      "id": "losartan-renal",
+      "name": "Losartan",
+      "emoji": "🫘🛡️🚪",
+      "drugClass": "ARB",
+      "primaryEffect": "Reduces proteinuria and slows chronic kidney disease progression",
+      "treatmentUsage": "Diabetic nephropathy, hypertension, heart failure, ACE inhibitor intolerance from cough",
+      "mechanismOfAction": "Selectively blocks the angiotensin II type 1 receptor, preventing efferent arteriolar vasoconstriction and aldosterone release without affecting bradykinin metabolism.",
+      "sideEffects": "Hyperkalemia, hypotension, acute kidney injury in renal artery stenosis, fetal toxicity; cough and angioedema are much rarer than with ACE inhibitors",
+      "contraindications": "Pregnancy (boxed warning), bilateral renal artery stenosis, hyperkalemia, concurrent ACE inhibitor",
+      "topicTags": [
+        "chronic kidney disease",
+        "proteinuria",
+        "hypertension",
+        "renin-angiotensin system"
+      ],
+      "tooltip": "No cough because bradykinin is not affected — ACE inhibitors cause cough precisely by blocking bradykinin breakdown. Losartan uniquely also has a mild uricosuric effect."
+    },
+    {
+      "id": "dapagliflozin-renal",
+      "name": "Dapagliflozin",
+      "emoji": "🫘🍬🛡️",
+      "drugClass": "SGLT2 Inhibitor",
+      "primaryEffect": "Slows chronic kidney disease progression independent of glucose lowering",
+      "treatmentUsage": "Chronic kidney disease with albuminuria, heart failure across the ejection fraction spectrum, type 2 diabetes",
+      "mechanismOfAction": "Blocks proximal tubule sodium-glucose cotransporter 2, increasing distal sodium delivery which restores tubuloglomerular feedback and reduces intraglomerular hyperfiltration.",
+      "sideEffects": "Genital mycotic infection, volume depletion, euglycemic diabetic ketoacidosis, initial dip in eGFR, urinary tract infection",
+      "contraindications": "Type 1 diabetes, dialysis, recurrent genital infections; hold before major surgery or prolonged fasting",
+      "topicTags": [
+        "chronic kidney disease",
+        "proteinuria",
+        "heart failure",
+        "cardiorenal protection"
+      ],
+      "tooltip": "The initial eGFR dip is hemodynamic and expected, reflecting reduced hyperfiltration — long-term decline is markedly slowed. Renal benefit occurs even in patients without diabetes."
+    },
+    {
+      "id": "finerenone",
+      "name": "Finerenone",
+      "emoji": "🫘🚫🧬",
+      "drugClass": "Nonsteroidal Mineralocorticoid Antagonist",
+      "primaryEffect": "Reduces renal inflammation and fibrosis",
+      "treatmentUsage": "Chronic kidney disease associated with type 2 diabetes to reduce kidney and cardiovascular events",
+      "mechanismOfAction": "A nonsteroidal mineralocorticoid receptor antagonist with a distinct binding mode that blocks receptor-mediated inflammatory and profibrotic gene transcription more than sodium handling.",
+      "sideEffects": "Hyperkalemia, hypotension, decreased eGFR initially; minimal gynecomastia unlike spironolactone",
+      "contraindications": "Adrenal insufficiency, concurrent strong CYP3A4 inhibitors, serum potassium above 5.0 at initiation",
+      "topicTags": [
+        "chronic kidney disease",
+        "diabetic nephropathy",
+        "hyperaldosteronism",
+        "proteinuria"
+      ],
+      "tooltip": "Distinguished from steroidal antagonists by targeting inflammation and fibrosis more than natriuresis, with less hyperkalemia and no antiandrogen effects. Potassium must be monitored closely."
+    },
+    {
+      "id": "sodium-zirconium",
+      "name": "Sodium Zirconium Cyclosilicate",
+      "emoji": "⚡🧲⚗️",
+      "drugClass": "Potassium Binder",
+      "primaryEffect": "Rapidly lowers serum potassium",
+      "treatmentUsage": "Acute and chronic hyperkalemia in chronic kidney disease and heart failure",
+      "mechanismOfAction": "A selective inorganic crystalline lattice that traps potassium ions throughout the gastrointestinal tract in exchange for sodium and hydrogen, beginning within one hour.",
+      "sideEffects": "Edema from the sodium load, hypokalemia if overdosed, constipation, hypomagnesemia",
+      "contraindications": "Bowel obstruction; caution in heart failure and hypertension because of the sodium load; separate from other oral drugs by two hours",
+      "topicTags": [
+        "hyperkalemia",
+        "chronic kidney disease",
+        "potassium"
+      ],
+      "tooltip": "Acts faster than patiromer, with onset within an hour, but delivers a sodium load that can worsen volume overload in heart failure. Still not a substitute for calcium in ECG changes."
+    },
+    {
+      "id": "cyclophosphamide-renal",
+      "name": "Cyclophosphamide",
+      "emoji": "🧬💥🚽",
+      "drugClass": "Alkylating Immunosuppressant",
+      "primaryEffect": "Profound suppression of B and T lymphocyte function",
+      "treatmentUsage": "Severe lupus nephritis, ANCA-associated vasculitis, rapidly progressive glomerulonephritis, Goodpasture syndrome, minimal change disease refractory to steroids",
+      "mechanismOfAction": "A prodrug activated hepatically to phosphoramide mustard, which cross-links DNA and kills rapidly proliferating lymphocytes, suppressing autoantibody production.",
+      "sideEffects": "Hemorrhagic cystitis and bladder cancer from acrolein, myelosuppression, infertility, SIADH, secondary malignancy, infection",
+      "contraindications": "Pregnancy, severe bone marrow suppression, active severe infection, urinary outflow obstruction",
+      "topicTags": [
+        "glomerulonephritis",
+        "lupus nephritis",
+        "vasculitis",
+        "immunosuppression"
+      ],
+      "tooltip": "Mesna binds acrolein in the bladder and prevents hemorrhagic cystitis; aggressive hydration helps too. Rituximab has replaced it in many vasculitis and nephritis protocols."
+    },
+    {
+      "id": "tacrolimus",
+      "name": "Tacrolimus",
+      "emoji": "🫘🔒🧬",
+      "drugClass": "Calcineurin Inhibitor",
+      "primaryEffect": "Prevents T cell activation and transplant rejection",
+      "treatmentUsage": "Prophylaxis of kidney, liver, and heart transplant rejection; membranous nephropathy; minimal change disease; atopic dermatitis topically",
+      "mechanismOfAction": "Binds FKBP-12 and the complex inhibits calcineurin, preventing dephosphorylation of NFAT so interleukin-2 transcription and T cell activation do not occur.",
+      "sideEffects": "Nephrotoxicity, neurotoxicity with tremor and headache, new-onset diabetes after transplant, hypertension, hyperkalemia, hypomagnesemia, alopecia",
+      "contraindications": "Concurrent strong CYP3A4 inhibitors or inducers without level monitoring, hypersensitivity to the castor oil vehicle in intravenous form",
+      "topicTags": [
+        "transplant",
+        "immunosuppression",
+        "nephrotoxicity",
+        "glomerular disease"
+      ],
+      "tooltip": "Requires therapeutic drug monitoring because of a narrow window and heavy CYP3A4 metabolism. Compared with cyclosporine it causes more diabetes and neurotoxicity but less hirsutism and gum hyperplasia."
+    },
+    {
+      "id": "cyclosporine",
+      "name": "Cyclosporine",
+      "emoji": "🫘🦷💇",
+      "drugClass": "Calcineurin Inhibitor",
+      "primaryEffect": "Suppresses T cell-mediated immunity",
+      "treatmentUsage": "Transplant rejection prophylaxis, steroid-resistant nephrotic syndrome, psoriasis, rheumatoid arthritis, aplastic anemia",
+      "mechanismOfAction": "Binds cyclophilin and the complex inhibits calcineurin, preventing NFAT dephosphorylation and thereby blocking interleukin-2 transcription and T cell proliferation.",
+      "sideEffects": "Nephrotoxicity, hypertension, gingival hyperplasia, hirsutism, tremor, hyperlipidemia, hyperkalemia, hyperuricemia and gout",
+      "contraindications": "Uncontrolled hypertension, significant renal dysfunction, malignancy, concurrent strong CYP3A4 modulators without monitoring",
+      "topicTags": [
+        "transplant",
+        "immunosuppression",
+        "nephrotoxicity",
+        "nephrotic syndrome"
+      ],
+      "tooltip": "The distinguishing triad from tacrolimus is gingival hyperplasia, hirsutism, and hypertension. Both are nephrotoxic through afferent arteriolar vasoconstriction, which can mimic rejection on biopsy."
+    },
+    {
+      "id": "mycophenolate",
+      "name": "Mycophenolate Mofetil",
+      "emoji": "🧬🚫🩸",
+      "drugClass": "Antimetabolite Immunosuppressant",
+      "primaryEffect": "Selectively inhibits lymphocyte proliferation",
+      "treatmentUsage": "Transplant rejection prophylaxis, lupus nephritis induction and maintenance, ANCA vasculitis maintenance, autoimmune disease",
+      "mechanismOfAction": "Its active metabolite inhibits inosine monophosphate dehydrogenase, blocking de novo guanosine synthesis; lymphocytes depend on this pathway because they lack a salvage pathway.",
+      "sideEffects": "Diarrhea and gastrointestinal intolerance, leukopenia, anemia, infection including CMV and BK virus, severe teratogenicity, lymphoma risk",
+      "contraindications": "Pregnancy (boxed warning for first-trimester loss and congenital malformations), hypersensitivity; requires pregnancy prevention program",
+      "topicTags": [
+        "transplant",
+        "lupus nephritis",
+        "immunosuppression",
+        "glomerular disease"
+      ],
+      "tooltip": "Lymphocyte selectivity comes from their exclusive reliance on de novo purine synthesis. It has largely replaced cyclophosphamide for lupus nephritis with equal efficacy and preserved fertility."
+    },
+    {
+      "id": "desmopressin-renal",
+      "name": "Desmopressin (Renal)",
+      "emoji": "💧🫘🩸",
+      "drugClass": "Vasopressin Analog",
+      "primaryEffect": "Concentrates urine and improves platelet function",
+      "treatmentUsage": "Central diabetes insipidus, uremic bleeding in advanced kidney disease, nocturnal enuresis, von Willebrand disease",
+      "mechanismOfAction": "Selective V2 agonist that inserts aquaporin-2 channels into the collecting duct and also triggers endothelial release of von Willebrand factor, improving platelet adhesion in uremia.",
+      "sideEffects": "Hyponatremia and water intoxication, headache, facial flushing, tachyphylaxis after repeated hemostatic dosing",
+      "contraindications": "Hyponatremia, primary polydipsia, severe heart failure, creatinine clearance below 50 for some indications",
+      "topicTags": [
+        "diabetes insipidus",
+        "uremic bleeding",
+        "vasopressin",
+        "hemostasis"
+      ],
+      "tooltip": "In uremic bleeding, platelet count and coagulation studies are normal but bleeding time is prolonged because uremic toxins impair platelet function. Desmopressin corrects this within an hour."
+    },
+    {
+      "id": "fomepizole",
+      "name": "Fomepizole",
+      "emoji": "🚨🧪🫘",
+      "drugClass": "Alcohol Dehydrogenase Inhibitor",
+      "primaryEffect": "Blocks formation of toxic alcohol metabolites",
+      "treatmentUsage": "Ethylene glycol and methanol poisoning",
+      "mechanismOfAction": "Competitively inhibits alcohol dehydrogenase with far higher affinity than ethanol, preventing conversion of ethylene glycol to glycolic and oxalic acid and methanol to formic acid.",
+      "sideEffects": "Headache, nausea, dizziness, transient transaminase elevation, injection site reaction",
+      "contraindications": "Hypersensitivity; does not remove already-formed metabolites, so dialysis may still be needed",
+      "topicTags": [
+        "toxic alcohol",
+        "antidote",
+        "acute kidney injury",
+        "metabolic acidosis"
+      ],
+      "tooltip": "Ethylene glycol causes calcium oxalate crystals and acute kidney injury; methanol causes blindness from retinal formic acid. Both present with high anion gap acidosis and an osmolar gap."
+    },
+    {
+      "id": "sodium-thiosulfate",
+      "name": "Sodium Thiosulfate",
+      "emoji": "🚨🧪⚡",
+      "drugClass": "Antidote",
+      "primaryEffect": "Detoxifies cyanide and reduces vascular calcification",
+      "treatmentUsage": "Cyanide poisoning including from nitroprusside, calciphylaxis in dialysis patients, prevention of cisplatin ototoxicity",
+      "mechanismOfAction": "Provides a sulfur donor for the enzyme rhodanese, which converts cyanide into the far less toxic thiocyanate that is renally excreted.",
+      "sideEffects": "Nausea and vomiting, hypotension, metabolic acidosis, thiocyanate accumulation in renal failure, volume overload from the sodium load",
+      "contraindications": "Caution in renal impairment because thiocyanate accumulates and causes neurotoxicity",
+      "topicTags": [
+        "cyanide poisoning",
+        "antidote",
+        "calciphylaxis",
+        "dialysis"
+      ],
+      "tooltip": "Prolonged high-dose nitroprusside releases cyanide, which is why thiosulfate is co-administered. Hydroxocobalamin is now the preferred first-line cyanide antidote in most settings."
+    },
+    {
+      "id": "cinacalcet-renal",
+      "name": "Cinacalcet (Renal)",
+      "emoji": "🦴🫘📉",
+      "drugClass": "Calcimimetic",
+      "primaryEffect": "Suppresses parathyroid hormone in secondary hyperparathyroidism",
+      "treatmentUsage": "Secondary hyperparathyroidism in dialysis patients, parathyroid carcinoma, refractory primary hyperparathyroidism",
+      "mechanismOfAction": "Allosteric activator of the parathyroid calcium-sensing receptor that increases its sensitivity to extracellular calcium, suppressing PTH synthesis and secretion.",
+      "sideEffects": "Hypocalcemia with paresthesias and tetany, nausea and vomiting, QT prolongation, adynamic bone disease",
+      "contraindications": "Serum calcium below the normal range; requires frequent calcium and PTH monitoring",
+      "topicTags": [
+        "chronic kidney disease",
+        "hyperparathyroidism",
+        "dialysis",
+        "mineral bone disorder"
+      ],
+      "tooltip": "Unlike vitamin D analogs, it lowers PTH without raising calcium and phosphate, which is its main advantage in the CKD mineral bone disorder algorithm."
+    },
+    {
+      "id": "norepinephrine-renal",
+      "name": "Norepinephrine",
+      "emoji": "🩸⬆️🫘",
+      "drugClass": "Vasopressor",
+      "primaryEffect": "Restores mean arterial pressure and renal perfusion in shock",
+      "treatmentUsage": "Septic shock (first-line vasopressor), cardiogenic and other vasodilatory shock, hepatorenal syndrome in the ICU",
+      "mechanismOfAction": "Potent alpha-1 adrenergic agonist causing arterial and venous vasoconstriction with modest beta-1 inotropic effect, raising systemic vascular resistance and perfusion pressure.",
+      "sideEffects": "Peripheral and mesenteric ischemia, reflex bradycardia, arrhythmias, tissue necrosis with extravasation, hyperglycemia",
+      "contraindications": "Uncorrected hypovolemia; caution with peripheral vascular disease; extravasation is treated with phentolamine",
+      "topicTags": [
+        "shock",
+        "vasopressor",
+        "acute kidney injury",
+        "sepsis"
+      ],
+      "tooltip": "Restoring perfusion pressure protects the kidney in septic shock, contrary to the old fear that vasopressors worsen renal ischemia. Low-dose dopamine for renal protection has been disproven."
+    },
+    {
+      "id": "hydroxocobalamin",
+      "name": "Hydroxocobalamin",
+      "emoji": "🚨🔴💉",
+      "drugClass": "Antidote",
+      "primaryEffect": "Binds and neutralizes circulating cyanide",
+      "treatmentUsage": "Cyanide poisoning from smoke inhalation, nitroprusside toxicity, or ingestion; refractory vasoplegic shock",
+      "mechanismOfAction": "Binds cyanide with high affinity to form cyanocobalamin (vitamin B12), which is nontoxic and renally excreted, and additionally scavenges nitric oxide.",
+      "sideEffects": "Red discoloration of skin, urine, and plasma that interferes with colorimetric lab assays and dialysis machines; hypertension; rash; anaphylaxis",
+      "contraindications": "Known hypersensitivity; no absolute contraindication in life-threatening cyanide toxicity",
+      "topicTags": [
+        "cyanide poisoning",
+        "antidote",
+        "smoke inhalation",
+        "emergency"
+      ],
+      "tooltip": "Preferred over nitrite-based kits in smoke inhalation because it does not induce methemoglobinemia, which would be catastrophic in a patient who also has carbon monoxide poisoning."
+    }
+  ]
+}

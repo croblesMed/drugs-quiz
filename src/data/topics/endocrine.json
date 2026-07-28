@@ -1,0 +1,738 @@
+{
+  "id": "endocrine",
+  "label": "Endocrine",
+  "icon": "🦋",
+  "blurb": "Diabetes agents, thyroid drugs, corticosteroids, bone and pituitary therapy",
+  "drugs": [
+    {
+      "id": "metformin",
+      "name": "Metformin",
+      "emoji": "🍬1️⃣🥛",
+      "drugClass": "Biguanide",
+      "primaryEffect": "Lowers blood glucose without causing hypoglycemia",
+      "treatmentUsage": "First-line therapy for type 2 diabetes mellitus, prediabetes, polycystic ovary syndrome with insulin resistance",
+      "mechanismOfAction": "Activates AMP-activated protein kinase, decreasing hepatic gluconeogenesis and increasing peripheral insulin sensitivity and glucose uptake.",
+      "sideEffects": "Diarrhea and abdominal discomfort, metallic taste, vitamin B12 deficiency with long-term use, lactic acidosis (rare but serious), weight neutrality or modest loss",
+      "contraindications": "eGFR below 30 mL/min, acute or unstable heart failure, severe hepatic impairment, alcohol abuse, hold before iodinated contrast if renal function is impaired",
+      "topicTags": [
+        "diabetes",
+        "type 2 diabetes",
+        "insulin sensitizer",
+        "PCOS"
+      ],
+      "tooltip": "First-line for type 2 diabetes because it lowers A1c well, causes no hypoglycemia alone, and does not cause weight gain. Watch for B12 deficiency and hold it around contrast studies."
+    },
+    {
+      "id": "glipizide",
+      "name": "Glipizide",
+      "emoji": "🍬🔒🚪",
+      "drugClass": "Sulfonylurea",
+      "primaryEffect": "Stimulates insulin release from pancreatic beta cells",
+      "treatmentUsage": "Type 2 diabetes mellitus when additional glucose lowering is needed and cost is a concern",
+      "mechanismOfAction": "Binds the SUR1 subunit and closes ATP-sensitive potassium channels on beta cells, causing depolarization, calcium influx, and insulin exocytosis independent of glucose level.",
+      "sideEffects": "Hypoglycemia (the main risk), weight gain, rash, hyponatremia, disulfiram-like reaction with alcohol in some agents",
+      "contraindications": "Type 1 diabetes, sulfa allergy, severe renal or hepatic impairment; caution in the elderly and in irregular eaters",
+      "topicTags": [
+        "diabetes",
+        "type 2 diabetes",
+        "insulin secretagogue",
+        "hypoglycemia"
+      ],
+      "tooltip": "Because insulin release is glucose-independent, sulfonylureas cause true hypoglycemia. Preferred over glyburide in older adults and renal impairment because its metabolites are inactive."
+    },
+    {
+      "id": "sitagliptin",
+      "name": "Sitagliptin",
+      "emoji": "🍬4️⃣🛡️",
+      "drugClass": "DPP-4 Inhibitor",
+      "primaryEffect": "Modestly lowers glucose by prolonging incretin action",
+      "treatmentUsage": "Type 2 diabetes mellitus, typically as add-on therapy to metformin",
+      "mechanismOfAction": "Inhibits dipeptidyl peptidase-4, the enzyme that degrades GLP-1 and GIP, so endogenous incretin levels rise and glucose-dependent insulin secretion increases while glucagon falls.",
+      "sideEffects": "Nasopharyngitis, headache, pancreatitis, severe joint pain, bullous pemphigoid, heart failure hospitalization with some agents in the class",
+      "contraindications": "History of pancreatitis; requires renal dose adjustment; concurrent GLP-1 agonist is redundant",
+      "topicTags": [
+        "diabetes",
+        "type 2 diabetes",
+        "incretin"
+      ],
+      "tooltip": "Weight neutral with no hypoglycemia because the incretin effect is glucose-dependent, but A1c lowering is modest. Bullous pemphigoid and arthralgia are the distinctive adverse effects."
+    },
+    {
+      "id": "semaglutide",
+      "name": "Semaglutide",
+      "emoji": "🍬📉🍽️",
+      "drugClass": "GLP-1 Receptor Agonist",
+      "primaryEffect": "Lowers glucose while producing substantial weight loss",
+      "treatmentUsage": "Type 2 diabetes mellitus, chronic weight management, cardiovascular risk reduction in type 2 diabetes",
+      "mechanismOfAction": "Agonizes GLP-1 receptors to increase glucose-dependent insulin secretion, suppress glucagon, delay gastric emptying, and increase hypothalamic satiety signaling.",
+      "sideEffects": "Nausea, vomiting, diarrhea, pancreatitis, gallstones, delayed gastric emptying with aspiration risk under anesthesia, medullary thyroid carcinoma in rodents",
+      "contraindications": "Personal or family history of medullary thyroid carcinoma or MEN 2 (boxed warning), history of pancreatitis, gastroparesis",
+      "topicTags": [
+        "diabetes",
+        "type 2 diabetes",
+        "incretin",
+        "weight loss",
+        "cardiovascular protection"
+      ],
+      "tooltip": "GLP-1 agonists lower A1c, cause major weight loss, and reduce cardiovascular events. The boxed warning for medullary thyroid carcinoma comes from rodent C-cell tumors and drives the contraindications."
+    },
+    {
+      "id": "empagliflozin",
+      "name": "Empagliflozin",
+      "emoji": "🍬🚽🫘",
+      "drugClass": "SGLT2 Inhibitor",
+      "primaryEffect": "Lowers glucose by causing urinary glucose excretion",
+      "treatmentUsage": "Type 2 diabetes, heart failure with reduced or preserved ejection fraction, chronic kidney disease progression",
+      "mechanismOfAction": "Inhibits sodium-glucose cotransporter 2 in the proximal tubule, blocking roughly 90 percent of filtered glucose reabsorption and producing glycosuria and osmotic diuresis.",
+      "sideEffects": "Genital mycotic infections, urinary tract infections, volume depletion and hypotension, euglycemic diabetic ketoacidosis, Fournier gangrene rarely",
+      "contraindications": "Type 1 diabetes, dialysis, recurrent genital infections; hold before major surgery to avoid euglycemic ketoacidosis",
+      "topicTags": [
+        "diabetes",
+        "type 2 diabetes",
+        "heart failure",
+        "chronic kidney disease",
+        "cardiorenal protection"
+      ],
+      "tooltip": "Now used as much for heart failure and kidney protection as for glucose. The high-yield adverse effect is euglycemic diabetic ketoacidosis, where ketosis occurs at near-normal glucose levels."
+    },
+    {
+      "id": "pioglitazone",
+      "name": "Pioglitazone",
+      "emoji": "🍬🧬💧",
+      "drugClass": "Thiazolidinedione",
+      "primaryEffect": "Increases peripheral insulin sensitivity",
+      "treatmentUsage": "Type 2 diabetes mellitus, nonalcoholic steatohepatitis, insulin resistance syndromes",
+      "mechanismOfAction": "Agonist at the nuclear receptor PPAR-gamma, altering transcription of genes that increase adipocyte glucose uptake, promote fatty acid storage, and improve insulin sensitivity.",
+      "sideEffects": "Fluid retention and peripheral edema, weight gain, heart failure exacerbation, fractures in women, bladder cancer signal, hepatotoxicity",
+      "contraindications": "Class III or IV heart failure (boxed warning), active bladder cancer, active liver disease",
+      "topicTags": [
+        "diabetes",
+        "type 2 diabetes",
+        "insulin sensitizer",
+        "PPAR"
+      ],
+      "tooltip": "It genuinely reverses insulin resistance and helps steatohepatitis, but fluid retention causing heart failure decompensation limits use. Onset of effect takes weeks because it works through gene transcription."
+    },
+    {
+      "id": "insulin-lispro",
+      "name": "Insulin Lispro",
+      "emoji": "💉⚡🍽️",
+      "drugClass": "Rapid-Acting Insulin",
+      "primaryEffect": "Covers the glucose rise from a meal",
+      "treatmentUsage": "Prandial coverage in type 1 and type 2 diabetes, insulin pumps, correction dosing, diabetic ketoacidosis by infusion",
+      "mechanismOfAction": "Amino acid substitutions at positions B28 and B29 prevent hexamer formation, so absorption is rapid with onset in 15 minutes and duration of three to four hours.",
+      "sideEffects": "Hypoglycemia, weight gain, lipohypertrophy at injection sites, hypokalemia from intracellular potassium shift",
+      "contraindications": "Hypoglycemia; requires careful timing relative to meals",
+      "topicTags": [
+        "diabetes",
+        "type 1 diabetes",
+        "insulin",
+        "prandial"
+      ],
+      "tooltip": "Rapid-acting analogs are engineered to resist hexamer formation, which is why they absorb faster than regular insulin. Give with the meal, not 30 minutes before as with regular insulin."
+    },
+    {
+      "id": "insulin-glargine",
+      "name": "Insulin Glargine",
+      "emoji": "💉🕐📏",
+      "drugClass": "Long-Acting Insulin",
+      "primaryEffect": "Provides flat basal insulin coverage for about 24 hours",
+      "treatmentUsage": "Basal insulin in type 1 and type 2 diabetes",
+      "mechanismOfAction": "Glycine substitution and two added arginines shift the isoelectric point so the insulin precipitates in subcutaneous tissue and dissolves slowly, giving a peakless profile.",
+      "sideEffects": "Hypoglycemia especially nocturnal, weight gain, injection site pain, lipohypertrophy",
+      "contraindications": "Hypoglycemia; must never be given intravenously or mixed with other insulins in the same syringe",
+      "topicTags": [
+        "diabetes",
+        "type 1 diabetes",
+        "insulin",
+        "basal"
+      ],
+      "tooltip": "The peakless profile mimics physiologic basal secretion and causes less nocturnal hypoglycemia than NPH. Because it depends on subcutaneous precipitation, it cannot be given intravenously."
+    },
+    {
+      "id": "insulin-regular",
+      "name": "Regular Insulin",
+      "emoji": "💉🏥💧",
+      "drugClass": "Short-Acting Insulin",
+      "primaryEffect": "Lowers glucose and shifts potassium intracellularly",
+      "treatmentUsage": "Diabetic ketoacidosis and hyperosmolar hyperglycemic state by continuous infusion, hyperkalemia, prandial coverage, intravenous use in hospital",
+      "mechanismOfAction": "Binds the insulin receptor tyrosine kinase, triggering GLUT4 translocation for glucose uptake and activating Na-K-ATPase to drive potassium into cells.",
+      "sideEffects": "Hypoglycemia, hypokalemia, weight gain, injection site reactions",
+      "contraindications": "Hypoglycemia, untreated hypokalemia in diabetic ketoacidosis where potassium must be repleted first",
+      "topicTags": [
+        "diabetes",
+        "insulin",
+        "hyperkalemia",
+        "diabetic ketoacidosis"
+      ],
+      "tooltip": "The only insulin that can be given intravenously, making it the agent for DKA and hyperkalemia. In DKA, potassium below 3.3 must be corrected before insulin or fatal hypokalemia follows."
+    },
+    {
+      "id": "glucagon",
+      "name": "Glucagon",
+      "emoji": "🍬📈🚨",
+      "drugClass": "Counterregulatory Hormone",
+      "primaryEffect": "Rapidly raises blood glucose",
+      "treatmentUsage": "Severe hypoglycemia when the patient cannot take oral glucose; beta-blocker and calcium channel blocker overdose; esophageal foreign body relaxation",
+      "mechanismOfAction": "Activates hepatic Gs-coupled glucagon receptors, raising cAMP to stimulate glycogenolysis and gluconeogenesis; the same cAMP rise bypasses blocked beta receptors in the heart.",
+      "sideEffects": "Nausea and vomiting, hyperglycemia, hypokalemia, headache; ineffective if hepatic glycogen is depleted",
+      "contraindications": "Pheochromocytoma, insulinoma; ineffective in starvation, adrenal insufficiency, or chronic alcohol use with depleted glycogen",
+      "topicTags": [
+        "hypoglycemia",
+        "antidote",
+        "beta-blocker overdose",
+        "emergency"
+      ],
+      "tooltip": "The antidote for beta-blocker overdose because it raises cardiac cAMP without needing the beta receptor. It fails in hypoglycemia when glycogen stores are depleted, as in alcoholics."
+    },
+    {
+      "id": "levothyroxine",
+      "name": "Levothyroxine",
+      "emoji": "🦋4️⃣📈",
+      "drugClass": "Thyroid Hormone",
+      "primaryEffect": "Replaces deficient thyroid hormone",
+      "treatmentUsage": "Hypothyroidism of any cause, myxedema coma, TSH suppression in thyroid cancer, congenital hypothyroidism",
+      "mechanismOfAction": "Synthetic T4 that is deiodinated peripherally to the active T3, which binds nuclear thyroid hormone receptors and regulates transcription of genes governing metabolic rate.",
+      "sideEffects": "Symptoms of hyperthyroidism if overdosed including palpitations, tremor, weight loss, atrial fibrillation, and accelerated osteoporosis; angina in coronary disease",
+      "contraindications": "Untreated adrenal insufficiency because it can precipitate adrenal crisis; recent myocardial infarction; thyrotoxicosis",
+      "topicTags": [
+        "hypothyroidism",
+        "thyroid",
+        "hormone replacement"
+      ],
+      "tooltip": "Take on an empty stomach; calcium, iron, and PPIs block absorption. In elderly or coronary patients start low and go slow. Always treat adrenal insufficiency first to avoid precipitating crisis."
+    },
+    {
+      "id": "methimazole",
+      "name": "Methimazole",
+      "emoji": "🦋🚫🧪",
+      "drugClass": "Thionamide",
+      "primaryEffect": "Reduces synthesis of new thyroid hormone",
+      "treatmentUsage": "Graves disease and hyperthyroidism, preparation before thyroidectomy or radioiodine",
+      "mechanismOfAction": "Inhibits thyroid peroxidase, blocking oxidation of iodide, iodination of tyrosine residues, and coupling of iodotyrosines into T3 and T4.",
+      "sideEffects": "Agranulocytosis, rash, arthralgia, hepatotoxicity of cholestatic type, aplasia cutis and other embryopathy in the first trimester",
+      "contraindications": "First trimester of pregnancy, prior agranulocytosis with thionamides, severe hepatic disease",
+      "topicTags": [
+        "hyperthyroidism",
+        "Graves disease",
+        "thyroid"
+      ],
+      "tooltip": "Preferred over propylthiouracil except in the first trimester and thyroid storm. Any patient who develops fever or sore throat must stop the drug and have a white count checked for agranulocytosis."
+    },
+    {
+      "id": "propylthiouracil",
+      "name": "Propylthiouracil",
+      "emoji": "🦋🚫🤰",
+      "drugClass": "Thionamide",
+      "primaryEffect": "Blocks thyroid hormone synthesis and peripheral T4 to T3 conversion",
+      "treatmentUsage": "Hyperthyroidism in the first trimester of pregnancy, thyroid storm",
+      "mechanismOfAction": "Inhibits thyroid peroxidase to block hormone synthesis and additionally inhibits peripheral 5-prime-deiodinase, reducing conversion of T4 to the more active T3.",
+      "sideEffects": "Severe hepatotoxicity and fulminant hepatic failure (boxed warning), agranulocytosis, ANCA-associated vasculitis, rash",
+      "contraindications": "Routine first-line use because of hepatotoxicity; use limited to first trimester and thyroid storm",
+      "topicTags": [
+        "hyperthyroidism",
+        "thyroid storm",
+        "pregnancy",
+        "thyroid"
+      ],
+      "tooltip": "Two niches only: first trimester (methimazole is teratogenic) and thyroid storm (it also blocks peripheral T4 to T3 conversion). Otherwise avoided because of fulminant hepatic failure risk."
+    },
+    {
+      "id": "radioactive-iodine",
+      "name": "Radioactive Iodine (I-131)",
+      "emoji": "🦋☢️💥",
+      "drugClass": "Radiopharmaceutical",
+      "primaryEffect": "Permanently ablates overactive thyroid tissue",
+      "treatmentUsage": "Definitive treatment of Graves disease and toxic nodular goiter; ablation of residual thyroid cancer",
+      "mechanismOfAction": "Concentrated by the sodium-iodide symporter in thyroid follicular cells, where beta emission destroys the surrounding tissue over weeks to months.",
+      "sideEffects": "Permanent hypothyroidism (the expected outcome), transient thyroiditis with neck pain, worsening of Graves ophthalmopathy, sialadenitis",
+      "contraindications": "Pregnancy and breastfeeding (absolute), moderate to severe Graves ophthalmopathy, inability to follow radiation precautions",
+      "topicTags": [
+        "hyperthyroidism",
+        "Graves disease",
+        "thyroid",
+        "thyroid cancer"
+      ],
+      "tooltip": "Absolutely contraindicated in pregnancy because fetal thyroid is ablated after 10 weeks. It can worsen Graves eye disease, so ophthalmopathy patients get steroids or a different treatment."
+    },
+    {
+      "id": "hydrocortisone",
+      "name": "Hydrocortisone",
+      "emoji": "🧂💊⚖️",
+      "drugClass": "Corticosteroid",
+      "primaryEffect": "Replaces physiologic glucocorticoid with mineralocorticoid activity",
+      "treatmentUsage": "Adrenal insufficiency, adrenal crisis, congenital adrenal hyperplasia, septic shock with vasopressor dependence",
+      "mechanismOfAction": "Identical to endogenous cortisol, binding glucocorticoid receptors to regulate metabolism and inflammation and mineralocorticoid receptors to promote sodium retention.",
+      "sideEffects": "Hyperglycemia, hypertension, hypokalemia, osteoporosis, immunosuppression, poor wound healing, Cushingoid features with excess",
+      "contraindications": "Systemic fungal infection; never abruptly discontinue after prolonged therapy",
+      "topicTags": [
+        "adrenal insufficiency",
+        "corticosteroid",
+        "adrenal crisis"
+      ],
+      "tooltip": "The replacement steroid of choice because its mineralocorticoid activity matches physiology. Doses must be tripled during illness — sick day rules — to prevent adrenal crisis."
+    },
+    {
+      "id": "fludrocortisone",
+      "name": "Fludrocortisone",
+      "emoji": "🧂💧⬆️",
+      "drugClass": "Mineralocorticoid",
+      "primaryEffect": "Promotes sodium retention and potassium excretion",
+      "treatmentUsage": "Primary adrenal insufficiency, salt-wasting congenital adrenal hyperplasia, neurogenic orthostatic hypotension",
+      "mechanismOfAction": "Potent mineralocorticoid receptor agonist in the distal nephron that increases epithelial sodium channel and Na-K-ATPase activity, expanding volume and excreting potassium and hydrogen.",
+      "sideEffects": "Hypertension, edema, hypokalemia, metabolic alkalosis, heart failure exacerbation, hyperglycemia",
+      "contraindications": "Systemic fungal infection, heart failure, uncontrolled hypertension",
+      "topicTags": [
+        "adrenal insufficiency",
+        "corticosteroid",
+        "orthostatic hypotension"
+      ],
+      "tooltip": "Added to hydrocortisone in primary but not secondary adrenal insufficiency, because aldosterone production is preserved when the defect is pituitary. Monitor blood pressure, potassium, and renin."
+    },
+    {
+      "id": "dexamethasone",
+      "name": "Dexamethasone",
+      "emoji": "💊🔬🔍",
+      "drugClass": "Corticosteroid",
+      "primaryEffect": "Potent glucocorticoid effect with essentially no mineralocorticoid activity",
+      "treatmentUsage": "Cerebral edema, bacterial meningitis adjunct, croup, antenatal fetal lung maturation, chemotherapy-induced nausea, dexamethasone suppression testing, severe COVID-19",
+      "mechanismOfAction": "Binds glucocorticoid receptors with very high affinity and long duration, suppressing NF-kB-driven inflammatory gene transcription and reducing capillary permeability.",
+      "sideEffects": "Hyperglycemia, insomnia and mood changes, immunosuppression, myopathy, avascular necrosis, adrenal suppression, gastritis",
+      "contraindications": "Systemic fungal infection, live vaccines; avoid abrupt withdrawal after prolonged use",
+      "topicTags": [
+        "corticosteroid",
+        "cerebral edema",
+        "diagnostic agent",
+        "meningitis"
+      ],
+      "tooltip": "The steroid for cerebral edema and for testing the HPA axis, because it does not cross-react with cortisol assays. Given before or with the first antibiotic dose in pneumococcal meningitis."
+    },
+    {
+      "id": "ketoconazole",
+      "name": "Ketoconazole",
+      "emoji": "🍄🚫🧂",
+      "drugClass": "Steroidogenesis Inhibitor",
+      "primaryEffect": "Blocks adrenal cortisol synthesis",
+      "treatmentUsage": "Medical management of Cushing syndrome when surgery is not possible; historically an antifungal",
+      "mechanismOfAction": "Inhibits multiple cytochrome P450 steroidogenic enzymes including 17,20-lyase and 11-beta-hydroxylase, reducing cortisol and androgen synthesis.",
+      "sideEffects": "Hepatotoxicity, gynecomastia and decreased libido from androgen blockade, QT prolongation, adrenal insufficiency, extensive CYP3A4 inhibition",
+      "contraindications": "Hepatic disease, concurrent QT-prolonging drugs, coadministration with CYP3A4-dependent drugs",
+      "topicTags": [
+        "Cushing syndrome",
+        "adrenal",
+        "steroidogenesis"
+      ],
+      "tooltip": "Its antiandrogen effect causing gynecomastia is the classic Step 1 association. As a potent CYP3A4 inhibitor it also raises levels of many co-prescribed drugs dramatically."
+    },
+    {
+      "id": "spironolactone-endo",
+      "name": "Spironolactone",
+      "emoji": "🧂🚫🚻",
+      "drugClass": "Mineralocorticoid Receptor Antagonist",
+      "primaryEffect": "Blocks aldosterone and androgen receptor effects",
+      "treatmentUsage": "Primary hyperaldosteronism, heart failure with reduced ejection fraction, resistant hypertension, ascites from cirrhosis, hirsutism in PCOS, acne",
+      "mechanismOfAction": "Competitively antagonizes the mineralocorticoid receptor in the collecting duct, reducing sodium reabsorption and potassium secretion; it also blocks androgen receptors and inhibits androgen synthesis.",
+      "sideEffects": "Hyperkalemia, gynecomastia and breast tenderness, menstrual irregularity, metabolic acidosis, decreased libido",
+      "contraindications": "Hyperkalemia, severe renal impairment, Addison disease, concurrent potassium supplements or potassium-sparing diuretics",
+      "topicTags": [
+        "hyperaldosteronism",
+        "PCOS",
+        "hirsutism",
+        "diuretic",
+        "heart failure"
+      ],
+      "tooltip": "The antiandrogen activity is a side effect in men (gynecomastia) and the therapeutic goal in women (hirsutism and acne in PCOS). Eplerenone is the selective alternative without endocrine effects."
+    },
+    {
+      "id": "desmopressin",
+      "name": "Desmopressin",
+      "emoji": "💧🚫🚽",
+      "drugClass": "Vasopressin Analog",
+      "primaryEffect": "Increases renal water reabsorption",
+      "treatmentUsage": "Central diabetes insipidus, nocturnal enuresis, von Willebrand disease and mild hemophilia A, uremic bleeding",
+      "mechanismOfAction": "Selective V2 receptor agonist that inserts aquaporin-2 channels into the collecting duct apical membrane, concentrating urine; V2 stimulation also releases von Willebrand factor and factor VIII from endothelium.",
+      "sideEffects": "Hyponatremia and water intoxication with seizures, headache, facial flushing, nausea; tachyphylaxis with repeated hemostatic dosing",
+      "contraindications": "Hyponatremia, severe renal impairment, primary polydipsia, heart failure",
+      "topicTags": [
+        "diabetes insipidus",
+        "von Willebrand disease",
+        "vasopressin",
+        "hemostasis"
+      ],
+      "tooltip": "Selectivity for V2 over V1 means water retention without vasoconstriction. The water deprivation test distinguishes central DI, which responds to desmopressin, from nephrogenic DI, which does not."
+    },
+    {
+      "id": "tolvaptan",
+      "name": "Tolvaptan",
+      "emoji": "💧🚪🚫",
+      "drugClass": "Vasopressin Receptor Antagonist",
+      "primaryEffect": "Produces free water excretion and raises serum sodium",
+      "treatmentUsage": "Hypervolemic and euvolemic hyponatremia including SIADH; autosomal dominant polycystic kidney disease progression",
+      "mechanismOfAction": "Competitively blocks V2 receptors in the collecting duct, preventing aquaporin-2 insertion so free water is excreted without sodium loss, an effect called aquaresis.",
+      "sideEffects": "Thirst, dry mouth, polyuria, hepatotoxicity, overly rapid sodium correction with osmotic demyelination risk",
+      "contraindications": "Hypovolemic hyponatremia, inability to sense thirst, anuria, concurrent strong CYP3A4 inhibitors; must be initiated in hospital",
+      "topicTags": [
+        "hyponatremia",
+        "SIADH",
+        "vasopressin",
+        "polycystic kidney disease"
+      ],
+      "tooltip": "Must be started in hospital because sodium can rise too fast and cause osmotic demyelination syndrome. Correction should not exceed roughly 8 mEq/L in 24 hours."
+    },
+    {
+      "id": "octreotide",
+      "name": "Octreotide",
+      "emoji": "🔇📉🩸",
+      "drugClass": "Somatostatin Analog",
+      "primaryEffect": "Broadly suppresses hormone secretion and splanchnic blood flow",
+      "treatmentUsage": "Acromegaly, carcinoid syndrome, VIPoma and other neuroendocrine tumors, acute variceal bleeding, refractory sulfonylurea-induced hypoglycemia",
+      "mechanismOfAction": "Long-acting somatostatin analog that binds somatostatin receptors 2 and 5, inhibiting release of growth hormone, insulin, glucagon, gastrin, VIP, and serotonin.",
+      "sideEffects": "Gallstones and biliary sludge, steatorrhea, abdominal cramping, hyperglycemia or hypoglycemia, bradycardia, vitamin B12 deficiency",
+      "contraindications": "Hypersensitivity; caution in diabetes and gallbladder disease",
+      "topicTags": [
+        "acromegaly",
+        "carcinoid syndrome",
+        "neuroendocrine tumor",
+        "variceal bleeding"
+      ],
+      "tooltip": "Somatostatin is the universal inhibitor, so octreotide suppresses nearly every gut and pituitary hormone. Gallstones occur in a large minority because gallbladder contraction is inhibited."
+    },
+    {
+      "id": "cabergoline",
+      "name": "Cabergoline",
+      "emoji": "🥛🚫🧠",
+      "drugClass": "Dopamine Agonist",
+      "primaryEffect": "Suppresses prolactin secretion and shrinks prolactinomas",
+      "treatmentUsage": "Prolactinoma and hyperprolactinemia (first-line), acromegaly as adjunct, Parkinson disease historically",
+      "mechanismOfAction": "Potent D2 receptor agonist on pituitary lactotrophs, mimicking the tonic dopaminergic inhibition of prolactin release and reducing tumor size.",
+      "sideEffects": "Nausea, orthostatic hypotension, headache, cardiac valvular fibrosis at high doses, impulse control disorders, psychosis",
+      "contraindications": "Uncontrolled hypertension, cardiac valvulopathy, history of pulmonary or retroperitoneal fibrosis",
+      "topicTags": [
+        "prolactinoma",
+        "hyperprolactinemia",
+        "dopamine",
+        "pituitary"
+      ],
+      "tooltip": "Medical therapy is first-line for prolactinoma even with large tumors, because dopamine agonists shrink them dramatically. Antipsychotics, which block D2, are a common cause of drug-induced hyperprolactinemia."
+    },
+    {
+      "id": "alendronate",
+      "name": "Alendronate",
+      "emoji": "🦴🚫🍽️",
+      "drugClass": "Bisphosphonate",
+      "primaryEffect": "Inhibits bone resorption and increases bone density",
+      "treatmentUsage": "Osteoporosis in postmenopausal women and men, glucocorticoid-induced osteoporosis, Paget disease of bone, hypercalcemia of malignancy",
+      "mechanismOfAction": "Binds hydroxyapatite and is taken up by osteoclasts, where it inhibits farnesyl pyrophosphate synthase in the mevalonate pathway, disrupting the cytoskeleton and inducing osteoclast apoptosis.",
+      "sideEffects": "Esophagitis and esophageal ulceration, osteonecrosis of the jaw, atypical femoral fractures, hypocalcemia, musculoskeletal pain",
+      "contraindications": "Esophageal stricture or achalasia, inability to sit upright for 30 minutes, hypocalcemia, creatinine clearance below 30 mL/min",
+      "topicTags": [
+        "osteoporosis",
+        "bone",
+        "Paget disease",
+        "hypercalcemia"
+      ],
+      "tooltip": "Take on an empty stomach with a full glass of water and remain upright for 30 minutes to prevent esophagitis. Correct vitamin D and calcium first, since bisphosphonates can cause hypocalcemia."
+    },
+    {
+      "id": "denosumab",
+      "name": "Denosumab",
+      "emoji": "🦴🎯🅺",
+      "drugClass": "RANKL Inhibitor",
+      "primaryEffect": "Potently suppresses osteoclast formation and activity",
+      "treatmentUsage": "Osteoporosis at high fracture risk, bone metastases and skeletal-related events, giant cell tumor of bone, hypercalcemia of malignancy",
+      "mechanismOfAction": "Monoclonal antibody against RANK ligand that prevents RANKL from binding RANK on osteoclast precursors, mimicking endogenous osteoprotegerin and blocking osteoclast differentiation.",
+      "sideEffects": "Hypocalcemia, osteonecrosis of the jaw, atypical femoral fracture, infection risk, severe rebound vertebral fractures if stopped without transition therapy",
+      "contraindications": "Hypocalcemia (must be corrected first), pregnancy; never discontinue without transitioning to a bisphosphonate",
+      "topicTags": [
+        "osteoporosis",
+        "bone",
+        "RANKL",
+        "biologic therapy"
+      ],
+      "tooltip": "Safe in renal impairment unlike bisphosphonates, but stopping it causes a rebound in bone turnover with multiple vertebral fractures, so a bisphosphonate must follow."
+    },
+    {
+      "id": "teriparatide",
+      "name": "Teriparatide",
+      "emoji": "🦴📈⏱️",
+      "drugClass": "PTH Analog (Anabolic)",
+      "primaryEffect": "Stimulates new bone formation rather than blocking resorption",
+      "treatmentUsage": "Severe osteoporosis with prior fragility fracture, glucocorticoid-induced osteoporosis, failure of antiresorptive therapy",
+      "mechanismOfAction": "Recombinant PTH fragment 1-34 given as an intermittent daily injection, which preferentially stimulates osteoblast activity, whereas continuous PTH elevation stimulates resorption.",
+      "sideEffects": "Hypercalcemia, orthostatic hypotension after injection, nausea, leg cramps, osteosarcoma in rats, injection site reactions",
+      "contraindications": "Prior skeletal radiation, Paget disease, unexplained alkaline phosphatase elevation, hypercalcemia, open epiphyses",
+      "topicTags": [
+        "osteoporosis",
+        "bone",
+        "parathyroid hormone",
+        "anabolic"
+      ],
+      "tooltip": "The paradox is central: pulsatile PTH builds bone while continuous PTH (as in hyperparathyroidism) destroys it. Treatment is limited to two years and must be followed by an antiresorptive."
+    },
+    {
+      "id": "cinacalcet",
+      "name": "Cinacalcet",
+      "emoji": "🦴🧲📉",
+      "drugClass": "Calcimimetic",
+      "primaryEffect": "Lowers parathyroid hormone and serum calcium",
+      "treatmentUsage": "Secondary hyperparathyroidism in dialysis patients, parathyroid carcinoma, primary hyperparathyroidism when surgery is not possible",
+      "mechanismOfAction": "Allosterically increases the sensitivity of the parathyroid calcium-sensing receptor to extracellular calcium, so the gland perceives higher calcium and suppresses PTH secretion.",
+      "sideEffects": "Hypocalcemia with paresthesias and tetany, nausea and vomiting, QT prolongation from hypocalcemia, adynamic bone disease",
+      "contraindications": "Serum calcium below the normal range; requires close calcium monitoring",
+      "topicTags": [
+        "hyperparathyroidism",
+        "calcium",
+        "bone",
+        "dialysis"
+      ],
+      "tooltip": "It tricks the parathyroid into thinking calcium is high. Contrast with familial hypocalciuric hypercalcemia, where an inactivating calcium-sensing receptor mutation does the opposite."
+    },
+    {
+      "id": "calcitriol",
+      "name": "Calcitriol",
+      "emoji": "☀️🦴🧬",
+      "drugClass": "Active Vitamin D",
+      "primaryEffect": "Increases intestinal calcium and phosphate absorption",
+      "treatmentUsage": "Chronic kidney disease-mineral bone disorder, hypoparathyroidism, vitamin D-dependent rickets, refractory hypocalcemia",
+      "mechanismOfAction": "The fully activated 1,25-dihydroxyvitamin D binds the nuclear vitamin D receptor, increasing transcription of intestinal calcium transport proteins and suppressing PTH gene expression.",
+      "sideEffects": "Hypercalcemia, hyperphosphatemia, nephrocalcinosis, vascular calcification, nausea and constipation",
+      "contraindications": "Hypercalcemia, vitamin D toxicity, hyperphosphatemia without a phosphate binder",
+      "topicTags": [
+        "chronic kidney disease",
+        "hypoparathyroidism",
+        "vitamin D",
+        "calcium"
+      ],
+      "tooltip": "Used when the kidney cannot perform 1-alpha-hydroxylation, as in chronic kidney disease or 1-alpha-hydroxylase deficiency. Plain cholecalciferol will not work in those settings."
+    },
+    {
+      "id": "estradiol",
+      "name": "Estradiol",
+      "emoji": "🚺🌸🦴",
+      "drugClass": "Estrogen",
+      "primaryEffect": "Replaces estrogen and relieves menopausal symptoms",
+      "treatmentUsage": "Vasomotor symptoms of menopause, genitourinary syndrome of menopause, hypoestrogenism, primary ovarian insufficiency, gender-affirming therapy",
+      "mechanismOfAction": "Binds nuclear estrogen receptors alpha and beta, altering gene transcription in reproductive tissue, bone, vasculature, and the central thermoregulatory center.",
+      "sideEffects": "Venous thromboembolism, stroke, endometrial hyperplasia and carcinoma if unopposed, breast tenderness, gallbladder disease, hypertriglyceridemia",
+      "contraindications": "History of estrogen-dependent cancer, unexplained vaginal bleeding, venous thromboembolism, active liver disease, smokers over 35",
+      "topicTags": [
+        "menopause",
+        "hormone replacement",
+        "estrogen",
+        "osteoporosis"
+      ],
+      "tooltip": "Unopposed estrogen causes endometrial carcinoma, so a progestin must be added in any woman with a uterus. Thromboembolic risk is the main safety limitation."
+    },
+    {
+      "id": "raloxifene",
+      "name": "Raloxifene",
+      "emoji": "🚺⚖️🦴",
+      "drugClass": "Selective Estrogen Receptor Modulator",
+      "primaryEffect": "Estrogen agonist in bone and antagonist in breast",
+      "treatmentUsage": "Postmenopausal osteoporosis, breast cancer risk reduction in high-risk women",
+      "mechanismOfAction": "Binds estrogen receptors and recruits different coactivators or corepressors depending on tissue, producing agonism in bone and antagonism in breast and uterus.",
+      "sideEffects": "Hot flashes, leg cramps, venous thromboembolism, fatal stroke in women at cardiovascular risk",
+      "contraindications": "History of venous thromboembolism, pregnancy, prolonged immobilization",
+      "topicTags": [
+        "osteoporosis",
+        "breast cancer prevention",
+        "estrogen",
+        "SERM"
+      ],
+      "tooltip": "Contrast the SERMs: raloxifene is antagonist in both breast and uterus, while tamoxifen is antagonist in breast but agonist in uterus and therefore raises endometrial cancer risk."
+    },
+    {
+      "id": "testosterone",
+      "name": "Testosterone",
+      "emoji": "🚹💪🩸",
+      "drugClass": "Androgen",
+      "primaryEffect": "Restores androgenic and anabolic effects",
+      "treatmentUsage": "Male hypogonadism, delayed puberty, gender-affirming therapy",
+      "mechanismOfAction": "Binds the androgen receptor directly and after conversion to dihydrotestosterone by 5-alpha-reductase; it is also aromatized to estradiol in peripheral tissue.",
+      "sideEffects": "Polycythemia, acne, suppression of spermatogenesis and testicular atrophy, gynecomastia from aromatization, sleep apnea, prostate growth, dyslipidemia",
+      "contraindications": "Prostate or breast cancer, desire for fertility, untreated severe sleep apnea, erythrocytosis, pregnancy exposure through skin contact",
+      "topicTags": [
+        "hypogonadism",
+        "androgen",
+        "hormone replacement"
+      ],
+      "tooltip": "Exogenous testosterone suppresses LH and FSH, which shrinks the testes and stops sperm production — the key counseling point for men who want children. Monitor hematocrit and PSA."
+    },
+    {
+      "id": "finasteride",
+      "name": "Finasteride",
+      "emoji": "🚹💇5️⃣",
+      "drugClass": "5-Alpha-Reductase Inhibitor",
+      "primaryEffect": "Reduces dihydrotestosterone levels",
+      "treatmentUsage": "Benign prostatic hyperplasia, androgenetic alopecia",
+      "mechanismOfAction": "Inhibits 5-alpha-reductase type 2, blocking conversion of testosterone to the far more potent dihydrotestosterone that drives prostate growth and follicular miniaturization.",
+      "sideEffects": "Decreased libido, erectile dysfunction, gynecomastia, decreased ejaculate volume, reduced PSA by about half, depression",
+      "contraindications": "Pregnancy and women of childbearing potential because of male fetal genital abnormalities; handling crushed tablets",
+      "topicTags": [
+        "benign prostatic hyperplasia",
+        "alopecia",
+        "androgen"
+      ],
+      "tooltip": "It halves PSA, so PSA values must be doubled when screening men on finasteride. Prostate shrinkage takes six months, unlike alpha-blockers which relieve symptoms within days."
+    },
+    {
+      "id": "clomiphene",
+      "name": "Clomiphene",
+      "emoji": "🚺🥚📈",
+      "drugClass": "Selective Estrogen Receptor Modulator",
+      "primaryEffect": "Induces ovulation by increasing gonadotropin release",
+      "treatmentUsage": "Ovulation induction in anovulatory infertility, especially polycystic ovary syndrome",
+      "mechanismOfAction": "Antagonizes hypothalamic estrogen receptors, blocking negative feedback so GnRH pulse frequency rises, increasing FSH and LH and stimulating follicular development.",
+      "sideEffects": "Hot flashes, ovarian hyperstimulation syndrome, multiple gestation, visual disturbances, ovarian cysts, mood changes",
+      "contraindications": "Pregnancy, ovarian cysts not from polycystic ovaries, liver disease, undiagnosed abnormal uterine bleeding",
+      "topicTags": [
+        "infertility",
+        "PCOS",
+        "ovulation induction",
+        "SERM"
+      ],
+      "tooltip": "It works by fooling the hypothalamus into perceiving low estrogen, which raises FSH. Letrozole has largely surpassed it in PCOS with higher live birth rates."
+    },
+    {
+      "id": "leuprolide",
+      "name": "Leuprolide",
+      "emoji": "🔄⬆️⬇️",
+      "drugClass": "GnRH Agonist",
+      "primaryEffect": "Initially stimulates then profoundly suppresses gonadotropins",
+      "treatmentUsage": "Prostate cancer, endometriosis, uterine fibroids, central precocious puberty, gender-affirming puberty suppression",
+      "mechanismOfAction": "Continuous GnRH receptor stimulation downregulates and desensitizes pituitary gonadotrophs after an initial flare, shutting off LH, FSH, and sex hormone production.",
+      "sideEffects": "Initial tumor flare with worsening bone pain or urinary obstruction, hot flashes, decreased bone density, decreased libido, mood changes",
+      "contraindications": "Pregnancy, undiagnosed vaginal bleeding; requires antiandrogen coverage during the initial flare in prostate cancer",
+      "topicTags": [
+        "prostate cancer",
+        "endometriosis",
+        "precocious puberty",
+        "GnRH"
+      ],
+      "tooltip": "Pulsatile GnRH stimulates while continuous GnRH suppresses — that pharmacologic principle is the heart of the exam question. Cover the initial testosterone flare with an antiandrogen."
+    },
+    {
+      "id": "somatropin",
+      "name": "Somatropin",
+      "emoji": "📏📈👶",
+      "drugClass": "Growth Hormone",
+      "primaryEffect": "Stimulates linear growth and anabolic metabolism",
+      "treatmentUsage": "Growth hormone deficiency in children and adults, Turner syndrome, Prader-Willi syndrome, chronic kidney disease-related growth failure, short bowel syndrome",
+      "mechanismOfAction": "Recombinant human growth hormone that binds the GH receptor to stimulate hepatic IGF-1 production, which drives epiphyseal growth plate chondrocyte proliferation.",
+      "sideEffects": "Insulin resistance and hyperglycemia, intracranial hypertension, slipped capital femoral epiphysis, scoliosis progression, edema, arthralgias",
+      "contraindications": "Closed epiphyses when used for height, active malignancy, acute critical illness, severe obesity in Prader-Willi with sleep apnea, proliferative retinopathy",
+      "topicTags": [
+        "growth hormone deficiency",
+        "pituitary",
+        "short stature"
+      ],
+      "tooltip": "Growth hormone acts largely through hepatic IGF-1, so IGF-1 is used to monitor therapy. In Laron syndrome the receptor is defective, so GH is high, IGF-1 is low, and only IGF-1 therapy works."
+    },
+    {
+      "id": "propranolol-thyroid",
+      "name": "Propranolol (Thyroid Storm)",
+      "emoji": "🦋🛡️🌡️",
+      "drugClass": "Beta-Blocker (Nonselective)",
+      "primaryEffect": "Rapidly controls the adrenergic manifestations of thyrotoxicosis",
+      "treatmentUsage": "Thyroid storm, symptomatic hyperthyroidism, thyrotoxic periodic paralysis",
+      "mechanismOfAction": "Blocks beta-1 and beta-2 adrenergic receptors to control tachycardia and tremor, and at high doses inhibits peripheral 5-prime-deiodinase conversion of T4 to T3.",
+      "sideEffects": "Bradycardia, hypotension, bronchospasm, fatigue, masking of hypoglycemia, heart failure exacerbation",
+      "contraindications": "Asthma, decompensated heart failure, high-grade AV block, severe bradycardia",
+      "topicTags": [
+        "hyperthyroidism",
+        "thyroid storm",
+        "beta-blocker"
+      ],
+      "tooltip": "The first drug given in thyroid storm because symptoms are largely adrenergic. Its inhibition of peripheral T4 to T3 conversion at high doses is a bonus that other beta-blockers lack."
+    },
+    {
+      "id": "sevelamer",
+      "name": "Sevelamer",
+      "emoji": "🦴🧲🍽️",
+      "drugClass": "Phosphate Binder",
+      "primaryEffect": "Reduces intestinal phosphate absorption",
+      "treatmentUsage": "Hyperphosphatemia in chronic kidney disease and dialysis patients",
+      "mechanismOfAction": "A nonabsorbed polymer that binds dietary phosphate in the gut lumen, forming an insoluble complex excreted in stool without delivering calcium or aluminum.",
+      "sideEffects": "Nausea, constipation, bloating, metabolic acidosis, bowel obstruction rarely, reduced absorption of fat-soluble vitamins",
+      "contraindications": "Bowel obstruction, hypophosphatemia, dysphagia or severe gastrointestinal motility disorders",
+      "topicTags": [
+        "chronic kidney disease",
+        "hyperphosphatemia",
+        "bone",
+        "dialysis"
+      ],
+      "tooltip": "Preferred over calcium-based binders because it avoids the calcium load that drives vascular calcification. It must be taken with meals to bind dietary phosphate."
+    },
+    {
+      "id": "mifepristone",
+      "name": "Mifepristone",
+      "emoji": "🚫🧪🤰",
+      "drugClass": "Glucocorticoid and Progesterone Receptor Antagonist",
+      "primaryEffect": "Blocks cortisol and progesterone receptor signaling",
+      "treatmentUsage": "Hyperglycemia associated with Cushing syndrome; medical termination of pregnancy with misoprostol",
+      "mechanismOfAction": "Competitively antagonizes the glucocorticoid receptor, blocking cortisol action at the tissue level, and antagonizes progesterone receptors causing decidual breakdown.",
+      "sideEffects": "Adrenal insufficiency that cannot be detected by cortisol levels, hypokalemia, endometrial thickening, vaginal bleeding, hypertension",
+      "contraindications": "Pregnancy when used for Cushing syndrome, adrenal insufficiency, concurrent long-term corticosteroid therapy, ectopic pregnancy",
+      "topicTags": [
+        "Cushing syndrome",
+        "adrenal",
+        "progesterone",
+        "steroid receptor"
+      ],
+      "tooltip": "Because it blocks the receptor rather than lowering cortisol, cortisol levels rise and cannot be used to monitor therapy — adrenal insufficiency must be recognized clinically."
+    },
+    {
+      "id": "acarbose",
+      "name": "Acarbose",
+      "emoji": "🍬🍞✂️",
+      "drugClass": "Alpha-Glucosidase Inhibitor",
+      "primaryEffect": "Blunts the postprandial glucose spike",
+      "treatmentUsage": "Type 2 diabetes with predominant postprandial hyperglycemia; prediabetes",
+      "mechanismOfAction": "Competitively inhibits intestinal brush border alpha-glucosidases, delaying hydrolysis of complex carbohydrates into absorbable monosaccharides.",
+      "sideEffects": "Flatulence, bloating, diarrhea from carbohydrate fermentation in the colon, elevated transaminases",
+      "contraindications": "Inflammatory bowel disease, intestinal obstruction, cirrhosis, severe renal impairment",
+      "topicTags": [
+        "diabetes",
+        "type 2 diabetes",
+        "carbohydrate absorption"
+      ],
+      "tooltip": "A key testable point: hypoglycemia occurring while on acarbose must be treated with pure glucose, not sucrose or complex carbohydrates, because their breakdown is blocked."
+    },
+    {
+      "id": "bromocriptine",
+      "name": "Bromocriptine",
+      "emoji": "🥛🌾🧠",
+      "drugClass": "Dopamine Agonist",
+      "primaryEffect": "Suppresses prolactin and growth hormone secretion",
+      "treatmentUsage": "Prolactinoma, acromegaly, type 2 diabetes, Parkinson disease, neuroleptic malignant syndrome",
+      "mechanismOfAction": "Ergot-derived D2 receptor agonist that inhibits pituitary prolactin release and paradoxically suppresses growth hormone in acromegaly.",
+      "sideEffects": "Nausea, orthostatic hypotension, headache, nasal congestion, psychosis, erythromelalgia, retroperitoneal and valvular fibrosis",
+      "contraindications": "Uncontrolled hypertension, coronary artery disease, cardiac valvulopathy, concurrent ergot alkaloids",
+      "topicTags": [
+        "prolactinoma",
+        "acromegaly",
+        "dopamine",
+        "pituitary"
+      ],
+      "tooltip": "Largely replaced by cabergoline, which is better tolerated and dosed twice weekly. As an ergot derivative it carries fibrotic complications including cardiac valve disease."
+    },
+    {
+      "id": "vasopressin",
+      "name": "Vasopressin",
+      "emoji": "💧🩸1️⃣",
+      "drugClass": "Vasopressin Analog",
+      "primaryEffect": "Causes vasoconstriction and water retention",
+      "treatmentUsage": "Septic and vasodilatory shock as a catecholamine-sparing vasopressor, cardiac arrest, diabetes insipidus, variceal hemorrhage",
+      "mechanismOfAction": "Agonizes V1 receptors on vascular smooth muscle to cause vasoconstriction through the phospholipase C pathway, and V2 receptors in the collecting duct to insert aquaporin-2 channels.",
+      "sideEffects": "Digital and mesenteric ischemia, hyponatremia, myocardial ischemia, skin necrosis with extravasation, bradycardia",
+      "contraindications": "Coronary artery disease with caution, peripheral vascular disease, hyponatremia",
+      "topicTags": [
+        "shock",
+        "vasopressor",
+        "diabetes insipidus",
+        "vasopressin"
+      ],
+      "tooltip": "In septic shock it is added to norepinephrine because vasopressin levels are relatively deficient and its receptor pathway remains responsive when adrenergic receptors are downregulated by acidosis."
+    }
+  ]
+}

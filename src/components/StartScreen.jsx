@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react'
 import { QUIZ_ATTRS } from '../utils/distractors'
-import drugClassesData from '../data/drugClasses.json'
-import topicTagsData from '../data/topicTags.json'
+import { buildClassColorMap, listClasses, listTags } from '../utils/classColors'
 
 const FILTER_MODES = [
   { id: 'all',   label: 'All Drugs' },
@@ -9,12 +8,9 @@ const FILTER_MODES = [
   { id: 'tag',   label: 'By Topic'  },
 ]
 
-function classBg(name) {
-  const dc = drugClassesData.find(d => d.name === name)
-  return dc ? `bg-${dc.color}-${dc.shade}` : 'bg-gray-400'
-}
+export default function StartScreen({ topic, personalBests, onStart, onBack }) {
+  const allDrugs = topic.drugs
 
-export default function StartScreen({ allDrugs, personalBests, onStart }) {
   const [filterMode,      setFilterMode]      = useState('all')
   const [selectedClasses, setSelectedClasses] = useState(new Set())
   const [selectedTags,    setSelectedTags]    = useState(new Set())
@@ -22,14 +18,20 @@ export default function StartScreen({ allDrugs, personalBests, onStart }) {
   const [answerAttr,      setAnswerAttr]      = useState('drugClass')
   const [startError,      setStartError]      = useState('')
 
-  const availableClasses = useMemo(() => {
-    const present = new Set(allDrugs.map(d => d.drugClass))
-    return drugClassesData.filter(dc => present.has(dc.name))
+  const colorMap         = useMemo(() => buildClassColorMap(allDrugs), [allDrugs])
+  const availableClasses = useMemo(() => listClasses(allDrugs), [allDrugs])
+  const availableTags    = useMemo(() => listTags(allDrugs),    [allDrugs])
+
+  const classCounts = useMemo(() => {
+    const c = {}
+    allDrugs.forEach(d => { if (d.drugClass) c[d.drugClass] = (c[d.drugClass] || 0) + 1 })
+    return c
   }, [allDrugs])
 
-  const availableTags = useMemo(() => {
-    const present = new Set(allDrugs.flatMap(d => d.topicTags || []))
-    return topicTagsData.filter(t => present.has(t))
+  const tagCounts = useMemo(() => {
+    const c = {}
+    allDrugs.forEach(d => (d.topicTags || []).forEach(t => { c[t] = (c[t] || 0) + 1 }))
+    return c
   }, [allDrugs])
 
   const filteredDrugs = useMemo(() => {
@@ -51,10 +53,11 @@ export default function StartScreen({ allDrugs, personalBests, onStart }) {
   const topScores = useMemo(() => {
     if (!personalBests) return []
     return Object.entries(personalBests)
+      .filter(([key]) => key.startsWith(topic.id + '_'))
       .map(([key, val]) => ({ key, ...val }))
       .sort((a, b) => (b.bestScore / b.totalDrugs) - (a.bestScore / a.totalDrugs))
       .slice(0, 5)
-  }, [personalBests])
+  }, [personalBests, topic.id])
 
   function formatKey(key) {
     try {
@@ -81,20 +84,25 @@ export default function StartScreen({ allDrugs, personalBests, onStart }) {
       return
     }
     const filterKey =
-      filterMode === 'class' ? [...selectedClasses].join('+') || 'all'
-      : filterMode === 'tag' ? [...selectedTags].join('+') || 'all'
+      filterMode === 'class' ? [...selectedClasses].sort().join('+') || 'all'
+      : filterMode === 'tag' ? [...selectedTags].sort().join('+') || 'all'
       : 'all'
-    onStart(filteredDrugs, { questionAttr, answerAttr, topicId: 'cardiology', filter: filterKey })
+    onStart(filteredDrugs, { questionAttr, answerAttr, topicId: topic.id, filter: filterKey })
   }
 
   return (
     <div className="min-h-screen bg-amber-50 pb-16">
-      <div className="max-w-xl mx-auto px-4 pt-10">
+      <div className="max-w-xl mx-auto px-4 pt-6">
+
+        <button onClick={onBack}
+          className="text-gray-400 hover:text-gray-700 text-sm font-bold mb-4 transition-colors">
+          &larr; All subjects
+        </button>
 
         <div className="text-center mb-7">
-          <div className="text-6xl mb-2">&#x1FAC0;</div>
-          <h1 className="text-4xl font-black text-gray-900">Drug Quiz</h1>
-          <p className="text-amber-600 font-bold mt-1">USMLE Step 1 &middot; Cardiology</p>
+          <div className="text-6xl mb-2">{topic.icon}</div>
+          <h1 className="text-4xl font-black text-gray-900">{topic.label}</h1>
+          <p className="text-amber-600 font-bold mt-1">{allDrugs.length} drugs &middot; USMLE Step 1</p>
         </div>
 
         {topScores.length > 0 && (
@@ -128,16 +136,23 @@ export default function StartScreen({ allDrugs, personalBests, onStart }) {
             ))}
           </div>
 
+          {(filterMode === 'class' || filterMode === 'tag') && (
+            <p className="text-gray-400 text-xs font-semibold mb-2">
+              Tap to select as many as you like &middot; need 3+ drugs to play
+            </p>
+          )}
+
           {filterMode === 'class' && (
-            <div className="flex flex-wrap gap-2">
-              {availableClasses.map(dc => {
-                const sel = selectedClasses.has(dc.name)
+            <div className="flex flex-wrap gap-2 max-h-64 overflow-y-auto">
+              {availableClasses.map(name => {
+                const sel = selectedClasses.has(name)
                 return (
-                  <button key={dc.name} onClick={() => toggleClass(dc.name)}
+                  <button key={name} onClick={() => toggleClass(name)}
                     className={`text-xs px-3 py-1.5 rounded-full font-black transition-all border-2 ${
-                      sel ? `${classBg(dc.name)} text-white border-transparent scale-105`
+                      sel ? `${colorMap[name]} text-white border-transparent scale-105`
                           : 'bg-white text-gray-600 border-gray-200 hover:border-amber-300'}`}>
-                    {dc.name}
+                    {name}
+                    <span className={sel ? 'text-white/70 ml-1' : 'text-gray-400 ml-1'}>{classCounts[name]}</span>
                   </button>
                 )
               })}
@@ -145,7 +160,7 @@ export default function StartScreen({ allDrugs, personalBests, onStart }) {
           )}
 
           {filterMode === 'tag' && (
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 max-h-64 overflow-y-auto">
               {availableTags.map(tag => {
                 const sel = selectedTags.has(tag)
                 return (
@@ -154,6 +169,7 @@ export default function StartScreen({ allDrugs, personalBests, onStart }) {
                       sel ? 'bg-amber-400 text-white border-transparent scale-105'
                           : 'bg-white text-gray-600 border-gray-200 hover:border-amber-300'}`}>
                     {tag}
+                    <span className={sel ? 'text-white/70 ml-1' : 'text-gray-400 ml-1'}>{tagCounts[tag]}</span>
                   </button>
                 )
               })}
@@ -215,14 +231,6 @@ export default function StartScreen({ allDrugs, personalBests, onStart }) {
           className="w-full bg-amber-400 hover:bg-amber-500 active:bg-amber-600 text-white font-black text-xl py-5 rounded-3xl transition-colors card-shadow-lg">
           Play &rarr;
         </button>
-
-        <p className="text-center text-gray-400 text-xs mt-4 font-semibold">
-          Inspired by{' '}
-          <a href="https://apps.apple.com/us/app/amino-acid-quiz/id1301129866"
-            target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:underline">
-            Amino Acid Quiz
-          </a>
-        </p>
       </div>
     </div>
   )

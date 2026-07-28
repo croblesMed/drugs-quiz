@@ -1,11 +1,7 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import TooltipModal from './TooltipModal'
-import drugClasses from '../data/drugClasses.json'
-
-const CLASS_COLORS = {}
-drugClasses.forEach(({ name, color, shade }) => { CLASS_COLORS[name] = `bg-${color}-${shade}` })
-function getClassColor(dc) { return CLASS_COLORS[dc] || 'bg-gray-400' }
+import { buildClassColorMap, listClasses } from '../utils/classColors'
 
 function Confetti() {
   const pieces = Array.from({ length: 48 }, (_, i) => ({
@@ -26,9 +22,14 @@ function Confetti() {
   )
 }
 
-export default function ResultsScreen({ results, score, personalBest, newRecord, onPlayAgain, onHome }) {
+export default function ResultsScreen({ results, score, personalBest, newRecord, onPlayAgain, onHome, onAllTopics }) {
   const [tooltipDrug,    setTooltipDrug]    = useState(null)
   const [showMissedOnly, setShowMissedOnly] = useState(false)
+
+  const drugs    = useMemo(() => results.map(r => r.drug), [results])
+  const colorMap = useMemo(() => buildClassColorMap(drugs), [drugs])
+  const classes  = useMemo(() => listClasses(drugs), [drugs])
+  const color    = dc => colorMap[dc] || 'bg-gray-400'
 
   const total   = results.length
   const wrong   = results.filter(r => !r.correct).length
@@ -67,7 +68,7 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
           )}
         </motion.div>
 
-        <div className="grid grid-cols-2 gap-3 mb-7">
+        <div className="grid grid-cols-2 gap-3 mb-2">
           <button onClick={onPlayAgain}
             className="bg-amber-400 hover:bg-amber-500 text-white font-black py-4 rounded-2xl transition-colors card-shadow">
             Play Again
@@ -77,6 +78,10 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
             Change Settings
           </button>
         </div>
+        <button onClick={onAllTopics}
+          className="w-full text-gray-400 hover:text-gray-700 text-sm font-bold py-2 mb-5 transition-colors">
+          &larr; All subjects
+        </button>
 
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-gray-900 font-black text-lg">
@@ -100,7 +105,7 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
               transition={{ delay: i * 0.02, duration: 0.18 }}
               onClick={() => setTooltipDrug(drug)}
               className={`relative rounded-2xl p-3 text-left border-2 card-shadow transition-transform hover:scale-105
-                ${getClassColor(drug.drugClass)}
+                ${color(drug.drugClass)}
                 ${correct ? 'border-white/30' : 'border-red-400/70'}`}>
               <div className={`absolute top-2 right-2 w-6 h-6 rounded-full flex items-center justify-center text-xs font-black ${
                 correct ? 'bg-green-400 text-green-900' : 'bg-red-400 text-red-900'}`}>
@@ -114,13 +119,11 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
         </div>
 
         <div className="mt-5 flex flex-wrap gap-1.5">
-          {drugClasses
-            .filter(dc => results.some(r => r.drug.drugClass === dc.name))
-            .map(dc => (
-              <span key={dc.name} className={`text-xs px-2 py-1 rounded-full text-white font-bold ${getClassColor(dc.name)}`}>
-                {dc.name}
-              </span>
-            ))}
+          {classes.map(name => (
+            <span key={name} className={`text-xs px-2 py-1 rounded-full text-white font-bold ${color(name)}`}>
+              {name}
+            </span>
+          ))}
         </div>
       </div>
 

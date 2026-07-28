@@ -1,0 +1,645 @@
+{
+  "id": "gastrointestinal",
+  "label": "Gastrointestinal",
+  "icon": "🍽️",
+  "blurb": "Acid suppression, antiemetics, IBD biologics, laxatives, liver disease",
+  "drugs": [
+    {
+      "id": "omeprazole",
+      "name": "Omeprazole",
+      "emoji": "🍽️🔌🛑",
+      "drugClass": "Proton Pump Inhibitor",
+      "primaryEffect": "Profound and prolonged suppression of gastric acid secretion",
+      "treatmentUsage": "Gastroesophageal reflux disease, peptic ulcer disease, Helicobacter pylori eradication regimens, Zollinger-Ellison syndrome, stress ulcer prophylaxis",
+      "mechanismOfAction": "A prodrug activated in the acidic secretory canaliculus that irreversibly binds the H+/K+ ATPase proton pump on parietal cells, blocking the final common step of acid secretion.",
+      "sideEffects": "Hypomagnesemia, vitamin B12 and iron malabsorption, increased Clostridioides difficile and pneumonia risk, acute interstitial nephritis, fracture risk, rebound acid hypersecretion",
+      "contraindications": "Concurrent clopidogrel with omeprazole specifically because CYP2C19 inhibition blocks clopidogrel activation; hypersensitivity",
+      "topicTags": [
+        "GERD",
+        "peptic ulcer disease",
+        "acid suppression",
+        "H pylori"
+      ],
+      "tooltip": "Irreversible pump inhibition means acid suppression outlasts the drug's short half-life. Take 30 to 60 minutes before a meal so pumps are active when drug levels peak. Pantoprazole is preferred with clopidogrel."
+    },
+    {
+      "id": "famotidine",
+      "name": "Famotidine",
+      "emoji": "🍽️2️⃣🛡️",
+      "drugClass": "H2 Receptor Antagonist",
+      "primaryEffect": "Moderate reduction of gastric acid secretion",
+      "treatmentUsage": "Gastroesophageal reflux disease, peptic ulcer disease, stress ulcer prophylaxis, adjunct in anaphylaxis and mastocytosis",
+      "mechanismOfAction": "Competitively blocks histamine H2 receptors on parietal cells, reducing histamine-stimulated cAMP production and therefore acid secretion.",
+      "sideEffects": "Headache, dizziness, confusion in the elderly or in renal impairment, thrombocytopenia, tachyphylaxis with continuous use",
+      "contraindications": "Hypersensitivity; requires renal dose adjustment",
+      "topicTags": [
+        "GERD",
+        "peptic ulcer disease",
+        "acid suppression",
+        "histamine"
+      ],
+      "tooltip": "Faster onset than PPIs but weaker and prone to tachyphylaxis within weeks. Famotidine is preferred over cimetidine because cimetidine inhibits CYP450 and causes gynecomastia by blocking androgen receptors."
+    },
+    {
+      "id": "sucralfate",
+      "name": "Sucralfate",
+      "emoji": "🍽️🩹🧱",
+      "drugClass": "Mucosal Protectant",
+      "primaryEffect": "Forms a physical protective barrier over ulcerated mucosa",
+      "treatmentUsage": "Duodenal ulcer healing, stress ulcer prophylaxis, radiation proctitis, oral mucositis",
+      "mechanismOfAction": "In acid, the aluminum sucrose sulfate polymerizes into a viscous paste that binds selectively to exposed proteins at ulcer craters, forming a protective coating.",
+      "sideEffects": "Constipation, aluminum accumulation in renal failure, impaired absorption of many drugs including fluoroquinolones, levothyroxine, and phenytoin",
+      "contraindications": "Severe renal impairment because of aluminum toxicity; requires an acidic environment so it should not be combined with PPIs at the same time",
+      "topicTags": [
+        "peptic ulcer disease",
+        "mucosal protection"
+      ],
+      "tooltip": "It requires acid to activate, so giving it with a proton pump inhibitor defeats the purpose. Give other medications two hours apart because it binds them in the gut."
+    },
+    {
+      "id": "misoprostol",
+      "name": "Misoprostol",
+      "emoji": "🍽️🧬🤰",
+      "drugClass": "Prostaglandin E1 Analog",
+      "primaryEffect": "Restores mucosal protection and stimulates uterine contraction",
+      "treatmentUsage": "Prevention of NSAID-induced gastric ulcers; cervical ripening, labor induction, medical abortion with mifepristone, postpartum hemorrhage",
+      "mechanismOfAction": "Agonizes prostaglandin EP receptors to increase gastric mucus and bicarbonate secretion and decrease acid production; in the uterus it stimulates myometrial contraction and cervical softening.",
+      "sideEffects": "Diarrhea and abdominal cramping, uterine cramping and bleeding, fever and chills with obstetric use",
+      "contraindications": "Pregnancy when used for gastric protection (boxed warning), prior cesarean delivery with labor induction, inflammatory bowel disease",
+      "topicTags": [
+        "peptic ulcer disease",
+        "NSAID",
+        "obstetrics",
+        "prostaglandin"
+      ],
+      "tooltip": "NSAIDs cause ulcers by blocking protective prostaglandins, and misoprostol replaces them. The uterotonic effect makes it absolutely contraindicated in pregnancy for gastric indications."
+    },
+    {
+      "id": "ondansetron",
+      "name": "Ondansetron",
+      "emoji": "🤢3️⃣🛑",
+      "drugClass": "5-HT3 Receptor Antagonist",
+      "primaryEffect": "Prevents and treats nausea and vomiting",
+      "treatmentUsage": "Chemotherapy-induced nausea and vomiting, postoperative nausea, gastroenteritis, hyperemesis gravidarum",
+      "mechanismOfAction": "Blocks 5-HT3 serotonin receptors on vagal afferents in the gut and in the chemoreceptor trigger zone, interrupting the serotonin-mediated emetic reflex.",
+      "sideEffects": "Headache, constipation, QT prolongation, serotonin syndrome with other serotonergic drugs, elevated transaminases",
+      "contraindications": "Congenital long QT syndrome, concurrent apomorphine, known hypersensitivity",
+      "topicTags": [
+        "nausea and vomiting",
+        "chemotherapy",
+        "serotonin",
+        "antiemetic"
+      ],
+      "tooltip": "The most effective antiemetic for chemotherapy-induced nausea because chemotherapy releases serotonin from gut enterochromaffin cells. Constipation and QT prolongation are the two effects to remember."
+    },
+    {
+      "id": "metoclopramide",
+      "name": "Metoclopramide",
+      "emoji": "🤢➡️🚶",
+      "drugClass": "Dopamine Antagonist / Prokinetic",
+      "primaryEffect": "Increases gastric motility and suppresses nausea",
+      "treatmentUsage": "Diabetic gastroparesis, refractory nausea and vomiting, migraine-associated nausea, small bowel intubation",
+      "mechanismOfAction": "Antagonizes D2 receptors in the chemoreceptor trigger zone for antiemesis and in the gut, where it also acts as a 5-HT4 agonist to increase acetylcholine release and accelerate gastric emptying.",
+      "sideEffects": "Tardive dyskinesia (boxed warning), acute dystonia, akathisia, parkinsonism, hyperprolactinemia with galactorrhea, drowsiness, diarrhea",
+      "contraindications": "Bowel obstruction or perforation, pheochromocytoma, seizure disorder, Parkinson disease, use beyond 12 weeks",
+      "topicTags": [
+        "gastroparesis",
+        "nausea and vomiting",
+        "dopamine",
+        "prokinetic"
+      ],
+      "tooltip": "The only widely available prokinetic, but the boxed warning for tardive dyskinesia limits therapy to 12 weeks. It is contraindicated in bowel obstruction because increasing motility against a blockage causes perforation."
+    },
+    {
+      "id": "prochlorperazine",
+      "name": "Prochlorperazine",
+      "emoji": "🤢🧠🎭",
+      "drugClass": "Dopamine Antagonist Antiemetic",
+      "primaryEffect": "Suppresses nausea and vomiting centrally",
+      "treatmentUsage": "Nausea and vomiting from many causes, vertigo, migraine-associated nausea",
+      "mechanismOfAction": "Phenothiazine that blocks D2 receptors in the chemoreceptor trigger zone of the area postrema with additional antihistamine and anticholinergic activity.",
+      "sideEffects": "Sedation, extrapyramidal symptoms including acute dystonia and akathisia, orthostatic hypotension, QT prolongation, neuroleptic malignant syndrome",
+      "contraindications": "Parkinson disease, dementia with Lewy bodies, severe CNS depression, children under two",
+      "topicTags": [
+        "nausea and vomiting",
+        "dopamine",
+        "antiemetic",
+        "extrapyramidal symptoms"
+      ],
+      "tooltip": "Acute dystonic reaction in a young patient given prochlorperazine for nausea is a classic emergency department vignette, treated with diphenhydramine or benztropine."
+    },
+    {
+      "id": "aprepitant",
+      "name": "Aprepitant",
+      "emoji": "🤢🅿️⏳",
+      "drugClass": "NK1 Receptor Antagonist",
+      "primaryEffect": "Prevents delayed chemotherapy-induced nausea and vomiting",
+      "treatmentUsage": "Prevention of acute and delayed nausea with highly emetogenic chemotherapy, given with a 5-HT3 antagonist and dexamethasone",
+      "mechanismOfAction": "Blocks neurokinin-1 receptors for substance P in the nucleus tractus solitarius and area postrema, the pathway responsible for the delayed phase of emesis.",
+      "sideEffects": "Fatigue, hiccups, elevated transaminases, neutropenia, CYP3A4 interactions reducing oral contraceptive efficacy",
+      "contraindications": "Concurrent pimozide, cisapride; caution with warfarin and hormonal contraception",
+      "topicTags": [
+        "nausea and vomiting",
+        "chemotherapy",
+        "substance P",
+        "antiemetic"
+      ],
+      "tooltip": "5-HT3 antagonists handle the acute phase in the first 24 hours; NK1 antagonists handle the delayed phase over days 2 to 5. That division of labor is the tested concept."
+    },
+    {
+      "id": "loperamide",
+      "name": "Loperamide",
+      "emoji": "💩🛑🔒",
+      "drugClass": "Antidiarrheal",
+      "primaryEffect": "Slows intestinal transit and reduces stool frequency",
+      "treatmentUsage": "Nonspecific and traveler's diarrhea, irritable bowel syndrome with diarrhea, high-output ileostomy",
+      "mechanismOfAction": "Peripherally restricted mu opioid receptor agonist in the myenteric plexus that decreases peristalsis and increases transit time; P-glycoprotein keeps it out of the central nervous system.",
+      "sideEffects": "Constipation, abdominal cramping, QT prolongation and torsades at very high abused doses, toxic megacolon in colitis",
+      "contraindications": "Bloody diarrhea or high fever suggesting invasive infection, Clostridioides difficile colitis, ulcerative colitis flare, children under two",
+      "topicTags": [
+        "diarrhea",
+        "opioid",
+        "irritable bowel syndrome"
+      ],
+      "tooltip": "Avoid in dysentery or C. difficile because slowing transit retains toxin and can precipitate toxic megacolon. At massive abused doses it does reach the heart and causes fatal arrhythmias."
+    },
+    {
+      "id": "polyethylene-glycol",
+      "name": "Polyethylene Glycol",
+      "emoji": "💩💧🌊",
+      "drugClass": "Osmotic Laxative",
+      "primaryEffect": "Draws water into the colon to soften stool",
+      "treatmentUsage": "Chronic constipation, fecal impaction, bowel preparation before colonoscopy",
+      "mechanismOfAction": "A nonabsorbable, osmotically active polymer that retains water in the intestinal lumen by osmosis without being fermented or altering electrolyte transport.",
+      "sideEffects": "Bloating, cramping, nausea; electrolyte disturbance mainly with large bowel prep volumes",
+      "contraindications": "Bowel obstruction, perforation, toxic megacolon, ileus",
+      "topicTags": [
+        "constipation",
+        "laxative",
+        "bowel preparation"
+      ],
+      "tooltip": "First-line for chronic constipation because it is not fermented by colonic bacteria, so it causes far less gas and bloating than lactulose while being equally effective."
+    },
+    {
+      "id": "lactulose",
+      "name": "Lactulose",
+      "emoji": "💩🧠💨",
+      "drugClass": "Osmotic Laxative",
+      "primaryEffect": "Softens stool and traps ammonia in the colon",
+      "treatmentUsage": "Hepatic encephalopathy (first-line), chronic constipation",
+      "mechanismOfAction": "A nonabsorbable disaccharide fermented by colonic bacteria into short-chain fatty acids, which acidify the lumen and convert absorbable ammonia into non-absorbable ammonium that is excreted.",
+      "sideEffects": "Flatulence, bloating, abdominal cramping, diarrhea, dehydration and hypernatremia with excessive dosing",
+      "contraindications": "Galactosemia, bowel obstruction; caution in diabetes because it contains galactose and lactose",
+      "topicTags": [
+        "hepatic encephalopathy",
+        "constipation",
+        "laxative",
+        "cirrhosis"
+      ],
+      "tooltip": "Titrate to two to three soft stools per day in hepatic encephalopathy. The ammonia trapping mechanism — NH3 becomes NH4+ in an acid colon and cannot be absorbed — is heavily tested."
+    },
+    {
+      "id": "mesalamine",
+      "name": "Mesalamine",
+      "emoji": "🔥🎯5️⃣",
+      "drugClass": "5-Aminosalicylate",
+      "primaryEffect": "Reduces colonic mucosal inflammation topically",
+      "treatmentUsage": "Induction and maintenance of remission in mild to moderate ulcerative colitis; limited role in Crohn colitis",
+      "mechanismOfAction": "Acts topically on colonic epithelium to inhibit cyclooxygenase and lipoxygenase pathways, scavenge free radicals, and reduce NF-kB-driven cytokine production.",
+      "sideEffects": "Headache, nausea, diarrhea, interstitial nephritis requiring creatinine monitoring, pancreatitis, rare paradoxical colitis exacerbation",
+      "contraindications": "Salicylate hypersensitivity, significant renal impairment",
+      "topicTags": [
+        "inflammatory bowel disease",
+        "ulcerative colitis",
+        "anti-inflammatory"
+      ],
+      "tooltip": "Works topically on the mucosa, not systemically, so the delivery formulation determines which bowel segment is treated. Sulfasalazine is the older prodrug whose sulfapyridine moiety causes most side effects."
+    },
+    {
+      "id": "infliximab",
+      "name": "Infliximab",
+      "emoji": "🔥🎯🅰️",
+      "drugClass": "TNF-Alpha Inhibitor",
+      "primaryEffect": "Induces and maintains remission in inflammatory bowel disease",
+      "treatmentUsage": "Moderate to severe Crohn disease and ulcerative colitis, fistulizing Crohn disease, rheumatoid arthritis, psoriasis, ankylosing spondylitis",
+      "mechanismOfAction": "Chimeric monoclonal antibody that binds soluble and membrane-bound tumor necrosis factor alpha, neutralizing it and inducing apoptosis of TNF-expressing inflammatory cells.",
+      "sideEffects": "Reactivation of latent tuberculosis and hepatitis B, invasive fungal infections, infusion reactions, drug-induced lupus, demyelinating disease, hepatosplenic T-cell lymphoma",
+      "contraindications": "Active infection, untreated latent tuberculosis, moderate to severe heart failure, demyelinating disease",
+      "topicTags": [
+        "inflammatory bowel disease",
+        "Crohn disease",
+        "biologic therapy",
+        "TNF"
+      ],
+      "tooltip": "Screen for latent tuberculosis and hepatitis B before the first dose — TNF is essential for granuloma maintenance, so blocking it reactivates walled-off tuberculosis."
+    },
+    {
+      "id": "vedolizumab",
+      "name": "Vedolizumab",
+      "emoji": "🔥🎯🍽️",
+      "drugClass": "Integrin Antagonist",
+      "primaryEffect": "Gut-selective suppression of intestinal inflammation",
+      "treatmentUsage": "Moderate to severe Crohn disease and ulcerative colitis",
+      "mechanismOfAction": "Monoclonal antibody against alpha-4 beta-7 integrin, blocking its interaction with MAdCAM-1 on gut endothelium so lymphocytes cannot home specifically to intestinal tissue.",
+      "sideEffects": "Nasopharyngitis, headache, arthralgia, infusion reactions, increased gastrointestinal infection risk",
+      "contraindications": "Active severe infection; hypersensitivity",
+      "topicTags": [
+        "inflammatory bowel disease",
+        "Crohn disease",
+        "biologic therapy",
+        "integrin"
+      ],
+      "tooltip": "Gut selectivity is the whole point: unlike natalizumab, which blocks alpha-4 broadly and risks PML, vedolizumab targets alpha-4 beta-7 and does not affect CNS lymphocyte trafficking."
+    },
+    {
+      "id": "ustekinumab",
+      "name": "Ustekinumab",
+      "emoji": "🔥1️⃣2️⃣",
+      "drugClass": "IL-12/23 Inhibitor",
+      "primaryEffect": "Blocks Th1 and Th17 inflammatory pathways",
+      "treatmentUsage": "Crohn disease, ulcerative colitis, plaque psoriasis, psoriatic arthritis",
+      "mechanismOfAction": "Monoclonal antibody against the shared p40 subunit of interleukin-12 and interleukin-23, blocking differentiation and activation of Th1 and Th17 lymphocytes.",
+      "sideEffects": "Nasopharyngitis, headache, injection site reactions, increased infection risk, rare reversible posterior leukoencephalopathy",
+      "contraindications": "Active serious infection, untreated latent tuberculosis, hypersensitivity",
+      "topicTags": [
+        "inflammatory bowel disease",
+        "Crohn disease",
+        "psoriasis",
+        "biologic therapy"
+      ],
+      "tooltip": "One antibody blocks two cytokines because IL-12 and IL-23 share the p40 subunit. IL-12 drives Th1 responses and IL-23 sustains Th17 — both central to Crohn disease and psoriasis."
+    },
+    {
+      "id": "azathioprine",
+      "name": "Azathioprine",
+      "emoji": "🧬🚫🩸",
+      "drugClass": "Purine Antimetabolite",
+      "primaryEffect": "Suppresses lymphocyte proliferation",
+      "treatmentUsage": "Maintenance of remission in inflammatory bowel disease, autoimmune hepatitis, transplant rejection prophylaxis, lupus nephritis, vasculitis",
+      "mechanismOfAction": "Prodrug converted to 6-mercaptopurine and then to thioguanine nucleotides that incorporate into DNA and inhibit purine synthesis, preferentially affecting rapidly dividing lymphocytes.",
+      "sideEffects": "Myelosuppression, hepatotoxicity, pancreatitis, increased lymphoma and nonmelanoma skin cancer risk, nausea, infection",
+      "contraindications": "Concurrent allopurinol or febuxostat without major dose reduction, TPMT or NUDT15 deficiency, pregnancy relative, prior azathioprine-induced pancreatitis",
+      "topicTags": [
+        "inflammatory bowel disease",
+        "immunosuppression",
+        "transplant",
+        "autoimmune"
+      ],
+      "tooltip": "Test TPMT and NUDT15 activity before starting, since deficiency causes catastrophic myelosuppression. Allopurinol blocks xanthine oxidase-mediated degradation, so the dose must be cut by 75 percent."
+    },
+    {
+      "id": "ursodiol",
+      "name": "Ursodeoxycholic Acid",
+      "emoji": "🫀💛💧",
+      "drugClass": "Bile Acid",
+      "primaryEffect": "Improves bile flow and reduces hepatotoxic bile acid concentration",
+      "treatmentUsage": "Primary biliary cholangitis (first-line), intrahepatic cholestasis of pregnancy, cholesterol gallstone dissolution, cystic fibrosis liver disease",
+      "mechanismOfAction": "A hydrophilic bile acid that displaces toxic hydrophobic bile acids from the bile acid pool, stimulates biliary bicarbonate secretion, and stabilizes hepatocyte membranes.",
+      "sideEffects": "Diarrhea, abdominal discomfort, weight gain, pruritus worsening early in therapy",
+      "contraindications": "Complete biliary obstruction, calcified or pigment gallstones, acute cholecystitis",
+      "topicTags": [
+        "primary biliary cholangitis",
+        "cholestasis",
+        "gallstones",
+        "liver"
+      ],
+      "tooltip": "First-line for primary biliary cholangitis, where it improves survival and delays transplant. It works by making the bile acid pool less hydrophobic and therefore less toxic to hepatocytes."
+    },
+    {
+      "id": "octreotide-gi",
+      "name": "Octreotide (Variceal Bleeding)",
+      "emoji": "🩸🔇🫀",
+      "drugClass": "Somatostatin Analog",
+      "primaryEffect": "Reduces splanchnic blood flow and portal pressure",
+      "treatmentUsage": "Acute esophageal variceal hemorrhage, carcinoid syndrome, high-output fistula, acromegaly",
+      "mechanismOfAction": "Inhibits release of splanchnic vasodilatory peptides including glucagon and VIP, causing splanchnic vasoconstriction that lowers portal venous inflow and variceal pressure.",
+      "sideEffects": "Hyperglycemia or hypoglycemia, bradycardia, nausea, gallstones with prolonged use, abdominal cramping",
+      "contraindications": "Hypersensitivity; caution in diabetes and gallbladder disease",
+      "topicTags": [
+        "variceal bleeding",
+        "cirrhosis",
+        "portal hypertension",
+        "somatostatin"
+      ],
+      "tooltip": "Given immediately in suspected variceal bleeding along with antibiotics and before endoscopy. It reduces portal pressure by cutting splanchnic inflow rather than by acting on the vessel directly."
+    },
+    {
+      "id": "propranolol-portal",
+      "name": "Propranolol (Portal Hypertension)",
+      "emoji": "🫀🩸🛡️",
+      "drugClass": "Beta-Blocker (Nonselective)",
+      "primaryEffect": "Lowers portal venous pressure",
+      "treatmentUsage": "Primary and secondary prophylaxis of variceal hemorrhage in cirrhosis",
+      "mechanismOfAction": "Beta-1 blockade reduces cardiac output while unopposed alpha-1 activity from beta-2 blockade causes splanchnic vasoconstriction, together reducing portal venous inflow.",
+      "sideEffects": "Bradycardia, hypotension, fatigue, bronchospasm, worsening outcomes in refractory ascites or spontaneous bacterial peritonitis",
+      "contraindications": "Asthma, decompensated heart failure, refractory ascites with hypotension, severe bradycardia",
+      "topicTags": [
+        "portal hypertension",
+        "cirrhosis",
+        "variceal bleeding",
+        "beta-blocker"
+      ],
+      "tooltip": "Nonselective beta blockade is required because the splanchnic vasoconstriction depends on blocking beta-2 receptors. Cardioselective agents like metoprolol do not work for this indication."
+    },
+    {
+      "id": "pancrelipase",
+      "name": "Pancrelipase",
+      "emoji": "🥞⚗️💊",
+      "drugClass": "Pancreatic Enzyme Replacement",
+      "primaryEffect": "Restores digestion of fat, protein, and starch",
+      "treatmentUsage": "Exocrine pancreatic insufficiency from chronic pancreatitis, cystic fibrosis, pancreatic cancer, or pancreatectomy",
+      "mechanismOfAction": "Supplies exogenous lipase, protease, and amylase in enteric-coated microspheres that dissolve in the duodenum, hydrolyzing dietary fat, protein, and carbohydrate.",
+      "sideEffects": "Abdominal pain, nausea, hyperuricemia, fibrosing colonopathy at very high doses in cystic fibrosis, perioral irritation",
+      "contraindications": "Known pork protein hypersensitivity; enteric coating is destroyed by acid so a PPI may be needed",
+      "topicTags": [
+        "pancreatic insufficiency",
+        "chronic pancreatitis",
+        "cystic fibrosis",
+        "enzyme replacement"
+      ],
+      "tooltip": "Must be taken with every meal and snack. Fat-soluble vitamins A, D, E, and K are supplemented alongside because steatorrhea causes their malabsorption."
+    },
+    {
+      "id": "orlistat",
+      "name": "Orlistat",
+      "emoji": "🍔🚫💧",
+      "drugClass": "Lipase Inhibitor",
+      "primaryEffect": "Blocks absorption of about 30 percent of dietary fat",
+      "treatmentUsage": "Chronic weight management in obesity, often with dietary modification",
+      "mechanismOfAction": "Covalently inhibits gastric and pancreatic lipases in the gut lumen, preventing hydrolysis of triglycerides into absorbable free fatty acids.",
+      "sideEffects": "Oily stools, fecal urgency and incontinence, flatus with discharge, fat-soluble vitamin deficiency, rare severe hepatotoxicity, oxalate nephropathy",
+      "contraindications": "Chronic malabsorption syndromes, cholestasis, pregnancy, calcium oxalate nephrolithiasis",
+      "topicTags": [
+        "obesity",
+        "weight loss",
+        "malabsorption"
+      ],
+      "tooltip": "The gastrointestinal side effects act as behavioral reinforcement to reduce dietary fat. Supplement fat-soluble vitamins A, D, E, and K, dosed at a different time than the drug."
+    },
+    {
+      "id": "bismuth-subsalicylate",
+      "name": "Bismuth Subsalicylate",
+      "emoji": "🍽️⚫🩹",
+      "drugClass": "Mucosal Protectant / Antidiarrheal",
+      "primaryEffect": "Coats mucosa, reduces diarrhea, and has antimicrobial activity",
+      "treatmentUsage": "Traveler's diarrhea prophylaxis and treatment, dyspepsia, quadruple therapy for Helicobacter pylori",
+      "mechanismOfAction": "Bismuth binds to and coats ulcerated mucosa and has direct antibacterial activity against Helicobacter pylori, while the salicylate moiety reduces intestinal secretion via prostaglandin inhibition.",
+      "sideEffects": "Black tongue and black stools, constipation, tinnitus and salicylate toxicity at high doses, rare bismuth encephalopathy",
+      "contraindications": "Aspirin allergy, children and adolescents with viral illness because of Reye syndrome risk, renal impairment, concurrent anticoagulants",
+      "topicTags": [
+        "diarrhea",
+        "H pylori",
+        "peptic ulcer disease",
+        "mucosal protection"
+      ],
+      "tooltip": "Black stools from bismuth sulfide can be mistaken for melena — a classic clinical trap. Contains salicylate, so it carries Reye syndrome risk in children with viral infections."
+    },
+    {
+      "id": "alosetron",
+      "name": "Alosetron",
+      "emoji": "🍽️3️⃣🚺",
+      "drugClass": "5-HT3 Receptor Antagonist",
+      "primaryEffect": "Slows colonic transit and reduces visceral pain",
+      "treatmentUsage": "Severe diarrhea-predominant irritable bowel syndrome in women who have failed conventional therapy",
+      "mechanismOfAction": "Potently blocks enteric 5-HT3 receptors, reducing colonic motility, increasing fluid absorption, and decreasing visceral afferent pain signaling.",
+      "sideEffects": "Constipation, ischemic colitis (boxed warning), severe complications of constipation including obstruction and perforation",
+      "contraindications": "Constipation, history of ischemic colitis, Crohn disease or ulcerative colitis, diverticulitis, severe hepatic impairment",
+      "topicTags": [
+        "irritable bowel syndrome",
+        "diarrhea",
+        "serotonin"
+      ],
+      "tooltip": "Withdrawn then reintroduced under a restricted program because of ischemic colitis. It is reserved for women with severe refractory diarrhea-predominant IBS."
+    },
+    {
+      "id": "linaclotide",
+      "name": "Linaclotide",
+      "emoji": "💩🌊🔓",
+      "drugClass": "Guanylate Cyclase-C Agonist",
+      "primaryEffect": "Increases intestinal fluid secretion and transit",
+      "treatmentUsage": "Chronic idiopathic constipation, irritable bowel syndrome with constipation",
+      "mechanismOfAction": "Agonizes intestinal guanylate cyclase-C receptors, raising intracellular cGMP which activates CFTR to secrete chloride and bicarbonate into the lumen, drawing water with them.",
+      "sideEffects": "Diarrhea (dose-limiting), abdominal pain, flatulence, dehydration",
+      "contraindications": "Children under six (boxed warning for fatal dehydration), known or suspected bowel obstruction",
+      "topicTags": [
+        "constipation",
+        "irritable bowel syndrome",
+        "laxative"
+      ],
+      "tooltip": "It mimics the mechanism of heat-stable enterotoxin from enterotoxigenic E. coli, which causes traveler's diarrhea through the same guanylate cyclase-C pathway. Extracellular cGMP also reduces visceral pain."
+    },
+    {
+      "id": "cholestyramine",
+      "name": "Cholestyramine",
+      "emoji": "💧🧲🟡",
+      "drugClass": "Bile Acid Sequestrant",
+      "primaryEffect": "Binds bile acids in the intestinal lumen",
+      "treatmentUsage": "Bile acid diarrhea, pruritus of cholestasis, hypercholesterolemia, digoxin toxicity, Clostridioides difficile toxin binding",
+      "mechanismOfAction": "A nonabsorbed anion exchange resin that binds negatively charged bile acids in the gut, preventing enterohepatic recirculation and increasing their fecal excretion.",
+      "sideEffects": "Constipation, bloating, fat-soluble vitamin malabsorption, hypertriglyceridemia, impaired absorption of many drugs",
+      "contraindications": "Complete biliary obstruction, bowel obstruction, severe hypertriglyceridemia",
+      "topicTags": [
+        "cholestasis",
+        "pruritus",
+        "hyperlipidemia",
+        "diarrhea"
+      ],
+      "tooltip": "Give other drugs one hour before or four hours after, because the resin binds warfarin, digoxin, levothyroxine, and thiazides. Relieves cholestatic pruritus by removing bile acids from circulation."
+    },
+    {
+      "id": "albumin-gi",
+      "name": "Albumin",
+      "emoji": "💧🫀⚖️",
+      "drugClass": "Plasma Volume Expander",
+      "primaryEffect": "Expands intravascular volume and supports renal perfusion",
+      "treatmentUsage": "Spontaneous bacterial peritonitis, large-volume paracentesis, hepatorenal syndrome, hypoalbuminemia with volume depletion",
+      "mechanismOfAction": "Provides oncotic pressure that retains fluid in the intravascular space, improving effective arterial blood volume and renal perfusion in cirrhotic circulatory dysfunction.",
+      "sideEffects": "Volume overload and pulmonary edema, hypersensitivity reactions, hypocalcemia, cost",
+      "contraindications": "Decompensated heart failure, severe anemia, pulmonary edema",
+      "topicTags": [
+        "cirrhosis",
+        "spontaneous bacterial peritonitis",
+        "hepatorenal syndrome",
+        "ascites"
+      ],
+      "tooltip": "Albumin given with antibiotics in spontaneous bacterial peritonitis reduces hepatorenal syndrome and mortality. It is also required after large-volume paracentesis to prevent circulatory dysfunction."
+    },
+    {
+      "id": "midodrine",
+      "name": "Midodrine",
+      "emoji": "🩸⬆️🦵",
+      "drugClass": "Alpha-1 Agonist",
+      "primaryEffect": "Raises blood pressure through peripheral vasoconstriction",
+      "treatmentUsage": "Hepatorenal syndrome with octreotide and albumin, neurogenic orthostatic hypotension, dialysis-associated hypotension",
+      "mechanismOfAction": "Prodrug converted to desglymidodrine, a selective alpha-1 adrenergic agonist that constricts arterioles and veins without central or cardiac beta effects.",
+      "sideEffects": "Supine hypertension, piloerection, scalp pruritus, urinary retention, bradycardia from reflex vagal response",
+      "contraindications": "Severe organic heart disease, acute kidney injury, urinary retention, pheochromocytoma, thyrotoxicosis, supine hypertension",
+      "topicTags": [
+        "hepatorenal syndrome",
+        "orthostatic hypotension",
+        "cirrhosis",
+        "alpha agonist"
+      ],
+      "tooltip": "Do not dose within four hours of bedtime because supine hypertension is the main hazard. In hepatorenal syndrome it is combined with octreotide and albumin to reverse splanchnic vasodilation."
+    },
+    {
+      "id": "n-acetylcysteine-gi",
+      "name": "N-Acetylcysteine (Hepatic)",
+      "emoji": "🫀🛡️💊",
+      "drugClass": "Antidote",
+      "primaryEffect": "Prevents hepatic necrosis in acetaminophen overdose",
+      "treatmentUsage": "Acetaminophen overdose, acute liver failure of other causes, prevention of contrast nephropathy",
+      "mechanismOfAction": "Serves as a cysteine precursor to replenish hepatic glutathione, which conjugates and detoxifies the reactive metabolite NAPQI before it binds hepatocyte proteins.",
+      "sideEffects": "Nausea and vomiting, anaphylactoid reaction with rapid intravenous loading, flushing, rash, bronchospasm",
+      "contraindications": "None absolute in acetaminophen overdose; slow the infusion if an anaphylactoid reaction occurs",
+      "topicTags": [
+        "acetaminophen toxicity",
+        "antidote",
+        "liver",
+        "acute liver failure"
+      ],
+      "tooltip": "Most effective within 8 hours of ingestion but still beneficial later. Use the Rumack-Matthew nomogram for single acute ingestions with a known time. NAPQI is the toxic metabolite it neutralizes."
+    },
+    {
+      "id": "rifaximin-gi",
+      "name": "Rifaximin (Hepatic Encephalopathy)",
+      "emoji": "🧠🦠🚫",
+      "drugClass": "Nonabsorbable Antibacterial",
+      "primaryEffect": "Reduces ammonia-producing gut bacteria",
+      "treatmentUsage": "Prevention of recurrent hepatic encephalopathy, added to lactulose; traveler's diarrhea; IBS with diarrhea",
+      "mechanismOfAction": "Inhibits bacterial DNA-dependent RNA polymerase within the gut lumen without systemic absorption, decreasing the population of urease-producing bacteria that generate ammonia.",
+      "sideEffects": "Flatulence, nausea, peripheral edema, dizziness; minimal systemic toxicity",
+      "contraindications": "Hypersensitivity to rifamycins",
+      "topicTags": [
+        "hepatic encephalopathy",
+        "cirrhosis",
+        "antibacterial",
+        "liver"
+      ],
+      "tooltip": "Added to lactulose after a second episode of encephalopathy, where it significantly reduces recurrence and hospitalization. Its near-zero absorption means very few systemic effects."
+    },
+    {
+      "id": "dicyclomine",
+      "name": "Dicyclomine",
+      "emoji": "🍽️🚫🌀",
+      "drugClass": "Antispasmodic (Anticholinergic)",
+      "primaryEffect": "Relieves intestinal smooth muscle spasm and cramping",
+      "treatmentUsage": "Irritable bowel syndrome with cramping pain, functional bowel disorders",
+      "mechanismOfAction": "Antagonizes muscarinic receptors on intestinal smooth muscle and has direct smooth muscle relaxant activity, reducing spasm and motility.",
+      "sideEffects": "Dry mouth, blurred vision, urinary retention, constipation, tachycardia, confusion in the elderly",
+      "contraindications": "Narrow-angle glaucoma, bladder outlet obstruction, myasthenia gravis, paralytic ileus, reflux esophagitis, breastfeeding",
+      "topicTags": [
+        "irritable bowel syndrome",
+        "anticholinergic",
+        "antispasmodic"
+      ],
+      "tooltip": "Best used as needed before meals for cramping. The full anticholinergic side effect burden makes it a poor choice in older adults, where it appears on the Beers list."
+    },
+    {
+      "id": "budesonide-gi",
+      "name": "Budesonide (Oral)",
+      "emoji": "🔥💊🫀",
+      "drugClass": "Corticosteroid",
+      "primaryEffect": "Local intestinal anti-inflammatory effect with low systemic exposure",
+      "treatmentUsage": "Mild to moderate ileal and right colonic Crohn disease, microscopic colitis, autoimmune hepatitis",
+      "mechanismOfAction": "A potent glucocorticoid with roughly 90 percent first-pass hepatic metabolism, so it acts on the intestinal mucosa while producing far less systemic steroid exposure.",
+      "sideEffects": "Fewer systemic steroid effects than prednisone, but still adrenal suppression, hyperglycemia, and mood changes at higher doses",
+      "contraindications": "Systemic fungal infection, concurrent strong CYP3A4 inhibitors which raise systemic levels, cirrhosis where first-pass metabolism fails",
+      "topicTags": [
+        "inflammatory bowel disease",
+        "Crohn disease",
+        "corticosteroid",
+        "microscopic colitis"
+      ],
+      "tooltip": "The high first-pass metabolism is the whole design. In cirrhosis that metabolism fails and systemic exposure rises, which is why it is avoided in advanced liver disease."
+    },
+    {
+      "id": "vonoprazan",
+      "name": "Vonoprazan",
+      "emoji": "🍽️🔌⚡",
+      "drugClass": "Potassium-Competitive Acid Blocker",
+      "primaryEffect": "Rapid and sustained gastric acid suppression",
+      "treatmentUsage": "Erosive esophagitis, Helicobacter pylori eradication regimens, peptic ulcer disease",
+      "mechanismOfAction": "Competitively and reversibly binds the potassium-binding site of the H+/K+ ATPase, inhibiting the proton pump without requiring acid activation or active pumps.",
+      "sideEffects": "Diarrhea, headache, elevated gastrin, nasopharyngitis; long-term profile still being characterized",
+      "contraindications": "Concurrent rilpivirine; hypersensitivity",
+      "topicTags": [
+        "GERD",
+        "peptic ulcer disease",
+        "acid suppression",
+        "H pylori"
+      ],
+      "tooltip": "Unlike PPIs it does not need an acidic environment or actively secreting pumps, so it works from the first dose and can be taken without regard to meals."
+    },
+    {
+      "id": "diphenoxylate-atropine",
+      "name": "Diphenoxylate / Atropine",
+      "emoji": "💩🛑⚗️",
+      "drugClass": "Antidiarrheal",
+      "primaryEffect": "Slows intestinal motility to reduce diarrhea",
+      "treatmentUsage": "Adjunctive treatment of nonspecific diarrhea",
+      "mechanismOfAction": "Diphenoxylate is an opioid agonist acting on intestinal mu receptors to slow peristalsis; subtherapeutic atropine is added purely to deter abuse by causing anticholinergic effects at high doses.",
+      "sideEffects": "Anticholinergic effects, drowsiness, dizziness, atropine toxicity in overdose, toxic megacolon in colitis, respiratory depression in children",
+      "contraindications": "Children under six, obstructive jaundice, bloody diarrhea or suspected invasive infection, Clostridioides difficile colitis",
+      "topicTags": [
+        "diarrhea",
+        "opioid",
+        "anticholinergic"
+      ],
+      "tooltip": "The atropine is a deliberate abuse deterrent, not a therapeutic ingredient. Unlike loperamide, diphenoxylate can cross into the CNS at high doses and cause opioid effects."
+    },
+    {
+      "id": "clarithromycin-hpylori",
+      "name": "Clarithromycin",
+      "emoji": "🦠5️⃣🍽️",
+      "drugClass": "Macrolide",
+      "primaryEffect": "Bacteriostatic inhibition of bacterial protein synthesis",
+      "treatmentUsage": "Helicobacter pylori eradication in triple therapy, community-acquired pneumonia, Mycobacterium avium complex",
+      "mechanismOfAction": "Binds the 23S rRNA of the 50S ribosomal subunit, blocking translocation of the peptidyl-tRNA and halting protein elongation.",
+      "sideEffects": "Metallic taste, gastrointestinal upset, QT prolongation, hepatotoxicity, potent CYP3A4 inhibition with many interactions",
+      "contraindications": "Concurrent statins metabolized by CYP3A4, ergots, colchicine in renal impairment; known long QT syndrome; pregnancy",
+      "topicTags": [
+        "H pylori",
+        "antibacterial",
+        "protein synthesis",
+        "peptic ulcer disease"
+      ],
+      "tooltip": "The classic triple therapy is clarithromycin, amoxicillin, and a PPI. Rising clarithromycin resistance has shifted many guidelines toward bismuth quadruple therapy as first-line."
+    },
+    {
+      "id": "obeticholic-acid",
+      "name": "Obeticholic Acid",
+      "emoji": "🫀🧬💛",
+      "drugClass": "FXR Agonist",
+      "primaryEffect": "Reduces bile acid synthesis and cholestatic injury",
+      "treatmentUsage": "Primary biliary cholangitis in patients with inadequate response to ursodiol",
+      "mechanismOfAction": "Potent agonist of the farnesoid X receptor, which suppresses hepatic bile acid synthesis through CYP7A1 downregulation and promotes bile acid efflux from hepatocytes.",
+      "sideEffects": "Severe pruritus (dose-limiting), fatigue, elevated LDL cholesterol, hepatic decompensation in advanced cirrhosis",
+      "contraindications": "Decompensated cirrhosis, complete biliary obstruction, prior hepatic decompensation",
+      "topicTags": [
+        "primary biliary cholangitis",
+        "cholestasis",
+        "liver",
+        "nuclear receptor"
+      ],
+      "tooltip": "Second-line after ursodiol in primary biliary cholangitis. Pruritus is common and dose-limiting, and dosing errors in cirrhotic patients caused fatal decompensation, prompting a boxed warning."
+    },
+    {
+      "id": "prucalopride",
+      "name": "Prucalopride",
+      "emoji": "💩4️⃣➡️",
+      "drugClass": "5-HT4 Agonist (Prokinetic)",
+      "primaryEffect": "Accelerates colonic transit",
+      "treatmentUsage": "Chronic idiopathic constipation refractory to laxatives",
+      "mechanismOfAction": "Highly selective 5-HT4 receptor agonist that enhances acetylcholine release from enteric neurons, stimulating high-amplitude propagating colonic contractions.",
+      "sideEffects": "Headache, nausea, diarrhea, abdominal pain, dizziness; no significant cardiac risk unlike older agents",
+      "contraindications": "Intestinal obstruction or perforation, severe inflammatory bowel disease, toxic megacolon",
+      "topicTags": [
+        "constipation",
+        "prokinetic",
+        "serotonin"
+      ],
+      "tooltip": "Its high 5-HT4 selectivity avoids the hERG channel effects that caused cisapride to be withdrawn for fatal arrhythmias. Useful when osmotic laxatives alone fail."
+    }
+  ]
+}

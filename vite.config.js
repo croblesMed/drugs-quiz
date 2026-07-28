@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/drug-quiz/',
+  base: '/drugs-quiz/',
   plugins: [
     react(),
     VitePWA({
@@ -12,9 +12,9 @@ export default defineConfig({
       manifest: {
         name: 'Drug Quiz',
         short_name: 'DrugQuiz',
-        description: 'Gamified pharmacology learning for medical students',
-        theme_color: '#0f172a',
-        background_color: '#0f172a',
+        description: 'USMLE Step 1 pharmacology — 457 drugs across 11 subjects',
+        theme_color: '#fbbf24',
+        background_color: '#fffbeb',
         display: 'standalone',
         icons: [
           { src: 'pwa-192.png', sizes: '192x192', type: 'image/png' },
