@@ -1,5 +1,5 @@
 /**
- * Deterministic color assignment for drug classes.
+ * Deterministic color assignment for drug classes and pathogen categories.
  *
  * You do NOT need to define colors anywhere. Add a drug with any
  * `drugClass` string and it automatically gets a stable, unique color
@@ -21,11 +21,11 @@ const PALETTE = [
 ]
 
 /**
- * @param {Array<{drugClass: string}>} drugs
+ * @param {Array<{_class: string}>} drugs
  * @returns {Record<string, string>} map of class name -> tailwind bg class
  */
 export function buildClassColorMap(drugs) {
-  const classes = [...new Set(drugs.map(d => d.drugClass).filter(Boolean))].sort()
+  const classes = [...new Set(drugs.map(d => d._class ?? d.drugClass).filter(Boolean))].sort()
   const map = {}
   classes.forEach((name, i) => {
     const [color, shade] = PALETTE[i % PALETTE.length]
@@ -34,9 +34,9 @@ export function buildClassColorMap(drugs) {
   return map
 }
 
-/** Unique, sorted list of drug classes present in a drug array. */
+/** Unique, sorted list of classes/categories present in an item array. */
 export function listClasses(drugs) {
-  return [...new Set(drugs.map(d => d.drugClass).filter(Boolean))].sort()
+  return [...new Set(drugs.map(d => d._class ?? d.drugClass).filter(Boolean))].sort()
 }
 
 /**

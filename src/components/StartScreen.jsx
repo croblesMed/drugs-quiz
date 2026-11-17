@@ -1,21 +1,27 @@
 import { useState, useMemo } from 'react'
-import { QUIZ_ATTRS } from '../utils/distractors'
 import { buildClassColorMap, listClasses, listTags } from '../utils/classColors'
 
-const FILTER_MODES = [
-  { id: 'all',   label: 'All Drugs' },
-  { id: 'class', label: 'By Class'  },
-  { id: 'tag',   label: 'By Topic'  },
-]
+function filterModes(noun, classKey) {
+  return [
+    { id: 'all',   label: noun === 'organisms' ? 'All Organisms' : 'All Drugs' },
+    { id: 'class', label: classKey === 'category' ? 'By Category' : 'By Class' },
+    { id: 'tag',   label: 'By Topic' },
+  ]
+}
 
 export default function StartScreen({ topic, personalBests, onStart, onBack }) {
-  const allDrugs = topic.drugs
+  const allDrugs  = topic.drugs
+  const ATTRS     = topic.quizAttrs
+  const NOUN      = topic.noun                 // "drugs" | "organisms"
+  const IDENTITY  = ATTRS[0].key               // always 'name'
+  const IDLABEL   = ATTRS[0].label             // "Drug Name" | "Organism"
+  const CLASS_KEY = topic.classKey             // 'drugClass' | 'category'
 
   const [filterMode,      setFilterMode]      = useState('all')
   const [selectedClasses, setSelectedClasses] = useState(new Set())
   const [selectedTags,    setSelectedTags]    = useState(new Set())
   const [questionAttr,    setQuestionAttr]    = useState('name')
-  const [answerAttr,      setAnswerAttr]      = useState('drugClass')
+  const [answerAttr,      setAnswerAttr]      = useState(CLASS_KEY)
   const [startError,      setStartError]      = useState('')
 
   const colorMap         = useMemo(() => buildClassColorMap(allDrugs), [allDrugs])
@@ -24,7 +30,7 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
 
   const classCounts = useMemo(() => {
     const c = {}
-    allDrugs.forEach(d => { if (d.drugClass) c[d.drugClass] = (c[d.drugClass] || 0) + 1 })
+    allDrugs.forEach(d => { if (d._class) c[d._class] = (c[d._class] || 0) + 1 })
     return c
   }, [allDrugs])
 
@@ -36,7 +42,7 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
 
   const filteredDrugs = useMemo(() => {
     if (filterMode === 'class' && selectedClasses.size > 0)
-      return allDrugs.filter(d => selectedClasses.has(d.drugClass))
+      return allDrugs.filter(d => selectedClasses.has(d._class))
     if (filterMode === 'tag' && selectedTags.size > 0)
       return allDrugs.filter(d => d.topicTags?.some(t => selectedTags.has(t)))
     return allDrugs
@@ -63,16 +69,16 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
     try {
       const after = key.includes('__') ? key.split(/__(.+)/)[1] : key
       const parts = after.split('__to__')
-      const q = QUIZ_ATTRS.find(a => a.key === parts[0])?.label || parts[0]
-      const a = QUIZ_ATTRS.find(a => a.key === parts[1])?.label || parts[1]
+      const q = ATTRS.find(a => a.key === parts[0])?.label || parts[0]
+      const a = ATTRS.find(a => a.key === parts[1])?.label || parts[1]
       return `${q} -> ${a}`
     } catch { return key }
   }
 
   function handleStart() {
     setStartError('')
-    if (questionAttr !== 'name' && answerAttr !== 'name') {
-      setStartError('One of Question or Answer must be "Drug Name" to start.')
+    if (questionAttr !== IDENTITY && answerAttr !== IDENTITY) {
+      setStartError(`One of Question or Answer must be "${IDLABEL}" to start.`)
       return
     }
     if (questionAttr === answerAttr) {
@@ -80,14 +86,17 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
       return
     }
     if (filteredDrugs.length < 3) {
-      setStartError('Select at least 3 drugs to start.')
+      setStartError(`Select at least 3 ${NOUN} to start.`)
       return
     }
     const filterKey =
       filterMode === 'class' ? [...selectedClasses].sort().join('+') || 'all'
       : filterMode === 'tag' ? [...selectedTags].sort().join('+') || 'all'
       : 'all'
-    onStart(filteredDrugs, { questionAttr, answerAttr, topicId: topic.id, filter: filterKey })
+    onStart(filteredDrugs, {
+      questionAttr, answerAttr, topicId: topic.id, filter: filterKey,
+      quizAttrs: ATTRS, noun: NOUN, identityKey: IDENTITY,
+    })
   }
 
   return (
@@ -102,7 +111,7 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
         <div className="text-center mb-7">
           <div className="text-6xl mb-2">{topic.icon}</div>
           <h1 className="text-4xl font-black text-gray-900">{topic.label}</h1>
-          <p className="text-amber-600 font-bold mt-1">{allDrugs.length} drugs &middot; USMLE Step 1</p>
+          <p className="text-amber-600 font-bold mt-1">{allDrugs.length} {NOUN} &middot; USMLE Step 1</p>
         </div>
 
         {topScores.length > 0 && (
@@ -125,9 +134,9 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
         )}
 
         <div className="bg-white border-2 border-amber-200 rounded-3xl p-5 mb-4 card-shadow">
-          <h2 className="text-gray-900 font-black text-lg mb-3">Drug Set</h2>
+          <h2 className="text-gray-900 font-black text-lg mb-3">{NOUN === 'organisms' ? 'Organism Set' : 'Drug Set'}</h2>
           <div className="flex gap-2 mb-4">
-            {FILTER_MODES.map(m => (
+            {filterModes(NOUN, CLASS_KEY).map(m => (
               <button key={m.id} onClick={() => { setFilterMode(m.id); clearSelections() }}
                 className={`flex-1 py-2 rounded-xl text-sm font-black transition-colors ${
                   filterMode === m.id ? 'bg-amber-400 text-white' : 'bg-amber-50 text-amber-700 hover:bg-amber-100 border border-amber-200'}`}>
@@ -138,7 +147,7 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
 
           {(filterMode === 'class' || filterMode === 'tag') && (
             <p className="text-gray-400 text-xs font-semibold mb-2">
-              Tap to select as many as you like &middot; need 3+ drugs to play
+              Tap to select as many as you like &middot; need 3+ {NOUN} to play
             </p>
           )}
 
@@ -177,20 +186,20 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
           )}
 
           <p className="text-gray-500 text-sm mt-3 font-semibold">
-            <span className="text-gray-900 font-black">{filteredDrugs.length}</span> drugs selected
+            <span className="text-gray-900 font-black">{filteredDrugs.length}</span> {NOUN} selected
           </p>
         </div>
 
         <div className="bg-white border-2 border-amber-200 rounded-3xl p-5 mb-4 card-shadow">
           <h2 className="text-gray-900 font-black text-lg mb-1">Quiz Mode</h2>
           <p className="text-gray-400 text-xs font-semibold mb-4">
-            Pick any combination. One side must be Drug Name to play.
+            Pick any combination. One side must be {IDLABEL} to play.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-amber-600 text-xs font-black uppercase tracking-wider mb-2">Question (shown)</label>
               <div className="space-y-1.5">
-                {QUIZ_ATTRS.map(attr => (
+                {ATTRS.map(attr => (
                   <button key={attr.key} onClick={() => setQuestionAttr(attr.key)}
                     className={`w-full text-left text-xs px-3 py-2 rounded-xl font-bold transition-colors border-2 ${
                       questionAttr === attr.key ? 'bg-amber-400 text-white border-transparent'
@@ -203,7 +212,7 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
             <div>
               <label className="block text-green-600 text-xs font-black uppercase tracking-wider mb-2">Answer (pick 1 of 6)</label>
               <div className="space-y-1.5">
-                {QUIZ_ATTRS.map(attr => (
+                {ATTRS.map(attr => (
                   <button key={attr.key} onClick={() => setAnswerAttr(attr.key)}
                     className={`w-full text-left text-xs px-3 py-2 rounded-xl font-bold transition-colors border-2 ${
                       answerAttr === attr.key ? 'bg-green-500 text-white border-transparent'
@@ -215,9 +224,9 @@ export default function StartScreen({ topic, personalBests, onStart, onBack }) {
             </div>
           </div>
           <div className="mt-4 text-center bg-amber-50 rounded-2xl py-2 px-3 border border-amber-200">
-            <span className="text-amber-700 font-black text-sm">{QUIZ_ATTRS.find(a => a.key === questionAttr)?.label}</span>
+            <span className="text-amber-700 font-black text-sm">{ATTRS.find(a => a.key === questionAttr)?.label}</span>
             <span className="text-gray-400 font-bold text-sm"> &rarr; </span>
-            <span className="text-green-700 font-black text-sm">{QUIZ_ATTRS.find(a => a.key === answerAttr)?.label}</span>
+            <span className="text-green-700 font-black text-sm">{ATTRS.find(a => a.key === answerAttr)?.label}</span>
           </div>
         </div>
 

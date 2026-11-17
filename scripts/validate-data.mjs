@@ -4,10 +4,12 @@
  *
  *   npm run validate
  *
- * Checks structure, required fields, unique ids and emoji, and flags
- * quality issues (very short fields, overlong tooltips, singleton classes
- * that make a "By Class" quiz impossible).
- * Exits with code 1 if any ERROR is found. WARNs do not fail the build.
+ * Handles both entity kinds:
+ *   kind: "drug"     items in `drugs`,     class field `drugClass`
+ *   kind: "pathogen" items in `organisms`, class field `category`
+ *
+ * Checks structure, required fields, unique ids, and flags quality issues.
+ * Exits 1 if any ERROR is found. WARNs do not fail the build.
  */
 
 import { readdirSync, readFileSync } from 'node:fs'
@@ -16,89 +18,90 @@ import { fileURLToPath }             from 'node:url'
 
 const DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'src', 'data', 'topics')
 
-const REQUIRED_STRINGS = [
-  'id', 'name', 'emoji', 'drugClass', 'primaryEffect', 'treatmentUsage',
-  'mechanismOfAction', 'sideEffects', 'contraindications', 'tooltip',
-]
-
-// Fields the quiz can ask about — each needs enough distinct values to
-// build six answer choices.
-const QUIZ_FIELDS = [
-  'name', 'drugClass', 'primaryEffect', 'treatmentUsage',
-  'mechanismOfAction', 'sideEffects', 'contraindications',
-]
+const SCHEMA = {
+  drug: {
+    itemsKey: 'drugs',
+    classKey: 'drugClass',
+    fields: ['id', 'name', 'emoji', 'drugClass', 'primaryEffect', 'treatmentUsage',
+             'mechanismOfAction', 'sideEffects', 'contraindications', 'tooltip'],
+    quizFields: ['name', 'drugClass', 'primaryEffect', 'treatmentUsage',
+                 'mechanismOfAction', 'sideEffects', 'contraindications'],
+    longField: 'mechanismOfAction',
+  },
+  pathogen: {
+    itemsKey: 'organisms',
+    classKey: 'category',
+    fields: ['id', 'name', 'emoji', 'category', 'labFeatures', 'manifestations',
+             'treatment', 'transmission', 'virulenceFactor', 'tooltip'],
+    quizFields: ['name', 'category', 'labFeatures', 'manifestations',
+                 'treatment', 'transmission', 'virulenceFactor'],
+    longField: 'labFeatures',
+  },
+}
 
 let errors = 0
 let warns  = 0
-
 const err  = (m) => { errors++; console.log(`  \x1b[31mERROR\x1b[0m  ${m}`) }
 const warn = (m) => { warns++;  console.log(`  \x1b[33mWARN \x1b[0m  ${m}`) }
 
 const files = readdirSync(DIR).filter(f => f.endsWith('.json')).sort()
-
-if (files.length === 0) {
-  console.log('No topic files found in src/data/topics/')
-  process.exit(1)
-}
+if (files.length === 0) { console.log('No topic files found'); process.exit(1) }
 
 console.log(`\nValidating ${files.length} topic file(s) in src/data/topics/\n`)
 
-const globalIds = new Map()
-let grandTotal  = 0
+let grandTotal = 0
+const summary  = []
 
 for (const file of files) {
   console.log(`\x1b[1m${file}\x1b[0m`)
 
   let raw
-  try {
-    raw = JSON.parse(readFileSync(join(DIR, file), 'utf8'))
-  } catch (e) {
-    err(`invalid JSON — ${e.message}`)
-    console.log('')
-    continue
-  }
+  try { raw = JSON.parse(readFileSync(join(DIR, file), 'utf8')) }
+  catch (e) { err(`invalid JSON — ${e.message}`); console.log(''); continue }
 
-  // --- Topic-level structure ---
   if (Array.isArray(raw)) {
     warn('file is a bare array; wrap it in { id, label, icon, blurb, drugs: [...] }')
-  }
-  const drugs = Array.isArray(raw) ? raw : raw.drugs
-  if (!Array.isArray(drugs)) { err('missing "drugs" array'); console.log(''); continue }
-
-  if (!Array.isArray(raw)) {
-    for (const k of ['id', 'label', 'icon']) {
-      if (!raw[k]) err(`topic is missing "${k}"`)
-    }
-    const expectedId = file.replace('.json', '')
-    if (raw.id && raw.id !== expectedId)
-      warn(`topic id "${raw.id}" does not match filename "${expectedId}"`)
+    raw = { drugs: raw }
   }
 
-  // --- Per-drug checks ---
-  const ids     = new Map()
-  const emojis  = new Map()
-  const names   = new Map()
+  const kind   = raw.kind || 'drug'
+  const schema = SCHEMA[kind]
+  if (!schema) { err(`unknown kind "${kind}" — must be "drug" or "pathogen"`); console.log(''); continue }
 
-  drugs.forEach((d, i) => {
+  const items = raw[schema.itemsKey] || raw.drugs || raw.organisms || raw.entries
+  if (!Array.isArray(items)) { err(`missing "${schema.itemsKey}" array`); console.log(''); continue }
+
+  for (const k of ['id', 'label', 'icon']) if (!raw[k]) err(`topic is missing "${k}"`)
+  const expectedId = file.replace('.json', '')
+  if (raw.id && raw.id !== expectedId)
+    warn(`topic id "${raw.id}" does not match filename "${expectedId}"`)
+  if (raw.quizAttrs && !Array.isArray(raw.quizAttrs))
+    err('"quizAttrs" must be an array of { key, label } objects')
+
+  const ids = new Map(), names = new Map(), emojis = new Map()
+
+  items.forEach((d, i) => {
     const where = d?.name || d?.id || `index ${i}`
-
     if (typeof d !== 'object' || d === null) { err(`${where}: not an object`); return }
 
-    for (const f of REQUIRED_STRINGS) {
+    for (const f of schema.fields) {
       if (!d[f] || typeof d[f] !== 'string' || d[f].trim() === '')
         err(`${where}: missing or empty "${f}"`)
+    }
+
+    // flag fields belonging to the other schema — usually a copy-paste slip
+    const otherKind = kind === 'drug' ? 'pathogen' : 'drug'
+    for (const f of SCHEMA[otherKind].fields) {
+      if (!schema.fields.includes(f) && d[f] !== undefined)
+        warn(`${where}: has "${f}", which belongs to the ${otherKind} schema — is that intended?`)
     }
 
     if (!Array.isArray(d.topicTags) || d.topicTags.length === 0)
       warn(`${where}: no topicTags — it will not appear in any "By Topic" filter`)
 
-    // duplicates within the file
     if (d.id) {
       if (ids.has(d.id)) err(`duplicate id "${d.id}" (also used by ${ids.get(d.id)})`)
       else ids.set(d.id, where)
-
-      // ids repeating across topics are fine — quizzes never mix topics
-      if (!globalIds.has(d.id)) globalIds.set(d.id, file)
     }
     if (d.name) {
       if (names.has(d.name)) err(`duplicate name "${d.name}"`)
@@ -109,36 +112,41 @@ for (const file of files) {
       else emojis.set(d.emoji, where)
     }
 
-    // quality heuristics
     if (d.tooltip && d.tooltip.split(/\s+/).length > 70)
       warn(`${where}: tooltip is ${d.tooltip.split(/\s+/).length} words (aim for under 60)`)
-    if (d.mechanismOfAction && d.mechanismOfAction.split(/\s+/).length < 8)
-      warn(`${where}: mechanismOfAction looks too short to be a good answer choice`)
+    const lf = d[schema.longField]
+    if (lf && lf.split(/\s+/).length < 8)
+      warn(`${where}: "${schema.longField}" looks too short to be a good answer choice`)
   })
 
-  // --- Quiz playability ---
-  for (const field of QUIZ_FIELDS) {
-    const distinct = new Set(drugs.map(d => d?.[field]).filter(Boolean)).size
+  // Quiz playability: each quizzable field needs 6+ distinct values
+  const attrKeys = raw.quizAttrs ? raw.quizAttrs.map(a => a.key) : schema.quizFields
+  for (const field of attrKeys) {
+    const distinct = new Set(items.map(d => d?.[field]).filter(Boolean)).size
     if (distinct < 6)
       err(`only ${distinct} distinct value(s) for "${field}" — need at least 6 to build answer choices`)
   }
 
   const classCounts = {}
-  drugs.forEach(d => { if (d?.drugClass) classCounts[d.drugClass] = (classCounts[d.drugClass] || 0) + 1 })
+  items.forEach(d => { const c = d?.[schema.classKey]; if (c) classCounts[c] = (classCounts[c] || 0) + 1 })
+
   const tagCounts = {}
-  drugs.forEach(d => (d?.topicTags || []).forEach(t => { tagCounts[t] = (tagCounts[t] || 0) + 1 }))
-  // Tags used by fewer than 3 drugs are hidden from the filter UI automatically
+  items.forEach(d => (d?.topicTags || []).forEach(t => { tagCounts[t] = (tagCounts[t] || 0) + 1 }))
+  // Tags used by fewer than 3 items are hidden from the filter UI automatically
   // (see listTags in src/utils/classColors.js), so they are not an error.
   const usableTags = Object.values(tagCounts).filter(n => n >= 3).length
   if (usableTags < 3)
-    warn(`only ${usableTags} tag(s) are used by 3+ drugs — the "By Topic" filter will be nearly empty`)
+    warn(`only ${usableTags} tag(s) are used by 3+ items — the "By Topic" filter will be nearly empty`)
 
-  grandTotal += drugs.length
-  console.log(`  ${drugs.length} drugs · ${Object.keys(classCounts).length} classes · ${usableTags} filterable tags (${Object.keys(tagCounts).length} total)\n`)
+  grandTotal += items.length
+  summary.push({ file, kind, n: items.length, classes: Object.keys(classCounts).length, usableTags, attrs: attrKeys.length })
+  console.log(`  ${kind} · ${items.length} items · ${Object.keys(classCounts).length} ${schema.classKey === 'category' ? 'categories' : 'classes'} · ${usableTags} filterable tags · ${attrKeys.length} quiz modes\n`)
 }
 
-console.log('─'.repeat(60))
-console.log(`${grandTotal} drugs across ${files.length} topics`)
+console.log('─'.repeat(70))
+const drugs     = summary.filter(s => s.kind === 'drug').reduce((n, s) => n + s.n, 0)
+const pathogens = summary.filter(s => s.kind === 'pathogen').reduce((n, s) => n + s.n, 0)
+console.log(`${grandTotal} items across ${files.length} topics  (${drugs} drugs, ${pathogens} organisms)`)
 console.log(`${errors} error(s), ${warns} warning(s)`)
 
 if (errors > 0) {

@@ -22,7 +22,7 @@ function Confetti() {
   )
 }
 
-export default function ResultsScreen({ results, score, personalBest, newRecord, onPlayAgain, onHome, onAllTopics }) {
+export default function ResultsScreen({ results, score, config, personalBest, newRecord, onPlayAgain, onHome, onAllTopics }) {
   const [tooltipDrug,    setTooltipDrug]    = useState(null)
   const [showMissedOnly, setShowMissedOnly] = useState(false)
 
@@ -30,6 +30,8 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
   const colorMap = useMemo(() => buildClassColorMap(drugs), [drugs])
   const classes  = useMemo(() => listClasses(drugs), [drugs])
   const color    = dc => colorMap[dc] || 'bg-gray-400'
+  const ATTRS    = config?.quizAttrs || []
+  const NOUN     = config?.noun || 'drugs'
 
   const total   = results.length
   const wrong   = results.filter(r => !r.correct).length
@@ -58,7 +60,7 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
               <div className="text-red-400 font-black text-sm uppercase tracking-wide">Missed</div>
             </div>
           </div>
-          <p className="text-gray-400 font-black text-lg">{pct}% &middot; {total} drugs</p>
+          <p className="text-gray-400 font-black text-lg">{pct}% &middot; {total} {NOUN}</p>
           {perfect && <p className="mt-2 text-amber-500 font-black text-xl animate-pulse">Perfect! &#x1F389;</p>}
           {newRecord && !perfect && <p className="mt-2 text-amber-500 font-black">&#x2726; New personal best!</p>}
           {personalBest && !newRecord && (
@@ -85,7 +87,7 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
 
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-gray-900 font-black text-lg">
-            Drug Review
+            {NOUN === 'organisms' ? 'Organism Review' : 'Drug Review'}
             {wrong > 0 && <span className="ml-2 text-red-400 text-sm font-bold">{wrong} missed</span>}
           </h2>
           {wrong > 0 && (
@@ -105,7 +107,7 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
               transition={{ delay: i * 0.02, duration: 0.18 }}
               onClick={() => setTooltipDrug(drug)}
               className={`relative rounded-2xl p-3 text-left border-2 card-shadow transition-transform hover:scale-105
-                ${color(drug.drugClass)}
+                ${color(drug._class)}
                 ${correct ? 'border-white/30' : 'border-red-400/70'}`}>
               <div className={`absolute top-2 right-2 w-6 h-6 rounded-full flex items-center justify-center text-xs font-black ${
                 correct ? 'bg-green-400 text-green-900' : 'bg-red-400 text-red-900'}`}>
@@ -113,7 +115,7 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
               </div>
               <div className="text-2xl mb-1">{drug.emoji}</div>
               <p className="text-white font-black text-sm leading-tight pr-7">{drug.name}</p>
-              <p className="text-white/75 text-xs mt-0.5 leading-tight">{drug.drugClass}</p>
+              <p className="text-white/75 text-xs mt-0.5 leading-tight">{drug._class}</p>
             </motion.button>
           ))}
         </div>
@@ -127,7 +129,7 @@ export default function ResultsScreen({ results, score, personalBest, newRecord,
         </div>
       </div>
 
-      {tooltipDrug && <TooltipModal drug={tooltipDrug} onClose={() => setTooltipDrug(null)} />}
+      {tooltipDrug && <TooltipModal drug={tooltipDrug} attrs={ATTRS} onClose={() => setTooltipDrug(null)} />}
     </div>
   )
 }

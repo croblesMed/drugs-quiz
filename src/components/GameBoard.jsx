@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import AnswerCard from './AnswerCard'
 import ScoreBar from './ScoreBar'
 import TooltipModal from './TooltipModal'
-import { QUIZ_ATTRS } from '../utils/distractors'
 
 export default function GameBoard({ state, answer, next, reset }) {
   const [tooltipDrug, setTooltipDrug] = useState(null)
@@ -11,12 +10,13 @@ export default function GameBoard({ state, answer, next, reset }) {
   const { round, score, results, currentIndex, queue, config } = state
   if (!round) return null
 
+  const ATTRS   = config.quizAttrs || []
   const total   = queue.length
   const current = currentIndex + 1
   const wrong   = results.filter(r => !r.correct).length
-  const qLabel  = QUIZ_ATTRS.find(a => a.key === config.questionAttr)?.label || config.questionAttr
-  const aLabel  = QUIZ_ATTRS.find(a => a.key === config.answerAttr)?.label || config.answerAttr
-  const isNameQ = config.questionAttr === 'name'
+  const qLabel  = ATTRS.find(a => a.key === config.questionAttr)?.label || config.questionAttr
+  const aLabel  = ATTRS.find(a => a.key === config.answerAttr)?.label || config.answerAttr
+  const isNameQ = config.questionAttr === (config.identityKey || 'name')
 
   return (
     <div className="min-h-screen bg-amber-50 pb-8">
@@ -75,7 +75,7 @@ export default function GameBoard({ state, answer, next, reset }) {
             >
               {round.choices.filter(c => c.isCorrect).length > 1 && (
                 <p className="text-center text-amber-600 text-sm font-bold">
-                  ⚠️ Multiple correct — drugs share this {aLabel.toLowerCase()}
+                  ⚠️ Multiple correct — {config.noun || 'drugs'} share this {aLabel.toLowerCase()}
                 </p>
               )}
 
@@ -104,7 +104,7 @@ export default function GameBoard({ state, answer, next, reset }) {
       </div>
 
       {tooltipDrug && (
-        <TooltipModal drug={tooltipDrug} onClose={() => setTooltipDrug(null)} />
+        <TooltipModal drug={tooltipDrug} attrs={ATTRS} onClose={() => setTooltipDrug(null)} />
       )}
     </div>
   )

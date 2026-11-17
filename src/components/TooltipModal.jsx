@@ -1,6 +1,4 @@
-import { QUIZ_ATTRS } from '../utils/distractors'
-
-export default function TooltipModal({ drug, onClose }) {
+export default function TooltipModal({ drug, attrs = [], onClose }) {
   if (!drug) return null
 
   return (
@@ -17,7 +15,7 @@ export default function TooltipModal({ drug, onClose }) {
           <div>
             <div className="text-3xl">{drug.emoji}</div>
             <h2 className="text-gray-900 font-black text-xl mt-1">{drug.name}</h2>
-            <p className="text-amber-600 text-sm font-semibold">{drug.drugClass}</p>
+            <p className="text-amber-600 text-sm font-semibold">{drug._class}</p>
           </div>
           <button
             onClick={onClose}
@@ -35,7 +33,7 @@ export default function TooltipModal({ drug, onClose }) {
           </div>
 
           {/* All attributes */}
-          {QUIZ_ATTRS.filter(a => a.key !== 'name').map(attr => (
+          {attrs.filter(a => a.key !== 'name').map(attr => (
             <div key={attr.key}>
               <p className="text-amber-600 text-xs font-black uppercase tracking-wider mb-1">
                 {attr.label}

@@ -1,0 +1,1184 @@
+{
+  "id": "bacteriology",
+  "label": "Bacteriology",
+  "icon": "🦠",
+  "blurb": "Gram stain, catalase, coagulase, hemolysis, lactose — and the diseases they cause",
+  "kind": "pathogen",
+  "organisms": [
+    {
+      "id": "staph-aureus",
+      "name": "Staphylococcus aureus",
+      "emoji": "🍇🟣🟡",
+      "category": "Gram-Positive Cocci",
+      "labFeatures": "Gram-positive cocci in grape-like clusters, catalase positive, coagulase positive, beta-hemolytic, ferments mannitol (yellow on mannitol salt agar), golden pigment",
+      "manifestations": "Skin and soft tissue abscess, acute endocarditis, osteomyelitis, septic arthritis, pneumonia after influenza, toxic shock syndrome, scalded skin syndrome, rapid-onset food poisoning",
+      "treatment": "Nafcillin or oxacillin for MSSA; vancomycin for MRSA; add clindamycin for toxin suppression in toxic shock",
+      "transmission": "Direct contact and nasal carriage; preformed toxin in mayonnaise, custard, and meats for food poisoning",
+      "virulenceFactor": "Protein A binds IgG Fc to block opsonization; TSST-1 superantigen cross-links MHC II and TCR; exfoliative toxin cleaves desmoglein-1",
+      "topicTags": [
+        "gram-positive",
+        "cocci",
+        "catalase positive",
+        "coagulase positive",
+        "skin infection",
+        "endocarditis",
+        "osteomyelitis",
+        "toxin-mediated"
+      ],
+      "tooltip": "Coagulase positive separates it from all other staph. Protein A is the classic virulence factor. Causes both rapid-onset food poisoning from preformed toxin and post-influenza pneumonia."
+    },
+    {
+      "id": "staph-epidermidis",
+      "name": "Staphylococcus epidermidis",
+      "emoji": "🍇⚪🔧",
+      "category": "Gram-Positive Cocci",
+      "labFeatures": "Gram-positive cocci in clusters, catalase positive, coagulase negative, novobiocin sensitive, forms biofilm, common blood culture contaminant",
+      "manifestations": "Prosthetic valve endocarditis, prosthetic joint infection, central line-associated bloodstream infection, CSF shunt infection",
+      "treatment": "Vancomycin, because most isolates are methicillin resistant; device removal is usually required",
+      "transmission": "Normal skin flora introduced during device placement or venipuncture",
+      "virulenceFactor": "Polysaccharide capsule and biofilm (slime layer) that adheres to plastic and shields from antibiotics and phagocytes",
+      "topicTags": [
+        "gram-positive",
+        "cocci",
+        "catalase positive",
+        "coagulase negative",
+        "biofilm",
+        "device infection",
+        "endocarditis"
+      ],
+      "tooltip": "Coagulase negative and novobiocin sensitive. Infects anything artificial. A single positive blood culture is usually contamination; multiple positives with a device suggest real infection."
+    },
+    {
+      "id": "staph-saprophyticus",
+      "name": "Staphylococcus saprophyticus",
+      "emoji": "🍇🚽🚺",
+      "category": "Gram-Positive Cocci",
+      "labFeatures": "Gram-positive cocci in clusters, catalase positive, coagulase negative, novobiocin resistant, urease positive",
+      "manifestations": "Uncomplicated cystitis in sexually active young women — the second most common cause after E. coli",
+      "treatment": "Trimethoprim-sulfamethoxazole or nitrofurantoin",
+      "transmission": "Normal vaginal and periurethral flora ascending into the bladder",
+      "virulenceFactor": "Urease and adhesins that bind uroepithelium",
+      "topicTags": [
+        "gram-positive",
+        "cocci",
+        "catalase positive",
+        "coagulase negative",
+        "urinary tract infection",
+        "urease positive"
+      ],
+      "tooltip": "Novobiocin resistant distinguishes it from S. epidermidis: Saprophyticus is Resistant, Epidermidis is Sensitive — 'NO StRES.' Second most common cause of cystitis in young women."
+    },
+    {
+      "id": "strep-pyogenes",
+      "name": "Streptococcus pyogenes (Group A)",
+      "emoji": "🔗🅰️🔥",
+      "category": "Gram-Positive Cocci",
+      "labFeatures": "Gram-positive cocci in chains, catalase negative, beta-hemolytic, bacitracin sensitive, PYR positive, Lancefield group A",
+      "manifestations": "Pharyngitis, impetigo, erysipelas, cellulitis, necrotizing fasciitis, scarlet fever, toxic shock-like syndrome; sequelae of rheumatic fever and post-streptococcal glomerulonephritis",
+      "treatment": "Penicillin or amoxicillin; add clindamycin for necrotizing fasciitis or toxic shock to suppress toxin production",
+      "transmission": "Respiratory droplets for pharyngitis; direct skin contact for impetigo and cellulitis",
+      "virulenceFactor": "M protein inhibits complement and mediates rheumatic fever through molecular mimicry; streptolysin O is antigenic (ASO titer); exotoxin A is a superantigen",
+      "topicTags": [
+        "gram-positive",
+        "cocci",
+        "catalase negative",
+        "beta-hemolytic",
+        "pharyngitis",
+        "skin infection",
+        "necrotizing fasciitis",
+        "toxin-mediated"
+      ],
+      "tooltip": "Bacitracin sensitive versus group B resistant. M protein drives both immune evasion and rheumatic fever via mimicry of cardiac myosin. Pharyngitis causes both rheumatic fever and PSGN; skin infection causes only PSGN."
+    },
+    {
+      "id": "strep-agalactiae",
+      "name": "Streptococcus agalactiae (Group B)",
+      "emoji": "🔗🅱️👶",
+      "category": "Gram-Positive Cocci",
+      "labFeatures": "Gram-positive cocci in chains, catalase negative, beta-hemolytic, bacitracin resistant, hippurate positive, CAMP test positive, Lancefield group B",
+      "manifestations": "Neonatal meningitis, pneumonia, and sepsis; chorioamnionitis and postpartum endometritis; soft tissue infection in diabetics",
+      "treatment": "Penicillin or ampicillin; intrapartum penicillin prophylaxis for colonized mothers",
+      "transmission": "Vertical transmission from maternal vaginal and rectal colonization during delivery",
+      "virulenceFactor": "Polysaccharide capsule that resists phagocytosis, and beta-hemolysin",
+      "topicTags": [
+        "gram-positive",
+        "cocci",
+        "catalase negative",
+        "beta-hemolytic",
+        "neonatal",
+        "meningitis",
+        "encapsulated"
+      ],
+      "tooltip": "Screen all pregnant women at 35 to 37 weeks and give intrapartum penicillin if positive. Group B is Bacitracin resistant and a cause of Babies' meningitis. CAMP factor and hippurate hydrolysis identify it."
+    },
+    {
+      "id": "strep-pneumoniae",
+      "name": "Streptococcus pneumoniae",
+      "emoji": "🔗2️⃣🫁",
+      "category": "Gram-Positive Cocci",
+      "labFeatures": "Gram-positive lancet-shaped diplococci, catalase negative, alpha-hemolytic, optochin sensitive, bile soluble, encapsulated, quellung reaction positive",
+      "manifestations": "Lobar pneumonia (most common cause), adult meningitis (most common cause), otitis media in children, sinusitis, spontaneous bacterial peritonitis",
+      "treatment": "Ceftriaxone plus vancomycin for meningitis; amoxicillin or ceftriaxone plus a macrolide for pneumonia",
+      "transmission": "Respiratory droplets; often follows viral upper respiratory infection, with nasopharyngeal colonization preceding disease",
+      "virulenceFactor": "Polysaccharide capsule is the key factor; IgA protease aids mucosal invasion; pneumolysin lyses host cells",
+      "topicTags": [
+        "gram-positive",
+        "cocci",
+        "catalase negative",
+        "alpha-hemolytic",
+        "pneumonia",
+        "meningitis",
+        "otitis media",
+        "encapsulated",
+        "IgA protease"
+      ],
+      "tooltip": "MOPS: Meningitis, Otitis media, Pneumonia, Sinusitis. Optochin sensitive and bile soluble separate it from viridans. Asplenic and sickle cell patients are at extreme risk from the capsule."
+    },
+    {
+      "id": "strep-viridans",
+      "name": "Viridans streptococci",
+      "emoji": "🔗🦷💚",
+      "category": "Gram-Positive Cocci",
+      "labFeatures": "Gram-positive cocci in chains, catalase negative, alpha-hemolytic, optochin resistant, bile insoluble, synthesizes dextrans",
+      "manifestations": "Subacute bacterial endocarditis on previously damaged valves, dental caries (S. mutans), brain abscess",
+      "treatment": "Penicillin plus gentamicin for endocarditis; amoxicillin prophylaxis before dental procedures in high-risk patients",
+      "transmission": "Normal oropharyngeal flora entering the blood during dental procedures or poor oral hygiene",
+      "virulenceFactor": "Dextrans that mediate adherence to fibrin-platelet aggregates on damaged valves and to tooth enamel",
+      "topicTags": [
+        "gram-positive",
+        "cocci",
+        "catalase negative",
+        "alpha-hemolytic",
+        "endocarditis",
+        "dental"
+      ],
+      "tooltip": "Optochin resistant and bile insoluble, the mirror image of pneumococcus. Dextran synthesis explains why it sticks to damaged valves — the classic subacute endocarditis after a dental visit."
+    },
+    {
+      "id": "enterococcus",
+      "name": "Enterococcus faecalis / faecium",
+      "emoji": "🔗🧂🛡️",
+      "category": "Gram-Positive Cocci",
+      "labFeatures": "Gram-positive cocci in pairs and short chains, catalase negative, gamma-hemolytic (variable), grows in 6.5% NaCl and bile, PYR positive, Lancefield group D",
+      "manifestations": "Urinary tract infection, biliary tract infection, subacute endocarditis after GI or GU instrumentation, intra-abdominal infection",
+      "treatment": "Ampicillin plus gentamicin for faecalis; linezolid or daptomycin for vancomycin-resistant faecium",
+      "transmission": "Endogenous colonic flora; nosocomial spread between patients in hospitals",
+      "virulenceFactor": "Intrinsic antibiotic resistance and bile and salt tolerance; VanA alters the peptidoglycan terminus from D-ala-D-ala to D-ala-D-lac",
+      "topicTags": [
+        "gram-positive",
+        "cocci",
+        "catalase negative",
+        "endocarditis",
+        "urinary tract infection",
+        "multidrug resistance"
+      ],
+      "tooltip": "Growth in 6.5% NaCl is the identifying feature. VRE resistance comes from swapping D-ala-D-ala for D-ala-D-lac so vancomycin cannot bind. Think endocarditis after colonoscopy."
+    },
+    {
+      "id": "clostridioides-difficile",
+      "name": "Clostridioides difficile",
+      "emoji": "🥖💩🏥",
+      "category": "Gram-Positive Spore-Forming Rod",
+      "labFeatures": "Gram-positive spore-forming anaerobic rod; diagnosed by stool PCR for toxin genes or toxin EIA; pseudomembranes on colonoscopy",
+      "manifestations": "Antibiotic-associated diarrhea, pseudomembranous colitis, toxic megacolon, colonic perforation",
+      "treatment": "Oral vancomycin or fidaxomicin; fecal microbiota transplant for recurrent disease; stop the inciting antibiotic",
+      "transmission": "Fecal-oral spread of alcohol-resistant spores in healthcare settings; requires soap and water, not alcohol gel",
+      "virulenceFactor": "Toxin A (enterotoxin) damages mucosa and Toxin B (cytotoxin) depolymerizes actin, causing cytoskeletal disruption and cell death",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "spore-forming",
+        "anaerobe",
+        "diarrhea",
+        "toxin-mediated",
+        "healthcare-associated"
+      ],
+      "tooltip": "Spores resist alcohol hand gel, so wash with soap and water. Clindamycin, fluoroquinolones, and broad-spectrum beta-lactams are the usual culprits. Toxin B is the cytotoxin that kills enterocytes."
+    },
+    {
+      "id": "clostridium-tetani",
+      "name": "Clostridium tetani",
+      "emoji": "🥖🤐🔒",
+      "category": "Gram-Positive Spore-Forming Rod",
+      "labFeatures": "Gram-positive spore-forming obligate anaerobe with terminal spores giving a tennis-racket appearance; diagnosis is clinical",
+      "manifestations": "Trismus (lockjaw), risus sardonicus, opisthotonus, muscle spasms, autonomic instability; neonatal tetanus from umbilical stump contamination",
+      "treatment": "Tetanus immune globulin, metronidazole, wound debridement, benzodiazepines for spasm, and vaccination",
+      "transmission": "Spores in soil entering puncture wounds, especially rusty nails and deep contaminated wounds",
+      "virulenceFactor": "Tetanospasmin, a protease that cleaves SNARE proteins and blocks release of the inhibitory neurotransmitters glycine and GABA from Renshaw cells",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "spore-forming",
+        "anaerobe",
+        "toxin-mediated",
+        "neurologic",
+        "vaccine-preventable"
+      ],
+      "tooltip": "Blocks inhibitory neurotransmission, so muscles cannot relax — the opposite of botulism, which blocks excitatory acetylcholine release. Both cleave SNARE proteins."
+    },
+    {
+      "id": "clostridium-botulinum",
+      "name": "Clostridium botulinum",
+      "emoji": "🥖🥫😵",
+      "category": "Gram-Positive Spore-Forming Rod",
+      "labFeatures": "Gram-positive spore-forming obligate anaerobe; toxin detected in serum, stool, or the suspect food",
+      "manifestations": "Descending flaccid paralysis with diplopia, dysphagia, dysarthria, and bilateral cranial neuropathies; floppy baby syndrome in infants",
+      "treatment": "Antitoxin (heptavalent in adults, BabyBIG in infants) and respiratory support; antibiotics are not used in infants",
+      "transmission": "Preformed toxin in improperly canned foods in adults; ingested spores in honey for infants under one year",
+      "virulenceFactor": "Botulinum toxin, a protease cleaving SNARE proteins to block presynaptic acetylcholine release at the neuromuscular junction",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "spore-forming",
+        "anaerobe",
+        "toxin-mediated",
+        "neurologic",
+        "foodborne"
+      ],
+      "tooltip": "Adults get preformed toxin from home-canned food; infants get spores from honey that then germinate in the gut. Symmetric descending paralysis with preserved sensation and normal mentation."
+    },
+    {
+      "id": "clostridium-perfringens",
+      "name": "Clostridium perfringens",
+      "emoji": "🥖💨🩸",
+      "category": "Gram-Positive Spore-Forming Rod",
+      "labFeatures": "Gram-positive spore-forming anaerobic rod, double zone of hemolysis on blood agar, stormy fermentation in milk medium, gas in tissue on imaging",
+      "manifestations": "Gas gangrene (myonecrosis) with crepitus, late-onset watery food poisoning 10 to 12 hours after eating, necrotizing enteritis",
+      "treatment": "Surgical debridement plus penicillin and clindamycin; hyperbaric oxygen as adjunct for gas gangrene",
+      "transmission": "Soil contamination of traumatic or surgical wounds; reheated meats and gravy for food poisoning",
+      "virulenceFactor": "Alpha toxin, a lecithinase (phospholipase C) that degrades cell membranes causing myonecrosis and hemolysis",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "spore-forming",
+        "anaerobe",
+        "toxin-mediated",
+        "foodborne",
+        "skin infection"
+      ],
+      "tooltip": "Alpha toxin is a lecithinase producing the double zone of hemolysis and gas in tissue. Its food poisoning has a longer incubation than S. aureus and resolves within 24 hours."
+    },
+    {
+      "id": "bacillus-anthracis",
+      "name": "Bacillus anthracis",
+      "emoji": "🥖⬛🐄",
+      "category": "Gram-Positive Spore-Forming Rod",
+      "labFeatures": "Gram-positive spore-forming rod in long chains (medusa head colonies), the only bacterium with a polypeptide capsule of poly-D-glutamate, non-hemolytic",
+      "manifestations": "Cutaneous anthrax with a painless black eschar; inhalational anthrax (woolsorter's disease) with mediastinal widening and hemorrhagic mediastinitis; GI anthrax",
+      "treatment": "Ciprofloxacin or doxycycline; add antitoxin and multidrug therapy for systemic disease",
+      "transmission": "Spores from contaminated animal hides, wool, and soil; inhalation in bioterrorism or industrial exposure",
+      "virulenceFactor": "Edema factor is an adenylate cyclase raising cAMP; lethal factor is a protease cleaving MAP kinase; poly-D-glutamate capsule resists phagocytosis",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "spore-forming",
+        "toxin-mediated",
+        "skin infection",
+        "encapsulated",
+        "zoonotic"
+      ],
+      "tooltip": "The only bacterium with a protein rather than polysaccharide capsule. Cutaneous lesions are painless black eschars. Inhalational disease shows widened mediastinum on chest x-ray, not pneumonia."
+    },
+    {
+      "id": "bacillus-cereus",
+      "name": "Bacillus cereus",
+      "emoji": "🥖🍚🤢",
+      "category": "Gram-Positive Spore-Forming Rod",
+      "labFeatures": "Gram-positive spore-forming rod, beta-hemolytic, motile, grows aerobically; diagnosis usually clinical from food history",
+      "manifestations": "Emetic syndrome with vomiting 1 to 5 hours after reheated rice; diarrheal syndrome 8 to 18 hours later; keratitis and endophthalmitis after eye trauma",
+      "treatment": "Supportive care with fluids for food poisoning; vancomycin or clindamycin for invasive or ocular disease",
+      "transmission": "Spores surviving in reheated fried rice, pasta, and other starchy foods left at room temperature",
+      "virulenceFactor": "Heat-stable cereulide causing vomiting, and a heat-labile enterotoxin raising cAMP to cause watery diarrhea",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "spore-forming",
+        "toxin-mediated",
+        "foodborne"
+      ],
+      "tooltip": "The reheated rice organism. Cereulide is preformed and heat stable, so reheating does not help — that is the short-incubation vomiting syndrome."
+    },
+    {
+      "id": "corynebacterium-diphtheriae",
+      "name": "Corynebacterium diphtheriae",
+      "emoji": "🥖🎨🫁",
+      "category": "Gram-Positive Rod",
+      "labFeatures": "Gram-positive club-shaped rods in V and L formations, metachromatic granules on methylene blue, black colonies on tellurite agar, Elek test detects toxin",
+      "manifestations": "Pharyngitis with a gray pseudomembrane, bull neck lymphadenopathy, myocarditis with arrhythmia, and peripheral neuropathy",
+      "treatment": "Diphtheria antitoxin first, plus penicillin or erythromycin; vaccination with the toxoid prevents it",
+      "transmission": "Respiratory droplets and direct contact with lesions from infected or carrier individuals",
+      "virulenceFactor": "Diphtheria toxin, encoded by a lysogenic beta-prophage, ADP-ribosylates elongation factor 2 to halt host protein synthesis",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "toxin-mediated",
+        "pharyngitis",
+        "vaccine-preventable",
+        "cardiac"
+      ],
+      "tooltip": "Attempting to scrape the gray pseudomembrane causes bleeding. The toxin is phage-encoded and ADP-ribosylates EF-2 — the same target as Pseudomonas exotoxin A."
+    },
+    {
+      "id": "listeria-monocytogenes",
+      "name": "Listeria monocytogenes",
+      "emoji": "🥖🧊🤰",
+      "category": "Gram-Positive Rod",
+      "labFeatures": "Gram-positive rod with characteristic tumbling motility at 22 to 28 C, cold enrichment (grows at 4 C), weakly beta-hemolytic, catalase positive, facultative intracellular",
+      "manifestations": "Meningitis in neonates, elderly, and immunocompromised; granulomatosis infantiseptica; febrile gastroenteritis; spontaneous abortion",
+      "treatment": "Ampicillin, often with gentamicin; it is the reason ampicillin is added to empiric meningitis coverage at the age extremes",
+      "transmission": "Unpasteurized dairy, soft cheeses, deli meats, and cold smoked fish; transplacental and vaginal transmission at birth",
+      "virulenceFactor": "Listeriolysin O escapes the phagosome; actin rockets (ActA) drive cell-to-cell spread while avoiding extracellular antibody",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "meningitis",
+        "neonatal",
+        "pregnancy",
+        "foodborne",
+        "intracellular"
+      ],
+      "tooltip": "The only gram-positive rod that causes meningitis, and the reason ampicillin is added for neonates, adults over 50, and immunocompromised patients. Actin rockets let it move between cells unseen."
+    },
+    {
+      "id": "nocardia",
+      "name": "Nocardia asteroides",
+      "emoji": "🌿🫁🧠",
+      "category": "Gram-Positive Filamentous Rod",
+      "labFeatures": "Gram-positive branching filamentous rods, partially acid-fast, aerobe, urease positive, grows slowly on buffered charcoal yeast or Sabouraud media",
+      "manifestations": "Cavitary pneumonia in immunocompromised patients, brain abscess, cutaneous infection after soil inoculation",
+      "treatment": "Trimethoprim-sulfamethoxazole, often prolonged; add a carbapenem or amikacin for severe or CNS disease",
+      "transmission": "Inhalation of soil dust, or direct inoculation of soil into skin",
+      "virulenceFactor": "Catalase and superoxide dismutase resist oxidative killing; mycolic acids in the cell wall confer partial acid-fastness",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "aerobe",
+        "pneumonia",
+        "brain abscess",
+        "immunocompromised",
+        "acid-fast"
+      ],
+      "tooltip": "Nocardia is aerobic, partially acid-fast, and treated with sulfonamides; Actinomyces is anaerobic, not acid-fast, and treated with penicillin. 'SNAP' — Sulfa for Nocardia, Actinomyces Penicillin."
+    },
+    {
+      "id": "actinomyces",
+      "name": "Actinomyces israelii",
+      "emoji": "🌿🦷💧",
+      "category": "Gram-Positive Filamentous Rod",
+      "labFeatures": "Gram-positive branching filamentous rods, not acid-fast, obligate anaerobe, yellow sulfur granules in pus",
+      "manifestations": "Cervicofacial abscess with draining sinus tracts through the jaw, pelvic infection associated with IUDs, aspiration pneumonia",
+      "treatment": "High-dose penicillin G followed by oral penicillin, often for 6 to 12 months; surgical drainage",
+      "transmission": "Normal oral flora invading after dental trauma, surgery, or poor dentition",
+      "virulenceFactor": "Ability to form dense filamentous aggregates (sulfur granules) that resist phagocytosis, plus tissue-penetrating sinus tracts",
+      "topicTags": [
+        "gram-positive",
+        "rod",
+        "anaerobe",
+        "dental",
+        "abscess"
+      ],
+      "tooltip": "Draining sinus tracts from the jaw after dental work, with yellow sulfur granules in the pus. Anaerobic and not acid-fast, which separates it from Nocardia. Treated with penicillin."
+    },
+    {
+      "id": "mycobacterium-tuberculosis",
+      "name": "Mycobacterium tuberculosis",
+      "emoji": "🧬🫁🔴",
+      "category": "Mycobacteria",
+      "labFeatures": "Acid-fast bacilli on Ziehl-Neelsen stain, aerobic, slow growing on Lowenstein-Jensen medium, niacin and catalase positive, caseating granulomas on histology",
+      "manifestations": "Primary infection with Ghon complex; reactivation apical cavitary pneumonia with hemoptysis and night sweats; Pott disease, scrofula, meningitis, and miliary spread",
+      "treatment": "Rifampin, isoniazid, pyrazinamide, and ethambutol (RIPE) for two months, then rifampin and isoniazid for four more",
+      "transmission": "Airborne respiratory droplet nuclei from a person with active pulmonary disease; requires airborne isolation",
+      "virulenceFactor": "Cord factor (trehalose dimycolate) induces TNF release and granuloma formation; sulfatides inhibit phagolysosome fusion",
+      "topicTags": [
+        "acid-fast",
+        "mycobacteria",
+        "aerobe",
+        "pneumonia",
+        "granuloma",
+        "intracellular",
+        "meningitis"
+      ],
+      "tooltip": "Reactivation prefers the lung apices because oxygen tension is highest there and the organism is an obligate aerobe. Cord factor drives granuloma formation; sulfatides block phagolysosome fusion."
+    },
+    {
+      "id": "mycobacterium-leprae",
+      "name": "Mycobacterium leprae",
+      "emoji": "🧬🖐️🦫",
+      "category": "Mycobacteria",
+      "labFeatures": "Acid-fast bacillus that cannot be cultured in vitro; grows in armadillos and mouse footpads; prefers cool temperatures",
+      "manifestations": "Tuberculoid form with few well-demarcated hypopigmented anesthetic plaques; lepromatous form with diffuse leonine facies, nodules, and glove-and-stocking neuropathy",
+      "treatment": "Dapsone plus rifampin for tuberculoid; add clofazimine for lepromatous; treatment lasts months to years",
+      "transmission": "Prolonged close contact with respiratory secretions of untreated lepromatous patients; armadillo exposure in the southern United States",
+      "virulenceFactor": "Preference for cool superficial tissues (skin, nerves, nose, extremities) and the ability to survive within Schwann cells and macrophages",
+      "topicTags": [
+        "acid-fast",
+        "mycobacteria",
+        "skin infection",
+        "neurologic",
+        "intracellular",
+        "zoonotic"
+      ],
+      "tooltip": "Tuberculoid is the Th1 response with few organisms and a positive lepromin test; lepromatous is the Th2 response with poor cell-mediated immunity and heavy bacillary load."
+    },
+    {
+      "id": "neisseria-meningitidis",
+      "name": "Neisseria meningitidis",
+      "emoji": "🫘🧠🩸",
+      "category": "Gram-Negative Cocci",
+      "labFeatures": "Gram-negative kidney-bean diplococci, oxidase positive, maltose and glucose fermenter, grows on Thayer-Martin agar, polysaccharide capsule",
+      "manifestations": "Meningitis with petechial or purpuric rash, meningococcemia, Waterhouse-Friderichsen syndrome with adrenal hemorrhage and shock",
+      "treatment": "Ceftriaxone; rifampin, ciprofloxacin, or ceftriaxone for close-contact prophylaxis; conjugate vaccine for prevention",
+      "transmission": "Respiratory droplets and oropharyngeal secretions; outbreaks in dormitories and military barracks",
+      "virulenceFactor": "Polysaccharide capsule, IgA protease, lipooligosaccharide endotoxin driving the shock and purpura, and pili for mucosal attachment",
+      "topicTags": [
+        "gram-negative",
+        "cocci",
+        "oxidase positive",
+        "meningitis",
+        "encapsulated",
+        "IgA protease",
+        "vaccine-preventable",
+        "rash"
+      ],
+      "tooltip": "Ferments Maltose and Glucose; gonorrhoeae ferments Glucose only. Terminal complement deficiency (C5 to C9) causes recurrent Neisseria infection. The vaccine does not cover serogroup B polysaccharide."
+    },
+    {
+      "id": "neisseria-gonorrhoeae",
+      "name": "Neisseria gonorrhoeae",
+      "emoji": "🫘🔥🦵",
+      "category": "Gram-Negative Cocci",
+      "labFeatures": "Gram-negative diplococci, oxidase positive, ferments glucose only, grows on Thayer-Martin, no polysaccharide capsule, intracellular within neutrophils",
+      "manifestations": "Purulent urethritis and cervicitis, pelvic inflammatory disease, Fitz-Hugh-Curtis syndrome, septic arthritis in young adults, neonatal conjunctivitis, disseminated infection with pustular rash and tenosynovitis",
+      "treatment": "Ceftriaxone, with doxycycline added to cover concurrent chlamydia; erythromycin eye ointment prophylaxis in newborns",
+      "transmission": "Sexual contact; vertical transmission during vaginal delivery causing ophthalmia neonatorum",
+      "virulenceFactor": "Antigenic variation of pili prevents lasting immunity and blocks vaccine development; IgA protease; opacity proteins",
+      "topicTags": [
+        "gram-negative",
+        "cocci",
+        "oxidase positive",
+        "sexually transmitted",
+        "septic arthritis",
+        "neonatal",
+        "IgA protease"
+      ],
+      "tooltip": "No capsule and no vaccine, because pilus antigenic variation prevents durable immunity — hence reinfection is common. Neonatal conjunctivitis appears days 2 to 5; chlamydial appears days 5 to 14."
+    },
+    {
+      "id": "escherichia-coli",
+      "name": "Escherichia coli",
+      "emoji": "🥖🚽🌈",
+      "category": "Gram-Negative Rod (Enteric)",
+      "labFeatures": "Gram-negative rod, lactose fermenter (pink on MacConkey), indole positive, green metallic sheen on EMB agar, catalase positive, oxidase negative, motile",
+      "manifestations": "Most common cause of urinary tract infection; neonatal meningitis; gram-negative sepsis; traveler's diarrhea (ETEC); bloody diarrhea and hemolytic uremic syndrome (EHEC O157:H7)",
+      "treatment": "Nitrofurantoin or TMP-SMX for cystitis; ceftriaxone for pyelonephritis or sepsis; supportive care only for EHEC, since antibiotics increase HUS risk",
+      "transmission": "Ascending fecal flora for UTI; contaminated food and water for diarrheal strains; undercooked ground beef for EHEC",
+      "virulenceFactor": "Fimbriae cause cystitis and pyelonephritis; K capsule causes pneumonia and neonatal meningitis; LT and ST toxins cause watery diarrhea; Shiga-like toxin in EHEC inactivates 60S ribosome",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "lactose fermenter",
+        "urinary tract infection",
+        "diarrhea",
+        "meningitis",
+        "neonatal",
+        "encapsulated"
+      ],
+      "tooltip": "EHEC O157:H7 does not ferment sorbitol, which is how labs flag it. Never give antibiotics for EHEC — killing the organism releases more Shiga-like toxin and precipitates hemolytic uremic syndrome."
+    },
+    {
+      "id": "klebsiella-pneumoniae",
+      "name": "Klebsiella pneumoniae",
+      "emoji": "🥖🍮🩸",
+      "category": "Gram-Negative Rod (Enteric)",
+      "labFeatures": "Gram-negative encapsulated rod, lactose fermenter, non-motile, urease positive, very large mucoid colonies from the thick capsule",
+      "manifestations": "Cavitary lobar pneumonia with thick currant jelly sputum in alcoholics and diabetics, aspiration pneumonia, urinary tract infection, nosocomial sepsis, liver abscess",
+      "treatment": "Carbapenem for extended-spectrum beta-lactamase producers; ceftazidime-avibactam or colistin for carbapenem-resistant strains",
+      "transmission": "Aspiration of colonizing oropharyngeal flora; nosocomial spread via healthcare workers and devices",
+      "virulenceFactor": "Very large polysaccharide capsule producing the mucoid phenotype and resisting phagocytosis; urease; ESBL and carbapenemase enzymes",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "lactose fermenter",
+        "pneumonia",
+        "urinary tract infection",
+        "encapsulated",
+        "urease positive",
+        "multidrug resistance"
+      ],
+      "tooltip": "The 4 A's: Aspiration pneumonia, Abscess in lungs and liver, Alcoholics, and diAbetics. Currant jelly sputum reflects necrotizing hemorrhagic consolidation from the capsule-driven inflammation."
+    },
+    {
+      "id": "proteus-mirabilis",
+      "name": "Proteus mirabilis",
+      "emoji": "🥖🌊🪨",
+      "category": "Gram-Negative Rod (Enteric)",
+      "labFeatures": "Gram-negative rod, lactose non-fermenter, highly motile with swarming growth on agar, urease positive, fishy odor, alkaline urine",
+      "manifestations": "Urinary tract infection with struvite (magnesium ammonium phosphate) staghorn calculi, chronic pyelonephritis",
+      "treatment": "TMP-SMX or a fluoroquinolone, plus complete surgical removal of infected stones",
+      "transmission": "Ascending fecal flora into the urinary tract, often in patients with chronic catheters",
+      "virulenceFactor": "Urease splits urea into ammonia, raising urine pH to precipitate struvite stones that then harbor bacteria; swarming motility aids ascent",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "lactose non-fermenter",
+        "urease positive",
+        "urinary tract infection",
+        "kidney stones"
+      ],
+      "tooltip": "Urease alkalinizes urine, which precipitates struvite staghorn calculi. The stone must come out entirely or infection recurs, since bacteria live inside it. Suspect it with urine pH above 8."
+    },
+    {
+      "id": "salmonella-typhi",
+      "name": "Salmonella Typhi",
+      "emoji": "🥖🌹🫄",
+      "category": "Gram-Negative Rod (Enteric)",
+      "labFeatures": "Gram-negative rod, lactose non-fermenter, produces hydrogen sulfide (black colonies on Hektoen), motile with flagella, has Vi capsule, facultative intracellular",
+      "manifestations": "Typhoid fever with stepwise rising fever, rose spots on the abdomen, relative bradycardia, hepatosplenomegaly, pea-soup diarrhea, and intestinal perforation in week 3",
+      "treatment": "Ceftriaxone or azithromycin; a fluoroquinolone where susceptible; cholecystectomy may be needed for chronic carriers",
+      "transmission": "Fecal-oral from contaminated food or water, often from a chronic gallbladder carrier; humans are the only reservoir",
+      "virulenceFactor": "Vi polysaccharide capsule resists phagocytosis; survival within macrophages allows dissemination and gallbladder colonization",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "lactose non-fermenter",
+        "diarrhea",
+        "encapsulated",
+        "intracellular",
+        "foodborne",
+        "vaccine-preventable"
+      ],
+      "tooltip": "Unlike other Salmonella it has a human-only reservoir and colonizes the gallbladder, creating chronic carriers like Typhoid Mary. Antibiotics do help here, unlike nontyphoidal Salmonella gastroenteritis."
+    },
+    {
+      "id": "salmonella-enteritidis",
+      "name": "Salmonella enteritidis (nontyphoidal)",
+      "emoji": "🥖🥚🐢",
+      "category": "Gram-Negative Rod (Enteric)",
+      "labFeatures": "Gram-negative rod, lactose non-fermenter, hydrogen sulfide producer, motile, invades the mucosa producing a monocytic infiltrate",
+      "manifestations": "Inflammatory diarrhea with fever, sometimes bloody; osteomyelitis in sickle cell disease; bacteremia in the immunocompromised",
+      "treatment": "Supportive care only in healthy hosts, since antibiotics prolong the carrier state; treat the very young, elderly, or immunocompromised",
+      "transmission": "Undercooked poultry and eggs, unpasteurized milk, and contact with pet reptiles and turtles",
+      "virulenceFactor": "Flagella and type III secretion system that injects effectors to force epithelial uptake; endotoxin",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "lactose non-fermenter",
+        "diarrhea",
+        "foodborne",
+        "zoonotic",
+        "osteomyelitis"
+      ],
+      "tooltip": "Antibiotics prolong fecal shedding in nontyphoidal Salmonella, so withhold them in healthy patients. It is motile and produces H2S, whereas Shigella is non-motile and does not."
+    },
+    {
+      "id": "shigella",
+      "name": "Shigella species",
+      "emoji": "🥖🩸🚫",
+      "category": "Gram-Negative Rod (Enteric)",
+      "labFeatures": "Gram-negative rod, lactose non-fermenter, non-motile, does not produce hydrogen sulfide, very low infectious dose (as few as 10 organisms)",
+      "manifestations": "Bloody mucoid diarrhea with tenesmus and fever (bacillary dysentery), febrile seizures in children, hemolytic uremic syndrome with S. dysenteriae",
+      "treatment": "Azithromycin or ceftriaxone for severe disease; fluids; avoid antimotility agents",
+      "transmission": "Fecal-oral between humans with a very low infectious dose, so person-to-person spread in daycares is common; the four F's — food, fingers, feces, flies",
+      "virulenceFactor": "Shiga toxin inactivates the 60S ribosomal subunit; invades M cells of Peyer patches and spreads cell to cell via actin polymerization",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "lactose non-fermenter",
+        "diarrhea",
+        "toxin-mediated",
+        "foodborne"
+      ],
+      "tooltip": "Non-motile and H2S negative, the mirror of Salmonella. Its extremely low infectious dose explains daycare outbreaks. Shiga toxin also causes HUS, same mechanism as EHEC."
+    },
+    {
+      "id": "vibrio-cholerae",
+      "name": "Vibrio cholerae",
+      "emoji": "🥖🍚🌊",
+      "category": "Gram-Negative Curved Rod",
+      "labFeatures": "Gram-negative comma-shaped rod, oxidase positive, grows in alkaline media (TCBS agar), shooting-star motility, acid labile so a large inoculum is needed",
+      "manifestations": "Profuse painless rice-water diarrhea with rapid dehydration, hypovolemic shock, and non-gap metabolic acidosis",
+      "treatment": "Aggressive oral or intravenous rehydration is the mainstay; doxycycline or azithromycin shortens shedding",
+      "transmission": "Contaminated drinking water and undercooked shellfish, usually in settings with poor sanitation",
+      "virulenceFactor": "Cholera toxin permanently activates Gs by ADP-ribosylation, raising cAMP to drive chloride and water secretion through CFTR",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "oxidase positive",
+        "diarrhea",
+        "toxin-mediated",
+        "foodborne"
+      ],
+      "tooltip": "Cholera toxin locks Gs on, flooding the lumen with chloride and water. Death is from dehydration, not infection, so rehydration alone saves nearly everyone. Acid labile, so gastric acid is protective."
+    },
+    {
+      "id": "campylobacter-jejuni",
+      "name": "Campylobacter jejuni",
+      "emoji": "🥖🌡️🐔",
+      "category": "Gram-Negative Curved Rod",
+      "labFeatures": "Gram-negative comma or S-shaped rod, oxidase positive, grows at 42 C, microaerophilic, darting motility",
+      "manifestations": "Bloody inflammatory diarrhea with severe cramping that can mimic appendicitis; antecedent of Guillain-Barre syndrome and reactive arthritis",
+      "treatment": "Supportive care; azithromycin or erythromycin if severe or prolonged; avoid fluoroquinolones given resistance",
+      "transmission": "Undercooked poultry, unpasteurized milk, contaminated water, and contact with infected puppies and other animals",
+      "virulenceFactor": "Cytolethal distending toxin; lipooligosaccharide that mimics peripheral nerve gangliosides, triggering autoimmune demyelination",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "oxidase positive",
+        "grows at 42 C",
+        "diarrhea",
+        "foodborne",
+        "zoonotic",
+        "neurologic"
+      ],
+      "tooltip": "Growth at 42 C is the identifying feature — it is adapted to the avian gut. The most common bacterial antecedent of Guillain-Barre, through ganglioside molecular mimicry."
+    },
+    {
+      "id": "helicobacter-pylori",
+      "name": "Helicobacter pylori",
+      "emoji": "🥖🌀🍽️",
+      "category": "Gram-Negative Curved Rod",
+      "labFeatures": "Gram-negative curved rod, oxidase positive, catalase positive, strongly urease positive (basis of breath and stool tests), microaerophilic",
+      "manifestations": "Chronic gastritis, duodenal ulcer (most common cause), gastric ulcer, gastric adenocarcinoma, and MALT lymphoma",
+      "treatment": "Bismuth quadruple therapy, or clarithromycin-based triple therapy with amoxicillin and a proton pump inhibitor",
+      "transmission": "Fecal-oral and oral-oral, usually acquired in childhood in crowded conditions",
+      "virulenceFactor": "Urease neutralizes gastric acid locally and allows colonization; CagA and VacA injure epithelium and promote carcinogenesis",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "urease positive",
+        "oxidase positive",
+        "peptic ulcer disease",
+        "gastric cancer"
+      ],
+      "tooltip": "Urease is both its survival mechanism and the basis of the urea breath test. It is the only bacterium classified as a WHO group 1 carcinogen, causing gastric adenocarcinoma and MALT lymphoma."
+    },
+    {
+      "id": "pseudomonas-aeruginosa",
+      "name": "Pseudomonas aeruginosa",
+      "emoji": "🥖💙🍇",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative rod, oxidase positive, lactose non-fermenter, obligate aerobe, blue-green pyocyanin pigment, grape-like odor, biofilm former",
+      "manifestations": "Pneumonia in cystic fibrosis and ventilated patients, burn wound sepsis, hot tub folliculitis, otitis externa, malignant otitis in diabetics, ecthyma gangrenosum, corneal ulcer in contact lens wearers",
+      "treatment": "Antipseudomonal beta-lactam such as piperacillin-tazobactam, cefepime, or meropenem, often with an aminoglycoside or fluoroquinolone",
+      "transmission": "Water reservoirs including sinks, hot tubs, humidifiers, and ventilator tubing; thrives in moist hospital environments",
+      "virulenceFactor": "Exotoxin A ADP-ribosylates EF-2 halting protein synthesis; phospholipase C, pyocyanin generating reactive oxygen species, alginate biofilm, and endotoxin",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "oxidase positive",
+        "lactose non-fermenter",
+        "aerobe",
+        "pneumonia",
+        "cystic fibrosis",
+        "biofilm",
+        "burn infection"
+      ],
+      "tooltip": "PSEUDOmonas: Pneumonia, Sepsis, Ecthyma gangrenosum, UTI, Diabetic osteomyelitis, Otitis externa. Exotoxin A hits EF-2, the same target as diphtheria toxin. Blue-green pigment with a grape smell."
+    },
+    {
+      "id": "haemophilus-influenzae",
+      "name": "Haemophilus influenzae",
+      "emoji": "🥖🍫🍼",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative pleomorphic coccobacillus requiring factors V (NAD) and X (hematin) on chocolate agar; satellite phenomenon around S. aureus; type b has a polyribosylribitol phosphate capsule",
+      "manifestations": "Epiglottitis with thumbprint sign and drooling, meningitis in unvaccinated children, otitis media, sinusitis, and COPD exacerbation from nontypeable strains",
+      "treatment": "Ceftriaxone for invasive disease; amoxicillin-clavulanate for mucosal infection; rifampin prophylaxis for close contacts",
+      "transmission": "Respiratory droplets and direct contact with respiratory secretions",
+      "virulenceFactor": "Type b polysaccharide capsule (PRP) resists phagocytosis; IgA protease cleaves mucosal antibody",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "meningitis",
+        "otitis media",
+        "encapsulated",
+        "IgA protease",
+        "vaccine-preventable"
+      ],
+      "tooltip": "Needs both factors V and X, hence growth only on chocolate agar. The Hib conjugate vaccine nearly eliminated invasive disease, so epiglottitis now suggests an unvaccinated child."
+    },
+    {
+      "id": "legionella",
+      "name": "Legionella pneumophila",
+      "emoji": "🥖💧🧊",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative rod that stains poorly (use silver stain), requires charcoal yeast extract with iron and cysteine, urine antigen test, facultative intracellular",
+      "manifestations": "Severe atypical pneumonia with high fever, relative bradycardia, diarrhea, confusion, and hyponatremia; Pontiac fever as a mild flu-like form",
+      "treatment": "Azithromycin or levofloxacin",
+      "transmission": "Inhalation of aerosols from contaminated water systems — air conditioning cooling towers, hot tubs, decorative fountains; no person-to-person spread",
+      "virulenceFactor": "Survives and replicates within alveolar macrophages by blocking phagolysosome fusion; Dot/Icm type IV secretion system",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "pneumonia",
+        "intracellular",
+        "healthcare-associated",
+        "hyponatremia"
+      ],
+      "tooltip": "Pneumonia plus hyponatremia plus diarrhea plus confusion in a smoker — think Legionella and send a urine antigen. Stains poorly on Gram because of its branched-chain fatty acid cell wall."
+    },
+    {
+      "id": "bordetella-pertussis",
+      "name": "Bordetella pertussis",
+      "emoji": "🥖😤🐓",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative coccobacillus grown on Bordet-Gengou or Regan-Lowe medium, diagnosed by nasopharyngeal PCR, marked lymphocytosis on CBC",
+      "manifestations": "Whooping cough in three stages: catarrhal, paroxysmal with inspiratory whoop and post-tussive emesis, then convalescent; apnea in infants",
+      "treatment": "Azithromycin, which limits spread more than it alters the course once paroxysms begin; DTaP and Tdap for prevention",
+      "transmission": "Highly contagious respiratory droplets; infants are often infected by an undervaccinated adolescent or adult",
+      "virulenceFactor": "Pertussis toxin disables Gi by ADP-ribosylation causing unchecked cAMP rise; filamentous hemagglutinin for attachment; tracheal cytotoxin destroys ciliated cells",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "pneumonia",
+        "toxin-mediated",
+        "vaccine-preventable",
+        "pediatrics"
+      ],
+      "tooltip": "Pertussis toxin disables Gi, the opposite of cholera toxin which locks Gs on — both end in excess cAMP. Lymphocytosis rather than neutrophilia is a distinctive clue."
+    },
+    {
+      "id": "brucella",
+      "name": "Brucella species",
+      "emoji": "🥖🐐🌊",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Small gram-negative coccobacillus, facultative intracellular, slow growing requiring prolonged culture, serology for diagnosis; a laboratory biohazard",
+      "manifestations": "Undulant fever with drenching sweats, malaise, arthralgias, hepatosplenomegaly, sacroiliitis, and spinal osteomyelitis",
+      "treatment": "Doxycycline plus rifampin, or doxycycline plus streptomycin, for six weeks",
+      "transmission": "Unpasteurized dairy from goats, sheep, or cattle; contact with infected animal tissue in farmers, veterinarians, and abattoir workers",
+      "virulenceFactor": "Survival within macrophages by inhibiting phagosome-lysosome fusion, allowing chronic reticuloendothelial infection",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "intracellular",
+        "zoonotic",
+        "osteomyelitis",
+        "granuloma"
+      ],
+      "tooltip": "Undulant fever means it rises and falls over weeks. Unpasteurized goat cheese plus back pain plus sweats is the classic vignette. Requires combination therapy because it hides inside macrophages."
+    },
+    {
+      "id": "francisella-tularensis",
+      "name": "Francisella tularensis",
+      "emoji": "🥖🐰🕷️",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Small gram-negative coccobacillus requiring cysteine-enriched media, facultative intracellular, highly infectious at very low doses, serology or PCR for diagnosis",
+      "manifestations": "Ulceroglandular tularemia with a painful ulcer and regional lymphadenopathy; pneumonic and typhoidal forms; caseating granulomas",
+      "treatment": "Streptomycin or gentamicin; doxycycline or ciprofloxacin for milder disease",
+      "transmission": "Tick and deerfly bites, handling infected rabbits, and inhalation of aerosols from contaminated soil or lawn mowing",
+      "virulenceFactor": "Intracellular survival in macrophages and an exceptionally low infectious dose (as few as 10 organisms), making it a bioterrorism concern",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "intracellular",
+        "zoonotic",
+        "tick-borne",
+        "granuloma",
+        "lymphadenopathy"
+      ],
+      "tooltip": "Rabbits and ticks. The infectious dose is so low that laboratory handling requires biosafety level 3. Forms caseating granulomas, so it can mimic tuberculosis histologically."
+    },
+    {
+      "id": "yersinia-pestis",
+      "name": "Yersinia pestis",
+      "emoji": "🥖🐀⚫",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative rod with bipolar safety-pin appearance on Wright-Giemsa stain, facultative intracellular, grows at 28 C best",
+      "manifestations": "Bubonic plague with painful matted buboes, septicemic plague with purpura and gangrene, and rapidly fatal pneumonic plague",
+      "treatment": "Streptomycin or gentamicin; doxycycline or ciprofloxacin as alternatives; strict isolation for pneumonic cases",
+      "transmission": "Flea bite from infected rodents, including prairie dogs in the southwestern United States; person-to-person respiratory spread in pneumonic plague",
+      "virulenceFactor": "F1 capsular antigen, Yersinia outer proteins (Yops) delivered by type III secretion to disable phagocytes, and plasminogen activator",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "intracellular",
+        "zoonotic",
+        "lymphadenopathy",
+        "pneumonia"
+      ],
+      "tooltip": "Safety-pin bipolar staining. Buboes are exquisitely tender, unlike the painless adenopathy of many other infections. Pneumonic plague is the only form that spreads person to person."
+    },
+    {
+      "id": "bartonella-henselae",
+      "name": "Bartonella henselae",
+      "emoji": "🥖🐈🪶",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative rod, fastidious and hard to culture, diagnosed serologically; Warthin-Starry silver stain of nodes; bacillary angiomatosis histology",
+      "manifestations": "Cat-scratch disease with regional tender lymphadenopathy and low-grade fever; bacillary angiomatosis and peliosis hepatis in HIV; culture-negative endocarditis",
+      "treatment": "Azithromycin for cat-scratch disease; doxycycline plus rifampin for bacillary angiomatosis",
+      "transmission": "Cat scratch or bite, and cat flea exposure",
+      "virulenceFactor": "Induction of vascular endothelial proliferation producing angioproliferative lesions, and intracellular persistence in erythrocytes and endothelium",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "zoonotic",
+        "lymphadenopathy",
+        "endocarditis",
+        "HIV-associated"
+      ],
+      "tooltip": "In immunocompetent hosts it causes self-limited regional adenopathy; in HIV it drives vascular proliferation (bacillary angiomatosis), which can be mistaken for Kaposi sarcoma."
+    },
+    {
+      "id": "treponema-pallidum",
+      "name": "Treponema pallidum",
+      "emoji": "🌀🔱🩹",
+      "category": "Spirochete",
+      "labFeatures": "Thin spirochete not visible on Gram stain and not culturable; dark-field microscopy, VDRL and RPR screening, FTA-ABS confirmation",
+      "manifestations": "Primary painless chancre; secondary diffuse maculopapular rash including palms and soles, condyloma lata; tertiary gummas, tabes dorsalis, Argyll Robertson pupils, aortitis; congenital syphilis with snuffles and saber shins",
+      "treatment": "Penicillin G at every stage, with dose and duration by stage; desensitize penicillin-allergic pregnant patients rather than substitute",
+      "transmission": "Sexual contact with a moist lesion; transplacental transmission causing congenital syphilis",
+      "virulenceFactor": "Outer membrane with very few surface proteins to limit antibody recognition, plus antigenic variation allowing immune evasion",
+      "topicTags": [
+        "spirochete",
+        "sexually transmitted",
+        "rash",
+        "neurologic",
+        "cardiac",
+        "congenital infection"
+      ],
+      "tooltip": "Primary chancre is painless, unlike chancroid from H. ducreyi. Treatment can precipitate the Jarisch-Herxheimer reaction — fever and myalgias hours after penicillin from lysed organisms."
+    },
+    {
+      "id": "borrelia-burgdorferi",
+      "name": "Borrelia burgdorferi",
+      "emoji": "🌀🎯🦌",
+      "category": "Spirochete",
+      "labFeatures": "Large spirochete visible on Giemsa stain; serologic ELISA with Western blot confirmation; clinical diagnosis when erythema migrans is present",
+      "manifestations": "Stage 1 erythema migrans target rash with flu-like illness; stage 2 facial nerve palsy, AV block, migratory arthralgia; stage 3 chronic monoarticular arthritis and encephalopathy",
+      "treatment": "Doxycycline for early disease; amoxicillin or cefuroxime in children and pregnancy; ceftriaxone for carditis or neurologic involvement",
+      "transmission": "Bite of the Ixodes scapularis tick, with the white-footed mouse as reservoir and deer as the adult tick host; requires 24 to 48 hours of attachment",
+      "virulenceFactor": "Outer surface protein antigenic variation (VlsE) for immune evasion, and the ability to disseminate widely through tissue",
+      "topicTags": [
+        "spirochete",
+        "tick-borne",
+        "rash",
+        "neurologic",
+        "cardiac",
+        "arthritis",
+        "zoonotic"
+      ],
+      "tooltip": "The Ixodes tick also transmits Babesia and Anaplasma, so coinfection is common. Bell palsy plus a target rash plus heart block in a Northeast hiker is the classic picture."
+    },
+    {
+      "id": "leptospira",
+      "name": "Leptospira interrogans",
+      "emoji": "🌀🐕🌊",
+      "category": "Spirochete",
+      "labFeatures": "Thin spirochete with hooked ends on dark-field microscopy, grows in Fletcher medium, serology or PCR; conjunctival suffusion without discharge",
+      "manifestations": "Flu-like illness with severe myalgias, conjunctival suffusion, and photophobia; Weil disease with jaundice, renal failure, and hemorrhage",
+      "treatment": "Penicillin G or doxycycline; doxycycline for prophylaxis in high-risk exposure",
+      "transmission": "Contact with water contaminated by animal urine, especially dog and rodent; surfers and tropical travelers, and flooding events",
+      "virulenceFactor": "Motility and tissue invasiveness allowing penetration of intact mucosa and skin, with vascular endothelial damage",
+      "topicTags": [
+        "spirochete",
+        "zoonotic",
+        "jaundice",
+        "acute kidney injury"
+      ],
+      "tooltip": "Conjunctival suffusion — red eyes without discharge — plus severe calf myalgias in a surfer or someone exposed to floodwater. Weil disease is the severe icteric form with renal failure."
+    },
+    {
+      "id": "chlamydia-trachomatis",
+      "name": "Chlamydia trachomatis",
+      "emoji": "🔵👁️🔥",
+      "category": "Obligate Intracellular",
+      "labFeatures": "Obligate intracellular organism lacking muramic acid in its peptidoglycan; cytoplasmic inclusions on Giemsa; nucleic acid amplification testing for diagnosis",
+      "manifestations": "Nongonococcal urethritis and cervicitis, pelvic inflammatory disease, reactive arthritis, lymphogranuloma venereum, neonatal conjunctivitis and pneumonia, and trachoma causing blindness",
+      "treatment": "Azithromycin or doxycycline; erythromycin for neonates; azithromycin for mass treatment of trachoma",
+      "transmission": "Sexual contact; vertical transmission at delivery; eye-seeking flies and fingers for trachoma serotypes A through C",
+      "virulenceFactor": "Two-form life cycle — the infectious extracellular elementary body and the replicative intracellular reticulate body — plus inhibition of phagolysosome fusion",
+      "topicTags": [
+        "intracellular",
+        "sexually transmitted",
+        "neonatal",
+        "arthritis",
+        "conjunctivitis"
+      ],
+      "tooltip": "It cannot make its own ATP, so it is an energy parasite. Serotypes A to C cause trachoma, D to K cause genital and neonatal disease, and L1 to L3 cause lymphogranuloma venereum."
+    },
+    {
+      "id": "mycoplasma-pneumoniae",
+      "name": "Mycoplasma pneumoniae",
+      "emoji": "🔵🫁🧊",
+      "category": "Cell-Wall-Deficient",
+      "labFeatures": "No cell wall, so invisible on Gram stain and unaffected by beta-lactams; membrane contains cholesterol; fried-egg colonies on Eaton agar; positive cold agglutinins",
+      "manifestations": "Walking pneumonia in young adults with persistent dry cough and chest x-ray findings worse than the exam suggests; bullous myringitis; erythema multiforme; cold agglutinin hemolytic anemia",
+      "treatment": "Azithromycin, doxycycline, or a fluoroquinolone; beta-lactams are useless",
+      "transmission": "Respiratory droplets in close quarters — military recruits, college dormitories, and prisons",
+      "virulenceFactor": "P1 adhesin binds respiratory epithelium; hydrogen peroxide production damages cilia; no endotoxin since there is no cell wall",
+      "topicTags": [
+        "atypical pneumonia",
+        "cell-wall-deficient",
+        "pneumonia",
+        "hemolytic anemia"
+      ],
+      "tooltip": "No cell wall means no Gram stain and no beta-lactam susceptibility. The only bacterium with cholesterol in its membrane. Cold agglutinin IgM can cause hemolysis — a favorite exam link."
+    },
+    {
+      "id": "rickettsia-rickettsii",
+      "name": "Rickettsia rickettsii",
+      "emoji": "🔵🕷️🖐️",
+      "category": "Obligate Intracellular",
+      "labFeatures": "Obligate intracellular gram-negative organism, Giemsa stain, serology for diagnosis; Weil-Felix historically positive; thrombocytopenia and hyponatremia common",
+      "manifestations": "Rocky Mountain spotted fever — fever, severe headache, then a rash starting on wrists and ankles that spreads centrally and involves palms and soles; vasculitis and shock",
+      "treatment": "Doxycycline started empirically on clinical suspicion, including in children, since delay is fatal",
+      "transmission": "Dermacentor tick bite, most commonly in the south Atlantic and south central United States despite the name",
+      "virulenceFactor": "Replication within vascular endothelium causing widespread small-vessel vasculitis, increased permeability, and consumptive thrombocytopenia",
+      "topicTags": [
+        "intracellular",
+        "tick-borne",
+        "rash",
+        "vasculitis",
+        "zoonotic"
+      ],
+      "tooltip": "Rash starts peripherally and moves inward — the reverse of typhus, which starts centrally and spares palms and soles. Treat on suspicion; waiting for serology costs lives."
+    },
+    {
+      "id": "coxiella-burnetii",
+      "name": "Coxiella burnetii",
+      "emoji": "🔵🐑💨",
+      "category": "Obligate Intracellular",
+      "labFeatures": "Obligate intracellular organism with a spore-like stable form, no arthropod vector required, serology for diagnosis; the exception to most Rickettsial rules",
+      "manifestations": "Q fever with pneumonia, high fever, and hepatitis with granulomas; chronic Q fever causing culture-negative endocarditis",
+      "treatment": "Doxycycline; add hydroxychloroquine for chronic Q fever endocarditis, often for 18 months or more",
+      "transmission": "Inhalation of aerosols from infected cattle, sheep, and goat placenta, hides, or amniotic fluid; no tick bite needed",
+      "virulenceFactor": "Resistant spore-like form surviving environmental drying, plus replication inside the acidified phagolysosome of macrophages",
+      "topicTags": [
+        "intracellular",
+        "zoonotic",
+        "pneumonia",
+        "endocarditis",
+        "granuloma"
+      ],
+      "tooltip": "The Rickettsial exception: no rash, no vector, spore-forming, and spread by aerosol. Think farm animals and parturition. A classic cause of culture-negative endocarditis."
+    },
+    {
+      "id": "ehrlichia-anaplasma",
+      "name": "Anaplasma phagocytophilum",
+      "emoji": "🔵🕷️⚪",
+      "category": "Obligate Intracellular",
+      "labFeatures": "Obligate intracellular organism forming morulae within granulocytes on peripheral smear; leukopenia, thrombocytopenia, and elevated transaminases; PCR confirms",
+      "manifestations": "Human granulocytic anaplasmosis with fever, headache, and myalgias, typically without a rash",
+      "treatment": "Doxycycline",
+      "transmission": "Ixodes tick bite, the same vector as Lyme disease and Babesia, so coinfection is common",
+      "virulenceFactor": "Replication within neutrophil vacuoles while inhibiting the respiratory burst and delaying apoptosis of the host cell",
+      "topicTags": [
+        "intracellular",
+        "tick-borne",
+        "zoonotic",
+        "neutropenia"
+      ],
+      "tooltip": "Fever and headache with cytopenias and no rash after a tick bite. Morulae inside granulocytes are the key smear finding; Ehrlichia forms them inside monocytes instead."
+    },
+    {
+      "id": "gardnerella-vaginalis",
+      "name": "Gardnerella vaginalis",
+      "emoji": "🥖🐟🔬",
+      "category": "Gram-Variable Rod",
+      "labFeatures": "Gram-variable pleomorphic rod; clue cells (epithelial cells coated with bacteria) on wet mount, vaginal pH above 4.5, positive whiff test with potassium hydroxide",
+      "manifestations": "Bacterial vaginosis with thin gray-white malodorous discharge and minimal inflammation; associated with preterm labor",
+      "treatment": "Metronidazole or clindamycin, oral or intravaginal",
+      "transmission": "Overgrowth of endogenous flora with loss of protective lactobacilli, associated with douching and new sexual partners",
+      "virulenceFactor": "Biofilm formation on vaginal epithelium and production of amines (the fishy odor) as lactobacilli are displaced",
+      "topicTags": [
+        "gram-variable",
+        "vaginitis",
+        "sexually associated"
+      ],
+      "tooltip": "Vaginosis, not vaginitis — there is little inflammation, which is why there is no itching or dysuria. Clue cells plus a positive whiff test plus pH above 4.5 clinches it."
+    },
+    {
+      "id": "bacteroides-fragilis",
+      "name": "Bacteroides fragilis",
+      "emoji": "🥖🚫💨",
+      "category": "Gram-Negative Anaerobe",
+      "labFeatures": "Gram-negative obligate anaerobic rod, bile resistant, grows below the diaphragm, lacks lipid A potency so endotoxin is weak",
+      "manifestations": "Intra-abdominal abscess after bowel perforation, peritonitis, pelvic abscess, and polymicrobial surgical site infection",
+      "treatment": "Metronidazole, piperacillin-tazobactam, or a carbapenem; drainage of abscesses",
+      "transmission": "Endogenous colonic flora spilling into the peritoneum after perforation, surgery, or diverticulitis",
+      "virulenceFactor": "Polysaccharide capsule promoting abscess formation, superoxide dismutase and catalase for brief oxygen tolerance, and beta-lactamase production",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "anaerobe",
+        "abscess",
+        "intra-abdominal infection"
+      ],
+      "tooltip": "The dominant anaerobe below the diaphragm; above the diaphragm think Peptostreptococcus and oral anaerobes. Its capsule is what drives abscess formation."
+    },
+    {
+      "id": "haemophilus-ducreyi",
+      "name": "Haemophilus ducreyi",
+      "emoji": "🥖😖🩹",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative coccobacillus in a school-of-fish arrangement, fastidious requiring enriched chocolate agar, usually a clinical diagnosis",
+      "manifestations": "Chancroid — one or more deep painful genital ulcers with ragged undermined edges and tender suppurative inguinal lymphadenopathy",
+      "treatment": "Azithromycin single dose, or ceftriaxone",
+      "transmission": "Sexual contact, most common in tropical and subtropical regions",
+      "virulenceFactor": "Cytolethal distending toxin causing tissue necrosis and ulceration, and resistance to serum killing",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "sexually transmitted",
+        "lymphadenopathy"
+      ],
+      "tooltip": "'Do cry' — H. ducreyi ulcers are painful, unlike the painless syphilitic chancre. Painful ulcer plus tender suppurative nodes is the distinguishing pair."
+    },
+    {
+      "id": "klebsiella-granulomatis",
+      "name": "Klebsiella granulomatis",
+      "emoji": "🥖🫀🌹",
+      "category": "Gram-Negative Rod (Enteric)",
+      "labFeatures": "Gram-negative rod seen as intracytoplasmic Donovan bodies in macrophages on Giemsa stain; difficult to culture",
+      "manifestations": "Granuloma inguinale (donovanosis) — a painless beefy-red ulcer that bleeds readily, without lymphadenopathy",
+      "treatment": "Doxycycline or azithromycin for at least three weeks until lesions heal",
+      "transmission": "Sexual contact, endemic in tropical regions including India, Papua New Guinea, and parts of Africa",
+      "virulenceFactor": "Intracellular survival in macrophages producing chronic granulomatous ulceration with vascular friable tissue",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "sexually transmitted",
+        "intracellular"
+      ],
+      "tooltip": "Donovan bodies in macrophages. A beefy-red painless ulcer that bleeds easily and notably lacks lymphadenopathy — which distinguishes it from chancroid and lymphogranuloma venereum."
+    },
+    {
+      "id": "ureaplasma",
+      "name": "Ureaplasma urealyticum",
+      "emoji": "🔵💧🔥",
+      "category": "Cell-Wall-Deficient",
+      "labFeatures": "No cell wall, urease positive, requires urea for growth, not seen on Gram stain, PCR for diagnosis",
+      "manifestations": "Nongonococcal urethritis, especially persistent cases after chlamydia has been treated; chorioamnionitis and neonatal pneumonia",
+      "treatment": "Doxycycline or azithromycin; beta-lactams are ineffective",
+      "transmission": "Sexual contact; vertical transmission to the neonate",
+      "virulenceFactor": "Urease generating ammonia that damages urothelium, plus adherence to mucosal epithelium",
+      "topicTags": [
+        "cell-wall-deficient",
+        "sexually transmitted",
+        "urease positive",
+        "neonatal"
+      ],
+      "tooltip": "Consider it in persistent urethritis after treating gonorrhea and chlamydia. Like Mycoplasma it has no cell wall, so beta-lactams do nothing — and urease positivity distinguishes it."
+    },
+    {
+      "id": "mycobacterium-avium",
+      "name": "Mycobacterium avium complex",
+      "emoji": "🧬🫁🛡️",
+      "category": "Mycobacteria",
+      "labFeatures": "Acid-fast bacilli, slow growing, environmental nontuberculous mycobacteria; blood culture positive in disseminated disease with CD4 below 50",
+      "manifestations": "Disseminated infection with fever, weight loss, diarrhea, and anemia in advanced HIV; cavitary lung disease in COPD; Lady Windermere syndrome; cervical lymphadenitis in children",
+      "treatment": "Azithromycin plus ethambutol plus rifabutin; azithromycin prophylaxis when CD4 is below 50",
+      "transmission": "Environmental exposure to water and soil aerosols; no person-to-person transmission",
+      "virulenceFactor": "Intracellular survival in macrophages with resistance to lysosomal killing; intrinsic multidrug resistance from the lipid-rich cell wall",
+      "topicTags": [
+        "acid-fast",
+        "mycobacteria",
+        "HIV-associated",
+        "pneumonia",
+        "immunocompromised",
+        "lymphadenopathy"
+      ],
+      "tooltip": "A CD4 count below 50 is the threshold for both disease and prophylaxis. Lady Windermere syndrome is right middle lobe disease in thin elderly women who habitually suppress cough."
+    },
+    {
+      "id": "burkholderia-cepacia",
+      "name": "Burkholderia cepacia complex",
+      "emoji": "🥖🫁🧅",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative rod, oxidase positive, lactose non-fermenter, aerobe, highly antibiotic resistant, grows on selective OFPBL agar",
+      "manifestations": "Rapidly progressive pneumonia and cepacia syndrome in cystic fibrosis; infection in chronic granulomatous disease; nosocomial outbreaks from contaminated solutions",
+      "treatment": "Trimethoprim-sulfamethoxazole, meropenem, or ceftazidime guided by susceptibilities; often multidrug resistant",
+      "transmission": "Person-to-person among cystic fibrosis patients (hence segregation policies), and contaminated medical solutions and disinfectants",
+      "virulenceFactor": "Extreme intrinsic antibiotic resistance, biofilm formation, and cable pili mediating adherence to respiratory epithelium",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "oxidase positive",
+        "aerobe",
+        "cystic fibrosis",
+        "multidrug resistance",
+        "biofilm"
+      ],
+      "tooltip": "A feared cystic fibrosis pathogen because it can cause fulminant decline and is a contraindication to lung transplant at many centers. CF patients are kept apart to prevent its spread."
+    },
+    {
+      "id": "serratia-marcescens",
+      "name": "Serratia marcescens",
+      "emoji": "🥖🔴🏥",
+      "category": "Gram-Negative Rod (Enteric)",
+      "labFeatures": "Gram-negative rod, lactose non-fermenter (slow), red prodigiosin pigment, DNase positive, motile, AmpC beta-lactamase producer",
+      "manifestations": "Nosocomial urinary tract and respiratory infection, catheter-related bloodstream infection, endocarditis in injection drug users",
+      "treatment": "Carbapenem or cefepime; avoid third-generation cephalosporins because AmpC induction causes resistance during therapy",
+      "transmission": "Contaminated hospital equipment, catheters, intravenous fluids, and hands of healthcare workers",
+      "virulenceFactor": "AmpC beta-lactamase inducible during treatment, biofilm formation on catheters, and extracellular DNase and proteases",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "lactose non-fermenter",
+        "healthcare-associated",
+        "urinary tract infection",
+        "multidrug resistance"
+      ],
+      "tooltip": "Red pigment is the memorable clue. It belongs to the SPACE organisms (Serratia, Pseudomonas, Acinetobacter, Citrobacter, Enterobacter) that induce AmpC and defeat cephalosporins mid-course."
+    },
+    {
+      "id": "acinetobacter-baumannii",
+      "name": "Acinetobacter baumannii",
+      "emoji": "🥖🏥🛡️",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative coccobacillus, oxidase negative, non-motile, strict aerobe, lactose non-fermenter, survives on dry surfaces for weeks",
+      "manifestations": "Ventilator-associated pneumonia, bloodstream infection, wound infection in combat casualties, and meningitis after neurosurgery",
+      "treatment": "Carbapenem if susceptible; colistin, tigecycline, or cefiderocol for carbapenem-resistant strains",
+      "transmission": "Contaminated ICU surfaces, ventilator circuits, and healthcare worker hands; notorious in combat trauma",
+      "virulenceFactor": "Extraordinary environmental persistence, efflux pumps and carbapenemases, and biofilm formation on plastic",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "aerobe",
+        "healthcare-associated",
+        "pneumonia",
+        "multidrug resistance",
+        "biofilm"
+      ],
+      "tooltip": "Among the most antibiotic-resistant organisms in medicine and remarkably hardy on dry surfaces, which is why ICU outbreaks are so hard to clear. Oxidase negative, unlike Pseudomonas."
+    },
+    {
+      "id": "enterobacter",
+      "name": "Enterobacter species",
+      "emoji": "🥖🏥🔄",
+      "category": "Gram-Negative Rod (Enteric)",
+      "labFeatures": "Gram-negative rod, lactose fermenter, motile, oxidase negative, inducible AmpC beta-lactamase",
+      "manifestations": "Nosocomial pneumonia, urinary tract infection, surgical site infection, and bacteremia",
+      "treatment": "Cefepime or a carbapenem; third-generation cephalosporins fail because AmpC is derepressed during treatment",
+      "transmission": "Nosocomial spread from hospital flora, devices, and healthcare worker hands",
+      "virulenceFactor": "Inducible AmpC beta-lactamase causing treatment-emergent resistance, plus endotoxin and biofilm formation",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "lactose fermenter",
+        "healthcare-associated",
+        "multidrug resistance"
+      ],
+      "tooltip": "The classic AmpC trap: the isolate tests susceptible to ceftriaxone, the patient improves, then relapses with a now-resistant organism. Use cefepime or a carbapenem from the start."
+    },
+    {
+      "id": "pasteurella-multocida",
+      "name": "Pasteurella multocida",
+      "emoji": "🥖🐈🐕",
+      "category": "Gram-Negative Rod (Non-Enteric)",
+      "labFeatures": "Gram-negative coccobacillus with bipolar staining, oxidase positive, catalase positive, grows on blood agar but not MacConkey",
+      "manifestations": "Rapidly progressive cellulitis within 24 hours of a cat or dog bite, with lymphangitis; osteomyelitis and septic arthritis if deeper structures are involved",
+      "treatment": "Amoxicillin-clavulanate; doxycycline or a fluoroquinolone plus clindamycin if penicillin allergic",
+      "transmission": "Cat and dog bites and scratches; cat bites are higher risk because they inoculate deeply",
+      "virulenceFactor": "Polysaccharide capsule resisting phagocytosis, plus endotoxin and dermonecrotic toxin",
+      "topicTags": [
+        "gram-negative",
+        "rod",
+        "oxidase positive",
+        "zoonotic",
+        "skin infection",
+        "encapsulated"
+      ],
+      "tooltip": "Cellulitis appearing within a day of an animal bite points here; staph and strep cellulitis take longer. Amoxicillin-clavulanate covers it plus the oral anaerobes also inoculated by the bite."
+    }
+  ]
+}

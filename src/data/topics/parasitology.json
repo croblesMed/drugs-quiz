@@ -1,0 +1,594 @@
+{
+  "id": "parasitology",
+  "label": "Parasitology",
+  "icon": "🪱",
+  "blurb": "Protozoa, nematodes, cestodes, trematodes — life cycle, disease, and drug",
+  "kind": "pathogen",
+  "organisms": [
+    {
+      "id": "plasmodium-falciparum",
+      "name": "Plasmodium falciparum",
+      "emoji": "🪱🦟🩸",
+      "category": "Blood Protozoan",
+      "labFeatures": "Thick and thin blood smears show ring forms and banana-shaped gametocytes with high parasitemia and all erythrocyte stages infected; no hypnozoites; rapid antigen tests",
+      "manifestations": "Irregular continuous fever, cerebral malaria with seizures and coma, severe hemolytic anemia, blackwater fever, acute kidney injury, and ARDS",
+      "treatment": "Intravenous artesunate for severe malaria; artemisinin-based combination therapy for uncomplicated cases; no primaquine needed since there are no hypnozoites",
+      "transmission": "Bite of the female Anopheles mosquito; also congenital and transfusion-transmitted",
+      "virulenceFactor": "PfEMP1 mediates erythrocyte rosetting and adhesion to endothelium causing microvascular obstruction and cerebral malaria; infects red cells of all ages",
+      "topicTags": [
+        "protozoan",
+        "mosquito-borne",
+        "malaria",
+        "hemolytic anemia",
+        "encephalitis"
+      ],
+      "tooltip": "The deadly species, because it infects red cells of every age and sequesters in capillaries. Sickle trait, G6PD deficiency, and thalassemia all confer partial protection."
+    },
+    {
+      "id": "plasmodium-vivax",
+      "name": "Plasmodium vivax / ovale",
+      "emoji": "🪱🦟🛌",
+      "category": "Blood Protozoan",
+      "labFeatures": "Blood smear shows enlarged infected red cells with Schuffner dots; infects only reticulocytes so parasitemia stays low; dormant hypnozoites in the liver",
+      "manifestations": "Tertian fever every 48 hours with chills and rigors, splenomegaly, mild anemia, and relapses months to years later from hepatic hypnozoites",
+      "treatment": "Chloroquine or ACT for blood stages, plus primaquine or tafenoquine to eradicate hypnozoites after G6PD testing",
+      "transmission": "Anopheles mosquito bite; vivax requires Duffy antigen on red cells for invasion",
+      "virulenceFactor": "Hypnozoite dormancy in hepatocytes allowing relapse long after the mosquito exposure; restriction to reticulocytes limits parasite burden",
+      "topicTags": [
+        "protozoan",
+        "mosquito-borne",
+        "malaria",
+        "G6PD deficiency",
+        "hemolytic anemia"
+      ],
+      "tooltip": "Only vivax and ovale form hypnozoites, so only they relapse and only they need primaquine. Duffy-negative individuals, common in West Africa, are resistant to vivax."
+    },
+    {
+      "id": "babesia",
+      "name": "Babesia microti",
+      "emoji": "🪱🕷️✝️",
+      "category": "Blood Protozoan",
+      "labFeatures": "Blood smear shows Maltese cross tetrads and pleomorphic ring forms within red cells; no pigment; PCR and serology; hemolytic anemia with high LDH",
+      "manifestations": "Fever, drenching sweats, hemolytic anemia, and fatigue; severe or fatal disease in asplenic, elderly, or immunocompromised patients",
+      "treatment": "Atovaquone plus azithromycin for mild disease; clindamycin plus quinine for severe disease; exchange transfusion for high parasitemia",
+      "transmission": "Ixodes scapularis tick bite in the northeastern and upper midwestern United States; also blood transfusion; coinfection with Lyme is common",
+      "virulenceFactor": "Intraerythrocytic replication causing hemolysis; the spleen is critical for clearance, which is why asplenia predicts severe disease",
+      "topicTags": [
+        "protozoan",
+        "tick-borne",
+        "hemolytic anemia",
+        "zoonotic",
+        "asplenia"
+      ],
+      "tooltip": "Maltese cross tetrads distinguish it from malaria, as does absence of hemozoin pigment and no travel history. Ask about splenectomy — it predicts fulminant disease."
+    },
+    {
+      "id": "toxoplasma",
+      "name": "Toxoplasma gondii",
+      "emoji": "🪱🐈🧠",
+      "category": "Tissue Protozoan",
+      "labFeatures": "Tachyzoites and tissue bradyzoite cysts on histology; serology for IgM and IgG; ring-enhancing lesions in the basal ganglia on MRI; PCR of CSF or amniotic fluid",
+      "manifestations": "Asymptomatic or mononucleosis-like illness in healthy hosts; necrotizing encephalitis with multiple ring-enhancing lesions in AIDS with CD4 below 100; congenital chorioretinitis, hydrocephalus, and diffuse intracranial calcifications",
+      "treatment": "Sulfadiazine plus pyrimethamine with leucovorin; TMP-SMX for prophylaxis when CD4 is below 100",
+      "transmission": "Ingestion of oocysts from cat feces, undercooked meat containing tissue cysts, and transplacental transmission",
+      "virulenceFactor": "Formation of a parasitophorous vacuole that resists lysosomal fusion; lifelong bradyzoite cysts in brain and muscle that reactivate with T-cell loss",
+      "topicTags": [
+        "protozoan",
+        "HIV-associated",
+        "congenital infection",
+        "encephalitis",
+        "zoonotic",
+        "intracellular"
+      ],
+      "tooltip": "Congenital triad: chorioretinitis, hydrocephalus, and intracranial calcifications — diffuse calcifications here versus periventricular in CMV. In AIDS, multiple ring-enhancing lesions versus a single lesion in CNS lymphoma."
+    },
+    {
+      "id": "trypanosoma-cruzi",
+      "name": "Trypanosoma cruzi",
+      "emoji": "🪱💋🫀",
+      "category": "Blood and Tissue Protozoan",
+      "labFeatures": "Trypomastigotes in blood and intracellular amastigotes in tissue on Giemsa stain; serology for chronic disease; megacolon or cardiomegaly on imaging",
+      "manifestations": "Acute phase with Romana sign (unilateral periorbital swelling) and chagoma; chronic Chagas disease with dilated cardiomyopathy, apical aneurysm, megaesophagus, and megacolon",
+      "treatment": "Benznidazole or nifurtimox, effective mainly in acute and early chronic disease; supportive management of cardiomyopathy",
+      "transmission": "Reduviid (kissing) bug feces rubbed into the bite wound or mucosa, in rural Latin America; also congenital and transfusion-related",
+      "virulenceFactor": "Intracellular amastigote replication in cardiac myocytes and autonomic ganglia, with autoimmune destruction of myenteric plexus neurons",
+      "topicTags": [
+        "protozoan",
+        "vector-borne",
+        "cardiac",
+        "Latin America",
+        "intracellular"
+      ],
+      "tooltip": "Destruction of the myenteric plexus causes megaesophagus and megacolon, mirroring achalasia and Hirschsprung disease. Apical aneurysm with cardioembolic stroke is the cardiac signature."
+    },
+    {
+      "id": "trypanosoma-brucei",
+      "name": "Trypanosoma brucei",
+      "emoji": "🪱🪰😴",
+      "category": "Blood Protozoan",
+      "labFeatures": "Trypomastigotes in blood, lymph node aspirate, or CSF on Giemsa; elevated CSF protein and IgM; Winterbottom sign with posterior cervical lymphadenopathy",
+      "manifestations": "African sleeping sickness: hemolymphatic stage with intermittent fever and adenopathy, then meningoencephalitic stage with daytime somnolence, personality change, and coma",
+      "treatment": "Fexinidazole orally for both stages where available; suramin or pentamidine for early stage; melarsoprol or eflornithine for CNS stage",
+      "transmission": "Bite of the tsetse fly in sub-Saharan Africa; rhodesiense is zoonotic and acute, gambiense is anthroponotic and chronic",
+      "virulenceFactor": "Variant surface glycoprotein antigenic variation producing recurrent waves of parasitemia that outpace antibody responses",
+      "topicTags": [
+        "protozoan",
+        "vector-borne",
+        "encephalitis",
+        "lymphadenopathy",
+        "Africa"
+      ],
+      "tooltip": "VSG switching causes the undulating fever curve — each antibody wave clears one variant as the next emerges. Reversal of the sleep-wake cycle gives the disease its name."
+    },
+    {
+      "id": "leishmania",
+      "name": "Leishmania species",
+      "emoji": "🪱🪰🫄",
+      "category": "Tissue Protozoan",
+      "labFeatures": "Intracellular amastigotes within macrophages on Giemsa stain of bone marrow, spleen, or skin lesion; positive rK39 serology; pancytopenia in visceral disease",
+      "manifestations": "Cutaneous leishmaniasis with a chronic painless ulcer and raised border; visceral leishmaniasis (kala-azar) with fever, massive splenomegaly, pancytopenia, and darkened skin",
+      "treatment": "Liposomal amphotericin B for visceral disease; miltefosine or antimonials; topical or intralesional therapy for localized cutaneous disease",
+      "transmission": "Bite of the female sandfly in the Middle East, South Asia, Africa, and Latin America; dogs and rodents serve as reservoirs",
+      "virulenceFactor": "Survival and replication within macrophage phagolysosomes by inhibiting oxidative burst; lipophosphoglycan surface coat resists complement",
+      "topicTags": [
+        "protozoan",
+        "vector-borne",
+        "skin infection",
+        "intracellular",
+        "pancytopenia"
+      ],
+      "tooltip": "Kala-azar means black fever, for the skin darkening. Massive splenomegaly with pancytopenia and fever in a traveler from South Asia or East Africa should raise it."
+    },
+    {
+      "id": "giardia",
+      "name": "Giardia lamblia",
+      "emoji": "🪱🏕️💧",
+      "category": "Intestinal Protozoan",
+      "labFeatures": "Pear-shaped trophozoites with four pairs of flagella and a ventral sucking disc, plus oval cysts, in stool; stool antigen or PCR; no blood or leukocytes in stool",
+      "manifestations": "Prolonged foul-smelling greasy diarrhea with bloating and flatulence, lactose intolerance, fat-soluble vitamin malabsorption and weight loss; worse in IgA deficiency",
+      "treatment": "Metronidazole, tinidazole, or nitazoxanide",
+      "transmission": "Fecal-oral through contaminated mountain streams and lakes, daycare settings, and sexual contact; cysts resist chlorination",
+      "virulenceFactor": "Ventral sucking disc attaches to duodenal mucosa causing villous blunting without invasion; variant surface protein switching evades secretory IgA",
+      "topicTags": [
+        "protozoan",
+        "diarrhea",
+        "malabsorption",
+        "waterborne"
+      ],
+      "tooltip": "Non-invasive, so the diarrhea is steatorrheic rather than bloody and there are no fecal leukocytes. The campers' and hikers' diarrhea. IgA deficiency predisposes to chronic infection."
+    },
+    {
+      "id": "entamoeba-histolytica",
+      "name": "Entamoeba histolytica",
+      "emoji": "🪱🫀🍶",
+      "category": "Intestinal Protozoan",
+      "labFeatures": "Trophozoites with ingested erythrocytes and cysts with up to four nuclei in stool; stool antigen or PCR; flask-shaped colonic ulcers; anchovy-paste liver abscess aspirate",
+      "manifestations": "Bloody dysentery with lower abdominal pain, amebic liver abscess typically in the right lobe, toxic megacolon, and ameboma",
+      "treatment": "Metronidazole or tinidazole for invasive disease, followed by paromomycin or iodoquinol to clear intraluminal cysts",
+      "transmission": "Fecal-oral ingestion of cysts from contaminated food and water, and sexual contact; travel to endemic areas",
+      "virulenceFactor": "Galactose-binding lectin for adherence, amebapores lysing host cells, and cysteine proteases degrading extracellular matrix and IgA",
+      "topicTags": [
+        "protozoan",
+        "diarrhea",
+        "waterborne",
+        "abscess"
+      ],
+      "tooltip": "Erythrophagocytosis — trophozoites with ingested red cells — distinguishes pathogenic E. histolytica from harmless E. dispar. Liver abscess aspirate looks like anchovy paste and is usually sterile."
+    },
+    {
+      "id": "cryptosporidium",
+      "name": "Cryptosporidium parvum",
+      "emoji": "🪱💧🛡️",
+      "category": "Intestinal Protozoan",
+      "labFeatures": "Acid-fast oocysts on modified Ziehl-Neelsen stain of stool, or direct fluorescent antibody; oocysts resist chlorination",
+      "manifestations": "Self-limited watery diarrhea in healthy hosts; severe chronic voluminous diarrhea with wasting in AIDS with CD4 below 100; biliary tract disease",
+      "treatment": "Nitazoxanide; antiretroviral therapy to restore CD4 count is the definitive treatment in AIDS; aggressive rehydration",
+      "transmission": "Fecal-oral through contaminated municipal water and recreational swimming pools; oocysts survive standard chlorination",
+      "virulenceFactor": "Intracellular but extracytoplasmic location at the apical enterocyte surface shielding it from both immune attack and luminal drugs",
+      "topicTags": [
+        "protozoan",
+        "diarrhea",
+        "HIV-associated",
+        "waterborne",
+        "immunocompromised"
+      ],
+      "tooltip": "Chlorine-resistant oocysts cause swimming pool and municipal water outbreaks. In AIDS it causes litres of watery stool daily, and nothing works reliably until CD4 recovers."
+    },
+    {
+      "id": "trichomonas",
+      "name": "Trichomonas vaginalis",
+      "emoji": "🪱🍓🏊",
+      "category": "Urogenital Protozoan",
+      "labFeatures": "Motile pear-shaped trophozoite with jerky motility on wet mount, no cyst stage; vaginal pH above 4.5; strawberry cervix; NAAT most sensitive",
+      "manifestations": "Frothy green-yellow malodorous vaginal discharge with pruritus and dysuria; usually asymptomatic urethritis in men; associated with preterm birth and HIV acquisition",
+      "treatment": "Metronidazole or tinidazole, with treatment of all sexual partners; a single oral dose is often sufficient",
+      "transmission": "Sexual contact; there is no cyst form, so it cannot survive long outside the host",
+      "virulenceFactor": "Adhesins and cysteine proteases causing epithelial microulceration (the strawberry cervix), plus degradation of local antibody",
+      "topicTags": [
+        "protozoan",
+        "sexually transmitted",
+        "vaginitis"
+      ],
+      "tooltip": "No cyst stage means obligate sexual transmission and mandatory partner treatment. Strawberry cervix plus motile trophozoites on wet mount plus pH above 4.5 is the classic picture."
+    },
+    {
+      "id": "naegleria",
+      "name": "Naegleria fowleri",
+      "emoji": "🪱🏊🧠",
+      "category": "Free-Living Amoeba",
+      "labFeatures": "Motile amoeboid trophozoites visible in fresh CSF wet mount; neutrophilic CSF with low glucose and high protein mimicking bacterial meningitis; PCR",
+      "manifestations": "Primary amebic meningoencephalitis with abrupt headache, fever, altered mentation, and death within about a week; altered taste or smell early",
+      "treatment": "Amphotericin B plus miltefosine, rifampin, and azithromycin; survival is rare despite treatment",
+      "transmission": "Forceful entry of warm fresh water into the nose while swimming or diving, or from nasal irrigation with untreated tap water",
+      "virulenceFactor": "Direct invasion through the olfactory neuroepithelium and cribriform plate into the frontal lobes, with amebapores causing rapid tissue destruction",
+      "topicTags": [
+        "amoeba",
+        "encephalitis",
+        "meningitis",
+        "waterborne"
+      ],
+      "tooltip": "Enters through the cribriform plate from warm fresh water, so early loss of smell or taste is a clue. Nearly uniformly fatal. Never irrigate sinuses with untreated tap water."
+    },
+    {
+      "id": "acanthamoeba",
+      "name": "Acanthamoeba species",
+      "emoji": "🪱👁️🔆",
+      "category": "Free-Living Amoeba",
+      "labFeatures": "Trophozoites and double-walled cysts on corneal scraping or brain biopsy; confocal microscopy of cornea; culture on non-nutrient agar with E. coli overlay",
+      "manifestations": "Severe painful keratitis with a ring infiltrate in contact lens wearers; granulomatous amebic encephalitis with a subacute course in the immunocompromised",
+      "treatment": "Topical polyhexamethylene biguanide or chlorhexidine with propamidine for keratitis; multidrug regimens for encephalitis with poor outcomes",
+      "transmission": "Contact lenses rinsed in tap water or homemade saline; soil and water exposure; hematogenous CNS spread in immunosuppression",
+      "virulenceFactor": "Mannose-binding protein adherence to corneal epithelium, cyst resistance to disinfectants, and proteases causing stromal necrosis",
+      "topicTags": [
+        "amoeba",
+        "keratitis",
+        "encephalitis",
+        "immunocompromised",
+        "waterborne"
+      ],
+      "tooltip": "Pain out of proportion to findings in a contact lens wearer who rinses with tap water. Unlike Naegleria it causes a subacute granulomatous encephalitis rather than fulminant meningoencephalitis."
+    },
+    {
+      "id": "ascaris",
+      "name": "Ascaris lumbricoides",
+      "emoji": "🪱🫁🍝",
+      "category": "Nematode (Roundworm)",
+      "labFeatures": "Large oval eggs with thick mamillated shells in stool; adult worms up to 35 cm may be passed or seen on imaging; eosinophilia during migration",
+      "manifestations": "Loffler syndrome with transient pulmonary infiltrates and eosinophilia during larval migration; intestinal or biliary obstruction with heavy worm burden; malnutrition in children",
+      "treatment": "Albendazole or mebendazole; pyrantel pamoate in pregnancy; surgical or endoscopic removal for obstruction",
+      "transmission": "Fecal-oral ingestion of eggs from soil contaminated with human feces; the most common helminth infection worldwide",
+      "virulenceFactor": "Larval migration through lung tissue triggering eosinophilic inflammation; sheer worm mass causing mechanical obstruction",
+      "topicTags": [
+        "nematode",
+        "helminth",
+        "pneumonia",
+        "eosinophilia",
+        "intestinal obstruction"
+      ],
+      "tooltip": "Larvae penetrate the gut, travel to lungs, get coughed up and swallowed to mature — that migration explains the transient pulmonary phase with eosinophilia (Loffler syndrome)."
+    },
+    {
+      "id": "enterobius",
+      "name": "Enterobius vermicularis",
+      "emoji": "🪱🍑🌙",
+      "category": "Nematode (Roundworm)",
+      "labFeatures": "Diagnosed with the cellophane tape test applied to the perianal skin in the morning, showing characteristic flattened-sided eggs; eggs are rarely found in stool",
+      "manifestations": "Intense nocturnal perianal pruritus, restless sleep and irritability in children, secondary excoriation, and occasionally vulvovaginitis",
+      "treatment": "Albendazole, mebendazole, or pyrantel pamoate, repeated in two weeks; treat the whole household and wash bedding",
+      "transmission": "Fecal-oral autoinfection from scratching and reinfection via fingernails, bedding, and clothing; spreads readily among household members",
+      "virulenceFactor": "Nocturnal migration of gravid females to the perianal skin to deposit eggs, causing pruritus that promotes autoinfection",
+      "topicTags": [
+        "nematode",
+        "helminth",
+        "pediatrics",
+        "pruritus"
+      ],
+      "tooltip": "The pinworm. Scotch tape test, not stool O&P. Treat everyone in the house and repeat in two weeks to catch the next cycle, because autoinfection is relentless."
+    },
+    {
+      "id": "strongyloides",
+      "name": "Strongyloides stercoralis",
+      "emoji": "🪱🦶🌀",
+      "category": "Nematode (Roundworm)",
+      "labFeatures": "Rhabditiform larvae in stool (not eggs); serology; eosinophilia; larvae in sputum during hyperinfection; agar plate culture shows larval tracks",
+      "manifestations": "Larva currens serpiginous rash, abdominal pain and diarrhea, Loffler-like pulmonary symptoms; hyperinfection syndrome with gram-negative sepsis when corticosteroids are given",
+      "treatment": "Ivermectin is first-line; albendazole as alternative; screen and treat before starting corticosteroids or anti-TNF therapy",
+      "transmission": "Filariform larvae penetrate intact skin from contaminated soil; autoinfection allows decades-long persistence without reexposure",
+      "virulenceFactor": "Unique autoinfective cycle in which larvae mature within the host, enabling lifelong infection and explosive hyperinfection under immunosuppression",
+      "topicTags": [
+        "nematode",
+        "helminth",
+        "eosinophilia",
+        "immunocompromised",
+        "skin infection",
+        "sepsis"
+      ],
+      "tooltip": "The reason to screen immigrants and travelers before steroids or anti-TNF therapy. Autoinfection means infection acquired decades ago can erupt as fatal hyperinfection with gram-negative bacteremia."
+    },
+    {
+      "id": "necator-ancylostoma",
+      "name": "Necator americanus / Ancylostoma duodenale",
+      "emoji": "🪱🩸🦶",
+      "category": "Nematode (Roundworm)",
+      "labFeatures": "Thin-shelled oval eggs in stool; microcytic hypochromic anemia with low ferritin; eosinophilia; ground itch at the entry site",
+      "manifestations": "Iron deficiency anemia from intestinal blood loss, growth and cognitive impairment in children, pruritic rash at larval entry, and transient pulmonary symptoms",
+      "treatment": "Albendazole or mebendazole, plus iron supplementation to correct the anemia",
+      "transmission": "Filariform larvae in soil penetrate bare skin, usually the feet; walking barefoot in endemic tropical regions",
+      "virulenceFactor": "Cutting plates or teeth that attach to intestinal mucosa plus anticoagulant secretions, producing ongoing occult blood loss",
+      "topicTags": [
+        "nematode",
+        "helminth",
+        "anemia",
+        "eosinophilia",
+        "skin infection"
+      ],
+      "tooltip": "The hookworms and the leading infectious cause of iron deficiency anemia worldwide. Barefoot soil exposure plus microcytic anemia plus eosinophilia is the triad."
+    },
+    {
+      "id": "trichinella",
+      "name": "Trichinella spiralis",
+      "emoji": "🪱🐷💪",
+      "category": "Nematode (Roundworm)",
+      "labFeatures": "Encysted larvae in striated muscle on biopsy; serology; marked eosinophilia with elevated creatine kinase; periorbital edema on exam",
+      "manifestations": "Early diarrhea and abdominal pain, then fever with periorbital edema, myositis, splinter hemorrhages, and in severe cases myocarditis and encephalitis",
+      "treatment": "Albendazole or mebendazole plus corticosteroids for severe inflammatory symptoms",
+      "transmission": "Ingestion of undercooked pork, bear, or wild game containing encysted larvae",
+      "virulenceFactor": "Larval encystment within skeletal muscle cells, converting them into nurse cells and provoking intense eosinophilic myositis",
+      "topicTags": [
+        "nematode",
+        "helminth",
+        "eosinophilia",
+        "foodborne",
+        "myositis",
+        "cardiac"
+      ],
+      "tooltip": "Periorbital edema plus myositis plus eosinophilia after eating undercooked pork or bear meat. Larvae convert muscle cells into nurse cells to sustain themselves."
+    },
+    {
+      "id": "wuchereria",
+      "name": "Wuchereria bancrofti",
+      "emoji": "🪱🦟🦵",
+      "category": "Nematode (Filarial)",
+      "labFeatures": "Microfilariae on nocturnal blood smear (nocturnal periodicity), circulating filarial antigen test, dilated lymphatics on ultrasound with the filarial dance sign",
+      "manifestations": "Recurrent lymphangitis and lymphadenitis, then elephantiasis with massive lymphedema of legs and scrotum; tropical pulmonary eosinophilia",
+      "treatment": "Diethylcarbamazine, with doxycycline to kill Wolbachia endosymbionts; ivermectin plus albendazole in areas with onchocerciasis coinfection; limb hygiene for lymphedema",
+      "transmission": "Bite of Culex, Anopheles, or Aedes mosquitoes in tropical regions; requires repeated bites over years to establish heavy infection",
+      "virulenceFactor": "Adult worms obstruct and damage lymphatic vessels; Wolbachia endosymbiont bacteria drive much of the inflammatory response",
+      "topicTags": [
+        "nematode",
+        "helminth",
+        "mosquito-borne",
+        "eosinophilia",
+        "lymphedema"
+      ],
+      "tooltip": "Blood must be drawn at night to catch the microfilariae. Doxycycline works by killing the Wolbachia endosymbiont the worm depends on — an unusual and heavily tested mechanism."
+    },
+    {
+      "id": "onchocerca",
+      "name": "Onchocerca volvulus",
+      "emoji": "🪱🪰👁️",
+      "category": "Nematode (Filarial)",
+      "labFeatures": "Microfilariae on skin snip (not blood), subcutaneous nodules containing adult worms, slit-lamp exam showing microfilariae in the anterior chamber; Mazzotti reaction historically",
+      "manifestations": "River blindness with keratitis and sclerosing chorioretinitis, intensely pruritic dermatitis, leopard skin depigmentation, hanging groin, and onchocercomas",
+      "treatment": "Ivermectin every 6 to 12 months to kill microfilariae, plus doxycycline to target Wolbachia; diethylcarbamazine is contraindicated because it can cause blindness",
+      "transmission": "Bite of the Simulium blackfly, which breeds in fast-flowing rivers in sub-Saharan Africa and Latin America",
+      "virulenceFactor": "Microfilarial death in the eye and skin releases Wolbachia antigens that trigger the inflammation causing blindness and dermatitis",
+      "topicTags": [
+        "nematode",
+        "helminth",
+        "vector-borne",
+        "eosinophilia",
+        "skin infection",
+        "blindness"
+      ],
+      "tooltip": "Blackfly, fast-flowing rivers, blindness. Skin snip rather than blood smear. Diethylcarbamazine is dangerous here because rapid microfilarial killing in the eye worsens vision."
+    },
+    {
+      "id": "loa-loa",
+      "name": "Loa loa",
+      "emoji": "🪱🥭👁️",
+      "category": "Nematode (Filarial)",
+      "labFeatures": "Microfilariae on daytime blood smear (diurnal periodicity); adult worm visible crossing the subconjunctiva; marked eosinophilia",
+      "manifestations": "Calabar swellings — transient painful subcutaneous swellings on the extremities — and the adult worm visibly migrating across the conjunctiva",
+      "treatment": "Diethylcarbamazine or albendazole; must exclude high microfilarial load first because rapid killing causes encephalopathy",
+      "transmission": "Bite of the Chrysops deerfly or mango fly in the rainforests of West and Central Africa",
+      "virulenceFactor": "Adult worm migration through subcutaneous tissue and across the eye; high microfilaremia creates risk of fatal encephalopathy with treatment",
+      "topicTags": [
+        "nematode",
+        "helminth",
+        "vector-borne",
+        "eosinophilia",
+        "skin infection"
+      ],
+      "tooltip": "The eye worm. Critically, ivermectin given for onchocerciasis in a Loa loa coinfected patient can cause fatal encephalopathy, which is why Loa loa burden must be assessed first."
+    },
+    {
+      "id": "taenia-solium",
+      "name": "Taenia solium",
+      "emoji": "🪱🐷🧠",
+      "category": "Cestode (Tapeworm)",
+      "labFeatures": "Proglottids and eggs in stool for intestinal infection; cystic brain lesions with scolex on MRI and serology for neurocysticercosis; eosinophilia variable",
+      "manifestations": "Intestinal taeniasis that is often asymptomatic; neurocysticercosis with new-onset seizures from calcified or active brain cysts, hydrocephalus, and raised intracranial pressure",
+      "treatment": "Praziquantel or niclosamide for intestinal tapeworm; albendazole with corticosteroids and antiepileptics for neurocysticercosis; never treat ocular cysts with antiparasitics",
+      "transmission": "Undercooked pork containing cysticerci causes intestinal tapeworm; ingestion of eggs from human feces causes cysticercosis, including by autoinfection",
+      "virulenceFactor": "Larval cysts evade immunity while intact; inflammation on cyst death produces the seizures, which is why treatment must be covered with steroids",
+      "topicTags": [
+        "cestode",
+        "helminth",
+        "foodborne",
+        "encephalitis",
+        "seizures"
+      ],
+      "tooltip": "Eating the pork gives you a tapeworm; eating the eggs gives you cysticercosis. Steroids and antiepileptics come before albendazole, since dying cysts provoke the seizures."
+    },
+    {
+      "id": "taenia-saginata",
+      "name": "Taenia saginata",
+      "emoji": "🪱🐄🎀",
+      "category": "Cestode (Tapeworm)",
+      "labFeatures": "Gravid proglottids and eggs in stool; scolex has four suckers without hooks, distinguishing it from T. solium; mild or absent eosinophilia",
+      "manifestations": "Usually asymptomatic; mild abdominal discomfort, and patients may notice motile proglottids in stool or underwear",
+      "treatment": "Praziquantel single dose, or niclosamide",
+      "transmission": "Ingestion of undercooked beef containing cysticerci; humans are the only definitive host",
+      "virulenceFactor": "Attachment via suckers to the small bowel with competition for nutrients; it does not cause cysticercosis in humans",
+      "topicTags": [
+        "cestode",
+        "helminth",
+        "foodborne"
+      ],
+      "tooltip": "The beef tapeworm and the benign one — it cannot cause cysticercosis because humans do not serve as its intermediate host. Scolex has suckers but no hooks."
+    },
+    {
+      "id": "echinococcus",
+      "name": "Echinococcus granulosus",
+      "emoji": "🪱🐕💧",
+      "category": "Cestode (Tapeworm)",
+      "labFeatures": "Hepatic or pulmonary cysts with eggshell calcification and daughter cysts on imaging; serology; hydatid sand with protoscolices in aspirate",
+      "manifestations": "Slowly enlarging hepatic or pulmonary hydatid cysts causing pain; anaphylaxis if a cyst ruptures; biliary obstruction",
+      "treatment": "Albendazole with PAIR (puncture, aspiration, injection, reaspiration) or surgical removal with great care to avoid spillage",
+      "transmission": "Ingestion of eggs from dog feces; sheep are the intermediate host, so sheep-herding regions are endemic",
+      "virulenceFactor": "Highly antigenic cyst fluid that provokes anaphylaxis on spillage, and daughter cyst formation that seeds new lesions",
+      "topicTags": [
+        "cestode",
+        "helminth",
+        "zoonotic",
+        "liver",
+        "anaphylaxis"
+      ],
+      "tooltip": "Never aspirate blindly — cyst rupture spills antigenic fluid and causes anaphylaxis plus dissemination. Dogs and sheep are the exposure clue; albendazole is given before and after intervention."
+    },
+    {
+      "id": "diphyllobothrium",
+      "name": "Diphyllobothrium latum",
+      "emoji": "🪱🐟1️⃣2️⃣",
+      "category": "Cestode (Tapeworm)",
+      "labFeatures": "Operculated eggs in stool; the longest human tapeworm at up to 10 meters; macrocytic anemia with low vitamin B12 and elevated methylmalonic acid",
+      "manifestations": "Often asymptomatic; vitamin B12 deficiency with megaloblastic anemia and subacute combined degeneration; abdominal discomfort",
+      "treatment": "Praziquantel or niclosamide, plus vitamin B12 repletion",
+      "transmission": "Ingestion of raw or undercooked freshwater fish such as salmon and pike; sushi and ceviche in endemic lake regions",
+      "virulenceFactor": "Avid competition for dietary vitamin B12 in the proximal small bowel, depleting the host over time",
+      "topicTags": [
+        "cestode",
+        "helminth",
+        "foodborne",
+        "anemia",
+        "neurologic"
+      ],
+      "tooltip": "The fish tapeworm that steals B12, producing megaloblastic anemia with neurologic signs. Raw freshwater fish is the exposure — a useful contrast with Anisakis, which causes acute gastric pain."
+    },
+    {
+      "id": "schistosoma-mansoni",
+      "name": "Schistosoma mansoni / japonicum",
+      "emoji": "🪱🐌🫀",
+      "category": "Trematode (Fluke)",
+      "labFeatures": "Eggs with a lateral spine (mansoni) or small lateral knob (japonicum) in stool; eosinophilia; periportal pipestem fibrosis on ultrasound",
+      "manifestations": "Katayama fever during acute infection; chronic hepatic periportal fibrosis with portal hypertension, variceal bleeding, and splenomegaly while liver function is preserved",
+      "treatment": "Praziquantel, repeated after several weeks; corticosteroids for Katayama fever",
+      "transmission": "Free-swimming cercariae from freshwater snails penetrate intact skin during wading or swimming in Africa, South America, and Asia",
+      "virulenceFactor": "Egg deposition in portal venules triggering granulomatous fibrosis; adult worms coat themselves in host antigens to evade immunity",
+      "topicTags": [
+        "trematode",
+        "helminth",
+        "eosinophilia",
+        "liver",
+        "portal hypertension",
+        "waterborne"
+      ],
+      "tooltip": "Portal hypertension with preserved hepatocellular function — the fibrosis is periportal, not cirrhotic. Swimmer's itch and freshwater snail exposure are the clues."
+    },
+    {
+      "id": "schistosoma-haematobium",
+      "name": "Schistosoma haematobium",
+      "emoji": "🪱🐌🚽",
+      "category": "Trematode (Fluke)",
+      "labFeatures": "Eggs with a terminal spine in urine rather than stool; hematuria; bladder wall calcification on imaging; eosinophilia",
+      "manifestations": "Painless terminal hematuria, chronic cystitis with bladder fibrosis, obstructive uropathy and hydronephrosis, and squamous cell carcinoma of the bladder",
+      "treatment": "Praziquantel; urologic surveillance for bladder malignancy in long-standing infection",
+      "transmission": "Cercariae from freshwater snails penetrate skin during contact with fresh water in Africa and the Middle East, including the Nile",
+      "virulenceFactor": "Egg deposition in the bladder venous plexus causing chronic granulomatous inflammation that drives squamous metaplasia and malignant transformation",
+      "topicTags": [
+        "trematode",
+        "helminth",
+        "eosinophilia",
+        "oncogenic",
+        "waterborne",
+        "hematuria"
+      ],
+      "tooltip": "The only common cause of squamous cell carcinoma of the bladder, which is otherwise transitional cell. Terminal-spined eggs in urine; mansoni has lateral spines in stool."
+    },
+    {
+      "id": "clonorchis",
+      "name": "Clonorchis sinensis",
+      "emoji": "🪱🐟🫀",
+      "category": "Trematode (Fluke)",
+      "labFeatures": "Small operculated eggs in stool; biliary dilatation on imaging; eosinophilia; elevated alkaline phosphatase",
+      "manifestations": "Biliary obstruction, recurrent pyogenic cholangitis, pigmented gallstones, and cholangiocarcinoma with chronic infection",
+      "treatment": "Praziquantel or albendazole; ERCP for biliary obstruction",
+      "transmission": "Ingestion of raw or undercooked freshwater fish in East and Southeast Asia",
+      "virulenceFactor": "Adult flukes inhabit bile ducts causing chronic inflammation, epithelial hyperplasia, and periductal fibrosis that promotes malignancy",
+      "topicTags": [
+        "trematode",
+        "helminth",
+        "foodborne",
+        "liver",
+        "oncogenic"
+      ],
+      "tooltip": "Chronic biliary inflammation makes this a recognized cause of cholangiocarcinoma. Raw freshwater fish in East Asia plus biliary symptoms plus eosinophilia points here."
+    },
+    {
+      "id": "paragonimus",
+      "name": "Paragonimus westermani",
+      "emoji": "🪱🦀🫁",
+      "category": "Trematode (Fluke)",
+      "labFeatures": "Operculated eggs in sputum or stool; chest imaging with cysts and ring shadows that can mimic tuberculosis; eosinophilia and pleural effusion",
+      "manifestations": "Chronic cough with hemoptysis and brown-flecked sputum, pleural effusion, and sometimes cerebral involvement with seizures",
+      "treatment": "Praziquantel or triclabendazole",
+      "transmission": "Ingestion of undercooked freshwater crab or crayfish in East Asia, West Africa, and parts of Latin America",
+      "virulenceFactor": "Larval migration through the diaphragm into lung parenchyma, forming fibrous capsules communicating with bronchioles",
+      "topicTags": [
+        "trematode",
+        "helminth",
+        "foodborne",
+        "pneumonia",
+        "eosinophilia"
+      ],
+      "tooltip": "A great tuberculosis mimic: chronic cough, hemoptysis, and cavitary lung lesions — but with eosinophilia and a history of undercooked crab or crayfish."
+    },
+    {
+      "id": "sarcoptes-scabiei",
+      "name": "Sarcoptes scabiei",
+      "emoji": "🪱🖐️🌙",
+      "category": "Ectoparasite (Mite)",
+      "labFeatures": "Skin scraping with mineral oil shows mites, eggs, or scybala (feces); dermoscopy shows the delta-wing jet sign; burrows in finger webs and flexor wrists",
+      "manifestations": "Intensely pruritic papules worst at night in finger webs, wrists, axillae, and genitals; crusted (Norwegian) scabies with thick hyperkeratotic plaques in the immunocompromised",
+      "treatment": "Topical permethrin 5% repeated in one week, or oral ivermectin; treat all household contacts and wash bedding in hot water",
+      "transmission": "Prolonged skin-to-skin contact, including sexual contact; fomites matter mainly in crusted scabies with its huge mite burden",
+      "virulenceFactor": "Burrowing into the stratum corneum with a delayed type IV hypersensitivity response to mite antigen causing the pruritus",
+      "topicTags": [
+        "ectoparasite",
+        "skin infection",
+        "pruritus",
+        "immunocompromised"
+      ],
+      "tooltip": "Itching reflects hypersensitivity, so it begins weeks after infestation and persists for weeks after successful treatment. Crusted scabies carries thousands of mites and is highly contagious."
+    },
+    {
+      "id": "pediculus",
+      "name": "Pediculus humanus",
+      "emoji": "🪱💇🥚",
+      "category": "Ectoparasite (Louse)",
+      "labFeatures": "Visual identification of adult lice and nits cemented to hair shafts; wet combing increases detection; nits within 1 cm of the scalp suggest active infestation",
+      "manifestations": "Scalp or body pruritus with excoriation and secondary bacterial infection; body lice can transmit epidemic typhus, relapsing fever, and trench fever",
+      "treatment": "Permethrin or dimethicone for head lice with repeat application; wet combing; body lice resolve with bathing and laundering clothes",
+      "transmission": "Head-to-head contact and shared combs or hats for head lice; crowded unhygienic conditions and infested clothing for body lice",
+      "virulenceFactor": "Saliva-induced hypersensitivity causing pruritus; body lice act as vectors for Rickettsia prowazekii, Borrelia recurrentis, and Bartonella quintana",
+      "topicTags": [
+        "ectoparasite",
+        "pruritus",
+        "vector-borne",
+        "skin infection"
+      ],
+      "tooltip": "Head lice are a nuisance; body lice are a vector, carrying epidemic typhus, relapsing fever, and trench fever — which is why delousing matters in refugee and wartime settings."
+    }
+  ]
+}

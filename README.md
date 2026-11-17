@@ -1,13 +1,15 @@
-# Drug Quiz — USMLE Step 1 Pharmacology
+# Step 1 Quiz — Pharmacology & Microbiology
 
-> A gamified, modular drug-learning app for medical students.
+> A gamified, modular learning app for medical students.
 > Live at **https://croblesmed.github.io/drugs-quiz/**
 > Inspired by [Amino Acid Quiz](https://apps.apple.com/us/app/amino-acid-quiz/id1301129866).
 
-**457 drugs across 11 subjects.** Pick a subject, pick which attribute is the
-question and which is the answer, then match drugs against six choices.
+**602 items across 15 subjects.** Pick a subject, pick which attribute is the
+question and which is the answer, then match against six choices.
 
-| Subject | Drugs | Subject | Drugs |
+### Pharmacology — 457 drugs
+
+| Subject | | Subject | |
 |---|---|---|---|
 | 🫀 Cardiology | 69 | 🍽️ Gastrointestinal | 36 |
 | 🫁 Pulmonology | 43 | 🫘 Renal | 35 |
@@ -15,6 +17,20 @@ question and which is the answer, then match drugs against six choices.
 | 🧠 Psychiatry | 40 | 🦴 Rheum / Immuno | 34 |
 | 🦠 Infectious Disease | 45 | ☠️ Toxicology | 36 |
 | 🦋 Endocrine | 41 | | |
+
+Quiz modes: drug name, class, primary effect, treatment usage, mechanism of
+action, side effects, contraindications.
+
+### Microbiology — 145 organisms
+
+| Subject | | Subject | |
+|---|---|---|---|
+| 🦠 Bacteriology | 58 | 🍄 Mycology | 18 |
+| 🧬 Virology | 38 | 🪱 Parasitology | 31 |
+
+Quiz modes: organism, category, lab & morphology (gram stain, hemolysis,
+coagulase, lactose, growth at 42 °C), manifestations, treatment, transmission,
+virulence factor.
 
 ## Quick start
 
@@ -27,11 +43,13 @@ npm run build      # validates, then builds to dist/
 
 ## Editing the drug data
 
-**See [DRUG_DATA_GUIDE.md](DRUG_DATA_GUIDE.md).** Short version: every drug
-lives in `src/data/topics/<subject>.json`. Add a drug by appending an object
-to the `drugs` array. Add a subject by dropping in a new JSON file — it
-appears on the home screen automatically. Drug class colors, the class list,
-and the tag list are all derived from the data; you never configure them.
+**See [DRUG_DATA_GUIDE.md](DRUG_DATA_GUIDE.md).** Short version: everything
+lives in `src/data/topics/<subject>.json`. Each file declares
+`kind: "drug"` or `kind: "pathogen"`, which sets the field names and quiz
+modes. Add an item by appending an object to the `drugs` or `organisms` array.
+Add a subject by dropping in a new JSON file — it appears on the home screen
+automatically, grouped by kind. Colors, class and category lists, and tag
+lists are all derived from the data; you never configure them.
 
 Run `npm run validate` after editing. It fails the build on missing fields,
 duplicate ids, or too few distinct values to build answer choices.
@@ -42,22 +60,23 @@ duplicate ids, or too few distinct values to build answer choices.
 src/
   App.jsx                    screen routing: topics → setup → game → results
   components/
-    TopicSelect.jsx          home screen, subject grid with per-topic best score
-    StartScreen.jsx          drug-set filters (multi-select) and quiz mode
+    TopicSelect.jsx          home screen, subject grid grouped by kind, per-topic best score
+    StartScreen.jsx          item-set filters (multi-select) and quiz mode
     GameBoard.jsx            question card, 6 answer cards, ✓/✗ tally
     AnswerCard.jsx           one answer choice
     ResultsScreen.jsx        score, drug tile grid, missed-only filter
     ScoreBar.jsx             fixed top bar with running tally
     TooltipModal.jsx         full drug detail sheet
   data/topics/
-    index.js                 auto-discovers every .json in this folder
+    index.js                 auto-discovers every .json, normalizes both kinds,
+                             defines DRUG_ATTRS and PATHOGEN_ATTRS
     *.json                   one file per subject — the entire content layer
   hooks/
     useGameSession.js        useReducer game state machine
     usePersonalBest.js       localStorage, keyed by topic + filter + mode
   utils/
     distractors.js           answer-choice construction and collision handling
-    classColors.js           automatic per-topic class colors, class/tag lists
+    classColors.js           automatic per-topic colors, class/category/tag lists
 scripts/
   validate-data.mjs          data integrity checks, runs before every build
 ```
@@ -68,7 +87,7 @@ scripts/
 
 The Drug Quiz App is a matching-game flashcard system built around a single core loop: you are shown one attribute of a drug, and you must select the correct match from 6 answer choices. Every round covers the entire drug set you've selected, and your goal is to get a perfect score. The game is designed to be fast, visually clean, and deeply satisfying to complete — like Amino Acid Quiz, but for pharmacology.
 
-**Current scope:** 457 drugs across 11 subjects covering the pharmacology tested on USMLE Step 1. Adding a subject requires only a new JSON file in `src/data/topics/` — no code changes.
+**Current scope:** 602 items across 15 subjects — 457 drugs and 145 organisms — covering the pharmacology and microbiology tested on USMLE Step 1. Adding a subject requires only a new JSON file in `src/data/topics/` — no code changes.
 
 **Target users:** Medical students preparing for USMLE Step 1 and preclinical coursework.
 

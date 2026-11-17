@@ -1,0 +1,353 @@
+{
+  "id": "mycology",
+  "label": "Mycology",
+  "icon": "🍄",
+  "blurb": "Dimorphic fungi, yeasts, molds — morphology, endemic region, and antifungals",
+  "kind": "pathogen",
+  "organisms": [
+    {
+      "id": "candida-albicans",
+      "name": "Candida albicans",
+      "emoji": "🍄⚪👅",
+      "category": "Yeast",
+      "labFeatures": "Budding yeast with pseudohyphae at 20 C and germ tubes at 37 C; forms a true hypha; germ tube test positive; grows on Sabouraud agar; part of normal flora",
+      "manifestations": "Oral thrush, esophagitis in AIDS, vulvovaginitis, diaper dermatitis, intertrigo, chronic mucocutaneous candidiasis, candidemia and endocarditis in neutropenic or catheterized patients",
+      "treatment": "Topical nystatin or clotrimazole for mucosal disease; fluconazole for esophagitis; echinocandin such as caspofungin for candidemia",
+      "transmission": "Endogenous overgrowth of normal flora after antibiotics, corticosteroids, diabetes, or immunosuppression; direct inoculation via central lines",
+      "virulenceFactor": "Phenotypic switching between yeast and hyphal forms for tissue invasion, adhesins, secreted aspartyl proteases, and biofilm formation on catheters",
+      "topicTags": [
+        "yeast",
+        "oral infection",
+        "esophagitis",
+        "HIV-associated",
+        "biofilm",
+        "vaginitis",
+        "immunocompromised"
+      ],
+      "tooltip": "Esophagitis means CD4 below 100 and is an AIDS-defining illness; thrush alone is not. T-cell defects give mucocutaneous disease, while neutrophil defects give disseminated candidemia."
+    },
+    {
+      "id": "cryptococcus-neoformans",
+      "name": "Cryptococcus neoformans",
+      "emoji": "🍄🕊️🧠",
+      "category": "Encapsulated Yeast",
+      "labFeatures": "Encapsulated yeast with narrow-based budding; India ink or mucicarmine stain shows the capsule; latex agglutination for capsular antigen in CSF; soap-bubble lesions in basal ganglia",
+      "manifestations": "Subacute meningoencephalitis with headache and raised intracranial pressure in AIDS with CD4 below 100; pneumonia; cutaneous lesions",
+      "treatment": "Amphotericin B plus flucytosine for induction, then fluconazole consolidation and maintenance; serial lumbar punctures for pressure control",
+      "transmission": "Inhalation of yeast from soil contaminated with pigeon droppings; no person-to-person spread",
+      "virulenceFactor": "Thick polysaccharide capsule blocks phagocytosis and complement; melanin production via laccase; urease aids CNS invasion",
+      "topicTags": [
+        "yeast",
+        "encapsulated",
+        "meningitis",
+        "HIV-associated",
+        "pneumonia",
+        "immunocompromised",
+        "urease positive"
+      ],
+      "tooltip": "Repeated lumbar punctures to relieve pressure matter as much as antifungals for survival. Cryptococcal antigen is more sensitive than India ink. Pigeon droppings are the exposure clue."
+    },
+    {
+      "id": "histoplasma",
+      "name": "Histoplasma capsulatum",
+      "emoji": "🍄🦇🏞️",
+      "category": "Dimorphic Fungus",
+      "labFeatures": "Mold with microconidia and tuberculate macroconidia in soil at 25 C; small intracellular yeast within macrophages at 37 C; urine antigen; granulomas with calcification",
+      "manifestations": "Usually asymptomatic or flu-like pulmonary illness; cavitary lung disease; disseminated disease with hepatosplenomegaly, pancytopenia, and oral ulcers in AIDS; mediastinal fibrosis",
+      "treatment": "Itraconazole for mild to moderate disease; liposomal amphotericin B for severe or disseminated disease",
+      "transmission": "Inhalation of microconidia from soil enriched with bird or bat droppings — caves, chicken coops, and the Mississippi and Ohio River valleys",
+      "virulenceFactor": "Survival and replication inside macrophage phagolysosomes by alkalinizing the compartment and acquiring iron and calcium",
+      "topicTags": [
+        "dimorphic",
+        "pneumonia",
+        "granuloma",
+        "HIV-associated",
+        "intracellular",
+        "Mississippi Ohio valley"
+      ],
+      "tooltip": "Histo Hides (inside macrophages). Mississippi and Ohio River valleys, bat and bird droppings, caves. Disseminated disease in AIDS shows pancytopenia from marrow involvement."
+    },
+    {
+      "id": "blastomyces",
+      "name": "Blastomyces dermatitidis",
+      "emoji": "🍄🤝🪵",
+      "category": "Dimorphic Fungus",
+      "labFeatures": "Mold at 25 C; broad-based budding yeast with a thick doubly refractile wall at 37 C; KOH prep of skin lesions or sputum; pyogranulomatous inflammation",
+      "manifestations": "Acute or chronic pneumonia that can mimic malignancy; verrucous skin lesions with heaped-up borders; osteomyelitis; prostatitis; rarely CNS disease",
+      "treatment": "Itraconazole for mild to moderate disease; liposomal amphotericin B for severe disease or CNS involvement",
+      "transmission": "Inhalation of conidia from moist decaying wood and soil near rivers in the Great Lakes, Ohio, and Mississippi River basins",
+      "virulenceFactor": "BAD1 adhesin promotes macrophage binding and suppresses TNF; thick yeast cell wall resists killing",
+      "topicTags": [
+        "dimorphic",
+        "pneumonia",
+        "skin infection",
+        "osteomyelitis",
+        "granuloma",
+        "Great Lakes"
+      ],
+      "tooltip": "Blastomyces Buds Broadly. Great Lakes and Ohio River valley, rotting wood. Verrucous skin lesions that look like squamous cell carcinoma are the classic extrapulmonary finding."
+    },
+    {
+      "id": "coccidioides",
+      "name": "Coccidioides immitis",
+      "emoji": "🍄🌵🏜️",
+      "category": "Dimorphic Fungus",
+      "labFeatures": "Mold with barrel-shaped arthroconidia in soil; large spherules packed with endospores in tissue at 37 C; eosinophilia common; serology or antigen testing",
+      "manifestations": "Valley fever with pneumonia, erythema nodosum, and arthralgias (desert rheumatism); cavitary lung disease; disseminated infection to meninges, bone, and skin",
+      "treatment": "Fluconazole or itraconazole; lifelong fluconazole for coccidioidal meningitis; amphotericin B for severe disseminated disease",
+      "transmission": "Inhalation of arthroconidia from dust in the southwestern United States and Central Valley of California; risk rises after earthquakes and dust storms",
+      "virulenceFactor": "Spherules too large for phagocytosis that rupture to release hundreds of endospores; arthroconidia are highly infectious at low dose",
+      "topicTags": [
+        "dimorphic",
+        "pneumonia",
+        "meningitis",
+        "southwest US",
+        "granuloma",
+        "eosinophilia"
+      ],
+      "tooltip": "Spherules, not budding yeast — the one dimorphic fungus whose tissue form is not a yeast. Southwest dust exposure plus erythema nodosum plus eosinophilia is the classic triad."
+    },
+    {
+      "id": "paracoccidioides",
+      "name": "Paracoccidioides brasiliensis",
+      "emoji": "🍄⛵🌴",
+      "category": "Dimorphic Fungus",
+      "labFeatures": "Mold at 25 C; yeast with multiple buds in a captain's wheel or mariner's wheel arrangement at 37 C; KOH or silver stain of tissue",
+      "manifestations": "Chronic pulmonary disease, painful oral and nasal mucosal ulcers, cervical lymphadenopathy, and skin lesions; predominantly affects adult men",
+      "treatment": "Itraconazole for most cases, often prolonged; trimethoprim-sulfamethoxazole as an alternative; amphotericin B for severe disease",
+      "transmission": "Inhalation of conidia from soil in rural Latin America, especially Brazil; agricultural workers are at highest risk",
+      "virulenceFactor": "Estrogen inhibits the mold-to-yeast transition, which explains the striking male predominance; gp43 adhesin mediates tissue binding",
+      "topicTags": [
+        "dimorphic",
+        "pneumonia",
+        "oral infection",
+        "lymphadenopathy",
+        "Latin America"
+      ],
+      "tooltip": "Captain's wheel morphology — a central yeast with multiple peripheral buds. The male predominance is real and mechanistic: estrogen blocks conversion to the pathogenic yeast form."
+    },
+    {
+      "id": "aspergillus-fumigatus",
+      "name": "Aspergillus fumigatus",
+      "emoji": "🍄4️⃣5️⃣",
+      "category": "Septate Mold",
+      "labFeatures": "Septate hyphae branching at acute 45-degree angles; conidiophores with radiating conidia; galactomannan antigen; monomorphic mold that does not form yeast",
+      "manifestations": "Invasive aspergillosis with angioinvasion and hemoptysis in neutropenia; allergic bronchopulmonary aspergillosis in asthma and cystic fibrosis; aspergilloma in old cavities; aflatoxin-related hepatocellular carcinoma",
+      "treatment": "Voriconazole is first-line for invasive disease; isavuconazole or liposomal amphotericin B as alternatives; corticosteroids for allergic bronchopulmonary disease",
+      "transmission": "Inhalation of ubiquitous airborne conidia from compost, construction dust, and water-damaged buildings",
+      "virulenceFactor": "Angioinvasion causing thrombosis and infarction; gliotoxin suppresses neutrophils; aflatoxin from A. flavus is a potent hepatocarcinogen causing p53 mutation",
+      "topicTags": [
+        "mold",
+        "septate hyphae",
+        "pneumonia",
+        "immunocompromised",
+        "asthma",
+        "oncogenic",
+        "neutropenia"
+      ],
+      "tooltip": "Septate hyphae at 45 degrees versus Mucor's wide-angle nonseptate hyphae. Allergic bronchopulmonary aspergillosis is treated with steroids, the opposite of invasive disease."
+    },
+    {
+      "id": "mucor-rhizopus",
+      "name": "Mucor and Rhizopus species",
+      "emoji": "🍄9️⃣0️⃣",
+      "category": "Nonseptate Mold",
+      "labFeatures": "Broad, ribbon-like nonseptate hyphae branching at wide 90-degree angles; rapid growth on culture; biopsy shows angioinvasion with necrosis",
+      "manifestations": "Rhinocerebral mucormycosis with black necrotic eschar on the palate or nasal turbinates, proptosis, and cranial neuropathies in diabetic ketoacidosis; pulmonary and cutaneous forms",
+      "treatment": "Urgent surgical debridement plus liposomal amphotericin B; posaconazole or isavuconazole for step-down; correct the underlying acidosis or neutropenia",
+      "transmission": "Inhalation of spores from soil and decaying organic matter, or direct inoculation through burns and wounds",
+      "virulenceFactor": "Ketone reductase allows growth in the high-glucose acidotic environment of DKA; CotH receptors bind endothelium driving angioinvasion and infarction",
+      "topicTags": [
+        "mold",
+        "nonseptate hyphae",
+        "diabetes",
+        "immunocompromised",
+        "sinusitis",
+        "neutropenia"
+      ],
+      "tooltip": "Diabetic ketoacidosis plus black palatal eschar plus proptosis is a surgical emergency. Ketone reductase explains why DKA specifically predisposes. Nonseptate wide-angle hyphae distinguish it from Aspergillus."
+    },
+    {
+      "id": "pneumocystis-jirovecii",
+      "name": "Pneumocystis jirovecii",
+      "emoji": "🍄🫁🏓",
+      "category": "Atypical Fungus",
+      "labFeatures": "Disc or cup-shaped cysts on methenamine silver or immunofluorescence of induced sputum or lavage; elevated beta-D-glucan and LDH; cannot be cultured; cholesterol instead of ergosterol in its membrane",
+      "manifestations": "Subacute dyspnea with dry cough and hypoxia disproportionate to findings; diffuse bilateral ground-glass interstitial infiltrates; pneumothorax",
+      "treatment": "High-dose trimethoprim-sulfamethoxazole, with adjunctive corticosteroids if PaO2 is below 70; TMP-SMX prophylaxis when CD4 is below 200",
+      "transmission": "Inhalation of airborne organisms, with most people exposed in childhood; disease reflects reactivation or reinfection under immunosuppression",
+      "virulenceFactor": "Tight adherence to type I pneumocytes causing alveolar damage; major surface glycoprotein antigenic variation; cholesterol-based membrane makes it resistant to amphotericin",
+      "topicTags": [
+        "atypical fungus",
+        "pneumonia",
+        "HIV-associated",
+        "immunocompromised",
+        "PCP prophylaxis"
+      ],
+      "tooltip": "CD4 below 200 is the threshold for both prophylaxis and disease. Its membrane uses cholesterol rather than ergosterol, which is exactly why amphotericin and azoles do not work on it."
+    },
+    {
+      "id": "malassezia",
+      "name": "Malassezia furfur",
+      "emoji": "🍄🍝🏖️",
+      "category": "Lipophilic Yeast",
+      "labFeatures": "KOH prep shows spaghetti and meatballs appearance of short hyphae and yeast clusters; lipid-dependent so it requires olive oil overlay to culture; yellow-green fluorescence under Wood lamp",
+      "manifestations": "Tinea versicolor with hypopigmented or hyperpigmented scaly macules on the trunk; seborrheic dermatitis and dandruff; catheter-related fungemia in neonates on lipid infusions",
+      "treatment": "Topical selenium sulfide, ketoconazole shampoo, or topical azole; oral fluconazole for extensive disease",
+      "transmission": "Overgrowth of normal skin flora in hot humid weather, with sweating and oily skin; not contagious",
+      "virulenceFactor": "Azelaic acid production inhibits tyrosinase causing the hypopigmentation; lipase degrades sebum triglycerides driving inflammation",
+      "topicTags": [
+        "yeast",
+        "skin infection",
+        "neonatal"
+      ],
+      "tooltip": "The hypopigmentation persists after treatment because azelaic acid has already inhibited melanocyte tyrosinase — tell patients the color takes months to return. Spaghetti and meatballs on KOH."
+    },
+    {
+      "id": "sporothrix",
+      "name": "Sporothrix schenckii",
+      "emoji": "🍄🌹🪴",
+      "category": "Dimorphic Fungus",
+      "labFeatures": "Mold with rosette-shaped conidia on delicate hyphae at 25 C; cigar-shaped budding yeast in tissue at 37 C; asteroid bodies on histology",
+      "manifestations": "Lymphocutaneous sporotrichosis with an ulcerating nodule at the inoculation site and ascending nodules along lymphatic channels; pulmonary and disseminated forms in the immunocompromised",
+      "treatment": "Itraconazole for several months; amphotericin B for disseminated or pulmonary disease; potassium iodide historically",
+      "transmission": "Traumatic inoculation from rose thorns, sphagnum moss, hay, and soil — rose gardener's disease; also from cat scratches",
+      "virulenceFactor": "Melanin in the cell wall resists oxidative killing; thermotolerance permitting growth at body temperature and lymphatic spread",
+      "topicTags": [
+        "dimorphic",
+        "skin infection",
+        "lymphadenopathy",
+        "zoonotic"
+      ],
+      "tooltip": "Gardener pricked by a thorn, then a chain of nodules marching up the arm along lymphatics. Cigar-shaped yeast in tissue. Nodular lymphangitis has a short differential — this leads it."
+    },
+    {
+      "id": "trichophyton",
+      "name": "Trichophyton species",
+      "emoji": "🍄🦶💅",
+      "category": "Dermatophyte",
+      "labFeatures": "KOH prep shows branching septate hyphae in skin scrapings; grows on dermatophyte test medium; does not fluoresce (unlike Microsporum)",
+      "manifestations": "Tinea pedis, tinea cruris, tinea corporis with annular scaly plaques and central clearing, tinea unguium (onychomycosis), and tinea capitis with alopecia",
+      "treatment": "Topical terbinafine or azole for skin; oral terbinafine or griseofulvin for nail and scalp infection, which topicals cannot penetrate",
+      "transmission": "Direct contact with infected skin, contaminated floors, shared towels, and animals; warm moist environments favor it",
+      "virulenceFactor": "Keratinases that digest keratin allowing colonization of stratum corneum, nails, and hair while remaining superficial",
+      "topicTags": [
+        "dermatophyte",
+        "skin infection",
+        "onychomycosis"
+      ],
+      "tooltip": "Dermatophytes stay in keratinized tissue and never invade living tissue. Scalp and nail disease requires oral therapy because topicals cannot reach the hair follicle or nail matrix."
+    },
+    {
+      "id": "microsporum",
+      "name": "Microsporum canis",
+      "emoji": "🍄🐈🔵",
+      "category": "Dermatophyte",
+      "labFeatures": "KOH prep shows septate hyphae; spindle-shaped macroconidia on culture; blue-green fluorescence of infected hairs under Wood lamp",
+      "manifestations": "Tinea capitis in children with scaly patches and broken hairs; tinea corporis; kerion as a boggy inflammatory mass",
+      "treatment": "Oral griseofulvin or terbinafine for tinea capitis; selenium sulfide shampoo to reduce spore shedding; treat infected pets",
+      "transmission": "Contact with infected cats and dogs, and person-to-person among children sharing hats or combs",
+      "virulenceFactor": "Keratinase-mediated invasion of hair shafts (ectothrix pattern) causing hair breakage and inflammatory response",
+      "topicTags": [
+        "dermatophyte",
+        "skin infection",
+        "pediatrics",
+        "zoonotic"
+      ],
+      "tooltip": "The dermatophyte that fluoresces under Wood lamp, unlike Trichophyton. A child with tinea capitis and a new kitten points here, and the pet needs treatment too."
+    },
+    {
+      "id": "epidermophyton",
+      "name": "Epidermophyton floccosum",
+      "emoji": "🍄🩳🧴",
+      "category": "Dermatophyte",
+      "labFeatures": "KOH prep with septate hyphae; club-shaped macroconidia in clusters and no microconidia on culture; does not invade hair",
+      "manifestations": "Tinea cruris (jock itch) and tinea pedis; onychomycosis; notably spares the hair and scalp",
+      "treatment": "Topical terbinafine, clotrimazole, or miconazole; keep the area dry",
+      "transmission": "Person-to-person contact, shared locker room floors, and contaminated clothing and towels",
+      "virulenceFactor": "Keratinase activity restricted to skin and nails, with inability to invade hair follicles",
+      "topicTags": [
+        "dermatophyte",
+        "skin infection",
+        "onychomycosis"
+      ],
+      "tooltip": "The dermatophyte that never infects hair, which distinguishes it from Trichophyton and Microsporum. Produces macroconidia but no microconidia on culture."
+    },
+    {
+      "id": "candida-auris",
+      "name": "Candida auris",
+      "emoji": "🍄🛡️🏥",
+      "category": "Yeast",
+      "labFeatures": "Budding yeast that does not form pseudohyphae; frequently misidentified by conventional systems so MALDI-TOF or molecular methods are needed; often resistant to fluconazole and sometimes echinocandins",
+      "manifestations": "Candidemia, wound and ear infection, and urinary tract infection in ICU patients; high mortality in outbreaks",
+      "treatment": "Echinocandin first-line pending susceptibilities; amphotericin B for echinocandin-resistant strains; strict contact precautions",
+      "transmission": "Person-to-person and environmental surfaces in healthcare facilities; persistent skin colonization allows silent spread",
+      "virulenceFactor": "Thermotolerance and salt tolerance, prolonged survival on dry surfaces, biofilm formation, and intrinsic multidrug resistance",
+      "topicTags": [
+        "yeast",
+        "healthcare-associated",
+        "multidrug resistance",
+        "immunocompromised",
+        "biofilm"
+      ],
+      "tooltip": "An emerging nosocomial threat notable for multidrug resistance and environmental persistence. Unlike C. albicans it does not form pseudohyphae and is routinely misidentified by older lab systems."
+    },
+    {
+      "id": "talaromyces",
+      "name": "Talaromyces marneffei",
+      "emoji": "🍄🐀🌏",
+      "category": "Dimorphic Fungus",
+      "labFeatures": "Mold producing a diffusible red pigment at 25 C; yeast with characteristic transverse septa dividing by fission rather than budding at 37 C",
+      "manifestations": "Disseminated infection in advanced HIV with fever, weight loss, papular skin lesions with central umbilication, hepatosplenomegaly, and anemia",
+      "treatment": "Liposomal amphotericin B induction followed by itraconazole; secondary prophylaxis until immune reconstitution",
+      "transmission": "Inhalation of conidia from soil in Southeast Asia, southern China, and northeastern India; bamboo rats are an associated reservoir",
+      "virulenceFactor": "Intracellular survival in macrophages; yeast replication by fission; melanin and catalase-peroxidase resisting oxidative killing",
+      "topicTags": [
+        "dimorphic",
+        "HIV-associated",
+        "skin infection",
+        "immunocompromised",
+        "Southeast Asia"
+      ],
+      "tooltip": "An AIDS-defining illness in Southeast Asia. Umbilicated papules mimic molluscum or cryptococcosis. It is the only dimorphic fungus whose yeast divides by fission, not budding."
+    },
+    {
+      "id": "fusarium",
+      "name": "Fusarium species",
+      "emoji": "🍄👁️🌾",
+      "category": "Septate Mold",
+      "labFeatures": "Septate hyphae with banana or canoe-shaped macroconidia; positive blood cultures (unusual for a mold); angioinvasive on biopsy",
+      "manifestations": "Keratitis in contact lens wearers, onychomycosis, and disseminated infection with painful skin nodules in profound neutropenia",
+      "treatment": "Voriconazole or liposomal amphotericin B, often combined; recovery of neutrophil count is critical; surgical debridement",
+      "transmission": "Environmental soil and plant exposure; contaminated contact lens solution; inhalation or direct inoculation",
+      "virulenceFactor": "Angioinvasion with thrombosis, intrinsic resistance to many antifungals, and mycotoxin production",
+      "topicTags": [
+        "mold",
+        "septate hyphae",
+        "immunocompromised",
+        "neutropenia",
+        "keratitis"
+      ],
+      "tooltip": "One of the few molds that grows in blood cultures. Keratitis in a contact lens wearer and disseminated disease with skin nodules in a neutropenic patient are the two presentations to know."
+    },
+    {
+      "id": "scedosporium",
+      "name": "Scedosporium apiospermum",
+      "emoji": "🍄🦴🌊",
+      "category": "Septate Mold",
+      "labFeatures": "Septate hyphae resembling Aspergillus on histology; distinguished only by culture; intrinsically resistant to amphotericin B",
+      "manifestations": "Mycetoma after traumatic inoculation, sinopulmonary colonization in cystic fibrosis, brain abscess after near-drowning, and disseminated disease in transplant recipients",
+      "treatment": "Voriconazole is the drug of choice; surgical debridement; amphotericin B is ineffective",
+      "transmission": "Traumatic inoculation from soil, and aspiration of polluted water in near-drowning events",
+      "virulenceFactor": "Intrinsic resistance to amphotericin B and many azoles, plus melanized cell wall resisting oxidative killing",
+      "topicTags": [
+        "mold",
+        "septate hyphae",
+        "brain abscess",
+        "immunocompromised",
+        "cystic fibrosis"
+      ],
+      "tooltip": "Looks exactly like Aspergillus in tissue but is amphotericin resistant — which is why culture identification changes management. Brain abscess after near-drowning is the classic vignette."
+    }
+  ]
+}
